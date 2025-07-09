@@ -1,0 +1,1 @@
+export { ProductsCatalogSection } from "./ProductsCatalogSection";
