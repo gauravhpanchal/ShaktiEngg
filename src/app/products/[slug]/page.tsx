@@ -224,13 +224,13 @@ export async function generateMetadata({
   };
 }
 
-interface PageProps {
+interface ProductPageProps {
   params: {
     slug: string;
   };
 }
 
-export default function ProductDetail({ params }: PageProps) {
+export default function ProductDetail({ params }: ProductPageProps) {
   const product = products.find((p) => p.slug === params.slug);
 
   if (!product) {
