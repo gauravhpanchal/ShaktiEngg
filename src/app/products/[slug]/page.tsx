@@ -224,13 +224,11 @@ export async function generateStaticParams() {
 //   };
 // }
 
-interface ProductPageProps {
-  params: {
-    slug: string;
-  };
-}
-
-export default async function ProductDetail({ params }: ProductPageProps) {
+export default async function ProductDetail({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}) {
   const { slug } = await params;
   const product = products.find((p) => p.slug === slug);
 
