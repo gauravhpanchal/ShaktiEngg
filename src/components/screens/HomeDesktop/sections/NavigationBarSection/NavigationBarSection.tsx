@@ -97,27 +97,22 @@ export const NavigationBarSection = (): JSX.Element => {
                 className="lg:hidden w-10 h-10 p-0 flex items-center justify-center rounded-full hover:bg-[#01010a0d] transition-all duration-300"
                 aria-label="Open mobile menu"
               >
-                <div className="relative w-6 h-6 flex items-center justify-center">
-                  <MenuIcon
-                    className={`w-6 h-6 transition-all duration-300 ${
-                      isMobileMenuOpen
-                        ? "opacity-0 rotate-180 scale-0"
-                        : "opacity-100 rotate-0 scale-100"
-                    }`}
-                  />
-                  <X
-                    className={`w-6 h-6 absolute transition-all duration-300 ${
-                      isMobileMenuOpen
-                        ? "opacity-100 rotate-0 scale-100"
-                        : "opacity-0 rotate-180 scale-0"
-                    }`}
-                  />
+                <div className="relative w-8 h-8 flex items-center justify-center">
+                  {!isMobileMenuOpen ? (
+                    <MenuIcon
+                      className={`w-6 h-6 transition-all duration-300 `}
+                    />
+                  ) : (
+                    <X
+                      className={`w-6 h-6 absolute transition-all duration-300 `}
+                    />
+                  )}
                 </div>
               </Button>
             </SheetTrigger>
             <SheetContent
               side="right"
-              className="w-full h-full max-w-none rounded-none border-none shadow-none bg-white fixed inset-0 data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:slide-out-to-right data-[state=open]:slide-in-from-right data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0 duration-300"
+              className="w-full p-0 h-full max-w-none rounded-none border-none shadow-none bg-white fixed inset-0 data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:slide-out-to-right data-[state=open]:slide-in-from-right data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0 duration-300"
             >
               {/* Hidden Sheet Title for Accessibility */}
               <SheetHeader className="sr-only">
@@ -132,9 +127,9 @@ export const NavigationBarSection = (): JSX.Element => {
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
                   <Image
-                    className="w-16 h-7"
+                    className="w-[200px] h-auto aspect-auto"
                     alt="Shakti Engineers"
-                    src="/company-logo.svg"
+                    src="/logo.png"
                     width={84}
                     height={36}
                     priority
@@ -143,9 +138,9 @@ export const NavigationBarSection = (): JSX.Element => {
               </div>
 
               {/* Mobile Menu Content - Centered */}
-              <div className="flex flex-col h-[calc(100vh-4rem)] justify-center items-center container-responsive py-8">
+              <div className="flex flex-col justify-center items-center container-responsive py-8 px-0">
                 {/* Mobile Navigation Links - Centered */}
-                <div className="flex flex-col items-center space-y-8 flex-1 justify-center">
+                <div className="flex flex-col items-center space-y-8 flex-1 ">
                   {navigationItems.map((item, index) => (
                     <Link
                       key={index}
@@ -153,31 +148,19 @@ export const NavigationBarSection = (): JSX.Element => {
                       className="text-center py-4 px-8 text-[#01010a] font-text-large-semi-bold hover:bg-[#01010a0d] rounded-xl transition-all duration-200 transform hover:scale-[1.05] active:scale-[0.95]"
                       onClick={() => setIsMobileMenuOpen(false)}
                     >
-                      <span className="text-2xl">{item.name}</span>
+                      <span className="text-xl">{item.name}</span>
                     </Link>
                   ))}
                 </div>
 
                 {/* Mobile CTA Buttons - Centered */}
-                <div className="flex flex-col items-center gap-4 w-full max-w-sm">
-                  <Link href="/contact" className="w-full">
-                    <Button
-                      variant="outline"
-                      className="w-full px-6 py-4 bg-[#01010a0d] rounded-2xl border-2 border-[#01010a26] hover:bg-[#01010a1a] transition-all duration-200 transform hover:scale-[1.02] active:scale-[0.98]"
-                      onClick={() => setIsMobileMenuOpen(false)}
-                    >
-                      <span className="font-text-regular-medium text-[#01010a] text-lg">
-                        Contact Us
-                      </span>
-                    </Button>
-                  </Link>
-
+                <div className="flex flex-col mt-8 items-center gap-4 w-full max-w-sm">
                   <QuoteModal>
                     <Button
-                      className="w-full px-6 py-4 bg-[#e22023] rounded-2xl border-2 border-[#e8787a] hover:bg-[#1414a8] transition-all duration-200 transform hover:scale-[1.02] active:scale-[0.98]"
-                      onClick={() => setIsMobileMenuOpen(false)}
+                      className="w-[90%] px-4  py-8 bg-[#e22023] rounded-2xl border-2 border-[#e8787a] hover:bg-[#1414a8] transition-all duration-200 transform hover:scale-[1.02] active:scale-[0.98]"
+                      // onClick={() => setIsMobileMenuOpen(false)}
                     >
-                      <span className="font-text-regular-medium text-white text-lg">
+                      <span className="font-text-regular-medium text-white text-xl">
                         Get Quote
                       </span>
                     </Button>

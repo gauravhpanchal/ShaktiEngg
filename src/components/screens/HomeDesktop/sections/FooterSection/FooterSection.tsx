@@ -11,25 +11,24 @@ import { Card, CardContent } from "@/components/ui/card";
 
 // Data for footer links
 const companyLinks = [
+  { name: "Home", href: "/" },
+  { name: "Products", href: "/products" },
   { name: "About Us", href: "/about" },
   { name: "Contact Us", href: "/contact" },
-  { name: "Our Services", href: "/services" },
-  { name: "Careers", href: "/careers" },
-  { name: "Blog", href: "/blog" },
+  { name: "Careers", href: "/" },
 ];
 
 const supportLinks = [
   { name: "FAQs", href: "/faq" },
   { name: "Support", href: "/support" },
-  { name: "Testimonials", href: "/testimonials" },
-  { name: "Privacy Policy", href: "/privacy" },
-  { name: "Terms of Use", href: "/terms" },
+  // { name: "Testimonials", href: "/testimonials" },
+  // { name: "Privacy Policy", href: "/privacy" },
+  // { name: "Terms of Use", href: "/terms" },
 ];
 
 const bottomLinks = [
   { name: "Privacy Policy", href: "/privacy" },
   { name: "Terms of Service", href: "/terms" },
-  { name: "Cookie Settings", href: "/cookies" },
 ];
 
 const socialIcons = [
@@ -69,7 +68,7 @@ export const FooterSection = (): JSX.Element => {
             <CardContent className="flex flex-col lg:flex-row items-start gap-8 lg:gap-16 p-6 lg:p-12">
               <div className="flex-col items-start gap-6 lg:gap-8 flex-1 grow flex">
                 <Image
-                  className="w-16 h-7 lg:w-[100px] lg:h-12"
+                  className="w-auto h-8 aspect-auto lg:w-auto lg:h-12"
                   alt="Shakti Engineers"
                   src="/logo.png"
                   width={84}
@@ -136,7 +135,7 @@ export const FooterSection = (): JSX.Element => {
                     <a
                       key={index}
                       href={link.href}
-                      className="flex items-start px-0 py-2 self-stretch w-full hover:bg-[#01010a0d] rounded transition-colors"
+                      className="flex items-start px-4 py-2 self-stretch w-full hover:bg-[#01010a0d] rounded transition-colors"
                     >
                       <div className="flex-1 mt-[-1.00px] font-text-small-semi-bold text-[#01010a] text-[length:var(--text-small-semi-bold-font-size)] tracking-[var(--text-small-semi-bold-letter-spacing)] leading-[var(--text-small-semi-bold-line-height)]">
                         {link.name}
@@ -153,7 +152,7 @@ export const FooterSection = (): JSX.Element => {
                     <a
                       key={index}
                       href={link.href}
-                      className="flex items-start px-0 py-2 self-stretch w-full hover:bg-[#01010a0d] rounded transition-colors"
+                      className="flex items-start px-4 py-2 self-stretch w-full hover:bg-[#01010a0d] rounded transition-colors"
                     >
                       <div className="flex-1 mt-[-1.00px] font-text-small-semi-bold text-[#01010a] text-[length:var(--text-small-semi-bold-font-size)] tracking-[var(--text-small-semi-bold-letter-spacing)] leading-[var(--text-small-semi-bold-line-height)]">
                         {link.name}
