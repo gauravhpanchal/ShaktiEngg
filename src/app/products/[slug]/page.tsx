@@ -192,37 +192,37 @@ export async function generateStaticParams() {
   }));
 }
 
-export async function generateMetadata({
-  params,
-}: {
-  params: { slug: string };
-}): Promise<Metadata> {
-  const product = products.find((p) => p.slug === params.slug);
+// export async function generateMetadata({
+//   params,
+// }: {
+//   params: { slug: string };
+// }): Promise<Metadata> {
+//   const product = products.find((p) => p.slug === params.slug);
 
-  if (!product) {
-    return {
-      title: "Product Not Found",
-    };
-  }
+//   if (!product) {
+//     return {
+//       title: "Product Not Found",
+//     };
+//   }
 
-  return {
-    title: `${product.name} - Shakti Engineers`,
-    description: product.description,
-    openGraph: {
-      title: `${product.name} - Shakti Engineers`,
-      description: product.description,
-      url: `https://shakti-engineers.com/products/${product.slug}`,
-      images: [
-        {
-          url: product.images[0],
-          width: 1200,
-          height: 630,
-          alt: product.name,
-        },
-      ],
-    },
-  };
-}
+//   return {
+//     title: `${product.name} - Shakti Engineers`,
+//     description: product.description,
+//     openGraph: {
+//       title: `${product.name} - Shakti Engineers`,
+//       description: product.description,
+//       url: `https://shakti-engineers.com/products/${product.slug}`,
+//       images: [
+//         {
+//           url: product.images[0],
+//           width: 1200,
+//           height: 630,
+//           alt: product.name,
+//         },
+//       ],
+//     },
+//   };
+// }
 
 interface ProductPageProps {
   params: {
