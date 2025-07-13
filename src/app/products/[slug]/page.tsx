@@ -230,7 +230,7 @@ interface ProductPageProps {
   };
 }
 
-export default function ProductDetail({ params }: ProductPageProps) {
+export default async function ProductDetail({ params }: ProductPageProps) {
   const product = products.find((p) => p.slug === params.slug);
 
   if (!product) {
