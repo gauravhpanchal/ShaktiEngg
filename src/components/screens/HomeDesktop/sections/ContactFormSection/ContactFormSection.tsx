@@ -62,7 +62,7 @@ export const ContactFormSection = (): JSX.Element => {
                 className="flex-1 border-none shadow-none bg-transparent"
               >
                 <CardContent className="flex flex-col items-center gap-4 lg:gap-6 p-0 text-center">
-                  <div className="text-[#1717c4]">{method.icon}</div>
+                  <div className="text-[#e22023]">{method.icon}</div>
 
                   <div className="flex flex-col items-center gap-4 lg:gap-6 relative self-stretch w-full">
                     <div className="flex flex-col items-center gap-3 lg:gap-4 relative self-stretch w-full">

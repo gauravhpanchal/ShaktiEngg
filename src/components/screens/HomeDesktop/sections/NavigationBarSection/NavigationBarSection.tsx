@@ -70,7 +70,7 @@ export const NavigationBarSection = (): JSX.Element => {
           <div className="hidden sm:flex items-center gap-2 lg:gap-4">
             <Link href="/contact">
               <Button
-                variant="outline"
+                variant="default"
                 className="px-3 lg:px-5 py-2 bg-[#01010a0d] rounded-[100px] border-b-4 border-[#01010a26] hover:bg-[#01010a1a] text-sm lg:text-base transition-colors"
               >
                 <span className="font-text-regular-medium text-[#01010a] text-[length:var(--text-regular-medium-font-size)] tracking-[var(--text-regular-medium-letter-spacing)] leading-[var(--text-regular-medium-line-height)]">
@@ -80,7 +80,7 @@ export const NavigationBarSection = (): JSX.Element => {
             </Link>
 
             <QuoteModal>
-              <Button className="px-3 lg:px-5 py-2 bg-[#1717c4] rounded-[100px] border-b-4 border-[#12129c] hover:bg-[#1414a8] text-sm lg:text-base transition-colors">
+              <Button className="px-3 lg:px-5 py-2 bg-[#e22023] rounded-[100px] border-b-4 border-[#e8787a] hover:bg-[#1414a8] text-sm lg:text-base transition-colors">
                 <span className="font-text-regular-medium text-white text-[length:var(--text-regular-medium-font-size)] tracking-[var(--text-regular-medium-letter-spacing)] leading-[var(--text-regular-medium-line-height)]">
                   Get Quote
                 </span>
@@ -174,7 +174,7 @@ export const NavigationBarSection = (): JSX.Element => {
 
                   <QuoteModal>
                     <Button
-                      className="w-full px-6 py-4 bg-[#1717c4] rounded-2xl border-2 border-[#12129c] hover:bg-[#1414a8] transition-all duration-200 transform hover:scale-[1.02] active:scale-[0.98]"
+                      className="w-full px-6 py-4 bg-[#e22023] rounded-2xl border-2 border-[#e8787a] hover:bg-[#1414a8] transition-all duration-200 transform hover:scale-[1.02] active:scale-[0.98]"
                       onClick={() => setIsMobileMenuOpen(false)}
                     >
                       <span className="font-text-regular-medium text-white text-lg">

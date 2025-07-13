@@ -25,19 +25,19 @@ export const ProductsCTASection = (): JSX.Element => {
 
                 <div className="flex flex-col gap-3">
                   <div className="flex items-center gap-3">
-                    <span className="w-2 h-2 bg-[#1717c4] rounded-full"></span>
+                    <span className="w-2 h-2 bg-[#e22023] rounded-full"></span>
                     <span className="font-text-regular-normal font-[number:var(--text-regular-normal-font-weight)] text-[#01010a] text-[length:var(--text-regular-normal-font-size)] tracking-[var(--text-regular-normal-letter-spacing)] leading-[var(--text-regular-normal-line-height)] [font-style:var(--text-regular-normal-font-style)]">
                       Free engineering consultation
                     </span>
                   </div>
                   <div className="flex items-center gap-3">
-                    <span className="w-2 h-2 bg-[#1717c4] rounded-full"></span>
+                    <span className="w-2 h-2 bg-[#e22023] rounded-full"></span>
                     <span className="font-text-regular-normal font-[number:var(--text-regular-normal-font-weight)] text-[#01010a] text-[length:var(--text-regular-normal-font-size)] tracking-[var(--text-regular-normal-letter-spacing)] leading-[var(--text-regular-normal-line-height)] [font-style:var(--text-regular-normal-font-style)]">
                       Rapid prototyping available
                     </span>
                   </div>
                   <div className="flex items-center gap-3">
-                    <span className="w-2 h-2 bg-[#1717c4] rounded-full"></span>
+                    <span className="w-2 h-2 bg-[#e22023] rounded-full"></span>
                     <span className="font-text-regular-normal font-[number:var(--text-regular-normal-font-weight)] text-[#01010a] text-[length:var(--text-regular-normal-font-size)] tracking-[var(--text-regular-normal-letter-spacing)] leading-[var(--text-regular-normal-line-height)] [font-style:var(--text-regular-normal-font-style)]">
                       Competitive pricing for all volumes
                     </span>
@@ -47,7 +47,7 @@ export const ProductsCTASection = (): JSX.Element => {
 
               <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 lg:gap-6">
                 <QuoteModal>
-                  <Button className="w-full sm:w-auto px-6 py-2.5 bg-[#1717c4] rounded-[100px] border-b-4 border-[#12129c] font-text-regular-medium font-[number:var(--text-regular-medium-font-weight)] text-white text-[length:var(--text-regular-medium-font-size)] tracking-[var(--text-regular-medium-letter-spacing)] leading-[var(--text-regular-medium-line-height)] [font-style:var(--text-regular-medium-font-style)] hover:bg-[#1414a8] transition-colors">
+                  <Button className="w-full sm:w-auto px-6 py-2.5 bg-[#e22023] rounded-[100px] border-b-4 border-[#e8787a] font-text-regular-medium font-[number:var(--text-regular-medium-font-weight)] text-white text-[length:var(--text-regular-medium-font-size)] tracking-[var(--text-regular-medium-letter-spacing)] leading-[var(--text-regular-medium-line-height)] [font-style:var(--text-regular-medium-font-style)] hover:bg-[#1414a8] transition-colors">
                     Start Custom Project
                   </Button>
                 </QuoteModal>
@@ -82,7 +82,7 @@ export const ProductsCTASection = (): JSX.Element => {
               </div>
 
               <QuoteModal>
-                <Button className="w-full px-6 py-2.5 bg-[#1717c4] rounded-[100px] border-b-4 border-[#12129c] font-text-regular-medium font-[number:var(--text-regular-medium-font-weight)] text-white text-[length:var(--text-regular-medium-font-size)] tracking-[var(--text-regular-medium-letter-spacing)] leading-[var(--text-regular-medium-line-height)] [font-style:var(--text-regular-medium-font-style)] hover:bg-[#1414a8] transition-colors">
+                <Button className="w-full px-6 py-2.5 bg-[#e22023] rounded-[100px] border-b-4 border-[#e8787a] font-text-regular-medium font-[number:var(--text-regular-medium-font-weight)] text-white text-[length:var(--text-regular-medium-font-size)] tracking-[var(--text-regular-medium-letter-spacing)] leading-[var(--text-regular-medium-line-height)] [font-style:var(--text-regular-medium-font-style)] hover:bg-[#1414a8] transition-colors">
                   Get Quote Now
                 </Button>
               </QuoteModal>

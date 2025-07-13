@@ -49,19 +49,19 @@ export const ProductDetailDesktop = ({
           <div className="flex items-center gap-2 text-sm">
             <Link
               href="/"
-              className="text-[#01010a] hover:text-[#1717c4] transition-colors"
+              className="text-[#01010a] hover:text-[#e22023] transition-colors"
             >
               Home
             </Link>
             <span className="text-[#01010a]">/</span>
             <Link
               href="/products"
-              className="text-[#01010a] hover:text-[#1717c4] transition-colors"
+              className="text-[#01010a] hover:text-[#e22023] transition-colors"
             >
               Products
             </Link>
             <span className="text-[#01010a]">/</span>
-            <span className="text-[#1717c4] font-medium">{product.name}</span>
+            <span className="text-[#e22023] font-medium">{product.name}</span>
           </div>
         </div>
       </section>
@@ -71,7 +71,7 @@ export const ProductDetailDesktop = ({
         <div className="container-responsive">
           <Link
             href="/products"
-            className="inline-flex items-center gap-2 text-[#01010a] hover:text-[#1717c4] transition-colors"
+            className="inline-flex items-center gap-2 text-[#01010a] hover:text-[#e22023] transition-colors"
           >
             <ChevronLeftIcon className="w-4 h-4" />
             <span className="font-text-regular-medium">Back to Products</span>
@@ -97,7 +97,7 @@ export const ProductDetailDesktop = ({
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 600px"
                 />
                 <div className="absolute top-4 left-4">
-                  <span className="bg-[#1717c4] text-white px-3 py-1 rounded-full text-sm font-text-small-semi-bold">
+                  <span className="bg-[#e22023] text-white px-3 py-1 rounded-full text-sm font-text-small-semi-bold">
                     {product.category}
                   </span>
                 </div>
@@ -111,7 +111,7 @@ export const ProductDetailDesktop = ({
                     onClick={() => setSelectedImageIndex(index)}
                     className={`relative overflow-hidden rounded-lg border-2 transition-all ${
                       selectedImageIndex === index
-                        ? "border-[#1717c4]"
+                        ? "border-[#e22023]"
                         : "border-transparent hover:border-[#01010a26]"
                     }`}
                   >
@@ -143,7 +143,7 @@ export const ProductDetailDesktop = ({
               {/* CTA Buttons */}
               <div className="flex flex-col sm:flex-row gap-4">
                 <QuoteModal>
-                  <Button className="w-full sm:w-auto px-6 py-3 bg-[#1717c4] rounded-[100px] border-b-4 border-[#12129c] font-text-regular-medium font-[number:var(--text-regular-medium-font-weight)] text-white text-[length:var(--text-regular-medium-font-size)] tracking-[var(--text-regular-medium-letter-spacing)] leading-[var(--text-regular-medium-line-height)] [font-style:var(--text-regular-medium-font-style)] hover:bg-[#1414a8] transition-colors">
+                  <Button className="w-full sm:w-auto px-6 py-3 bg-[#e22023] rounded-[100px] border-b-4 border-[#e8787a] font-text-regular-medium font-[number:var(--text-regular-medium-font-weight)] text-white text-[length:var(--text-regular-medium-font-size)] tracking-[var(--text-regular-medium-letter-spacing)] leading-[var(--text-regular-medium-line-height)] [font-style:var(--text-regular-medium-font-style)] hover:bg-[#1414a8] transition-colors">
                     Get Custom Quote
                   </Button>
                 </QuoteModal>
@@ -170,7 +170,7 @@ export const ProductDetailDesktop = ({
                         key={index}
                         className="font-text-regular-normal font-[number:var(--text-regular-normal-font-weight)] text-[#01010a] text-[length:var(--text-regular-normal-font-size)] tracking-[var(--text-regular-normal-letter-spacing)] leading-[var(--text-regular-normal-line-height)] [font-style:var(--text-regular-normal-font-style)] flex items-start"
                       >
-                        <span className="w-1.5 h-1.5 bg-[#1717c4] rounded-full mr-3 mt-2 flex-shrink-0"></span>
+                        <span className="w-1.5 h-1.5 bg-[#e22023] rounded-full mr-3 mt-2 flex-shrink-0"></span>
                         {feature}
                       </li>
                     ))}
@@ -229,7 +229,7 @@ export const ProductDetailDesktop = ({
           </div>
 
           {/* CTA Section */}
-          <Card className="w-full border-none shadow-lg bg-[#1717c4] text-white">
+          <Card className="w-full border-none shadow-lg bg-[#e22023] text-white">
             <CardContent className="p-8 lg:p-12 text-center">
               <h2 className="font-heading-h2 font-[number:var(--heading-h2-font-weight)] text-white text-[length:var(--heading-h2-font-size)] tracking-[var(--heading-h2-letter-spacing)] leading-[var(--heading-h2-line-height)] [font-style:var(--heading-h2-font-style)] mb-4">
                 Ready to Get Started?
@@ -241,14 +241,14 @@ export const ProductDetailDesktop = ({
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <QuoteModal>
-                  <Button className="px-8 py-3 bg-white text-[#1717c4] rounded-[100px] border-b-4 border-[#f2f2f2] font-text-regular-medium font-[number:var(--text-regular-medium-font-weight)] text-[length:var(--text-regular-medium-font-size)] tracking-[var(--text-regular-medium-letter-spacing)] leading-[var(--text-regular-medium-line-height)] [font-style:var(--text-regular-medium-font-style)] hover:bg-[#f2f2f2] transition-colors">
+                  <Button className="px-8 py-3 bg-white text-[#e22023] rounded-[100px] border-b-4 border-[#f2f2f2] font-text-regular-medium font-[number:var(--text-regular-medium-font-weight)] text-[length:var(--text-regular-medium-font-size)] tracking-[var(--text-regular-medium-letter-spacing)] leading-[var(--text-regular-medium-line-height)] [font-style:var(--text-regular-medium-font-style)] hover:bg-[#f2f2f2] transition-colors">
                     Request Quote
                   </Button>
                 </QuoteModal>
                 <Link href="/contact">
                   <Button
                     variant="outline"
-                    className="px-8 py-3 bg-transparent text-white border-2 border-white rounded-[100px] font-text-regular-medium font-[number:var(--text-regular-medium-font-weight)] text-[length:var(--text-regular-medium-font-size)] tracking-[var(--text-regular-medium-letter-spacing)] leading-[var(--text-regular-medium-line-height)] [font-style:var(--text-regular-medium-font-style)] hover:bg-white hover:text-[#1717c4] transition-colors"
+                    className="px-8 py-3 bg-transparent text-white border-2 border-white rounded-[100px] font-text-regular-medium font-[number:var(--text-regular-medium-font-weight)] text-[length:var(--text-regular-medium-font-size)] tracking-[var(--text-regular-medium-letter-spacing)] leading-[var(--text-regular-medium-line-height)] [font-style:var(--text-regular-medium-font-style)] hover:bg-white hover:text-[#e22023] transition-colors"
                   >
                     Contact Us
                   </Button>

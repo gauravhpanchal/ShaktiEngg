@@ -136,7 +136,7 @@ const ProductCard = ({ product }: { product: (typeof products)[0] }) => (
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
           />
           <div className="absolute top-4 left-4">
-            <span className="bg-[#1717c4] text-white px-3 py-1 rounded-full text-sm font-text-small-semi-bold">
+            <span className="bg-[#e22023] text-white px-3 py-1 rounded-full text-sm font-text-small-semi-bold">
               {product.category}
             </span>
           </div>
@@ -146,7 +146,7 @@ const ProductCard = ({ product }: { product: (typeof products)[0] }) => (
       <div className="p-6 flex flex-col flex-1">
         <div className="flex flex-col gap-3 mb-4">
           <Link href={`/products/${product.slug}`}>
-            <h3 className="font-heading-h4 font-[number:var(--heading-h4-font-weight)] text-[#01010a] text-[length:var(--heading-h4-font-size)] tracking-[var(--heading-h4-letter-spacing)] leading-[var(--heading-h4-line-height)] [font-style:var(--heading-h4-font-style)] hover:text-[#1717c4] transition-colors">
+            <h3 className="font-heading-h4 font-[number:var(--heading-h4-font-weight)] text-[#01010a] text-[length:var(--heading-h4-font-size)] tracking-[var(--heading-h4-letter-spacing)] leading-[var(--heading-h4-line-height)] [font-style:var(--heading-h4-font-style)] hover:text-[#e22023] transition-colors">
               {product.name}
             </h3>
           </Link>
@@ -166,7 +166,7 @@ const ProductCard = ({ product }: { product: (typeof products)[0] }) => (
                   key={index}
                   className="font-text-small-normal font-[number:var(--text-small-normal-font-weight)] text-[#01010a] text-[length:var(--text-small-normal-font-size)] tracking-[var(--text-small-normal-letter-spacing)] leading-[var(--text-small-normal-line-height)] [font-style:var(--text-small-normal-font-style)] flex items-center"
                 >
-                  <span className="w-1.5 h-1.5 bg-[#1717c4] rounded-full mr-2 flex-shrink-0"></span>
+                  <span className="w-1.5 h-1.5 bg-[#e22023] rounded-full mr-2 flex-shrink-0"></span>
                   {feature}
                 </li>
               ))}
@@ -201,7 +201,7 @@ const ProductCard = ({ product }: { product: (typeof products)[0] }) => (
           </Link>
 
           <QuoteModal>
-            <Button className="w-full px-4 py-2 bg-[#1717c4] rounded-[100px] border-b-4 border-[#12129c] font-text-regular-medium font-[number:var(--text-regular-medium-font-weight)] text-white text-[length:var(--text-regular-medium-font-size)] tracking-[var(--text-regular-medium-letter-spacing)] leading-[var(--text-regular-medium-line-height)] [font-style:var(--text-regular-medium-font-style)] hover:bg-[#1414a8] transition-colors">
+            <Button className="w-full px-4 py-2 bg-[#e22023] rounded-[100px] border-b-4 border-[#e8787a] font-text-regular-medium font-[number:var(--text-regular-medium-font-weight)] text-white text-[length:var(--text-regular-medium-font-size)] tracking-[var(--text-regular-medium-letter-spacing)] leading-[var(--text-regular-medium-line-height)] [font-style:var(--text-regular-medium-font-style)] hover:bg-[#1414a8] transition-colors">
               Request Quote
             </Button>
           </QuoteModal>

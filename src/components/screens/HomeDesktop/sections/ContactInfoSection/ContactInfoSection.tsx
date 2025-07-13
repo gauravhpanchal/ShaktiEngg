@@ -106,7 +106,7 @@ export const ContactInfoSection = (): JSX.Element => {
                   required
                   value={formData.name}
                   onChange={(e) => handleInputChange("name", e.target.value)}
-                  className="self-stretch bg-[#01010a0d] rounded-xl border-transparent focus:border-[#1717c4] focus:ring-[#1717c4]"
+                  className="self-stretch bg-[#01010a0d] rounded-xl border-transparent focus:border-[#e22023] focus:ring-[#e22023]"
                   placeholder="Enter your full name"
                   disabled={isSubmitting}
                 />
@@ -125,7 +125,7 @@ export const ContactInfoSection = (): JSX.Element => {
                   required
                   value={formData.email}
                   onChange={(e) => handleInputChange("email", e.target.value)}
-                  className="self-stretch bg-[#01010a0d] rounded-xl border-transparent focus:border-[#1717c4] focus:ring-[#1717c4]"
+                  className="self-stretch bg-[#01010a0d] rounded-xl border-transparent focus:border-[#e22023] focus:ring-[#e22023]"
                   placeholder="Enter your email address"
                   disabled={isSubmitting}
                 />
@@ -142,7 +142,7 @@ export const ContactInfoSection = (): JSX.Element => {
                   id="company"
                   value={formData.company}
                   onChange={(e) => handleInputChange("company", e.target.value)}
-                  className="self-stretch bg-[#01010a0d] rounded-xl border-transparent focus:border-[#1717c4] focus:ring-[#1717c4]"
+                  className="self-stretch bg-[#01010a0d] rounded-xl border-transparent focus:border-[#e22023] focus:ring-[#e22023]"
                   placeholder="Enter your company name"
                   disabled={isSubmitting}
                 />
@@ -161,7 +161,7 @@ export const ContactInfoSection = (): JSX.Element => {
                   value={formData.message}
                   onChange={(e) => handleInputChange("message", e.target.value)}
                   placeholder="Tell us about your product requirements, specifications, quantities, and timeline..."
-                  className="h-32 lg:h-[182px] self-stretch bg-[#01010a0d] rounded-xl border-transparent font-text-regular-normal text-[#01010a99] focus:border-[#1717c4] focus:ring-[#1717c4] resize-none"
+                  className="h-32 lg:h-[182px] self-stretch bg-[#01010a0d] rounded-xl border-transparent font-text-regular-normal text-[#01010a99] focus:border-[#e22023] focus:ring-[#e22023] resize-none"
                   disabled={isSubmitting}
                 />
               </div>
@@ -189,7 +189,7 @@ export const ContactInfoSection = (): JSX.Element => {
               <Button
                 type="submit"
                 disabled={!agreeToTerms || isSubmitting}
-                className="w-full sm:w-auto px-6 py-2.5 bg-[#1717c4] rounded-[100px] border-b-4 border-[#12129c] font-text-regular-medium font-[number:var(--text-regular-medium-font-weight)] text-white text-[length:var(--text-regular-medium-font-size)] tracking-[var(--text-regular-medium-letter-spacing)] leading-[var(--text-regular-medium-line-height)] [font-style:var(--text-regular-medium-font-style)] hover:bg-[#1414a8] transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+                className="w-full sm:w-auto px-6 py-2.5 bg-[#e22023] rounded-[100px] border-b-4 border-[#e8787a] font-text-regular-medium font-[number:var(--text-regular-medium-font-weight)] text-white text-[length:var(--text-regular-medium-font-size)] tracking-[var(--text-regular-medium-letter-spacing)] leading-[var(--text-regular-medium-line-height)] [font-style:var(--text-regular-medium-font-style)] hover:bg-[#1414a8] transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
               >
                 {isSubmitting ? "Submitting..." : "Submit Request"}
               </Button>

@@ -55,7 +55,7 @@ export const AboutStatsSection = (): JSX.Element => {
             >
               <CardContent className="flex flex-col items-center gap-4 lg:gap-6 p-6 lg:p-8 text-center">
                 <div className="flex flex-col items-center gap-2 relative self-stretch w-full">
-                  <span className="font-heading-h1 font-[number:var(--heading-h1-font-weight)] text-[#1717c4] text-[length:var(--heading-h1-font-size)] text-center tracking-[var(--heading-h1-letter-spacing)] leading-[var(--heading-h1-line-height)] [font-style:var(--heading-h1-font-style)]">
+                  <span className="font-heading-h1 font-[number:var(--heading-h1-font-weight)] text-[#e22023] text-[length:var(--heading-h1-font-size)] text-center tracking-[var(--heading-h1-letter-spacing)] leading-[var(--heading-h1-line-height)] [font-style:var(--heading-h1-font-style)]">
                     {stat.number}
                   </span>
 

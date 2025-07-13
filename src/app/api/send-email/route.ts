@@ -109,7 +109,7 @@ export async function POST(request: NextRequest) {
       subject = `New Contact Form Submission - ${formData.name}`;
       emailContent = `
         <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
-          <h2 style="color: #1717c4; border-bottom: 2px solid #1717c4; padding-bottom: 10px;">
+          <h2 style="color: #e22023; border-bottom: 2px solid #e22023; padding-bottom: 10px;">
             New Contact Form Submission
           </h2>
           <div style="background-color: #f9f9f9; padding: 20px; border-radius: 8px; margin: 20px 0;">
@@ -123,7 +123,7 @@ export async function POST(request: NextRequest) {
           </div>
           <div style="margin: 20px 0;">
             <h3 style="color: #333;">Message:</h3>
-            <div style="background-color: #fff; padding: 15px; border-left: 4px solid #1717c4; margin: 10px 0;">
+            <div style="background-color: #fff; padding: 15px; border-left: 4px solid #e22023; margin: 10px 0;">
               ${formData.message.replace(/\n/g, "<br>")}
             </div>
           </div>
@@ -137,7 +137,7 @@ export async function POST(request: NextRequest) {
       subject = `New Quote Request - ${formData.name} (${formData.productType})`;
       emailContent = `
         <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
-          <h2 style="color: #1717c4; border-bottom: 2px solid #1717c4; padding-bottom: 10px;">
+          <h2 style="color: #e22023; border-bottom: 2px solid #e22023; padding-bottom: 10px;">
             New Quote Request
           </h2>
           <div style="background-color: #f9f9f9; padding: 20px; border-radius: 8px; margin: 20px 0;">
@@ -153,7 +153,7 @@ export async function POST(request: NextRequest) {
           </div>
           <div style="background-color: #fff; padding: 20px; border-radius: 8px; margin: 20px 0; border: 1px solid #ddd;">
             <h3 style="margin-top: 0; color: #333;">Project Details</h3>
-            <p><strong>Product Type:</strong> <span style="background-color: #1717c4; color: white; padding: 2px 8px; border-radius: 4px;">${
+            <p><strong>Product Type:</strong> <span style="background-color: #e22023; color: white; padding: 2px 8px; border-radius: 4px;">${
               formData.productType
             }</span></p>
             <p><strong>Quantity:</strong> ${formData.quantity}</p>
@@ -163,7 +163,7 @@ export async function POST(request: NextRequest) {
           </div>
           <div style="margin: 20px 0;">
             <h3 style="color: #333;">Specifications & Requirements:</h3>
-            <div style="background-color: #fff; padding: 15px; border-left: 4px solid #1717c4; margin: 10px 0;">
+            <div style="background-color: #fff; padding: 15px; border-left: 4px solid #e22023; margin: 10px 0;">
               ${formData.specifications.replace(/\n/g, "<br>")}
             </div>
           </div>

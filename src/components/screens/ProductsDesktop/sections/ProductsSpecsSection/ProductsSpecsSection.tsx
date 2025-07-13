@@ -85,7 +85,7 @@ export const ProductsSpecsSection = (): JSX.Element => {
                       key={itemIndex}
                       className="font-text-regular-normal font-[number:var(--text-regular-normal-font-weight)] text-[#01010a] text-[length:var(--text-regular-normal-font-size)] tracking-[var(--text-regular-normal-letter-spacing)] leading-[var(--text-regular-normal-line-height)] [font-style:var(--text-regular-normal-font-style)] flex items-start"
                     >
-                      <span className="w-1.5 h-1.5 bg-[#1717c4] rounded-full mr-3 mt-2 flex-shrink-0"></span>
+                      <span className="w-1.5 h-1.5 bg-[#e22023] rounded-full mr-3 mt-2 flex-shrink-0"></span>
                       {item}
                     </li>
                   ))}

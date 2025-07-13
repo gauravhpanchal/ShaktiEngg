@@ -112,7 +112,7 @@ export const QuoteModal = ({ children }: QuoteModalProps): JSX.Element => {
                 required
                 value={formData.name}
                 onChange={(e) => handleInputChange("name", e.target.value)}
-                className="bg-[#01010a0d] rounded-xl border-transparent focus:border-[#1717c4] focus:ring-[#1717c4]"
+                className="bg-[#01010a0d] rounded-xl border-transparent focus:border-[#e22023] focus:ring-[#e22023]"
                 placeholder="Enter your full name"
                 disabled={isSubmitting}
               />
@@ -131,7 +131,7 @@ export const QuoteModal = ({ children }: QuoteModalProps): JSX.Element => {
                 required
                 value={formData.email}
                 onChange={(e) => handleInputChange("email", e.target.value)}
-                className="bg-[#01010a0d] rounded-xl border-transparent focus:border-[#1717c4] focus:ring-[#1717c4]"
+                className="bg-[#01010a0d] rounded-xl border-transparent focus:border-[#e22023] focus:ring-[#e22023]"
                 placeholder="Enter your email"
                 disabled={isSubmitting}
               />
@@ -150,7 +150,7 @@ export const QuoteModal = ({ children }: QuoteModalProps): JSX.Element => {
                 id="quote-company"
                 value={formData.company}
                 onChange={(e) => handleInputChange("company", e.target.value)}
-                className="bg-[#01010a0d] rounded-xl border-transparent focus:border-[#1717c4] focus:ring-[#1717c4]"
+                className="bg-[#01010a0d] rounded-xl border-transparent focus:border-[#e22023] focus:ring-[#e22023]"
                 placeholder="Enter company name"
                 disabled={isSubmitting}
               />
@@ -168,7 +168,7 @@ export const QuoteModal = ({ children }: QuoteModalProps): JSX.Element => {
                 type="tel"
                 value={formData.phone}
                 onChange={(e) => handleInputChange("phone", e.target.value)}
-                className="bg-[#01010a0d] rounded-xl border-transparent focus:border-[#1717c4] focus:ring-[#1717c4]"
+                className="bg-[#01010a0d] rounded-xl border-transparent focus:border-[#e22023] focus:ring-[#e22023]"
                 placeholder="Enter phone number"
                 disabled={isSubmitting}
               />
@@ -187,7 +187,7 @@ export const QuoteModal = ({ children }: QuoteModalProps): JSX.Element => {
                 }
                 disabled={isSubmitting}
               >
-                <SelectTrigger className="bg-[#01010a0d] rounded-xl border-transparent focus:border-[#1717c4] focus:ring-[#1717c4]">
+                <SelectTrigger className="bg-[#01010a0d] rounded-xl border-transparent focus:border-[#e22023] focus:ring-[#e22023]">
                   <SelectValue placeholder="Select product type" />
                 </SelectTrigger>
                 <SelectContent>
@@ -217,7 +217,7 @@ export const QuoteModal = ({ children }: QuoteModalProps): JSX.Element => {
                 onValueChange={(value) => handleInputChange("quantity", value)}
                 disabled={isSubmitting}
               >
-                <SelectTrigger className="bg-[#01010a0d] rounded-xl border-transparent focus:border-[#1717c4] focus:ring-[#1717c4]">
+                <SelectTrigger className="bg-[#01010a0d] rounded-xl border-transparent focus:border-[#e22023] focus:ring-[#e22023]">
                   <SelectValue placeholder="Select quantity range" />
                 </SelectTrigger>
                 <SelectContent>
@@ -241,7 +241,7 @@ export const QuoteModal = ({ children }: QuoteModalProps): JSX.Element => {
               onValueChange={(value) => handleInputChange("timeline", value)}
               disabled={isSubmitting}
             >
-              <SelectTrigger className="bg-[#01010a0d] rounded-xl border-transparent focus:border-[#1717c4] focus:ring-[#1717c4]">
+              <SelectTrigger className="bg-[#01010a0d] rounded-xl border-transparent focus:border-[#e22023] focus:ring-[#e22023]">
                 <SelectValue placeholder="Select timeline" />
               </SelectTrigger>
               <SelectContent>
@@ -270,7 +270,7 @@ export const QuoteModal = ({ children }: QuoteModalProps): JSX.Element => {
                 handleInputChange("specifications", e.target.value)
               }
               placeholder="Please provide details about your products requirements, operating conditions, and any special requirements..."
-              className="h-16 bg-[#01010a0d] rounded-xl border-transparent focus:border-[#1717c4] focus:ring-[#1717c4] resize-none"
+              className="h-16 bg-[#01010a0d] rounded-xl border-transparent focus:border-[#e22023] focus:ring-[#e22023] resize-none"
               disabled={isSubmitting}
             />
           </div>
@@ -307,7 +307,7 @@ export const QuoteModal = ({ children }: QuoteModalProps): JSX.Element => {
             <Button
               type="submit"
               disabled={!formData.agreeToTerms || isSubmitting}
-              className="w-full sm:w-auto px-6 py-2.5 bg-[#1717c4] rounded-[100px] border-b-4 border-[#12129c] font-text-regular-medium font-[number:var(--text-regular-medium-font-weight)] text-white text-[length:var(--text-regular-medium-font-size)] hover:bg-[#1414a8] transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+              className="w-full sm:w-auto px-6 py-2.5 bg-[#e22023] rounded-[100px] border-b-4 border-[#e8787a] font-text-regular-medium font-[number:var(--text-regular-medium-font-weight)] text-white text-[length:var(--text-regular-medium-font-size)] hover:bg-[#1414a8] transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
             >
               {isSubmitting ? "Submitting..." : "Submit Quote Request"}
             </Button>

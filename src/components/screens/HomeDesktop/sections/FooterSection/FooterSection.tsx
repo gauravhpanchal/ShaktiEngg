@@ -117,7 +117,7 @@ export const FooterSection = (): JSX.Element => {
                       key={index}
                       href={social.href}
                       aria-label={`Follow us on ${social.alt}`}
-                      className="text-[#01010a] hover:text-[#1717c4] transition-colors"
+                      className="text-[#01010a] hover:text-[#e22023] transition-colors"
                       target="_blank"
                       rel="noopener noreferrer"
                     >

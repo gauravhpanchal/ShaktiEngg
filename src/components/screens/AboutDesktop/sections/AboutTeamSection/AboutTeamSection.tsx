@@ -83,7 +83,7 @@ export const AboutTeamSection = (): JSX.Element => {
                       {member.name}
                     </h4>
 
-                    <span className="relative self-stretch font-text-regular-semi-bold font-[number:var(--text-regular-semi-bold-font-weight)] text-[#1717c4] text-[length:var(--text-regular-semi-bold-font-size)] text-center tracking-[var(--text-regular-semi-bold-letter-spacing)] leading-[var(--text-regular-semi-bold-line-height)] [font-style:var(--text-regular-semi-bold-font-style)]">
+                    <span className="relative self-stretch font-text-regular-semi-bold font-[number:var(--text-regular-semi-bold-font-weight)] text-[#e22023] text-[length:var(--text-regular-semi-bold-font-size)] text-center tracking-[var(--text-regular-semi-bold-letter-spacing)] leading-[var(--text-regular-semi-bold-line-height)] [font-style:var(--text-regular-semi-bold-font-style)]">
                       {member.position}
                     </span>
                   </div>
