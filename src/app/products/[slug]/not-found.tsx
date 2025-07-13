@@ -14,7 +14,7 @@ export default function NotFound() {
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Link href="/products">
-            <Button className="px-6 py-2.5 bg-[#e22023] rounded-[100px] border-b-4 border-[#e8787a] text-white hover:bg-[#1414a8] transition-colors">
+            <Button className="px-6 py-2.5 bg-[#e22023] rounded-[100px] border-b-4 border-[#e8787a] text-white hover:bg-[#e8787a] transition-colors">
               View All Products
             </Button>
           </Link>

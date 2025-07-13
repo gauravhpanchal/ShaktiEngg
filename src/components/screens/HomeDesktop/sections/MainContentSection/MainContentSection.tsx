@@ -4,6 +4,8 @@ import React from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import homepageContent from "@/data/homepage-content.json";
+import Link from "next/link";
+import { QuoteModal } from "@/components/QuoteModal";
 
 // Feature data from JSON
 const features = homepageContent.benefits.features.map((feature) => ({
@@ -63,24 +65,28 @@ export const MainContentSection = (): JSX.Element => {
 
             {/* CTA buttons */}
             <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 lg:gap-6 relative">
-              <Button
-                variant="outline"
-                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-2.5 relative mt-[-4.00px] mb-[-4.00px] ml-[-4.00px] bg-[#01010a0d] rounded-[100px] border-b-4 [border-bottom-style:solid] border-[#01010a26] hover:bg-[#01010a1a] transition-colors"
-              >
-                <span className="font-text-regular-medium font-[number:var(--text-regular-medium-font-weight)] text-[#01010a] text-[length:var(--text-regular-medium-font-size)] tracking-[var(--text-regular-medium-letter-spacing)] leading-[var(--text-regular-medium-line-height)] whitespace-nowrap [font-style:var(--text-regular-medium-font-style)]">
-                  Learn More
-                </span>
-              </Button>
+              <Link href="/products">
+                <Button
+                  variant="outline"
+                  className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-2.5 relative mt-[-4.00px] mb-[-4.00px] ml-[-4.00px] bg-[#01010a0d] rounded-[100px] border-b-4 [border-bottom-style:solid] border-[#01010a26] hover:bg-[#01010a1a] transition-colors"
+                >
+                  <span className="font-text-regular-medium font-[number:var(--text-regular-medium-font-weight)] text-[#01010a] text-[length:var(--text-regular-medium-font-size)] tracking-[var(--text-regular-medium-letter-spacing)] leading-[var(--text-regular-medium-line-height)] whitespace-nowrap [font-style:var(--text-regular-medium-font-style)]">
+                    Learn More
+                  </span>
+                </Button>
+              </Link>
 
-              <Button
-                variant="ghost"
-                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 relative rounded-[100px] hover:bg-[#01010a0d] transition-colors"
-              >
-                <span className="font-text-regular-medium font-[number:var(--text-regular-medium-font-weight)] text-[#01010a] text-[length:var(--text-regular-medium-font-size)] tracking-[var(--text-regular-medium-letter-spacing)] leading-[var(--text-regular-medium-line-height)] whitespace-nowrap [font-style:var(--text-regular-medium-font-style)]">
-                  Get Quote
-                </span>
-                <ChevronRightIcon className="w-5 h-5 lg:w-6 lg:h-6" />
-              </Button>
+              <QuoteModal>
+                <Button
+                  variant="ghost"
+                  className="w-full sm:w-auto inline-flex items-center justify-center gap-2 relative rounded-[100px] hover:bg-[#01010a0d] transition-colors"
+                >
+                  <span className="font-text-regular-medium font-[number:var(--text-regular-medium-font-weight)] text-[#01010a] text-[length:var(--text-regular-medium-font-size)] tracking-[var(--text-regular-medium-letter-spacing)] leading-[var(--text-regular-medium-line-height)] whitespace-nowrap [font-style:var(--text-regular-medium-font-style)]">
+                    Get Quote
+                  </span>
+                  <ChevronRightIcon className="w-5 h-5 lg:w-6 lg:h-6" />
+                </Button>
+              </QuoteModal>
             </div>
           </div>
 

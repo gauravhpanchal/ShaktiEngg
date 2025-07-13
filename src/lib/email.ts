@@ -1,15 +1,16 @@
 export interface ContactFormData {
   name: string;
   email: string;
-  company?: string;
+  company: string;
+  phone: string;
   message: string;
 }
 
 export interface QuoteFormData {
   name: string;
   email: string;
-  company?: string;
-  phone?: string;
+  company: string;
+  phone: string;
   productType: string;
   quantity: string;
   timeline?: string;

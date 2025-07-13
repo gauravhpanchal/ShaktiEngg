@@ -45,6 +45,41 @@ export const QuoteModal = ({ children }: QuoteModalProps): JSX.Element => {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
 
+    const trimmedData = {
+      ...formData,
+      name: formData.name.trim(),
+      email: formData.email.trim(),
+      company: formData.company.trim(),
+      phone: formData.phone.trim(),
+      specifications: formData.specifications.trim(),
+    };
+
+    // Validate required fields
+    if (!trimmedData.name) {
+      toast.error("Please enter your full name");
+      return;
+    }
+
+    if (!trimmedData.email) {
+      toast.error("Please enter your email address");
+      return;
+    }
+
+    if (!trimmedData.productType) {
+      toast.error("Please select a product type");
+      return;
+    }
+
+    if (!trimmedData.quantity) {
+      toast.error("Please select an estimated quantity");
+      return;
+    }
+
+    if (!trimmedData.specifications) {
+      toast.error("Please provide specifications and requirements");
+      return;
+    }
+
     if (!formData.agreeToTerms) {
       toast.error("Please agree to the terms and conditions");
       return;
@@ -53,7 +88,7 @@ export const QuoteModal = ({ children }: QuoteModalProps): JSX.Element => {
     setIsSubmitting(true);
 
     try {
-      await sendQuoteEmail(formData);
+      await sendQuoteEmail(trimmedData);
       toast.success(
         "Quote request submitted successfully! We'll get back to you within 24 hours."
       );
@@ -149,6 +184,8 @@ export const QuoteModal = ({ children }: QuoteModalProps): JSX.Element => {
               <Input
                 id="quote-company"
                 value={formData.company}
+                type="text"
+                required
                 onChange={(e) => handleInputChange("company", e.target.value)}
                 className="bg-[#01010a0d] rounded-xl border-transparent focus:border-[#e22023] focus:ring-[#e22023]"
                 placeholder="Enter company name"
@@ -167,6 +204,7 @@ export const QuoteModal = ({ children }: QuoteModalProps): JSX.Element => {
                 id="quote-phone"
                 type="tel"
                 value={formData.phone}
+                required
                 onChange={(e) => handleInputChange("phone", e.target.value)}
                 className="bg-[#01010a0d] rounded-xl border-transparent focus:border-[#e22023] focus:ring-[#e22023]"
                 placeholder="Enter phone number"
@@ -307,7 +345,7 @@ export const QuoteModal = ({ children }: QuoteModalProps): JSX.Element => {
             <Button
               type="submit"
               disabled={!formData.agreeToTerms || isSubmitting}
-              className="w-full sm:w-auto px-6 py-2.5 bg-[#e22023] rounded-[100px] border-b-4 border-[#e8787a] font-text-regular-medium font-[number:var(--text-regular-medium-font-weight)] text-white text-[length:var(--text-regular-medium-font-size)] hover:bg-[#1414a8] transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+              className="w-full sm:w-auto px-6 py-2.5 bg-[#e22023] rounded-[100px] border-b-4 border-[#e8787a] font-text-regular-medium font-[number:var(--text-regular-medium-font-weight)] text-white text-[length:var(--text-regular-medium-font-size)] hover:bg-[#e8787a] transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
             >
               {isSubmitting ? "Submitting..." : "Submit Quote Request"}
             </Button>

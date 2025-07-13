@@ -80,7 +80,7 @@ export const NavigationBarSection = (): JSX.Element => {
             </Link>
 
             <QuoteModal>
-              <Button className="px-3 lg:px-5 py-2 bg-[#e22023] rounded-[100px] border-b-4 border-[#e8787a] hover:bg-[#1414a8] text-sm lg:text-base transition-colors">
+              <Button className="px-3 lg:px-5 py-2 bg-[#e22023] rounded-[100px] border-b-4 border-[#e8787a] hover:bg-[#e8787a] text-sm lg:text-base transition-colors">
                 <span className="font-text-regular-medium text-white text-[length:var(--text-regular-medium-font-size)] tracking-[var(--text-regular-medium-letter-spacing)] leading-[var(--text-regular-medium-line-height)]">
                   Get Quote
                 </span>
@@ -138,9 +138,9 @@ export const NavigationBarSection = (): JSX.Element => {
               </div>
 
               {/* Mobile Menu Content - Centered */}
-              <div className="flex flex-col justify-center items-center container-responsive py-8 px-0">
+              <div className="flex flex-col justify-between items-center container-responsive py-0 px-0 h-[calc(100vh-4rem)]">
                 {/* Mobile Navigation Links - Centered */}
-                <div className="flex flex-col items-center space-y-8 flex-1 ">
+                <div className="flex flex-col items-center space-y-8 flex-1  pt-8">
                   {navigationItems.map((item, index) => (
                     <Link
                       key={index}
@@ -153,11 +153,11 @@ export const NavigationBarSection = (): JSX.Element => {
                   ))}
                 </div>
 
-                {/* Mobile CTA Buttons - Centered */}
-                <div className="flex flex-col mt-8 items-center gap-4 w-full max-w-sm">
+                {/* Mobile CTA Buttons - Bottom */}
+                <div className="flex flex-col items-center gap-4 w-full max-w-sm pb-8">
                   <QuoteModal>
                     <Button
-                      className="w-[90%] px-4  py-8 bg-[#e22023] rounded-2xl border-2 border-[#e8787a] hover:bg-[#1414a8] transition-all duration-200 transform hover:scale-[1.02] active:scale-[0.98]"
+                      className="w-[90%] px-4 py-8 bg-[#e22023] rounded-2xl border-2 border-[#e8787a] hover:bg-[#e8787a] transition-all duration-200 transform hover:scale-[1.02] active:scale-[0.98]"
                       // onClick={() => setIsMobileMenuOpen(false)}
                     >
                       <span className="font-text-regular-medium text-white text-xl">

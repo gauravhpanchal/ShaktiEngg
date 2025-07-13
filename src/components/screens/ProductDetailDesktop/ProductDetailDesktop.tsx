@@ -143,7 +143,7 @@ export const ProductDetailDesktop = ({
               {/* CTA Buttons */}
               <div className="flex flex-col sm:flex-row gap-4">
                 <QuoteModal>
-                  <Button className="w-full sm:w-auto px-6 py-3 bg-[#e22023] rounded-[100px] border-b-4 border-[#e8787a] font-text-regular-medium font-[number:var(--text-regular-medium-font-weight)] text-white text-[length:var(--text-regular-medium-font-size)] tracking-[var(--text-regular-medium-letter-spacing)] leading-[var(--text-regular-medium-line-height)] [font-style:var(--text-regular-medium-font-style)] hover:bg-[#1414a8] transition-colors">
+                  <Button className="w-full sm:w-auto px-6 py-3 bg-[#e22023] rounded-[100px] border-b-4 border-[#e8787a] font-text-regular-medium font-[number:var(--text-regular-medium-font-weight)] text-white text-[length:var(--text-regular-medium-font-size)] tracking-[var(--text-regular-medium-letter-spacing)] leading-[var(--text-regular-medium-line-height)] [font-style:var(--text-regular-medium-font-style)] hover:bg-[#e8787a] transition-colors">
                     Get Custom Quote
                   </Button>
                 </QuoteModal>

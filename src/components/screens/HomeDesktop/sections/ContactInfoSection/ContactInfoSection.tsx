@@ -15,12 +15,46 @@ export const ContactInfoSection = (): JSX.Element => {
     name: "",
     email: "",
     company: "",
+    phone: "",
     message: "",
   });
   const [agreeToTerms, setAgreeToTerms] = useState(false);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    const trimmedData = {
+      ...formData,
+      name: formData.name.trim(),
+      email: formData.email.trim(),
+      company: formData.company.trim(),
+      phone: formData.phone.trim(),
+      message: formData.message.trim(),
+    };
+
+    // Validate required fields
+    if (!trimmedData.name) {
+      toast.error("Please enter your name");
+      return;
+    }
+
+    if (!trimmedData.email) {
+      toast.error("Please enter your email address");
+      return;
+    }
+
+    if (!trimmedData.company) {
+      toast.error("Please enter your company name");
+      return;
+    }
+    if (!trimmedData.phone) {
+      toast.error("Please enter your phone number");
+      return;
+    }
+
+    if (!trimmedData.message) {
+      toast.error("Please provide project details");
+      return;
+    }
 
     if (!agreeToTerms) {
       toast.error("Please agree to the terms and conditions");
@@ -30,7 +64,7 @@ export const ContactInfoSection = (): JSX.Element => {
     setIsSubmitting(true);
 
     try {
-      await sendContactEmail(formData);
+      await sendContactEmail(trimmedData);
       toast.success("Message sent successfully! We'll get back to you soon.");
 
       // Reset form
@@ -38,6 +72,7 @@ export const ContactInfoSection = (): JSX.Element => {
         name: "",
         email: "",
         company: "",
+        phone: "",
         message: "",
       });
       setAgreeToTerms(false);
@@ -104,6 +139,7 @@ export const ContactInfoSection = (): JSX.Element => {
                 <Input
                   id="name"
                   required
+                  type="text"
                   value={formData.name}
                   onChange={(e) => handleInputChange("name", e.target.value)}
                   className="self-stretch bg-[#01010a0d] rounded-xl border-transparent focus:border-[#e22023] focus:ring-[#e22023]"
@@ -140,10 +176,30 @@ export const ContactInfoSection = (): JSX.Element => {
                 </label>
                 <Input
                   id="company"
+                  required
+                  type="text"
                   value={formData.company}
                   onChange={(e) => handleInputChange("company", e.target.value)}
                   className="self-stretch bg-[#01010a0d] rounded-xl border-transparent focus:border-[#e22023] focus:ring-[#e22023]"
                   placeholder="Enter your company name"
+                  disabled={isSubmitting}
+                />
+              </div>
+              <div className="flex flex-col items-start gap-2 self-stretch w-full">
+                <label
+                  htmlFor="phone"
+                  className="self-stretch font-text-regular-normal font-[number:var(--text-regular-normal-font-weight)] text-[#01010a] text-[length:var(--text-regular-normal-font-size)] tracking-[var(--text-regular-normal-letter-spacing)] leading-[var(--text-regular-normal-line-height)] [font-style:var(--text-regular-normal-font-style)]"
+                >
+                  Contact No
+                </label>
+                <Input
+                  id="phone"
+                  required
+                  type="text"
+                  value={formData.phone}
+                  onChange={(e) => handleInputChange("phone", e.target.value)}
+                  className="self-stretch bg-[#01010a0d] rounded-xl border-transparent focus:border-[#e22023] focus:ring-[#e22023]"
+                  placeholder="Enter your contact number"
                   disabled={isSubmitting}
                 />
               </div>
@@ -158,10 +214,11 @@ export const ContactInfoSection = (): JSX.Element => {
                 <Textarea
                   id="message"
                   required
+                  typeof="text"
                   value={formData.message}
                   onChange={(e) => handleInputChange("message", e.target.value)}
                   placeholder="Tell us about your product requirements, specifications, quantities, and timeline..."
-                  className="h-32 lg:h-[182px] self-stretch bg-[#01010a0d] rounded-xl border-transparent font-text-regular-normal text-[#01010a99] focus:border-[#e22023] focus:ring-[#e22023] resize-none"
+                  className="h-32 lg:h-[100px] self-stretch bg-[#01010a0d] rounded-xl border-transparent font-text-regular-normal text-[#01010a99] focus:border-[#e22023] focus:ring-[#e22023] resize-none"
                   disabled={isSubmitting}
                 />
               </div>
@@ -189,7 +246,7 @@ export const ContactInfoSection = (): JSX.Element => {
               <Button
                 type="submit"
                 disabled={!agreeToTerms || isSubmitting}
-                className="w-full sm:w-auto px-6 py-2.5 bg-[#e22023] rounded-[100px] border-b-4 border-[#e8787a] font-text-regular-medium font-[number:var(--text-regular-medium-font-weight)] text-white text-[length:var(--text-regular-medium-font-size)] tracking-[var(--text-regular-medium-letter-spacing)] leading-[var(--text-regular-medium-line-height)] [font-style:var(--text-regular-medium-font-style)] hover:bg-[#1414a8] transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+                className="w-full sm:w-auto px-6 py-2.5 bg-[#e22023] rounded-[100px] border-b-4 border-[#e8787a] font-text-regular-medium font-[number:var(--text-regular-medium-font-weight)] text-white text-[length:var(--text-regular-medium-font-size)] tracking-[var(--text-regular-medium-letter-spacing)] leading-[var(--text-regular-medium-line-height)] [font-style:var(--text-regular-medium-font-style)] hover:bg-[#e8787a] transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
               >
                 {isSubmitting ? "Submitting..." : "Submit Request"}
               </Button>

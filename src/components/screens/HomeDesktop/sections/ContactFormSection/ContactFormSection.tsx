@@ -26,7 +26,7 @@ const contactMethods = [
       "Visit us at our headquarters for facility tours and meetings.",
     contact:
       "8F, New Empire I.E. (A), Kondivita Lane,J.B.Nagar, Andheri (E), Mumbai - 400059",
-    href: "#",
+    href: "https://www.google.com/maps/dir//AF%2F8,+New+Empire+Estate,+Ram+Krishna+Mandir+Road,+near+Kondivita+Rd,+J+B,+J+B+Nagar,+Andheri+East,+Mumbai,+Maharashtra+400059/@19.1137008,72.7890161,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x3be7c838e5555555:0xeb432b7d5cb1202d!2m2!1d72.8714178!2d19.1137191?entry=ttu&g_ep=EgoyMDI1MDcwOS4wIKXMDSoASAFQAw%3D%3D",
   },
 ];
 
@@ -37,7 +37,7 @@ export const ContactFormSection = (): JSX.Element => {
         <div className="flex flex-col max-w-4xl items-center gap-4 relative w-full text-center">
           <div className="inline-flex items-center relative">
             <div className="relative w-fit mt-[-1.00px] font-heading-tagline font-[number:var(--heading-tagline-font-weight)] text-[#01010a] text-[length:var(--heading-tagline-font-size)] text-center tracking-[var(--heading-tagline-letter-spacing)] leading-[var(--heading-tagline-line-height)] whitespace-nowrap [font-style:var(--heading-tagline-font-style)]">
-              Connect
+              Contact Us
             </div>
           </div>
 
@@ -77,6 +77,7 @@ export const ContactFormSection = (): JSX.Element => {
 
                     <a
                       href={method.href}
+                      target="_blank"
                       className="relative self-stretch font-text-regular-link font-[number:var(--text-regular-link-font-weight)] text-[#01010a] text-[length:var(--text-regular-link-font-size)] text-center tracking-[var(--text-regular-link-letter-spacing)] leading-[var(--text-regular-link-line-height)] underline [font-style:var(--text-regular-link-font-style)] hover:no-underline transition-all break-words"
                     >
                       {method.contact}

@@ -4,6 +4,7 @@ import React from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import homepageContent from "@/data/homepage-content.json";
+import Link from "next/link";
 
 // Service features from JSON
 const serviceFeatures = homepageContent.industries.sectors
@@ -69,20 +70,24 @@ export const ContentLayoutSection = (): JSX.Element => {
         </div>
 
         <div className="flex flex-col sm:flex-row items-center gap-4 lg:gap-6 relative">
-          <Button
-            variant="secondary"
-            className="w-full sm:w-auto px-6 py-2.5 bg-[#01010a0d] rounded-[100px] border-b-4 [border-bottom-style:solid] border-[#01010a26] font-text-regular-medium text-[#01010a] hover:bg-[#01010a1a] transition-colors"
-          >
-            Learn More
-          </Button>
+          <Link href="/products">
+            <Button
+              variant="secondary"
+              className="w-full sm:w-auto px-6 py-2.5 bg-[#01010a0d] rounded-[100px] border-b-4 [border-bottom-style:solid] border-[#01010a26] font-text-regular-medium text-[#01010a] hover:bg-[#01010a1a] transition-colors"
+            >
+              Learn More
+            </Button>
+          </Link>
 
-          <Button
-            variant="ghost"
-            className="w-full sm:w-auto flex items-center gap-2 rounded-[100px] font-text-regular-medium text-[#01010a] p-0 hover:bg-[#01010a0d] transition-colors"
-          >
-            Contact Us
-            <ChevronRightIcon className="w-5 h-5 lg:w-6 lg:h-6" />
-          </Button>
+          <Link href="/contact">
+            <Button
+              variant="ghost"
+              className="w-full sm:w-auto flex items-center gap-2 rounded-[100px] font-text-regular-medium text-[#01010a] px-2 hover:bg-[#01010a0d] transition-colors"
+            >
+              Contact Us
+              <ChevronRightIcon className="w-5 h-5 lg:w-6 lg:h-6" />
+            </Button>
+          </Link>
         </div>
       </div>
     </section>

@@ -120,6 +120,9 @@ export async function POST(request: NextRequest) {
             <p><strong>Company:</strong> ${
               formData.company || "Not provided"
             }</p>
+            <p><strong>Contact No:</strong> ${
+              formData.phone || "Not provided"
+            }</p>
           </div>
           <div style="margin: 20px 0;">
             <h3 style="color: #333;">Message:</h3>
