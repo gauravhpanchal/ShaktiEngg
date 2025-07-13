@@ -36,8 +36,8 @@ export const NavigationBarSection = (): JSX.Element => {
         <div className="flex items-center gap-4 lg:gap-6">
           <Link href="/" className="flex-shrink-0">
             <Image
-              className="w-16 h-auto aspect-auto lg:w-[220px] lg:h-auto"
-              alt="Spring Solutions Company Logo"
+              className="w-[200px] h-auto aspect-auto lg:w-[220px] lg:h-auto"
+              alt="Shakti Engineers"
               src="/logo.png"
               width={84}
               height={36}
@@ -133,7 +133,7 @@ export const NavigationBarSection = (): JSX.Element => {
                 >
                   <Image
                     className="w-16 h-7"
-                    alt="Spring Solutions Company Logo"
+                    alt="Shakti Engineers"
                     src="/company-logo.svg"
                     width={84}
                     height={36}

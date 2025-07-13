@@ -21,7 +21,7 @@ export const ContactInfoSection = (): JSX.Element => {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    
+
     if (!agreeToTerms) {
       toast.error("Please agree to the terms and conditions");
       return;
@@ -32,7 +32,7 @@ export const ContactInfoSection = (): JSX.Element => {
     try {
       await sendContactEmail(formData);
       toast.success("Message sent successfully! We'll get back to you soon.");
-      
+
       // Reset form
       setFormData({
         name: "",
@@ -43,14 +43,16 @@ export const ContactInfoSection = (): JSX.Element => {
       setAgreeToTerms(false);
     } catch (error) {
       console.error("Error submitting contact form:", error);
-      toast.error("Failed to send message. Please try again or contact us directly.");
+      toast.error(
+        "Failed to send message. Please try again or contact us directly."
+      );
     } finally {
       setIsSubmitting(false);
     }
   };
 
   const handleInputChange = (field: keyof ContactFormData, value: string) => {
-    setFormData(prev => ({ ...prev, [field]: value }));
+    setFormData((prev) => ({ ...prev, [field]: value }));
   };
 
   return (
@@ -60,7 +62,7 @@ export const ContactInfoSection = (): JSX.Element => {
           <div className="flex-1 grow relative order-2 lg:order-1">
             <Image
               className="w-full h-64 sm:h-96 lg:h-[734px] object-cover rounded-lg"
-              alt="Modern manufacturing facility with advanced spring production equipment, motors, and gear systems"
+              alt="Modern manufacturing facility with advanced product production equipment, motors, and gear systems"
               src="https://images.pexels.com/photos/1108572/pexels-photo-1108572.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
               width={600}
               height={734}
@@ -82,12 +84,16 @@ export const ContactInfoSection = (): JSX.Element => {
                 </h2>
 
                 <p className="self-stretch font-text-medium-normal font-[number:var(--text-medium-normal-font-weight)] text-[#01010a] text-[length:var(--text-medium-normal-font-size)] tracking-[var(--text-medium-normal-letter-spacing)] leading-[var(--text-medium-normal-line-height)] [font-style:var(--text-medium-normal-font-style)]">
-                  We&#39;d love to hear from you. Get in touch today for a custom quote or technical consultation!
+                  We&#39;d love to hear from you. Get in touch today for a
+                  custom quote or technical consultation!
                 </p>
               </div>
             </div>
 
-            <form onSubmit={handleSubmit} className="flex flex-col items-start gap-4 lg:gap-6 self-stretch w-full">
+            <form
+              onSubmit={handleSubmit}
+              className="flex flex-col items-start gap-4 lg:gap-6 self-stretch w-full"
+            >
               <div className="flex flex-col items-start gap-2 self-stretch w-full">
                 <label
                   htmlFor="name"
@@ -154,7 +160,7 @@ export const ContactInfoSection = (): JSX.Element => {
                   required
                   value={formData.message}
                   onChange={(e) => handleInputChange("message", e.target.value)}
-                  placeholder="Tell us about your spring requirements, specifications, quantities, and timeline..."
+                  placeholder="Tell us about your product requirements, specifications, quantities, and timeline..."
                   className="h-32 lg:h-[182px] self-stretch bg-[#01010a0d] rounded-xl border-transparent font-text-regular-normal text-[#01010a99] focus:border-[#1717c4] focus:ring-[#1717c4] resize-none"
                   disabled={isSubmitting}
                 />
@@ -164,7 +170,9 @@ export const ContactInfoSection = (): JSX.Element => {
                 <Checkbox
                   id="terms"
                   checked={agreeToTerms}
-                  onCheckedChange={(checked) => setAgreeToTerms(checked as boolean)}
+                  onCheckedChange={(checked) =>
+                    setAgreeToTerms(checked as boolean)
+                  }
                   className="w-5 h-5 bg-[#01010a0d] rounded border-transparent mt-0.5"
                   disabled={isSubmitting}
                 />
@@ -172,7 +180,9 @@ export const ContactInfoSection = (): JSX.Element => {
                   htmlFor="terms"
                   className="font-text-small-normal font-[number:var(--text-small-normal-font-weight)] text-[#01010a] text-[length:var(--text-small-normal-font-size)] tracking-[var(--text-small-normal-letter-spacing)] leading-[var(--text-small-normal-line-height)] [font-style:var(--text-small-normal-font-style)] flex-1"
                 >
-                  I agree to the Terms of Service and Privacy Policy, and consent to receive communications about spring manufacturing services.
+                  I agree to the Terms of Service and Privacy Policy, and
+                  consent to receive communications about product manufacturing
+                  services.
                 </label>
               </div>
 

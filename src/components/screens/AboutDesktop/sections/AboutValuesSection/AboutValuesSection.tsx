@@ -6,22 +6,26 @@ const values = [
   {
     icon: "/high-quality.svg",
     title: "Quality Excellence",
-    description: "We maintain the highest standards in every spring we manufacture, ensuring consistent quality and reliability.",
+    description:
+      "We maintain the highest standards in every products we manufacture, ensuring consistent quality and reliability.",
   },
   {
     icon: "/productivity.svg",
     title: "Innovation Drive",
-    description: "Continuously investing in new technologies and processes to stay at the forefront of spring manufacturing.",
+    description:
+      "Continuously investing in new technologies and processes to stay at the forefront of manufacturing.",
   },
   {
     icon: "/support.svg",
     title: "Customer Focus",
-    description: "Building lasting partnerships through exceptional service, technical support, and customized solutions.",
+    description:
+      "Building lasting partnerships through exceptional service, technical support, and customized solutions.",
   },
   {
     icon: "/manufacturing.svg",
     title: "Precision Engineering",
-    description: "Leveraging decades of expertise to deliver springs that meet exact specifications and performance requirements.",
+    description:
+      "Leveraging decades of expertise to deliver products that meet exact specifications and performance requirements.",
   },
 ];
 
@@ -32,8 +36,8 @@ export const AboutValuesSection = (): JSX.Element => {
         <div className="flex flex-col max-w-4xl items-center gap-4 relative w-full text-center">
           <div className="inline-flex items-center relative">
             <span className="relative w-fit mt-[-1.00px] font-heading-tagline font-[number:var(--heading-tagline-font-weight)] text-[#01010a] text-[length:var(--heading-tagline-font-size)] text-center tracking-[var(--heading-tagline-letter-spacing)] leading-[var(--heading-tagline-line-height)] whitespace-nowrap [font-style:var(--heading-tagline-font-style)]">
-                Our Values
-              </span>
+              Our Values
+            </span>
           </div>
 
           <div className="flex flex-col items-center gap-4 lg:gap-6 relative self-stretch w-full">
@@ -41,15 +45,20 @@ export const AboutValuesSection = (): JSX.Element => {
               The Principles That Guide Us
             </h2>
 
-            <p className="relative self-stretch font-text-medium-normal font-[number:var(--text-medium-normal-font-weight)] text-[#01010a] text-[length:var(--text-medium-normal-font-size)] text-center tracking-[var(--text-medium-normal-letter-spacing)] leading-[var(--text-medium-normal-line-height)] [font-style:var(--text-medium-normal-font-style)] max-w-3xl">
-              Our core values shape everything we do, from the springs we manufacture to the relationships we build with our customers and partners.
+            <p className="relative mx-auto font-text-medium-normal font-[number:var(--text-medium-normal-font-weight)] text-[#01010a] text-[length:var(--text-medium-normal-font-size)] text-center tracking-[var(--text-medium-normal-letter-spacing)] leading-[var(--text-medium-normal-line-height)] [font-style:var(--text-medium-normal-font-style)] max-w-3xl">
+              Our core values shape everything we do, from the products we
+              manufacture to the relationships we build with our customers and
+              partners.
             </p>
           </div>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8 relative self-stretch w-full">
           {values.map((value, index) => (
-            <Card key={index} className="flex-1 border-none shadow-none bg-transparent">
+            <Card
+              key={index}
+              className="flex-1 border-none shadow-none bg-transparent"
+            >
               <CardContent className="flex flex-col items-center gap-4 lg:gap-6 p-0 text-center">
                 <Image
                   className="w-12 h-12 lg:w-16 lg:h-16"

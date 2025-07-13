@@ -16,11 +16,16 @@ export const ProductsHeroSection = (): JSX.Element => {
             </div>
 
             <h1 className="font-heading-h1 font-[number:var(--heading-h1-font-weight)] text-[#01010a] text-[length:var(--heading-h1-font-size)] text-center tracking-[var(--heading-h1-letter-spacing)] leading-[var(--heading-h1-line-height)] [font-style:var(--heading-h1-font-style)] text-balance">
-              Comprehensive Spring Solutions for Every Industry
+              Engineered for Performance, Designed for Reliability
             </h1>
 
             <p className="text-[length:var(--text-medium-normal-font-size)] text-center leading-[var(--text-medium-normal-line-height)] font-text-medium-normal font-[number:var(--text-medium-normal-font-weight)] text-[#01010a] tracking-[var(--text-medium-normal-letter-spacing)] [font-style:var(--text-medium-normal-font-style)] max-w-3xl">
-              From compression and extension springs to custom wire forms, our extensive product range is engineered to meet the most demanding specifications across automotive, aerospace, industrial, and consumer applications.
+              At Shakti Engineers, we are committed to providing high-quality,
+              efficient, and reliable engineering solutions to meet the evolving
+              needs of various industries. Our products are designed and
+              manufactured with precision, using advanced technology and robust
+              materials to ensure optimum performance, durability, and low
+              maintenance.
             </p>
           </div>
 
@@ -43,8 +48,8 @@ export const ProductsHeroSection = (): JSX.Element => {
         <div className="w-full relative">
           <Image
             className="w-full h-48 sm:h-64 md:h-80 lg:h-[720px] object-cover rounded-lg"
-            alt="Comprehensive display of various spring types with motors, gears, and helical components"
-            src="https://images.pexels.com/photos/257736/pexels-photo-257736.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+            alt="Comprehensive display of various products types with motors, gears, and helical components"
+            src="/our-products.png"
             width={1260}
             height={720}
             priority

@@ -3,28 +3,17 @@ import Image from "next/image";
 import React from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
+import homepageContent from "@/data/homepage-content.json";
 
-// Define service features data for mapping
-const serviceFeatures = [
-  {
+// Service features from JSON
+const serviceFeatures = homepageContent.industries.sectors
+  .slice(0, 3)
+  .map((sector) => ({
     icon: "/manufacturing.svg",
-    alt: "State-of-the-art manufacturing facilities",
-    title: "State-of-the-Art Production Facilities",
-    description: "Our facilities are equipped with the latest technology and precision machinery for superior spring manufacturing.",
-  },
-  {
-    icon: "/high-quality.svg",
-    alt: "Expert quality control team",
-    title: "Expert Team Committed to Excellence",
-    description: "Our skilled engineering team ensures top-notch quality control and precision in every spring we produce.",
-  },
-  {
-    icon: "/inbox-customize.svg",
-    alt: "Custom spring solutions",
-    title: "Custom Solutions for Every Requirement",
-    description: "We provide tailored spring solutions designed to fit your specific application needs and performance requirements.",
-  },
-];
+    alt: `${sector.name} industry solutions`,
+    title: sector.name,
+    description: sector.description,
+  }));
 
 export const ContentLayoutSection = (): JSX.Element => {
   return (
@@ -33,19 +22,17 @@ export const ContentLayoutSection = (): JSX.Element => {
         <div className="flex flex-col max-w-4xl items-center gap-4 relative w-full text-center">
           <div className="inline-flex items-center relative">
             <span className="relative w-fit mt-[-1.00px] font-heading-tagline font-[number:var(--heading-tagline-font-weight)] text-[#01010a] text-[length:var(--heading-tagline-font-size)] text-center tracking-[var(--heading-tagline-letter-spacing)] leading-[var(--heading-tagline-line-height)] whitespace-nowrap [font-style:var(--heading-tagline-font-style)]">
-              Quality
+              {homepageContent.company.name}
             </span>
           </div>
 
           <div className="flex flex-col items-center gap-4 lg:gap-6 relative self-stretch w-full">
             <h2 className="mt-[-1.00px] font-heading-h2 font-[number:var(--heading-h2-font-weight)] text-[length:var(--heading-h2-font-size)] text-center tracking-[var(--heading-h2-letter-spacing)] leading-[var(--heading-h2-line-height)] relative self-stretch text-[#01010a] [font-style:var(--heading-h2-font-style)] text-balance">
-              Comprehensive Manufacturing Services Tailored for You
+              {homepageContent.industries.sectionTitle}
             </h2>
 
-            <p className="relative self-stretch font-text-medium-normal font-[number:var(--text-medium-normal-font-weight)] text-[#01010a] text-[length:var(--text-medium-normal-font-size)] text-center tracking-[var(--text-medium-normal-letter-spacing)] leading-[var(--text-medium-normal-line-height)] [font-style:var(--text-medium-normal-font-style)] max-w-3xl">
-              Our manufacturing services are designed to meet diverse industry
-              needs. We specialize in producing high-quality springs with
-              precision and efficiency, backed by decades of engineering expertise.
+            <p className="relative mx-auto font-text-medium-normal font-[number:var(--text-medium-normal-font-weight)] text-[#01010a] text-[length:var(--text-medium-normal-font-size)] text-center tracking-[var(--text-medium-normal-letter-spacing)] leading-[var(--text-medium-normal-line-height)] [font-style:var(--text-medium-normal-font-style)] max-w-3xl">
+              {homepageContent.industries.sectionSubtitle}
             </p>
           </div>
         </div>
@@ -53,7 +40,10 @@ export const ContentLayoutSection = (): JSX.Element => {
         <div className="flex flex-col items-start gap-8 lg:gap-16 relative self-stretch w-full">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-12 relative self-stretch w-full">
             {serviceFeatures.map((feature, index) => (
-              <Card key={index} className="flex-1 border-none shadow-none bg-transparent">
+              <Card
+                key={index}
+                className="flex-1 border-none shadow-none bg-transparent"
+              >
                 <CardContent className="flex flex-col items-center gap-4 lg:gap-6 p-0 text-center">
                   <Image
                     className="w-10 h-10 lg:w-12 lg:h-12"

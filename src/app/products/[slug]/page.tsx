@@ -3,235 +3,188 @@ import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 
 // Product data
+
 const products = [
   {
     id: 1,
-    slug: "compression-springs",
-    name: "Compression Springs",
-    category: "Standard Springs",
-    price: "$45",
-    description: "High-quality compression springs designed for various load requirements and applications.",
-    longDescription: "Our compression springs are engineered to provide reliable performance under compressive loads. Manufactured using premium materials and precision winding techniques, these springs offer consistent force characteristics and long service life. Available in a wide range of sizes, materials, and load specifications to meet your exact requirements.",
+    slug: "helical-geared-motors",
+    name: "SHAKTI Make Helical Geared Motors",
+    category: "Motors",
+    description:
+      "Compact. Efficient. Reliable. Designed for low-speed applications with maximum performance.",
+    longDescription:
+      "SHREE SHAKTI Geared Motors are designed to deliver maximum efficiency and reliability for low-speed applications across various industries. These compact drive systems combine high-performance electric motors (AC or DC) with precision-engineered gearboxes—Helical, Worm, or Epicyclic—ensuring optimum power transmission and long service life.\n\nManufactured under strict quality control by trained personnel, these motors meet the highest standards of performance and durability.",
     features: [
-      "Custom wire diameters from 0.1mm to 25mm",
-      "Various materials available (steel, stainless, music wire)",
-      "Precision wound with tight tolerances",
-      "100% load tested for quality assurance",
-      "Shot peening available for enhanced fatigue life",
-      "Custom coatings and finishes available"
+      "Compact and economical drive for low-speed operations",
+      "Single, Double, Triple, and Quadruple reduction options",
+      "Mounting types: foot, foot-cum-flange, agitator",
+      "Close-grained cast iron housing",
+      "Heat-treated alloy steel gears and pinions",
+      "Heavy-duty bearings for silent operation",
+      "Integral pinion shafts from high-grade alloy steel",
     ],
     applications: [
-      "Automotive suspension systems",
-      "Industrial machinery and equipment",
-      "Consumer electronics and appliances",
-      "Medical devices and instruments",
-      "Aerospace components",
-      "Heavy-duty manufacturing equipment"
+      "Material handling systems",
+      "Packaging machinery",
+      "Agitators and mixers",
+      "Industrial automation",
+      "Conveyors and feeders",
+      "Textile and paper industries",
     ],
     specifications: {
-      "Wire Diameter": "0.1mm - 25mm",
-      "Materials": "High Carbon Steel, Stainless Steel, Music Wire",
-      "Finish Options": "Zinc Plating, Powder Coating, Passivation",
-      "Load Range": "1N - 50,000N",
-      "Temperature Range": "-40°C to +200°C",
-      "Standards": "ISO 9001:2015, ASTM, DIN"
+      "Motor Type": "Totally enclosed, fan-cooled",
+      "Insulation Class": "Class B (Optional: Class F or H)",
+      Voltage: "400/440V, 3-phase, 50Hz",
+      Protection: "IP55 (custom options available)",
+      "Gear Types": "Helical, Worm, Epicyclic",
+      "Mounting Options": "Foot, Flange, Agitator",
     },
-    images: [
-      "https://images.pexels.com/photos/257736/pexels-photo-257736.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-      "https://images.pexels.com/photos/159298/gears-cogs-machine-machinery-159298.jpeg?auto=compress&cs=tinysrgb&w=800",
-      "https://images.pexels.com/photos/1108572/pexels-photo-1108572.jpeg?auto=compress&cs=tinysrgb&w=800"
-    ]
+    images: ["/helical-geared-motor.png", "/helical-geared-motor-2.png"],
   },
   {
     id: 2,
-    slug: "extension-springs",
-    name: "Extension Springs",
-    category: "Standard Springs",
-    price: "$35",
-    description: "Precision extension springs with custom hook configurations and load specifications.",
-    longDescription: "Extension springs are designed to resist pulling forces and return to their original length when the load is removed. Our extension springs feature precision-formed hooks and loops, ensuring secure attachment and reliable performance in tension applications.",
+    slug: "rotary-vibrators",
+    name: "SHAKTI Make Rotary Vibrators",
+    category: "Material Handling",
+    description:
+      "Efficient vibratory solutions for material handling, dosing, and compaction across industries.",
+    longDescription:
+      "SHREE SHAKTI Rotary Vibrators are engineered to handle a wide variety of material handling and processing applications across industries such as Mining, Power, Fertilizers, Chemicals, Pharmaceuticals, and Food Processing. Their enclosed, surface-cooled construction ensures robust, quiet, and long-lasting operation.",
     features: [
-      "Custom hook and loop designs",
-      "High tensile strength materials",
-      "Corrosion resistant coatings",
-      "Fatigue tested for durability",
-      "Various end configurations available",
-      "Precision load specifications"
+      "Robust, enclosed, surface-cooled design",
+      "Centrifugal force adjustable from 0 to Max",
+      "Available speeds: 2800, 1400, 900, 700 RPM",
+      "Heavy-duty bearings ensure long service life",
+      "Low-noise operation",
+      "IP44 protection (IP55 optional)",
+      "Thermal protection available",
     ],
     applications: [
-      "Garage doors and counterbalance systems",
-      "Exercise equipment and fitness machines",
-      "Agricultural machinery",
-      "Aerospace components",
-      "Automotive applications",
-      "Industrial equipment"
+      "Emptying bins and silos",
+      "Feeding and mixing",
+      "Screening and compaction",
+      "Dust removal and ventilation",
+      "Dosing and cleaning operations",
+      "Process flow control",
     ],
     specifications: {
-      "Wire Diameter": "0.2mm - 20mm",
-      "Materials": "Music Wire, Stainless Steel, Chrome Silicon",
-      "Hook Types": "Machine Hook, Crossover Hook, Side Hook",
-      "Load Range": "0.5N - 30,000N",
-      "Extension Range": "10% - 300% of free length",
-      "Standards": "ISO 9001:2015, ASTM A313"
+      Voltage: "400/440V, 3-phase, 50Hz",
+      "Vibration Frequency": "2800 / 1400 / 900 / 700 RPM",
+      Amplitude: "2mm to 4mm",
+      Protection: "IP44 (IP55 optional)",
+      Bearings: "Heavy-duty, sealed",
+      "Noise Level": "Low",
     },
-    images: [
-      "https://images.pexels.com/photos/159298/gears-cogs-machine-machinery-159298.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-      "https://images.pexels.com/photos/257736/pexels-photo-257736.jpeg?auto=compress&cs=tinysrgb&w=800",
-      "https://images.pexels.com/photos/1108117/pexels-photo-1108117.jpeg?auto=compress&cs=tinysrgb&w=800"
-    ]
+    images: ["/rotary-vibrator.png", "/rotary-vibrator-2.png"],
   },
   {
     id: 3,
-    slug: "torsion-springs",
-    name: "Torsion Springs",
-    category: "Specialty Springs",
-    price: "$65",
-    description: "Custom torsion springs engineered for rotational force applications.",
-    longDescription: "Torsion springs store and release angular energy, providing torque when twisted. Our torsion springs are precisely manufactured to deliver consistent rotational force characteristics, making them ideal for applications requiring controlled angular movement.",
+    slug: "bump-jolt-machines",
+    name: "SHAKTI Make Bump & Jolt Machines",
+    category: "Testing Equipment",
+    description:
+      "Test packaging integrity and durability by simulating real-world transport conditions.",
+    longDescription:
+      "Shakti Engineers' Bump & Jolt Machines simulate road transport and handling conditions to test product durability, packaging integrity, and component strength. Precision bump and jolt mechanisms help manufacturers meet international quality standards with confidence.",
     features: [
-      "Precise torque control and measurement",
-      "Custom leg configurations and angles",
-      "High cycle life design",
-      "Temperature resistant materials",
-      "Various mounting options",
-      "Stress-relieved for stability"
+      "25mm bump height (customizable)",
+      "Adjustable frequency: 60–160 drops/min",
+      "Rotary vibrator for horizontal jolts (25–50 jolts/sec)",
+      "Integrated cycle counter",
+      "Heavy-duty build with premium materials",
+      "Separate motors for bump and jolt",
+      "Engineered for long operational life",
     ],
     applications: [
-      "Hinges and latches",
-      "Counterbalance systems",
-      "Automotive components",
-      "Industrial equipment",
-      "Clothespins and clips",
-      "Garage door systems"
+      "Packaging material testing",
+      "Assembly strength validation",
+      "Transport simulation",
+      "Quality assurance labs",
+      "Weld joint endurance tests",
+      "Product R&D testing",
     ],
     specifications: {
-      "Wire Diameter": "0.3mm - 15mm",
-      "Materials": "Music Wire, Stainless Steel, Chrome Vanadium",
-      "Leg Configurations": "Straight, Bent, Hooked",
-      "Torque Range": "0.1 Nm - 1000 Nm",
-      "Angular Deflection": "90° - 720°",
-      "Standards": "ISO 9001:2015, DIN 2089"
+      "Bump Height": "25mm (customizable)",
+      "Drop Frequency": "60–160 drops/min",
+      "Jolt Rate": "25–50 jolts/sec",
+      "Motor Control": "Independent for each function",
+      Counter: "Integrated cycle counter",
+      Construction: "Heavy-duty steel frame",
     },
-    images: [
-      "https://images.pexels.com/photos/1108572/pexels-photo-1108572.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-      "https://images.pexels.com/photos/162553/keys-workshop-mechanic-tools-162553.jpeg?auto=compress&cs=tinysrgb&w=800",
-      "https://images.pexels.com/photos/190574/pexels-photo-190574.jpeg?auto=compress&cs=tinysrgb&w=800"
-    ]
+    images: ["/bump-jolt.png"],
   },
   {
     id: 4,
-    slug: "wire-forms",
-    name: "Wire Forms",
-    category: "Custom Solutions",
-    price: "$55",
-    description: "Precision wire forms and custom shapes for specialized applications.",
-    longDescription: "Wire forms are custom-shaped components created from various wire materials to meet specific functional requirements. Our wire forming capabilities allow us to create complex geometries and precise shapes for unique applications.",
+    slug: "bin-activators",
+    name: "SHAKTI Make Bin Activators",
+    category: "Bulk Material Systems",
+    description:
+      "Ensure uninterrupted discharge from storage bins and prevent material flow issues.",
+    longDescription:
+      "Shakti Bin Activators are engineered to resolve material flow issues in storage systems by ensuring uninterrupted, uniform discharge of bulk solids. They prevent bridging, rat-holing, and segregation—improving discharge consistency while maintaining product integrity.",
     features: [
-      "Complex geometries and shapes",
-      "Multiple bend angles and radii",
-      "Tight tolerances and precision",
-      "Various wire types and materials",
-      "Custom finishing options",
-      "Prototype to production volumes"
+      "First-in, first-out discharge",
+      "No particle damage",
+      "Optimized cone angles",
+      "Prevents rat-holing and blockages",
+      "Energy efficient and low maintenance",
+      "Quick and simple installation",
+      "Noise-free operation",
     ],
     applications: [
-      "Display fixtures and retail",
-      "Safety components and guards",
-      "Electronic contacts and connectors",
-      "Mechanical linkages",
-      "Automotive clips and fasteners",
-      "Medical device components"
+      "Powder and granule storage",
+      "Pharmaceuticals and chemicals",
+      "Food-grade silos",
+      "Construction material hoppers",
+      "Refractory material bins",
+      "Steel and cement industries",
     ],
     specifications: {
-      "Wire Diameter": "0.5mm - 12mm",
-      "Materials": "Steel, Stainless Steel, Brass, Aluminum",
-      "Bend Radius": "1x to 10x wire diameter",
-      "Tolerance": "±0.1mm standard",
-      "Finish Options": "Zinc, Nickel, Powder Coating",
-      "Standards": "ISO 9001:2015, Custom specifications"
+      "Diameter Range": "300mm – 3600mm",
+      "Material Options": "Carbon Steel, 304/316 Stainless Steel",
+      "Discharge Volume": "30 to 20,000 liters",
+      Finish: "Custom and food-grade finishes",
+      Installation: "Steel or concrete bins",
+      "Elastic Sleeve": "Optional for food-grade use",
     },
-    images: [
-      "https://images.pexels.com/photos/162553/keys-workshop-mechanic-tools-162553.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-      "https://images.pexels.com/photos/1108572/pexels-photo-1108572.jpeg?auto=compress&cs=tinysrgb&w=800",
-      "https://images.pexels.com/photos/257736/pexels-photo-257736.jpeg?auto=compress&cs=tinysrgb&w=800"
-    ]
+    images: ["/bin.png"],
   },
   {
     id: 5,
-    slug: "leaf-springs",
-    name: "Leaf Springs",
-    category: "Heavy Duty",
-    price: "$85",
-    description: "Robust leaf springs for heavy-duty applications requiring high load capacity.",
-    longDescription: "Leaf springs are designed to handle heavy loads while providing controlled deflection. Our leaf springs are manufactured using high-strength steel and advanced heat treatment processes to ensure maximum durability and performance in demanding applications.",
+    slug: "vibro-separators",
+    name: "SHAKTI Make Vibro Separators",
+    category: "Separation Systems",
+    description:
+      "Versatile separators for classifying and dewatering materials with high throughput.",
+    longDescription:
+      "Shakti Vibro Separators are versatile systems for separating solids from liquids or classifying solids by size. Their multi-plane vibration ensures high throughput, reduced screen blinding, and efficient operation in minimal space.",
     features: [
-      "Multi-leaf design for high loads",
-      "Shot peened finish for fatigue resistance",
-      "High load capacity design",
-      "Stress relieved for dimensional stability",
-      "Custom mounting configurations",
-      "Progressive or linear rate options"
+      "Supports up to five screens",
+      "Handles wet or dry materials",
+      "Multi-plane vibration system",
+      "Pollution-free operation",
+      "Uniform screen tensioning",
+      "Adjustable discharge ports",
+      "Vibration-free base",
     ],
     applications: [
-      "Vehicle suspension systems",
-      "Heavy machinery and equipment",
-      "Railway systems and rolling stock",
-      "Construction equipment",
-      "Agricultural machinery",
-      "Industrial material handling"
+      "Powder classification",
+      "Solid-liquid separation",
+      "Granule sizing",
+      "Wet slurry dewatering",
+      "Food and chemical processing",
+      "Metal and mining industries",
     ],
     specifications: {
-      "Thickness": "3mm - 25mm",
-      "Materials": "Spring Steel, Chrome Silicon, Chrome Vanadium",
-      "Load Capacity": "500N - 100,000N",
-      "Deflection": "10mm - 200mm",
-      "Length": "100mm - 2000mm",
-      "Standards": "ISO 9001:2015, SAE J510"
+      "Screen Levels": "Up to 5 (six-size separation)",
+      "Material Capability": "Wet, dry, coarse, fine",
+      "Power Usage": "Low consumption",
+      Mounting: "Floor, bin, or plank",
+      "Tensioning System": "Uniform and long-lasting",
+      "Base Design": "Vibration-free",
     },
-    images: [
-      "https://images.pexels.com/photos/190574/pexels-photo-190574.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-      "https://images.pexels.com/photos/1108117/pexels-photo-1108117.jpeg?auto=compress&cs=tinysrgb&w=800",
-      "https://images.pexels.com/photos/257736/pexels-photo-257736.jpeg?auto=compress&cs=tinysrgb&w=800"
-    ]
+    images: ["/vibro-seperator.png"],
   },
-  {
-    id: 6,
-    slug: "coil-springs",
-    name: "Coil Springs",
-    category: "Industrial",
-    price: "$75",
-    description: "Industrial-grade coil springs for demanding manufacturing environments.",
-    longDescription: "Industrial coil springs are engineered for continuous operation in demanding manufacturing environments. These springs provide reliable performance, consistent force characteristics, and long service life in industrial applications.",
-    features: [
-      "Heavy-duty construction",
-      "Consistent performance characteristics",
-      "Long service life design",
-      "Custom specifications available",
-      "High-temperature capabilities",
-      "Corrosion resistant options"
-    ],
-    applications: [
-      "Manufacturing equipment",
-      "Conveyor systems",
-      "Stamping presses",
-      "Assembly lines",
-      "Packaging machinery",
-      "Material handling equipment"
-    ],
-    specifications: {
-      "Wire Diameter": "2mm - 30mm",
-      "Materials": "Chrome Silicon, Chrome Vanadium, Stainless Steel",
-      "Load Range": "100N - 75,000N",
-      "Operating Temperature": "-20°C to +250°C",
-      "Coil Diameter": "20mm - 500mm",
-      "Standards": "ISO 9001:2015, DIN EN 13906"
-    },
-    images: [
-      "https://images.pexels.com/photos/1108117/pexels-photo-1108117.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-      "https://images.pexels.com/photos/190574/pexels-photo-190574.jpeg?auto=compress&cs=tinysrgb&w=800",
-      "https://images.pexels.com/photos/159298/gears-cogs-machine-machinery-159298.jpeg?auto=compress&cs=tinysrgb&w=800"
-    ]
-  }
 ];
 
 export async function generateStaticParams() {
@@ -240,9 +193,13 @@ export async function generateStaticParams() {
   }));
 }
 
-export async function generateMetadata({ params }: { params: { slug: string } }): Promise<Metadata> {
+export async function generateMetadata({
+  params,
+}: {
+  params: { slug: string };
+}): Promise<Metadata> {
   const product = products.find((p) => p.slug === params.slug);
-  
+
   if (!product) {
     return {
       title: "Product Not Found",
@@ -250,12 +207,12 @@ export async function generateMetadata({ params }: { params: { slug: string } })
   }
 
   return {
-    title: `${product.name} - Spring Solutions`,
+    title: `${product.name} - Shakti Engineers`,
     description: product.description,
     openGraph: {
-      title: `${product.name} - Spring Solutions`,
+      title: `${product.name} - Shakti Engineers`,
       description: product.description,
-      url: `https://spring-solutions.com/products/${product.slug}`,
+      url: `https://shakti-engineers.com/products/${product.slug}`,
       images: [
         {
           url: product.images[0],
@@ -268,7 +225,11 @@ export async function generateMetadata({ params }: { params: { slug: string } })
   };
 }
 
-export default function ProductDetail({ params }: { params: { slug: string } }) {
+export default function ProductDetail({
+  params,
+}: {
+  params: { slug: string };
+}) {
   const product = products.find((p) => p.slug === params.slug);
 
   if (!product) {

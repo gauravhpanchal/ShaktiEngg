@@ -17,67 +17,112 @@ import {
 const products = [
   {
     id: 1,
-    slug: "compression-springs",
-    name: "Compression Springs",
-    category: "Standard Springs",
-    description: "High-quality compression springs designed for various load requirements and applications.",
-    features: ["Custom wire diameters", "Various materials available", "Precision wound", "Load tested"],
-    applications: ["Automotive suspension", "Industrial machinery", "Consumer electronics", "Medical devices"],
-    image: "https://images.pexels.com/photos/257736/pexels-photo-257736.jpeg?auto=compress&cs=tinysrgb&w=800",
+    slug: "helical-geared-motors",
+    name: "SHAKTI Make helical-geared-motors",
+    category: "Motors",
+    description:
+      "Compact. Efficient. Reliable. Designed for low-speed applications with maximum performance.",
+    features: [
+      "Compact and economical drive",
+      "Multiple reduction options",
+      "Alloy steel gears",
+      "Silent operation",
+    ],
+    applications: [
+      "Material handling systems",
+      "Packaging machinery",
+      "Industrial automation",
+      "Conveyors and feeders",
+    ],
+    image: "/helical-geared-motor-2.png",
   },
   {
     id: 2,
-    slug: "extension-springs",
-    name: "Extension Springs",
-    category: "Standard Springs",
-    description: "Precision extension springs with custom hook configurations and load specifications.",
-    features: ["Custom hook designs", "High tensile strength", "Corrosion resistant", "Fatigue tested"],
-    applications: ["Garage doors", "Exercise equipment", "Agricultural machinery", "Aerospace components"],
-    image: "https://images.pexels.com/photos/159298/gears-cogs-machine-machinery-159298.jpeg?auto=compress&cs=tinysrgb&w=800",
+    slug: "rotary-vibrators",
+    name: "SHAKTI Make Rotary Vibrators",
+    category: "Material Handling",
+    description:
+      "Efficient vibratory solutions for material handling, dosing, and compaction across industries.",
+    features: [
+      "Adjustable centrifugal force",
+      "Multiple vibration frequencies",
+      "Heavy-duty bearings",
+      "Low-noise operation",
+    ],
+    applications: [
+      "Emptying bins and silos",
+      "Feeding and mixing",
+      "Screening and compaction",
+      "Dust removal and cleaning",
+    ],
+    image: "/rotary-vibrator.png",
   },
   {
     id: 3,
-    slug: "torsion-springs",
-    name: "Torsion Springs",
-    category: "Specialty Springs",
-    description: "Custom torsion springs engineered for rotational force applications.",
-    features: ["Precise torque control", "Custom leg configurations", "High cycle life", "Temperature resistant"],
-    applications: ["Hinges and latches", "Counterbalance systems", "Automotive components", "Industrial equipment"],
-    image: "https://images.pexels.com/photos/1108572/pexels-photo-1108572.jpeg?auto=compress&cs=tinysrgb&w=800",
+    slug: "bump-jolt-machines",
+    name: "SHAKTI Make Bump & Jolt Machines",
+    category: "Testing Equipment",
+    description:
+      "Test packaging integrity and durability by simulating real-world transport conditions.",
+    features: [
+      "Customizable bump height",
+      "Adjustable drop frequency",
+      "Integrated cycle counter",
+      "Dual motor system",
+    ],
+    applications: [
+      "Product packaging testing",
+      "Assembly validation",
+      "Welding joint evaluation",
+      "Transportation simulation",
+    ],
+    image: "/bump-jolt.png",
   },
   {
     id: 4,
-    slug: "wire-forms",
-    name: "Wire Forms",
-    category: "Custom Solutions",
-    description: "Precision wire forms and custom shapes for specialized applications.",
-    features: ["Complex geometries", "Multiple bend angles", "Tight tolerances", "Various wire types"],
-    applications: ["Display fixtures", "Safety components", "Electronic contacts", "Mechanical linkages"],
-    image: "https://images.pexels.com/photos/162553/keys-workshop-mechanic-tools-162553.jpeg?auto=compress&cs=tinysrgb&w=800",
+    slug: "bin-activators",
+    name: "SHAKTI Make Bin Activators",
+    category: "Bulk Material Systems",
+    description:
+      "Ensure uninterrupted discharge from storage bins and prevent material flow issues.",
+    features: [
+      "First-in, first-out discharge",
+      "Prevents bridging",
+      "Energy efficient",
+      "Easy to install",
+    ],
+    applications: [
+      "Powder discharge systems",
+      "Silos and hoppers",
+      "Food-grade material flow",
+      "Pharmaceutical bins",
+    ],
+    image: "/bin.png",
   },
   {
     id: 5,
-    slug: "leaf-springs",
-    name: "Leaf Springs",
-    category: "Heavy Duty",
-    description: "Robust leaf springs for heavy-duty applications requiring high load capacity.",
-    features: ["Multi-leaf design", "Shot peened finish", "High load capacity", "Stress relieved"],
-    applications: ["Vehicle suspension", "Heavy machinery", "Railway systems", "Construction equipment"],
-    image: "https://images.pexels.com/photos/190574/pexels-photo-190574.jpeg?auto=compress&cs=tinysrgb&w=800",
-  },
-  {
-    id: 6,
-    slug: "coil-springs",
-    name: "Coil Springs",
-    category: "Industrial",
-    description: "Industrial-grade coil springs for demanding manufacturing environments.",
-    features: ["Heavy-duty construction", "Consistent performance", "Long service life", "Custom specifications"],
-    applications: ["Manufacturing equipment", "Conveyor systems", "Stamping presses", "Assembly lines"],
-    image: "https://images.pexels.com/photos/1108117/pexels-photo-1108117.jpeg?auto=compress&cs=tinysrgb&w=800",
+    slug: "vibro-separators",
+    name: "SHAKTI Make Vibro Separators",
+    category: "Separation Systems",
+    description:
+      "Versatile separators for classifying and dewatering materials with high throughput.",
+    features: [
+      "Multi-plane vibration",
+      "Supports up to five screens",
+      "Pollution-free operation",
+      "Long screen life",
+    ],
+    applications: [
+      "Wet and dry separation",
+      "Granule classification",
+      "Solid-liquid dewatering",
+      "Powder grading",
+    ],
+    image: "/vibro-seperator.png",
   },
 ];
 
-const ProductCard = ({ product }: { product: typeof products[0] }) => (
+const ProductCard = ({ product }: { product: (typeof products)[0] }) => (
   <Card className="border-none shadow-lg bg-white group cursor-pointer hover:shadow-xl transition-shadow duration-300">
     <CardContent className="p-0 flex flex-col h-full">
       <Link href={`/products/${product.slug}`}>
@@ -97,7 +142,7 @@ const ProductCard = ({ product }: { product: typeof products[0] }) => (
           </div>
         </div>
       </Link>
-      
+
       <div className="p-6 flex flex-col flex-1">
         <div className="flex flex-col gap-3 mb-4">
           <Link href={`/products/${product.slug}`}>
@@ -117,7 +162,10 @@ const ProductCard = ({ product }: { product: typeof products[0] }) => (
             </h4>
             <ul className="space-y-1">
               {product.features.slice(0, 3).map((feature, index) => (
-                <li key={index} className="font-text-small-normal font-[number:var(--text-small-normal-font-weight)] text-[#01010a] text-[length:var(--text-small-normal-font-size)] tracking-[var(--text-small-normal-letter-spacing)] leading-[var(--text-small-normal-line-height)] [font-style:var(--text-small-normal-font-style)] flex items-center">
+                <li
+                  key={index}
+                  className="font-text-small-normal font-[number:var(--text-small-normal-font-weight)] text-[#01010a] text-[length:var(--text-small-normal-font-size)] tracking-[var(--text-small-normal-letter-spacing)] leading-[var(--text-small-normal-line-height)] [font-style:var(--text-small-normal-font-style)] flex items-center"
+                >
                   <span className="w-1.5 h-1.5 bg-[#1717c4] rounded-full mr-2 flex-shrink-0"></span>
                   {feature}
                 </li>
@@ -131,7 +179,10 @@ const ProductCard = ({ product }: { product: typeof products[0] }) => (
             </h4>
             <div className="flex flex-wrap gap-2">
               {product.applications.slice(0, 2).map((app, index) => (
-                <span key={index} className="bg-[#f2f2f2] text-[#01010a] px-2 py-1 rounded text-xs font-text-small-normal">
+                <span
+                  key={index}
+                  className="bg-[#f2f2f2] text-[#01010a] px-2 py-1 rounded text-xs font-text-small-normal"
+                >
                   {app}
                 </span>
               ))}
@@ -148,7 +199,7 @@ const ProductCard = ({ product }: { product: typeof products[0] }) => (
               View Details
             </Button>
           </Link>
-          
+
           <QuoteModal>
             <Button className="w-full px-4 py-2 bg-[#1717c4] rounded-[100px] border-b-4 border-[#12129c] font-text-regular-medium font-[number:var(--text-regular-medium-font-weight)] text-white text-[length:var(--text-regular-medium-font-size)] tracking-[var(--text-regular-medium-letter-spacing)] leading-[var(--text-regular-medium-line-height)] [font-style:var(--text-regular-medium-font-style)] hover:bg-[#1414a8] transition-colors">
               Request Quote
@@ -173,11 +224,13 @@ export const ProductsCatalogSection = (): JSX.Element => {
 
           <div className="flex flex-col items-center gap-4 lg:gap-6 relative self-stretch w-full">
             <h2 className="mt-[-1.00px] font-heading-h2 font-[number:var(--heading-h2-font-weight)] text-[length:var(--heading-h2-font-size)] text-center tracking-[var(--heading-h2-letter-spacing)] leading-[var(--heading-h2-line-height)] relative self-stretch text-[#01010a] [font-style:var(--heading-h2-font-style)] text-balance">
-              Explore Our Complete Spring Range
+              Explore Our Complete Products Range
             </h2>
 
-            <p className="relative self-stretch font-text-medium-normal font-[number:var(--text-medium-normal-font-weight)] text-[#01010a] text-[length:var(--text-medium-normal-font-size)] text-center tracking-[var(--text-medium-normal-letter-spacing)] leading-[var(--text-medium-normal-line-height)] [font-style:var(--text-medium-normal-font-style)] max-w-3xl">
-              Discover our comprehensive selection of precision-engineered springs, each designed to meet specific industry requirements and performance standards.
+            <p className="relative mx-auto font-text-medium-normal font-[number:var(--text-medium-normal-font-weight)] text-[#01010a] text-[length:var(--text-medium-normal-font-size)] text-center tracking-[var(--text-medium-normal-letter-spacing)] leading-[var(--text-medium-normal-line-height)] [font-style:var(--text-medium-normal-font-style)] max-w-3xl">
+              Discover our comprehensive selection of engineered products, each
+              designed to meet specific industry requirements and performance
+              standards.
             </p>
           </div>
         </div>
@@ -194,7 +247,10 @@ export const ProductsCatalogSection = (): JSX.Element => {
             >
               <CarouselContent className="-ml-2 md:-ml-4">
                 {products.map((product) => (
-                  <CarouselItem key={product.id} className="pl-2 md:pl-4 basis-full sm:basis-1/2">
+                  <CarouselItem
+                    key={product.id}
+                    className="pl-2 md:pl-4 basis-full sm:basis-1/2"
+                  >
                     <ProductCard product={product} />
                   </CarouselItem>
                 ))}

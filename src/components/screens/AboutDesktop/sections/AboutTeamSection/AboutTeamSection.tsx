@@ -6,26 +6,34 @@ const teamMembers = [
   {
     name: "Sarah Johnson",
     position: "Chief Executive Officer",
-    image: "https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=400",
-    description: "Leading Spring Solutions with over 20 years of manufacturing industry experience.",
+    image:
+      "https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=400",
+    description:
+      "Leading Products Solutions with over 20 years of manufacturing industry experience.",
   },
   {
     name: "Michael Chen",
     position: "Head of Engineering",
-    image: "https://images.pexels.com/photos/2182970/pexels-photo-2182970.jpeg?auto=compress&cs=tinysrgb&w=400",
-    description: "Expert in spring design and manufacturing processes with advanced engineering background.",
+    image:
+      "https://images.pexels.com/photos/2182970/pexels-photo-2182970.jpeg?auto=compress&cs=tinysrgb&w=400",
+    description:
+      "Expert in Products design and manufacturing processes with advanced engineering background.",
   },
   {
     name: "Emily Rodriguez",
     position: "Quality Assurance Director",
-    image: "https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=400",
-    description: "Ensuring the highest quality standards in every spring we manufacture.",
+    image:
+      "https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=400",
+    description:
+      "Ensuring the highest quality standards in every Products we manufacture.",
   },
   {
     name: "David Thompson",
     position: "Operations Manager",
-    image: "https://images.pexels.com/photos/2379005/pexels-photo-2379005.jpeg?auto=compress&cs=tinysrgb&w=400",
-    description: "Optimizing production efficiency and managing our state-of-the-art manufacturing facilities.",
+    image:
+      "https://images.pexels.com/photos/2379005/pexels-photo-2379005.jpeg?auto=compress&cs=tinysrgb&w=400",
+    description:
+      "Optimizing production efficiency and managing our state-of-the-art manufacturing facilities.",
   },
 ];
 
@@ -36,8 +44,8 @@ export const AboutTeamSection = (): JSX.Element => {
         <div className="flex flex-col max-w-4xl items-center gap-4 relative w-full text-center">
           <div className="inline-flex items-center relative">
             <span className="relative w-fit mt-[-1.00px] font-heading-tagline font-[number:var(--heading-tagline-font-weight)] text-[#01010a] text-[length:var(--heading-tagline-font-size)] text-center tracking-[var(--heading-tagline-letter-spacing)] leading-[var(--heading-tagline-line-height)] whitespace-nowrap [font-style:var(--heading-tagline-font-style)]">
-                Our Team
-              </span>
+              Our Team
+            </span>
           </div>
 
           <div className="flex flex-col items-center gap-4 lg:gap-6 relative self-stretch w-full">
@@ -45,19 +53,24 @@ export const AboutTeamSection = (): JSX.Element => {
               Meet the Experts Behind Our Success
             </h2>
 
-            <p className="relative self-stretch font-text-medium-normal font-[number:var(--text-medium-normal-font-weight)] text-[#01010a] text-[length:var(--text-medium-normal-font-size)] text-center tracking-[var(--text-medium-normal-letter-spacing)] leading-[var(--text-medium-normal-line-height)] [font-style:var(--text-medium-normal-font-style)] max-w-3xl">
-              Our experienced leadership team brings decades of expertise in manufacturing, engineering, and quality assurance to deliver exceptional spring solutions.
+            <p className="relative mx-auto font-text-medium-normal font-[number:var(--text-medium-normal-font-weight)] text-[#01010a] text-[length:var(--text-medium-normal-font-size)] text-center tracking-[var(--text-medium-normal-letter-spacing)] leading-[var(--text-medium-normal-line-height)] [font-style:var(--text-medium-normal-font-style)] max-w-3xl">
+              Our experienced leadership team brings decades of expertise in
+              manufacturing, engineering, and quality assurance to deliver
+              exceptional Products solutions.
             </p>
           </div>
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8 relative self-stretch w-full">
           {teamMembers.map((member, index) => (
-            <Card key={index} className="flex-1 border-none shadow-none bg-transparent">
+            <Card
+              key={index}
+              className="flex-1 border-none shadow-none bg-transparent"
+            >
               <CardContent className="flex flex-col items-center gap-4 lg:gap-6 p-0 text-center">
                 <Image
                   className="w-full h-64 sm:h-80 lg:h-[320px] object-cover rounded-lg"
-                  alt={`${member.name} - ${member.position} at Spring Solutions`}
+                  alt={`${member.name} - ${member.position} at Products Solutions`}
                   src={member.image}
                   width={320}
                   height={320}

@@ -10,7 +10,7 @@ export interface QuoteFormData {
   email: string;
   company?: string;
   phone?: string;
-  springType: string;
+  productType: string;
   quantity: string;
   timeline?: string;
   specifications: string;
@@ -18,47 +18,47 @@ export interface QuoteFormData {
 }
 
 export async function sendContactEmail(formData: ContactFormData) {
-  const response = await fetch('/api/send-email', {
-    method: 'POST',
+  const response = await fetch("/api/send-email", {
+    method: "POST",
     headers: {
-      'Content-Type': 'application/json',
+      "Content-Type": "application/json",
     },
     body: JSON.stringify({
-      type: 'contact',
+      type: "contact",
       formData,
     }),
   });
 
   if (!response.ok) {
     const error = await response.json();
-    console.error('Email API error:', error);
-    throw new Error(error.error || 'Failed to send email');
+    console.error("Email API error:", error);
+    throw new Error(error.error || "Failed to send email");
   }
 
   const result = await response.json();
-  console.log('Email sent successfully:', result);
+  console.log("Email sent successfully:", result);
   return result;
 }
 
 export async function sendQuoteEmail(formData: QuoteFormData) {
-  const response = await fetch('/api/send-email', {
-    method: 'POST',
+  const response = await fetch("/api/send-email", {
+    method: "POST",
     headers: {
-      'Content-Type': 'application/json',
+      "Content-Type": "application/json",
     },
     body: JSON.stringify({
-      type: 'quote',
+      type: "quote",
       formData,
     }),
   });
 
   if (!response.ok) {
     const error = await response.json();
-    console.error('Email API error:', error);
-    throw new Error(error.error || 'Failed to send email');
+    console.error("Email API error:", error);
+    throw new Error(error.error || "Failed to send email");
   }
 
   const result = await response.json();
-  console.log('Quote email sent successfully:', result);
+  console.log("Quote email sent successfully:", result);
   return result;
 }

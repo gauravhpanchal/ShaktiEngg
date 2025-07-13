@@ -17,11 +17,17 @@ export const AboutHeroSection = (): JSX.Element => {
             </div>
 
             <h1 className="font-heading-h1 font-[number:var(--heading-h1-font-weight)] text-[#01010a] text-[length:var(--heading-h1-font-size)] text-center tracking-[var(--heading-h1-letter-spacing)] leading-[var(--heading-h1-line-height)] [font-style:var(--heading-h1-font-style)] text-balance">
-              Decades of Excellence in Spring Manufacturing
+              Driven by Innovation, Strengthened by Experience
             </h1>
 
             <p className="text-[length:var(--text-medium-normal-font-size)] text-center leading-[var(--text-medium-normal-line-height)] font-text-medium-normal font-[number:var(--text-medium-normal-font-weight)] text-[#01010a] tracking-[var(--text-medium-normal-letter-spacing)] [font-style:var(--text-medium-normal-font-style)] max-w-3xl">
-              Since our founding, Spring Solutions has been at the forefront of precision spring manufacturing. Our commitment to quality, innovation, and customer satisfaction has made us a trusted partner for industries worldwide.
+              At Shakti Engineers, we believe that engineering excellence,
+              combined with unwavering commitment, leads to remarkable results.
+              Since our inception in 1978, we have dedicated ourselves to the
+              development and manufacturing of reliable, high-performance
+              products such as Geared Motors, Rotary Vibrators, and more,
+              proudly contributing to India's growth in import substitution and
+              industrial advancement.
             </p>
           </div>
 
@@ -46,7 +52,7 @@ export const AboutHeroSection = (): JSX.Element => {
         <div className="w-full relative">
           <Image
             className="w-full h-48 sm:h-64 md:h-80 lg:h-[720px] object-cover rounded-lg"
-            alt="Spring Solutions manufacturing facility with advanced motor equipment, gears, and skilled technicians"
+            alt="Shakti Engineers manufacturing facility with advanced motor equipment, gears, and skilled technicians"
             src="https://images.pexels.com/photos/1108572/pexels-photo-1108572.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
             width={1260}
             height={720}

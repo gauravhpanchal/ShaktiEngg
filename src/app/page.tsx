@@ -1,19 +1,20 @@
 import { HomeDesktop } from "@/components/screens/HomeDesktop";
 import type { Metadata } from "next";
+import homepageContent from "@/data/homepage-content.json";
 
 export const metadata: Metadata = {
-  title: "Home - Precision Springs Manufacturing",
-  description: "Discover our expertly engineered springs designed to meet the highest industry standards. With a commitment to quality and innovation, we serve diverse sectors with precision and reliability.",
+  title: homepageContent.metadata.pageTitle,
+  description: homepageContent.metadata.metaDescription,
   openGraph: {
-    title: "Spring Solutions - Precision Springs Manufacturing",
-    description: "Discover our expertly engineered springs designed to meet the highest industry standards.",
+    title: homepageContent.metadata.pageTitle,
+    description: homepageContent.metadata.metaDescription,
     url: "https://spring-solutions.com",
     images: [
       {
         url: "/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "Spring Solutions Manufacturing",
+        alt: "SHAKTI Industrial Equipment Manufacturing",
       },
     ],
   },

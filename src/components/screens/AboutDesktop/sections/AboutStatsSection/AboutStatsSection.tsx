@@ -3,19 +3,19 @@ import { Card, CardContent } from "@/components/ui/card";
 
 const stats = [
   {
-    number: "25+",
+    number: "27+",
     label: "Years of Experience",
-    description: "Decades of expertise in precision spring manufacturing",
+    description: "Decades of expertise in  manufacturing",
   },
   {
     number: "10M+",
-    label: "Springs Manufactured",
-    description: "Millions of high-quality springs delivered worldwide",
+    label: "Products Manufactured",
+    description: "Millions of high-quality products delivered worldwide",
   },
   {
     number: "500+",
     label: "Satisfied Clients",
-    description: "Companies trust us for their spring manufacturing needs",
+    description: "Companies trust us for their manufacturing needs",
   },
   {
     number: "99.8%",
@@ -31,8 +31,8 @@ export const AboutStatsSection = (): JSX.Element => {
         <div className="flex flex-col max-w-4xl items-center gap-4 relative w-full text-center">
           <div className="inline-flex items-center relative">
             <span className="relative w-fit mt-[-1.00px] font-heading-tagline font-[number:var(--heading-tagline-font-weight)] text-[#01010a] text-[length:var(--heading-tagline-font-size)] text-center tracking-[var(--heading-tagline-letter-spacing)] leading-[var(--heading-tagline-line-height)] whitespace-nowrap [font-style:var(--heading-tagline-font-style)]">
-                By the Numbers
-              </span>
+              By the Numbers
+            </span>
           </div>
 
           <div className="flex flex-col items-center gap-4 lg:gap-6 relative self-stretch w-full">
@@ -40,15 +40,19 @@ export const AboutStatsSection = (): JSX.Element => {
               Our Track Record of Excellence
             </h2>
 
-            <p className="relative self-stretch font-text-medium-normal font-[number:var(--text-medium-normal-font-weight)] text-[#01010a] text-[length:var(--text-medium-normal-font-size)] text-center tracking-[var(--text-medium-normal-letter-spacing)] leading-[var(--text-medium-normal-line-height)] [font-style:var(--text-medium-normal-font-style)] max-w-3xl">
-              These numbers reflect our commitment to excellence and the trust our customers place in our manufacturing capabilities.
+            <p className="relative mx-auto font-text-medium-normal font-[number:var(--text-medium-normal-font-weight)] text-[#01010a] text-[length:var(--text-medium-normal-font-size)] text-center tracking-[var(--text-medium-normal-letter-spacing)] leading-[var(--text-medium-normal-line-height)] [font-style:var(--text-medium-normal-font-style)] max-w-3xl">
+              These numbers reflect our commitment to excellence and the trust
+              our customers place in our manufacturing capabilities.
             </p>
           </div>
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8 relative self-stretch w-full">
           {stats.map((stat, index) => (
-            <Card key={index} className="flex-1 border-none shadow-none bg-white">
+            <Card
+              key={index}
+              className="flex-1 border-none shadow-none bg-white"
+            >
               <CardContent className="flex flex-col items-center gap-4 lg:gap-6 p-6 lg:p-8 text-center">
                 <div className="flex flex-col items-center gap-2 relative self-stretch w-full">
                   <span className="font-heading-h1 font-[number:var(--heading-h1-font-weight)] text-[#1717c4] text-[length:var(--heading-h1-font-size)] text-center tracking-[var(--heading-h1-letter-spacing)] leading-[var(--heading-h1-line-height)] [font-style:var(--heading-h1-font-style)]">

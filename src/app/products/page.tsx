@@ -2,11 +2,13 @@ import { ProductsDesktop } from "@/components/screens/ProductsDesktop";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Products - Spring Solutions",
-  description: "Explore our comprehensive range of precision springs including compression, extension, torsion springs, wire forms, and custom solutions for industrial applications.",
+  title: "Products - Shakti Engineers",
+  description:
+    "Explore our comprehensive range of precision products including compression, extension, torsion springs, wire forms, and custom solutions for industrial applications.",
   openGraph: {
     title: "Spring Products - Compression, Extension & Torsion Springs",
-    description: "Explore our comprehensive range of precision springs for industrial applications.",
+    description:
+      "Explore our comprehensive range of precision springs for industrial applications.",
     url: "https://spring-solutions.com/products",
     images: [
       {

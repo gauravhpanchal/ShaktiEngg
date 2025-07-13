@@ -13,11 +13,14 @@ export const ProductsCTASection = (): JSX.Element => {
             <div className="flex flex-col items-start gap-6 lg:gap-8 flex-1">
               <div className="flex flex-col items-start gap-4 lg:gap-6 w-full">
                 <h2 className="font-heading-h2 font-[number:var(--heading-h2-font-weight)] text-[#01010a] text-[length:var(--heading-h2-font-size)] tracking-[var(--heading-h2-letter-spacing)] leading-[var(--heading-h2-line-height)] [font-style:var(--heading-h2-font-style)] text-balance">
-                  Need a Custom Spring Solution?
+                  Need a Custom Quote?
                 </h2>
 
                 <p className="font-text-medium-normal font-[number:var(--text-medium-normal-font-weight)] text-[#01010a] text-[length:var(--text-medium-normal-font-size)] tracking-[var(--text-medium-normal-letter-spacing)] leading-[var(--text-medium-normal-line-height)] [font-style:var(--text-medium-normal-font-style)]">
-                  Our engineering team specializes in creating custom spring solutions tailored to your exact specifications. From prototype to production, we'll work with you to develop the perfect spring for your application.
+                  Our engineering team specializes in creating custom solutions
+                  tailored to your exact specifications. From prototype to
+                  production, we'll work with you to develop the perfect for
+                  your application.
                 </p>
 
                 <div className="flex flex-col gap-3">
@@ -70,10 +73,10 @@ export const ProductsCTASection = (): JSX.Element => {
 
                 <div className="flex flex-col gap-2 text-sm">
                   <span className="font-text-small-semi-bold font-[number:var(--text-small-semi-bold-font-weight)] text-[#01010a] text-[length:var(--text-small-semi-bold-font-size)] tracking-[var(--text-small-semi-bold-letter-spacing)] leading-[var(--text-small-semi-bold-line-height)] [font-style:var(--text-small-semi-bold-font-style)]">
-                    📧 info@springmanufacturer.com
+                    📧 shaktiengr@gmail.com
                   </span>
                   <span className="font-text-small-semi-bold font-[number:var(--text-small-semi-bold-font-weight)] text-[#01010a] text-[length:var(--text-small-semi-bold-font-size)] tracking-[var(--text-small-semi-bold-letter-spacing)] leading-[var(--text-small-semi-bold-line-height)] [font-style:var(--text-small-semi-bold-font-style)]">
-                    📞 +1 (555) 123-4567
+                    📞 +91 9821034962
                   </span>
                 </div>
               </div>

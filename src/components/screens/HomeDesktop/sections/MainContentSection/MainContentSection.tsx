@@ -3,25 +3,14 @@ import Image from "next/image";
 import React from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
+import homepageContent from "@/data/homepage-content.json";
 
-// Feature data for mapping
-const features = [
-  {
-    icon: "/productivity.svg",
-    alt: "Productivity enhancement icon",
-    text: "Boost productivity and streamline your manufacturing workflow with our precision-engineered springs.",
-  },
-  {
-    icon: "/support.svg",
-    alt: "Expert support icon",
-    text: "Access expert technical support and engineering consultation whenever you need assistance.",
-  },
-  {
-    icon: "/integration-instructions.svg",
-    alt: "System integration icon",
-    text: "Enjoy seamless integration with your existing manufacturing systems and processes.",
-  },
-];
+// Feature data from JSON
+const features = homepageContent.benefits.features.map((feature) => ({
+  icon: `/${feature.icon}.svg`,
+  alt: `${feature.title} icon`,
+  text: feature.description,
+}));
 
 export const MainContentSection = (): JSX.Element => {
   return (
@@ -34,16 +23,16 @@ export const MainContentSection = (): JSX.Element => {
               {/* Heading section */}
               <div className="gap-4 self-stretch w-full flex flex-col items-start">
                 <span className="relative w-fit mt-[-1.00px] font-heading-tagline font-[number:var(--heading-tagline-font-weight)] text-[#01010a] text-[length:var(--heading-tagline-font-size)] tracking-[var(--heading-tagline-letter-spacing)] leading-[var(--heading-tagline-line-height)] whitespace-nowrap [font-style:var(--heading-tagline-font-style)]">
-                  Empower
+                  {homepageContent.company.name}
                 </span>
 
                 <div className="flex flex-col items-start gap-4 lg:gap-6 relative self-stretch w-full">
                   <h2 className="relative self-stretch mt-[-1.00px] font-heading-h2 font-[number:var(--heading-h2-font-weight)] text-[#01010a] text-[length:var(--heading-h2-font-size)] tracking-[var(--heading-h2-letter-spacing)] leading-[var(--heading-h2-line-height)] [font-style:var(--heading-h2-font-style)] text-balance">
-                    Unlock Your Manufacturing Potential
+                    {homepageContent.benefits.sectionTitle}
                   </h2>
 
                   <p className="relative self-stretch font-text-medium-normal font-[number:var(--text-medium-normal-font-weight)] text-[#01010a] text-[length:var(--text-medium-normal-font-size)] tracking-[var(--text-medium-normal-letter-spacing)] leading-[var(--text-medium-normal-line-height)] [font-style:var(--text-medium-normal-font-style)]">
-                    Experience unparalleled efficiency and reliability with our spring solutions. Transform your manufacturing processes and achieve your production goals faster than ever before.
+                    {homepageContent.benefits.sectionSubtitle}
                   </p>
                 </div>
               </div>

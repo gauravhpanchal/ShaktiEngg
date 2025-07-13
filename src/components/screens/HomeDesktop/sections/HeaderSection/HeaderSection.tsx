@@ -13,29 +13,30 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 import Autoplay from "embla-carousel-autoplay";
+import homepageContent from "@/data/homepage-content.json";
 
 const heroImages = [
   {
-    src: "https://images.pexels.com/photos/257736/pexels-photo-257736.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    src: "/our-products.png",
     alt: "Precision compression springs and mechanical gears in industrial manufacturing setting",
   },
   {
-    src: "https://images.pexels.com/photos/159298/gears-cogs-machine-machinery-159298.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    src: "/hero-2.png",
     alt: "Industrial machinery gears and precision engineering components with helical motors",
   },
   {
-    src: "https://images.pexels.com/photos/1108572/pexels-photo-1108572.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    src: "/hero-4.png",
     alt: "Modern manufacturing facility with advanced motor systems and spring production equipment",
   },
   {
-    src: "https://images.pexels.com/photos/162553/keys-workshop-mechanic-tools-162553.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    src: "/hero-3.png",
     alt: "Precision workshop tools with helical gears and motor components for spring manufacturing",
   },
 ];
 
 export const HeaderSection = (): JSX.Element => {
   const plugin = React.useRef(
-    Autoplay({ delay: 4000, stopOnInteraction: true })
+    Autoplay({ delay: 2000, stopOnInteraction: true })
   );
 
   return (
@@ -44,21 +45,21 @@ export const HeaderSection = (): JSX.Element => {
         <div className="flex flex-col max-w-4xl items-center gap-6 lg:gap-8 w-full text-center">
           <div className="flex flex-col items-center gap-4 lg:gap-6 w-full">
             <h1 className="font-heading-h1 font-[number:var(--heading-h1-font-weight)] text-[#01010a] text-[length:var(--heading-h1-font-size)] text-center tracking-[var(--heading-h1-letter-spacing)] leading-[var(--heading-h1-line-height)] [font-style:var(--heading-h1-font-style)] text-balance">
-              Precision Springs Crafted for Every Application
+              {homepageContent.hero.title}
             </h1>
 
             <p className="text-[length:var(--text-medium-normal-font-size)] text-center leading-[var(--text-medium-normal-line-height)] font-text-medium-normal font-[number:var(--text-medium-normal-font-weight)] text-[#01010a] tracking-[var(--text-medium-normal-letter-spacing)] [font-style:var(--text-medium-normal-font-style)] max-w-3xl">
-              Discover our expertly engineered springs designed to meet the
-              highest industry standards. With a commitment to quality and
-              innovation, we serve diverse sectors with precision and
-              reliability.
+              {homepageContent.hero.subtitle}
             </p>
           </div>
 
           <div className="flex flex-col sm:flex-row items-center gap-3 lg:gap-4 w-full sm:w-auto">
-            <Link href="/products" className="w-full sm:w-auto">
+            <Link
+              href={homepageContent.hero.primaryCTA.href}
+              className="w-full sm:w-auto"
+            >
               <Button className="w-full sm:w-auto px-6 py-2.5 bg-[#1717c4] rounded-[100px] border-b-4 border-[#12129c] font-text-regular-medium font-[number:var(--text-regular-medium-font-weight)] text-white text-[length:var(--text-regular-medium-font-size)] tracking-[var(--text-regular-medium-letter-spacing)] leading-[var(--text-regular-medium-line-height)] [font-style:var(--text-regular-medium-font-style)] hover:bg-[#1414a8] transition-colors">
-                Learn More
+                {homepageContent.hero.primaryCTA.text}
               </Button>
             </Link>
 
@@ -67,7 +68,7 @@ export const HeaderSection = (): JSX.Element => {
                 variant="outline"
                 className="w-full sm:w-auto px-6 py-2.5 bg-[#01010a0d] rounded-[100px] border-b-4 border-[#01010a26] font-text-regular-medium font-[number:var(--text-regular-medium-font-weight)] text-[#01010a] text-[length:var(--text-regular-medium-font-size)] tracking-[var(--text-regular-medium-letter-spacing)] leading-[var(--text-regular-medium-line-height)] [font-style:var(--text-regular-medium-font-style)] hover:bg-[#01010a1a] transition-colors"
               >
-                Get Quote
+                {homepageContent.hero.secondaryCTA.text}
               </Button>
             </QuoteModal>
           </div>

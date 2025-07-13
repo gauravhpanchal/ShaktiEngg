@@ -35,7 +35,7 @@ export const QuoteModal = ({ children }: QuoteModalProps): JSX.Element => {
     email: "",
     company: "",
     phone: "",
-    springType: "",
+    productType: "",
     quantity: "",
     timeline: "",
     specifications: "",
@@ -44,7 +44,7 @@ export const QuoteModal = ({ children }: QuoteModalProps): JSX.Element => {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    
+
     if (!formData.agreeToTerms) {
       toast.error("Please agree to the terms and conditions");
       return;
@@ -54,16 +54,18 @@ export const QuoteModal = ({ children }: QuoteModalProps): JSX.Element => {
 
     try {
       await sendQuoteEmail(formData);
-      toast.success("Quote request submitted successfully! We'll get back to you within 24 hours.");
+      toast.success(
+        "Quote request submitted successfully! We'll get back to you within 24 hours."
+      );
       setIsOpen(false);
-      
+
       // Reset form
       setFormData({
         name: "",
         email: "",
         company: "",
         phone: "",
-        springType: "",
+        productType: "",
         quantity: "",
         timeline: "",
         specifications: "",
@@ -71,21 +73,24 @@ export const QuoteModal = ({ children }: QuoteModalProps): JSX.Element => {
       });
     } catch (error) {
       console.error("Error submitting quote:", error);
-      toast.error("Failed to submit quote request. Please try again or contact us directly.");
+      toast.error(
+        "Failed to submit quote request. Please try again or contact us directly."
+      );
     } finally {
       setIsSubmitting(false);
     }
   };
 
-  const handleInputChange = (field: keyof QuoteFormData, value: string | boolean) => {
-    setFormData(prev => ({ ...prev, [field]: value }));
+  const handleInputChange = (
+    field: keyof QuoteFormData,
+    value: string | boolean
+  ) => {
+    setFormData((prev) => ({ ...prev, [field]: value }));
   };
 
   return (
     <Dialog open={isOpen} onOpenChange={setIsOpen}>
-      <DialogTrigger asChild>
-        {children}
-      </DialogTrigger>
+      <DialogTrigger asChild>{children}</DialogTrigger>
       <DialogContent className="max-w-2xl max-h-[90vh] overflow-y-auto w-[calc(100vw-2rem)] mx-auto rounded-2xl sm:rounded-lg sm:mx-0 sm:w-full fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
         <DialogHeader>
           <DialogTitle className="font-heading-h4 font-[number:var(--heading-h4-font-weight)] text-[#01010a] text-[length:var(--heading-h4-font-size)] tracking-[var(--heading-h4-letter-spacing)] leading-[var(--heading-h4-line-height)] [font-style:var(--heading-h4-font-style)]">
@@ -96,7 +101,10 @@ export const QuoteModal = ({ children }: QuoteModalProps): JSX.Element => {
         <form onSubmit={handleSubmit} className="space-y-6">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <div className="space-y-2">
-              <Label htmlFor="quote-name" className="font-text-regular-normal font-[number:var(--text-regular-normal-font-weight)] text-[#01010a] text-[length:var(--text-regular-normal-font-size)]">
+              <Label
+                htmlFor="quote-name"
+                className="font-text-regular-normal font-[number:var(--text-regular-normal-font-weight)] text-[#01010a] text-[length:var(--text-regular-normal-font-size)]"
+              >
                 Full Name *
               </Label>
               <Input
@@ -111,7 +119,10 @@ export const QuoteModal = ({ children }: QuoteModalProps): JSX.Element => {
             </div>
 
             <div className="space-y-2">
-              <Label htmlFor="quote-email" className="font-text-regular-normal font-[number:var(--text-regular-normal-font-weight)] text-[#01010a] text-[length:var(--text-regular-normal-font-size)]">
+              <Label
+                htmlFor="quote-email"
+                className="font-text-regular-normal font-[number:var(--text-regular-normal-font-weight)] text-[#01010a] text-[length:var(--text-regular-normal-font-size)]"
+              >
                 Email Address *
               </Label>
               <Input
@@ -129,7 +140,10 @@ export const QuoteModal = ({ children }: QuoteModalProps): JSX.Element => {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <div className="space-y-2">
-              <Label htmlFor="quote-company" className="font-text-regular-normal font-[number:var(--text-regular-normal-font-weight)] text-[#01010a] text-[length:var(--text-regular-normal-font-size)]">
+              <Label
+                htmlFor="quote-company"
+                className="font-text-regular-normal font-[number:var(--text-regular-normal-font-weight)] text-[#01010a] text-[length:var(--text-regular-normal-font-size)]"
+              >
                 Company Name
               </Label>
               <Input
@@ -143,7 +157,10 @@ export const QuoteModal = ({ children }: QuoteModalProps): JSX.Element => {
             </div>
 
             <div className="space-y-2">
-              <Label htmlFor="quote-phone" className="font-text-regular-normal font-[number:var(--text-regular-normal-font-weight)] text-[#01010a] text-[length:var(--text-regular-normal-font-size)]">
+              <Label
+                htmlFor="quote-phone"
+                className="font-text-regular-normal font-[number:var(--text-regular-normal-font-weight)] text-[#01010a] text-[length:var(--text-regular-normal-font-size)]"
+              >
                 Phone Number
               </Label>
               <Input
@@ -161,24 +178,32 @@ export const QuoteModal = ({ children }: QuoteModalProps): JSX.Element => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <div className="space-y-2">
               <Label className="font-text-regular-normal font-[number:var(--text-regular-normal-font-weight)] text-[#01010a] text-[length:var(--text-regular-normal-font-size)]">
-                Spring Type *
+                Product Type *
               </Label>
-              <Select 
-                required 
-                onValueChange={(value) => handleInputChange("springType", value)}
+              <Select
+                required
+                onValueChange={(value) =>
+                  handleInputChange("productType", value)
+                }
                 disabled={isSubmitting}
               >
                 <SelectTrigger className="bg-[#01010a0d] rounded-xl border-transparent focus:border-[#1717c4] focus:ring-[#1717c4]">
-                  <SelectValue placeholder="Select spring type" />
+                  <SelectValue placeholder="Select product type" />
                 </SelectTrigger>
                 <SelectContent>
-                  <SelectItem value="compression">Compression Springs</SelectItem>
-                  <SelectItem value="extension">Extension Springs</SelectItem>
-                  <SelectItem value="torsion">Torsion Springs</SelectItem>
-                  <SelectItem value="wire-forms">Wire Forms</SelectItem>
-                  <SelectItem value="leaf">Leaf Springs</SelectItem>
-                  <SelectItem value="coil">Coil Springs</SelectItem>
-                  <SelectItem value="custom">Custom Solution</SelectItem>
+                  <SelectItem value="helical-geared-motors">
+                    Helical Geared Motors
+                  </SelectItem>
+                  <SelectItem value="rotary-vibrators">
+                    Rotary Vibrators
+                  </SelectItem>
+                  <SelectItem value="bump-jolt-machines">
+                    Bump & Jolt Machines
+                  </SelectItem>
+                  <SelectItem value="bin-activators">Bin Activators</SelectItem>
+                  <SelectItem value="vibro-separators">
+                    Vibro Separators
+                  </SelectItem>
                 </SelectContent>
               </Select>
             </div>
@@ -187,8 +212,8 @@ export const QuoteModal = ({ children }: QuoteModalProps): JSX.Element => {
               <Label className="font-text-regular-normal font-[number:var(--text-regular-normal-font-weight)] text-[#01010a] text-[length:var(--text-regular-normal-font-size)]">
                 Estimated Quantity *
               </Label>
-              <Select 
-                required 
+              <Select
+                required
                 onValueChange={(value) => handleInputChange("quantity", value)}
                 disabled={isSubmitting}
               >
@@ -199,7 +224,9 @@ export const QuoteModal = ({ children }: QuoteModalProps): JSX.Element => {
                   <SelectItem value="1-100">1 - 100 pieces</SelectItem>
                   <SelectItem value="101-500">101 - 500 pieces</SelectItem>
                   <SelectItem value="501-1000">501 - 1,000 pieces</SelectItem>
-                  <SelectItem value="1001-5000">1,001 - 5,000 pieces</SelectItem>
+                  <SelectItem value="1001-5000">
+                    1,001 - 5,000 pieces
+                  </SelectItem>
                   <SelectItem value="5000+">5,000+ pieces</SelectItem>
                 </SelectContent>
               </Select>
@@ -210,7 +237,7 @@ export const QuoteModal = ({ children }: QuoteModalProps): JSX.Element => {
             <Label className="font-text-regular-normal font-[number:var(--text-regular-normal-font-weight)] text-[#01010a] text-[length:var(--text-regular-normal-font-size)]">
               Project Timeline
             </Label>
-            <Select 
+            <Select
               onValueChange={(value) => handleInputChange("timeline", value)}
               disabled={isSubmitting}
             >
@@ -229,16 +256,21 @@ export const QuoteModal = ({ children }: QuoteModalProps): JSX.Element => {
           </div>
 
           <div className="space-y-2">
-            <Label htmlFor="quote-specifications" className="font-text-regular-normal font-[number:var(--text-regular-normal-font-weight)] text-[#01010a] text-[length:var(--text-regular-normal-font-size)]">
+            <Label
+              htmlFor="quote-specifications"
+              className="font-text-regular-normal font-[number:var(--text-regular-normal-font-weight)] text-[#01010a] text-[length:var(--text-regular-normal-font-size)]"
+            >
               Specifications & Requirements *
             </Label>
             <Textarea
               id="quote-specifications"
               required
               value={formData.specifications}
-              onChange={(e) => handleInputChange("specifications", e.target.value)}
-              placeholder="Please provide details about your spring requirements including dimensions, materials, load specifications, operating conditions, and any special requirements..."
-              className="h-32 bg-[#01010a0d] rounded-xl border-transparent focus:border-[#1717c4] focus:ring-[#1717c4] resize-none"
+              onChange={(e) =>
+                handleInputChange("specifications", e.target.value)
+              }
+              placeholder="Please provide details about your products requirements, operating conditions, and any special requirements..."
+              className="h-16 bg-[#01010a0d] rounded-xl border-transparent focus:border-[#1717c4] focus:ring-[#1717c4] resize-none"
               disabled={isSubmitting}
             />
           </div>
@@ -247,7 +279,9 @@ export const QuoteModal = ({ children }: QuoteModalProps): JSX.Element => {
             <Checkbox
               id="quote-terms"
               checked={formData.agreeToTerms}
-              onCheckedChange={(checked) => handleInputChange("agreeToTerms", checked as boolean)}
+              onCheckedChange={(checked) =>
+                handleInputChange("agreeToTerms", checked as boolean)
+              }
               className="w-5 h-5 bg-[#01010a0d] rounded border-transparent mt-0.5"
               disabled={isSubmitting}
             />
@@ -255,11 +289,12 @@ export const QuoteModal = ({ children }: QuoteModalProps): JSX.Element => {
               htmlFor="quote-terms"
               className="font-text-small-normal font-[number:var(--text-small-normal-font-weight)] text-[#01010a] text-[length:var(--text-small-normal-font-size)] tracking-[var(--text-small-normal-letter-spacing)] leading-[var(--text-small-normal-line-height)] [font-style:var(--text-small-normal-font-style)] flex-1"
             >
-              I agree to the Terms of Service and Privacy Policy, and consent to receive communications about my quote request and spring manufacturing services.
+              I agree to the Terms of Service and Privacy Policy, and consent to
+              receive communications.
             </Label>
           </div>
 
-          <div className="flex flex-col sm:flex-row gap-3 pt-4">
+          <div className="flex flex-col sm:flex-row gap-3">
             <Button
               type="button"
               variant="outline"

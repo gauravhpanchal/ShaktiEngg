@@ -55,8 +55,8 @@ export const ProductsSpecsSection = (): JSX.Element => {
         <div className="flex flex-col max-w-4xl items-center gap-4 relative w-full text-center">
           <div className="inline-flex items-center relative">
             <span className="relative w-fit mt-[-1.00px] font-heading-tagline font-[number:var(--heading-tagline-font-weight)] text-[#01010a] text-[length:var(--heading-tagline-font-size)] text-center tracking-[var(--heading-tagline-letter-spacing)] leading-[var(--heading-tagline-line-height)] whitespace-nowrap [font-style:var(--heading-tagline-font-style)]">
-                Specifications
-              </span>
+              Specifications
+            </span>
           </div>
 
           <div className="flex flex-col items-center gap-4 lg:gap-6 relative self-stretch w-full">
@@ -64,8 +64,9 @@ export const ProductsSpecsSection = (): JSX.Element => {
               Technical Specifications & Standards
             </h2>
 
-            <p className="relative self-stretch font-text-medium-normal font-[number:var(--text-medium-normal-font-weight)] text-[#01010a] text-[length:var(--text-medium-normal-font-size)] text-center tracking-[var(--text-medium-normal-letter-spacing)] leading-[var(--text-medium-normal-line-height)] [font-style:var(--text-medium-normal-font-style)] max-w-3xl">
-              Our springs are manufactured to the highest industry standards with precise specifications and quality control measures.
+            <p className="relative mx-auto font-text-medium-normal font-[number:var(--text-medium-normal-font-weight)] text-[#01010a] text-[length:var(--text-medium-normal-font-size)] text-center tracking-[var(--text-medium-normal-letter-spacing)] leading-[var(--text-medium-normal-line-height)] [font-style:var(--text-medium-normal-font-style)] max-w-3xl">
+              Our products are manufactured to the highest industry standards
+              with precise specifications and quality control measures.
             </p>
           </div>
         </div>
@@ -80,7 +81,10 @@ export const ProductsSpecsSection = (): JSX.Element => {
 
                 <ul className="space-y-2">
                   {spec.items.map((item, itemIndex) => (
-                    <li key={itemIndex} className="font-text-regular-normal font-[number:var(--text-regular-normal-font-weight)] text-[#01010a] text-[length:var(--text-regular-normal-font-size)] tracking-[var(--text-regular-normal-letter-spacing)] leading-[var(--text-regular-normal-line-height)] [font-style:var(--text-regular-normal-font-style)] flex items-start">
+                    <li
+                      key={itemIndex}
+                      className="font-text-regular-normal font-[number:var(--text-regular-normal-font-weight)] text-[#01010a] text-[length:var(--text-regular-normal-font-size)] tracking-[var(--text-regular-normal-letter-spacing)] leading-[var(--text-regular-normal-line-height)] [font-style:var(--text-regular-normal-font-style)] flex items-start"
+                    >
                       <span className="w-1.5 h-1.5 bg-[#1717c4] rounded-full mr-3 mt-2 flex-shrink-0"></span>
                       {item}
                     </li>

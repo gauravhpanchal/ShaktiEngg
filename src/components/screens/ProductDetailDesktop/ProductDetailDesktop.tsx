@@ -22,12 +22,11 @@ interface Product {
   slug: string;
   name: string;
   category: string;
-  price: string;
   description: string;
   longDescription: string;
   features: string[];
   applications: string[];
-  specifications: Record<string, string>;
+  specifications: Record<string, string | undefined>;
   images: string[];
 }
 
@@ -35,22 +34,30 @@ interface ProductDetailDesktopProps {
   product: Product;
 }
 
-export const ProductDetailDesktop = ({ product }: ProductDetailDesktopProps): JSX.Element => {
+export const ProductDetailDesktop = ({
+  product,
+}: ProductDetailDesktopProps): JSX.Element => {
   const [selectedImageIndex, setSelectedImageIndex] = useState(0);
 
   return (
     <main className="flex flex-col w-full">
       <NavigationBarSection />
-      
+
       {/* Breadcrumb */}
       <section className="bg-[#f2f2f2] py-4">
         <div className="container-responsive">
           <div className="flex items-center gap-2 text-sm">
-            <Link href="/" className="text-[#01010a] hover:text-[#1717c4] transition-colors">
+            <Link
+              href="/"
+              className="text-[#01010a] hover:text-[#1717c4] transition-colors"
+            >
               Home
             </Link>
             <span className="text-[#01010a]">/</span>
-            <Link href="/products" className="text-[#01010a] hover:text-[#1717c4] transition-colors">
+            <Link
+              href="/products"
+              className="text-[#01010a] hover:text-[#1717c4] transition-colors"
+            >
               Products
             </Link>
             <span className="text-[#01010a]">/</span>
@@ -62,7 +69,10 @@ export const ProductDetailDesktop = ({ product }: ProductDetailDesktopProps): JS
       {/* Back Button */}
       <section className="bg-white py-4">
         <div className="container-responsive">
-          <Link href="/products" className="inline-flex items-center gap-2 text-[#01010a] hover:text-[#1717c4] transition-colors">
+          <Link
+            href="/products"
+            className="inline-flex items-center gap-2 text-[#01010a] hover:text-[#1717c4] transition-colors"
+          >
             <ChevronLeftIcon className="w-4 h-4" />
             <span className="font-text-regular-medium">Back to Products</span>
           </Link>
@@ -100,7 +110,9 @@ export const ProductDetailDesktop = ({ product }: ProductDetailDesktopProps): JS
                     key={index}
                     onClick={() => setSelectedImageIndex(index)}
                     className={`relative overflow-hidden rounded-lg border-2 transition-all ${
-                      selectedImageIndex === index ? 'border-[#1717c4]' : 'border-transparent hover:border-[#01010a26]'
+                      selectedImageIndex === index
+                        ? "border-[#1717c4]"
+                        : "border-transparent hover:border-[#01010a26]"
                     }`}
                   >
                     <Image
@@ -122,10 +134,6 @@ export const ProductDetailDesktop = ({ product }: ProductDetailDesktopProps): JS
                 <h1 className="font-heading-h1 font-[number:var(--heading-h1-font-weight)] text-[#01010a] text-[length:var(--heading-h1-font-size)] tracking-[var(--heading-h1-letter-spacing)] leading-[var(--heading-h1-line-height)] [font-style:var(--heading-h1-font-style)]">
                   {product.name}
                 </h1>
-                
-                <p className="font-text-large-semi-bold font-[number:var(--text-large-semi-bold-font-weight)] text-[#1717c4] text-[length:var(--text-large-semi-bold-font-size)] tracking-[var(--text-large-semi-bold-letter-spacing)] leading-[var(--text-large-semi-bold-line-height)] [font-style:var(--text-large-semi-bold-font-style)]">
-                  Starting from {product.price}
-                </p>
 
                 <p className="font-text-medium-normal font-[number:var(--text-medium-normal-font-weight)] text-[#01010a] text-[length:var(--text-medium-normal-font-size)] tracking-[var(--text-medium-normal-letter-spacing)] leading-[var(--text-medium-normal-line-height)] [font-style:var(--text-medium-normal-font-style)]">
                   {product.longDescription}
@@ -158,7 +166,10 @@ export const ProductDetailDesktop = ({ product }: ProductDetailDesktopProps): JS
                   </h3>
                   <ul className="space-y-2">
                     {product.features.map((feature, index) => (
-                      <li key={index} className="font-text-regular-normal font-[number:var(--text-regular-normal-font-weight)] text-[#01010a] text-[length:var(--text-regular-normal-font-size)] tracking-[var(--text-regular-normal-letter-spacing)] leading-[var(--text-regular-normal-line-height)] [font-style:var(--text-regular-normal-font-style)] flex items-start">
+                      <li
+                        key={index}
+                        className="font-text-regular-normal font-[number:var(--text-regular-normal-font-weight)] text-[#01010a] text-[length:var(--text-regular-normal-font-size)] tracking-[var(--text-regular-normal-letter-spacing)] leading-[var(--text-regular-normal-line-height)] [font-style:var(--text-regular-normal-font-style)] flex items-start"
+                      >
                         <span className="w-1.5 h-1.5 bg-[#1717c4] rounded-full mr-3 mt-2 flex-shrink-0"></span>
                         {feature}
                       </li>
@@ -174,20 +185,22 @@ export const ProductDetailDesktop = ({ product }: ProductDetailDesktopProps): JS
             <h2 className="font-heading-h2 font-[number:var(--heading-h2-font-weight)] text-[#01010a] text-[length:var(--heading-h2-font-size)] tracking-[var(--heading-h2-letter-spacing)] leading-[var(--heading-h2-line-height)] [font-style:var(--heading-h2-font-style)] mb-8 text-center">
               Technical Specifications
             </h2>
-            
+
             <Card className="border-none shadow-lg bg-white">
               <CardContent className="p-6 lg:p-8">
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                  {Object.entries(product.specifications).map(([key, value], index) => (
-                    <div key={index} className="flex flex-col gap-2">
-                      <span className="font-text-regular-semi-bold font-[number:var(--text-regular-semi-bold-font-weight)] text-[#01010a] text-[length:var(--text-regular-semi-bold-font-size)] tracking-[var(--text-regular-semi-bold-letter-spacing)] leading-[var(--text-regular-semi-bold-line-height)] [font-style:var(--text-regular-semi-bold-font-style)]">
-                        {key}:
-                      </span>
-                      <span className="font-text-regular-normal font-[number:var(--text-regular-normal-font-weight)] text-[#01010a] text-[length:var(--text-regular-normal-font-size)] tracking-[var(--text-regular-normal-letter-spacing)] leading-[var(--text-regular-normal-line-height)] [font-style:var(--text-regular-normal-font-style)]">
-                        {value}
-                      </span>
-                    </div>
-                  ))}
+                  {Object.entries(product.specifications)
+                    .filter(([, value]) => value !== undefined)
+                    .map(([key, value], index) => (
+                      <div key={index} className="flex flex-col gap-2">
+                        <span className="font-text-regular-semi-bold font-[number:var(--text-regular-semi-bold-font-weight)] text-[#01010a] text-[length:var(--text-regular-semi-bold-font-size)] tracking-[var(--text-regular-semi-bold-letter-spacing)] leading-[var(--text-regular-semi-bold-line-height)] [font-style:var(--text-regular-semi-bold-font-style)]">
+                          {key}:
+                        </span>
+                        <span className="font-text-regular-normal font-[number:var(--text-regular-normal-font-weight)] text-[#01010a] text-[length:var(--text-regular-normal-font-size)] tracking-[var(--text-regular-normal-letter-spacing)] leading-[var(--text-regular-normal-line-height)] [font-style:var(--text-regular-normal-font-style)]">
+                          {value}
+                        </span>
+                      </div>
+                    ))}
                 </div>
               </CardContent>
             </Card>
@@ -198,10 +211,13 @@ export const ProductDetailDesktop = ({ product }: ProductDetailDesktopProps): JS
             <h2 className="font-heading-h2 font-[number:var(--heading-h2-font-weight)] text-[#01010a] text-[length:var(--heading-h2-font-size)] tracking-[var(--heading-h2-letter-spacing)] leading-[var(--heading-h2-line-height)] [font-style:var(--heading-h2-font-style)] mb-8 text-center">
               Common Applications
             </h2>
-            
+
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               {product.applications.map((application, index) => (
-                <Card key={index} className="border-none shadow-lg bg-[#f2f2f2] hover:shadow-xl transition-shadow">
+                <Card
+                  key={index}
+                  className="border-none shadow-lg bg-[#f2f2f2] hover:shadow-xl transition-shadow"
+                >
                   <CardContent className="p-6 text-center">
                     <span className="font-text-regular-semi-bold font-[number:var(--text-regular-semi-bold-font-weight)] text-[#01010a] text-[length:var(--text-regular-semi-bold-font-size)] tracking-[var(--text-regular-semi-bold-letter-spacing)] leading-[var(--text-regular-semi-bold-line-height)] [font-style:var(--text-regular-semi-bold-font-style)]">
                       {application}
@@ -219,7 +235,9 @@ export const ProductDetailDesktop = ({ product }: ProductDetailDesktopProps): JS
                 Ready to Get Started?
               </h2>
               <p className="font-text-medium-normal font-[number:var(--text-medium-normal-font-weight)] text-white text-[length:var(--text-medium-normal-font-size)] tracking-[var(--text-medium-normal-letter-spacing)] leading-[var(--text-medium-normal-line-height)] [font-style:var(--text-medium-normal-font-style)] mb-8 max-w-2xl mx-auto">
-                Contact our engineering team for a custom quote or technical consultation. We're here to help you find the perfect spring solution for your application.
+                Contact our engineering team for a custom quote or technical
+                consultation. We're here to help you find the perfect solution
+                for your application.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <QuoteModal>

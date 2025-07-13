@@ -1,0 +1,290 @@
+{
+  "hero": {
+    "title": "Precision Engineering Solutions for Industrial Excellence",
+    "subtitle": "SHAKTI delivers helical geared motors, rotary vibrators, testing machines, bin activators, and vibro separators engineered for maximum performance across pharmaceutical, chemical, food processing, and manufacturing industries.",
+    "primaryCTA": {
+      "text": "Explore Products",
+      "href": "/products"
+    },
+    "secondaryCTA": {
+      "text": "Get Quote",
+      "action": "quote-modal"
+    }
+  },
+  "company": {
+    "name": "SHAKTI",
+    "tagline": "Engineering Excellence Since Inception",
+    "description": "Leading manufacturer of precision-engineered industrial equipment, specializing in motors, testing machines, and material handling solutions for pharmaceutical, chemical, food processing, and manufacturing industries."
+  },
+  "products": {
+    "sectionTitle": "Our Product Portfolio",
+    "sectionSubtitle": "Comprehensive solutions engineered for reliability, efficiency, and performance across industrial applications",
+    "featured": [
+      {
+        "id": 1,
+        "name": "SHAKTI Make Helical Geared Motors",
+        "category": "Motors",
+        "shortDescription": "Compact. Efficient. Reliable. Designed for low-speed applications with maximum performance.",
+        "keyFeatures": [
+          "Compact and economical drive for low-speed operations",
+          "Single, Double, Triple, and Quadruple reduction options",
+          "Heat-treated alloy steel gears and pinions",
+          "Heavy-duty bearings for silent operation"
+        ],
+        "industries": [
+          "Material handling systems",
+          "Packaging machinery",
+          "Industrial automation",
+          "Conveyors and feeders"
+        ]
+      },
+      {
+        "id": 2,
+        "name": "SHAKTI Make Rotary Vibrators",
+        "category": "Material Handling",
+        "shortDescription": "Efficient vibratory solutions for material handling, dosing, and compaction across industries.",
+        "keyFeatures": [
+          "Robust, enclosed, surface-cooled design",
+          "Centrifugal force adjustable from 0 to Max",
+          "Heavy-duty bearings ensure long service life",
+          "Low-noise operation"
+        ],
+        "industries": [
+          "Emptying bins and silos",
+          "Feeding and mixing",
+          "Screening and compaction",
+          "Process flow control"
+        ]
+      },
+      {
+        "id": 3,
+        "name": "SHAKTI Make Bump & Jolt Machines",
+        "category": "Testing Equipment",
+        "shortDescription": "Test packaging integrity and durability by simulating real-world transport conditions.",
+        "keyFeatures": [
+          "25mm bump height (customizable)",
+          "Adjustable frequency: 60–160 drops/min",
+          "Rotary vibrator for horizontal jolts (25–50 jolts/sec)",
+          "Integrated cycle counter"
+        ],
+        "industries": [
+          "Packaging material testing",
+          "Assembly strength validation",
+          "Quality assurance labs",
+          "Product R&D testing"
+        ]
+      },
+      {
+        "id": 4,
+        "name": "SHAKTI Make Bin Activators",
+        "category": "Bulk Material Systems",
+        "shortDescription": "Ensure uninterrupted discharge from storage bins and prevent material flow issues.",
+        "keyFeatures": [
+          "First-in, first-out discharge",
+          "No particle damage",
+          "Optimized cone angles",
+          "Energy efficient and low maintenance"
+        ],
+        "industries": [
+          "Powder and granule storage",
+          "Pharmaceuticals and chemicals",
+          "Food-grade silos",
+          "Steel and cement industries"
+        ]
+      },
+      {
+        "id": 5,
+        "name": "SHAKTI Make Vibro Separators",
+        "category": "Separation Systems",
+        "shortDescription": "Versatile separators for classifying and dewatering materials with high throughput.",
+        "keyFeatures": [
+          "Supports up to five screens",
+          "Handles wet or dry materials",
+          "Multi-plane vibration system",
+          "Vibration-free base"
+        ],
+        "industries": [
+          "Powder classification",
+          "Solid-liquid separation",
+          "Food and chemical processing",
+          "Metal and mining industries"
+        ]
+      }
+    ]
+  },
+  "capabilities": {
+    "sectionTitle": "Why Choose SHAKTI",
+    "sectionSubtitle": "Decades of engineering expertise delivering reliable solutions for critical industrial applications",
+    "features": [
+      {
+        "title": "Advanced Manufacturing Excellence",
+        "description": "State-of-the-art production facilities with precision machinery and quality control systems.",
+        "icon": "manufacturing"
+      },
+      {
+        "title": "Comprehensive Industry Expertise",
+        "description": "Specialized solutions for pharmaceutical, chemical, food processing, and manufacturing sectors.",
+        "icon": "expertise"
+      },
+      {
+        "title": "Custom Engineering Solutions",
+        "description": "Tailored designs to meet exact application requirements with complete technical support.",
+        "icon": "custom-solutions"
+      },
+      {
+        "title": "Quality Assurance Excellence",
+        "description": "Rigorous testing and quality control ensuring highest industry standards and reliability.",
+        "icon": "quality"
+      }
+    ]
+  },
+  "benefits": {
+    "sectionTitle": "Engineered for Performance",
+    "sectionSubtitle": "Our solutions deliver measurable improvements to your operations",
+    "features": [
+      {
+        "title": "Enhanced Operational Efficiency",
+        "description": "Optimize your production processes with precision-engineered equipment designed for maximum uptime and reliability.",
+        "icon": "productivity"
+      },
+      {
+        "title": "Expert Technical Support",
+        "description": "Access comprehensive engineering consultation, installation guidance, and ongoing technical support from our experienced team.",
+        "icon": "support"
+      },
+      {
+        "title": "Seamless System Integration",
+        "description": "Equipment designed for easy integration with existing manufacturing systems and processes, minimizing downtime during installation.",
+        "icon": "integration"
+      }
+    ]
+  },
+  "industries": {
+    "sectionTitle": "Industries We Serve",
+    "sectionSubtitle": "Trusted solutions across diverse industrial sectors",
+    "sectors": [
+      {
+        "name": "Pharmaceutical",
+        "description": "FDA-compliant equipment for drug manufacturing, powder handling, and quality testing applications.",
+        "applications": [
+          "Powder Processing",
+          "Quality Control",
+          "Material Handling",
+          "Packaging"
+        ]
+      },
+      {
+        "name": "Food Processing",
+        "description": "Food-grade solutions for ingredient handling, processing, and packaging with hygiene compliance.",
+        "applications": [
+          "Ingredient Handling",
+          "Screening",
+          "Mixing",
+          "Packaging"
+        ]
+      },
+      {
+        "name": "Chemical Industry",
+        "description": "Robust equipment for chemical processing, material handling, and hazardous environment applications.",
+        "applications": [
+          "Chemical Processing",
+          "Bulk Handling",
+          "Separation",
+          "Storage"
+        ]
+      },
+      {
+        "name": "Manufacturing",
+        "description": "Reliable drive systems and testing equipment for general manufacturing and assembly operations.",
+        "applications": [
+          "Assembly Lines",
+          "Quality Testing",
+          "Material Transport",
+          "Automation"
+        ]
+      }
+    ]
+  },
+  "qualityAssurance": {
+    "sectionTitle": "Quality & Reliability",
+    "sectionSubtitle": "Manufactured under strict quality control by trained personnel",
+    "certifications": [
+      "ISO Quality Standards",
+      "Industry Compliance",
+      "Performance Testing",
+      "Material Certification"
+    ],
+    "features": [
+      "Precision Engineering",
+      "Rigorous Testing",
+      "Quality Materials",
+      "Expert Manufacturing"
+    ]
+  },
+  "specifications": {
+    "sectionTitle": "Technical Excellence",
+    "sectionSubtitle": "Engineered to meet the most demanding industrial requirements",
+    "highlights": [
+      {
+        "category": "Motors",
+        "specs": [
+          "Voltage: 400/440V, 3-phase, 50Hz",
+          "Protection: IP55 (custom options available)",
+          "Insulation: Class B/F/H options",
+          "Mounting: Foot, Flange, Agitator"
+        ]
+      },
+      {
+        "category": "Testing Equipment",
+        "specs": [
+          "Drop Height: 25mm (customizable)",
+          "Frequency: 60-160 drops/min",
+          "Construction: Heavy-duty steel frame",
+          "Control: Independent motor systems"
+        ]
+      },
+      {
+        "category": "Material Handling",
+        "specs": [
+          "Diameter Range: 300mm - 3600mm",
+          "Materials: Carbon Steel, SS 304/316",
+          "Volume: 30 to 20,000 liters",
+          "Finishes: Custom and food-grade"
+        ]
+      }
+    ]
+  },
+  "callToAction": {
+    "sectionTitle": "Ready to Enhance Your Operations?",
+    "sectionSubtitle": "Contact our engineering team to discuss your specific requirements and discover the perfect SHAKTI solution for your application.",
+    "primaryCTA": {
+      "text": "Request Consultation",
+      "href": "/contact"
+    },
+    "secondaryCTA": {
+      "text": "Download Catalog",
+      "action": "download-catalog"
+    },
+    "contactInfo": {
+      "phone": "Contact our technical team",
+      "email": "Get detailed specifications",
+      "support": "Expert engineering consultation"
+    }
+  },
+  "metadata": {
+    "pageTitle": "SHAKTI - Helical Geared Motors, Rotary Vibrators & Industrial Equipment",
+    "metaDescription": "Leading manufacturer of SHAKTI helical geared motors, rotary vibrators, bump & jolt machines, bin activators, and vibro separators for pharmaceutical, chemical, food processing, and manufacturing industries.",
+    "keywords": [
+      "SHAKTI helical geared motors",
+      "rotary vibrators",
+      "bump jolt machines",
+      "bin activators",
+      "vibro separators",
+      "industrial equipment",
+      "material handling",
+      "pharmaceutical equipment",
+      "food processing equipment",
+      "SHAKTI motors"
+    ]
+  }
+}

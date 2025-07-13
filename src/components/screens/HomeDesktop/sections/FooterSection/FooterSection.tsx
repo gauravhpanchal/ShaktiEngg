@@ -33,11 +33,31 @@ const bottomLinks = [
 ];
 
 const socialIcons = [
-  { icon: <FacebookIcon className="w-5 h-5 lg:w-6 lg:h-6" />, alt: "Facebook", href: "https://facebook.com" },
-  { icon: <InstagramIcon className="w-5 h-5 lg:w-6 lg:h-6" />, alt: "Instagram", href: "https://instagram.com" },
-  { icon: <TwitterIcon className="w-5 h-5 lg:w-6 lg:h-6" />, alt: "X (Twitter)", href: "https://twitter.com" },
-  { icon: <LinkedinIcon className="w-5 h-5 lg:w-6 lg:h-6" />, alt: "LinkedIn", href: "https://linkedin.com" },
-  { icon: <YoutubeIcon className="w-5 h-5 lg:w-6 lg:h-6" />, alt: "YouTube", href: "https://youtube.com" },
+  {
+    icon: <FacebookIcon className="w-5 h-5 lg:w-6 lg:h-6" />,
+    alt: "Facebook",
+    href: "https://facebook.com",
+  },
+  {
+    icon: <InstagramIcon className="w-5 h-5 lg:w-6 lg:h-6" />,
+    alt: "Instagram",
+    href: "https://instagram.com",
+  },
+  {
+    icon: <TwitterIcon className="w-5 h-5 lg:w-6 lg:h-6" />,
+    alt: "X (Twitter)",
+    href: "https://twitter.com",
+  },
+  {
+    icon: <LinkedinIcon className="w-5 h-5 lg:w-6 lg:h-6" />,
+    alt: "LinkedIn",
+    href: "https://linkedin.com",
+  },
+  {
+    icon: <YoutubeIcon className="w-5 h-5 lg:w-6 lg:h-6" />,
+    alt: "YouTube",
+    href: "https://youtube.com",
+  },
 ];
 
 export const FooterSection = (): JSX.Element => {
@@ -49,9 +69,9 @@ export const FooterSection = (): JSX.Element => {
             <CardContent className="flex flex-col lg:flex-row items-start gap-8 lg:gap-16 p-6 lg:p-12">
               <div className="flex-col items-start gap-6 lg:gap-8 flex-1 grow flex">
                 <Image
-                  className="w-16 h-7 lg:w-[84px] lg:h-9"
-                  alt="Spring Solutions Company Logo"
-                  src="/company-logo.svg"
+                  className="w-16 h-7 lg:w-[100px] lg:h-12"
+                  alt="Shakti Engineers"
+                  src="/logo.png"
                   width={84}
                   height={36}
                 />
@@ -63,7 +83,8 @@ export const FooterSection = (): JSX.Element => {
                     </div>
 
                     <div className="self-stretch font-text-small-normal text-[#01010a] text-[length:var(--text-small-normal-font-size)] tracking-[var(--text-small-normal-letter-spacing)] leading-[var(--text-small-normal-line-height)]">
-                      Level 1, 12 Spring Manufacturing St, Sydney NSW 2000
+                      8F, New Empire I.E. (A), Kondivita Lane,J.B.Nagar, Andheri
+                      (E), Mumbai - 400059
                     </div>
                   </div>
 
@@ -77,14 +98,14 @@ export const FooterSection = (): JSX.Element => {
                         href="tel:1800123456"
                         className="self-stretch mt-[-1.00px] font-text-small-link text-[#01010a] text-[length:var(--text-small-link-font-size)] tracking-[var(--text-small-link-letter-spacing)] leading-[var(--text-small-link-line-height)] underline hover:no-underline transition-all"
                       >
-                        1800 123 4567
+                        +91 9821034962
                       </a>
 
                       <a
-                        href="mailto:info@springsolutions.com"
+                        href="mailto:shaktiengr@gmail.com"
                         className="self-stretch font-text-small-link text-[#01010a] text-[length:var(--text-small-link-font-size)] tracking-[var(--text-small-link-letter-spacing)] leading-[var(--text-small-link-line-height)] underline hover:no-underline transition-all"
                       >
-                        info@springsolutions.com
+                        shaktiengr@gmail.com
                       </a>
                     </div>
                   </div>
@@ -92,9 +113,9 @@ export const FooterSection = (): JSX.Element => {
 
                 <div className="flex items-start gap-3">
                   {socialIcons.map((social, index) => (
-                    <a 
-                      key={index} 
-                      href={social.href} 
+                    <a
+                      key={index}
+                      href={social.href}
                       aria-label={`Follow us on ${social.alt}`}
                       className="text-[#01010a] hover:text-[#1717c4] transition-colors"
                       target="_blank"
@@ -147,7 +168,7 @@ export const FooterSection = (): JSX.Element => {
           <div className="flex flex-col items-start gap-6 lg:gap-8 self-stretch w-full">
             <div className="justify-between flex flex-col sm:flex-row items-start sm:items-center gap-4 self-stretch w-full">
               <div className="w-fit mt-[-1.00px] font-text-small-normal text-[#01010a] text-[length:var(--text-small-normal-font-size)] tracking-[var(--text-small-normal-letter-spacing)] leading-[var(--text-small-normal-line-height)] whitespace-nowrap">
-                © 2025 Spring Solutions. All rights reserved.
+                © 2025 Shakti Engineers. All rights reserved.
               </div>
 
               <div className="flex flex-wrap items-start gap-4 lg:gap-6">

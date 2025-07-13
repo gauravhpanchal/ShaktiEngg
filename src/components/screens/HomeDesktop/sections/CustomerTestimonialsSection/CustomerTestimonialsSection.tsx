@@ -1,10 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import {
-  Avatar,
-  AvatarFallback,
-  AvatarImage,
-} from "@/components/ui/avatar";
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Card, CardContent } from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";
 
@@ -12,9 +8,10 @@ import { Separator } from "@/components/ui/separator";
 const testimonialData = {
   stars: "/stars.svg",
   quote:
-    "The quality of springs we received exceeded our expectations, enhancing our production efficiency significantly. Their technical expertise and customer service are outstanding!",
+    "The quality of products we received exceeded our expectations, enhancing our production efficiency significantly. Their technical expertise and customer service are outstanding!",
   customer: {
-    avatar: "https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=200",
+    avatar:
+      "https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=200",
     name: "John Doe",
     position: "Manufacturing Manager, Acme Corp",
   },
@@ -57,7 +54,10 @@ export const CustomerTestimonialsSection = (): JSX.Element => {
                 </span>
               </div>
 
-              <Separator orientation="vertical" className="h-12 lg:h-[61px] hidden sm:block" />
+              <Separator
+                orientation="vertical"
+                className="h-12 lg:h-[61px] hidden sm:block"
+              />
 
               <Image
                 className="w-24 h-10 lg:w-[120px] lg:h-12"

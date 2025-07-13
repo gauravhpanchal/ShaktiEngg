@@ -13,67 +13,37 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
+import homepageContent from "@/data/homepage-content.json";
 
-// Product data with motor/gear images
-const products = [
-  {
-    id: 1,
-    slug: "compression-springs",
-    name: "Compression Springs",
-    variant: "Heavy Duty",
-    price: "$45",
-    image: "https://images.pexels.com/photos/257736/pexels-photo-257736.jpeg?auto=compress&cs=tinysrgb&w=800",
-  },
-  {
-    id: 2,
-    slug: "extension-springs",
-    name: "Extension Springs",
-    variant: "Standard",
-    price: "$35",
-    image: "https://images.pexels.com/photos/159298/gears-cogs-machine-machinery-159298.jpeg?auto=compress&cs=tinysrgb&w=800",
-  },
-  {
-    id: 3,
-    slug: "torsion-springs",
-    name: "Torsion Springs",
-    variant: "Custom",
-    price: "$65",
-    image: "https://images.pexels.com/photos/1108572/pexels-photo-1108572.jpeg?auto=compress&cs=tinysrgb&w=800",
-  },
-  {
-    id: 4,
-    slug: "wire-forms",
-    name: "Wire Forms",
-    variant: "Precision",
-    price: "$55",
-    image: "https://images.pexels.com/photos/162553/keys-workshop-mechanic-tools-162553.jpeg?auto=compress&cs=tinysrgb&w=800",
-  },
-  {
-    id: 5,
-    slug: "leaf-springs",
-    name: "Leaf Springs",
-    variant: "Automotive",
-    price: "$85",
-    image: "https://images.pexels.com/photos/190574/pexels-photo-190574.jpeg?auto=compress&cs=tinysrgb&w=800",
-  },
-  {
-    id: 6,
-    slug: "coil-springs",
-    name: "Coil Springs",
-    variant: "Industrial",
-    price: "$75",
-    image: "https://images.pexels.com/photos/1108117/pexels-photo-1108117.jpeg?auto=compress&cs=tinysrgb&w=800",
-  },
+// Product data from JSON with motor/gear images
+const imageMap = [
+  "/helical-geared-motor.png",
+  "/rotary-vibrator.png",
+  "/bump-jolt.png",
+  "/bin.png",
+  "/vibro-seperator.png",
 ];
 
-const ProductCard = ({ product }: { product: typeof products[0] }) => (
+const products = homepageContent.products.featured.map((product, index) => ({
+  id: product.id,
+  slug: product.name
+    .toLowerCase()
+    .replace(/shakti make /g, "")
+    .replace(/\s+/g, "-")
+    .replace(/&/g, ""),
+  name: product.name,
+  variant: product.category,
+  image: imageMap[index] || imageMap[0],
+}));
+
+const ProductCard = ({ product }: { product: (typeof products)[0] }) => (
   <Card className="border-none shadow-none bg-transparent group cursor-pointer">
     <CardContent className="p-0 flex flex-col items-start gap-4">
       <Link href={`/products/${product.slug}`} className="w-full">
         <div className="w-full relative overflow-hidden rounded-lg">
           <Image
-            className="w-full h-64 sm:h-80 lg:h-[486px] object-cover transition-transform duration-300 group-hover:scale-105"
-            alt={`${product.name} - ${product.variant} spring manufacturing with motor components`}
+            className="w-full h-64 sm:h-80 lg:h-[350px] object-cover transition-transform duration-300 group-hover:scale-105"
+            alt={`${product.name} - ${product.variant} products manufacturing with motor components`}
             src={product.image}
             width={400}
             height={486}
@@ -81,7 +51,7 @@ const ProductCard = ({ product }: { product: typeof products[0] }) => (
           />
         </div>
       </Link>
-      
+
       <div className="flex flex-col items-start gap-2 w-full">
         <div className="flex flex-col items-start w-full">
           <Link href={`/products/${product.slug}`}>
@@ -93,10 +63,7 @@ const ProductCard = ({ product }: { product: typeof products[0] }) => (
             {product.variant}
           </p>
         </div>
-        <p className="w-full font-text-large-semi-bold font-[number:var(--text-large-semi-bold-font-weight)] text-[#01010a] text-[length:var(--text-large-semi-bold-font-size)] tracking-[var(--text-large-semi-bold-letter-spacing)] leading-[var(--text-large-semi-bold-line-height)] [font-style:var(--text-large-semi-bold-font-style)]">
-          {product.price}
-        </p>
-        
+
         {/* Get Quote Button */}
         <QuoteModal>
           <Button className="w-full mt-2 px-4 py-2 bg-[#1717c4] rounded-[100px] border-b-4 border-[#12129c] font-text-regular-medium font-[number:var(--text-regular-medium-font-weight)] text-white text-[length:var(--text-regular-medium-font-size)] tracking-[var(--text-regular-medium-letter-spacing)] leading-[var(--text-regular-medium-line-height)] [font-style:var(--text-regular-medium-font-style)] hover:bg-[#1414a8] transition-colors">
@@ -116,17 +83,17 @@ export const ProductShowcaseSection = (): JSX.Element => {
           <div className="max-w-2xl gap-4 flex-1 flex flex-col items-start">
             <div className="inline-flex items-center w-full">
               <span className="font-heading-tagline font-[number:var(--heading-tagline-font-weight)] text-[#01010a] text-[length:var(--heading-tagline-font-size)] tracking-[var(--heading-tagline-letter-spacing)] leading-[var(--heading-tagline-line-height)] [font-style:var(--heading-tagline-font-style)]">
-                Innovative
+                {homepageContent.company.name}
               </span>
             </div>
 
             <div className="flex flex-col items-start gap-4 w-full">
               <h2 className="w-full font-heading-h2 font-[number:var(--heading-h2-font-weight)] text-[#01010a] text-[length:var(--heading-h2-font-size)] tracking-[var(--heading-h2-letter-spacing)] leading-[var(--heading-h2-line-height)] [font-style:var(--heading-h2-font-style)] text-balance">
-                Our Product Range
+                {homepageContent.products.sectionTitle}
               </h2>
 
               <p className="w-full font-text-medium-normal font-[number:var(--text-medium-normal-font-weight)] text-[#01010a] text-[length:var(--text-medium-normal-font-size)] tracking-[var(--text-medium-normal-letter-spacing)] leading-[var(--text-medium-normal-line-height)] [font-style:var(--text-medium-normal-font-style)]">
-                Explore our comprehensive range of high-quality, innovative spring solutions designed for various industrial applications and engineered for superior performance.
+                {homepageContent.products.sectionSubtitle}
               </p>
             </div>
           </div>
@@ -155,7 +122,10 @@ export const ProductShowcaseSection = (): JSX.Element => {
             >
               <CarouselContent className="-ml-2 md:-ml-4">
                 {products.map((product) => (
-                  <CarouselItem key={product.id} className="pl-2 md:pl-4 basis-4/5 sm:basis-3/5">
+                  <CarouselItem
+                    key={product.id}
+                    className="pl-2 md:pl-4 basis-4/5 sm:basis-3/5"
+                  >
                     <ProductCard product={product} />
                   </CarouselItem>
                 ))}
