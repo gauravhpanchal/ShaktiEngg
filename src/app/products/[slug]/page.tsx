@@ -3,7 +3,6 @@ import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 
 // Product data
-
 const products = [
   {
     id: 1,
@@ -225,11 +224,13 @@ export async function generateMetadata({
   };
 }
 
-export default function ProductDetail({
-  params,
-}: {
-  params: { slug: string };
-}) {
+interface PageProps {
+  params: {
+    slug: string;
+  };
+}
+
+export default function ProductDetail({ params }: PageProps) {
   const product = products.find((p) => p.slug === params.slug);
 
   if (!product) {
