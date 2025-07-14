@@ -19,8 +19,8 @@ const companyLinks = [
 ];
 
 const supportLinks = [
-  { name: "FAQs", href: "/faq" },
-  { name: "Support", href: "/support" },
+  { name: "FAQs", href: "/" },
+  { name: "Support", href: "/" },
   // { name: "Testimonials", href: "/testimonials" },
   // { name: "Privacy Policy", href: "/privacy" },
   // { name: "Terms of Use", href: "/terms" },

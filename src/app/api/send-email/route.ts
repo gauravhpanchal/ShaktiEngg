@@ -102,8 +102,7 @@ export async function POST(request: NextRequest) {
 
     let emailContent = "";
     let subject = "";
-    const recipientEmail =
-      process.env.CONTACT_EMAIL || "gauravhpanchal2@gmail.com";
+    const recipientEmail = process.env.CONTACT_EMAIL || "shaktiengr@gmail.com";
 
     if (type === "contact") {
       subject = `New Contact Form Submission - ${formData.name}`;
