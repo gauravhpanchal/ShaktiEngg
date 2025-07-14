@@ -138,7 +138,7 @@ export const NavigationBarSection = (): JSX.Element => {
               </div>
 
               {/* Mobile Menu Content - Centered */}
-              <div className="flex flex-col justify-between items-center container-responsive py-0 px-0 h-[calc(100vh-4rem)]">
+              <div className="flex flex-col justify-center items-center container-responsive py-0 px-0 h-auto">
                 {/* Mobile Navigation Links - Centered */}
                 <div className="flex flex-col items-center space-y-8 flex-1 pt-8">
                   {navigationItems.map((item, index) => (
@@ -154,7 +154,7 @@ export const NavigationBarSection = (): JSX.Element => {
                 </div>
 
                 {/* Mobile CTA Buttons - Bottom */}
-                <div className="flex flex-col items-center gap-4 w-full max-w-sm pb-12 px-4">
+                <div className="flex flex-col items-center gap-4 w-full max-w-sm mt-8 pb-12 px-4">
                   <QuoteModal>
                     <Button
                       className="w-full px-4 py-6 bg-[#e22023] rounded-2xl border-2 border-[#e8787a] hover:bg-[#e8787a] transition-all duration-200 transform hover:scale-[1.02] active:scale-[0.98]"
