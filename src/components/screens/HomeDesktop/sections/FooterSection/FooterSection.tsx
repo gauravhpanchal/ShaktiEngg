@@ -8,6 +8,7 @@ import {
 import Image from "next/image";
 import React from "react";
 import { Card, CardContent } from "@/components/ui/card";
+import Link from "next/link";
 
 // Data for footer links
 const companyLinks = [
@@ -149,7 +150,7 @@ export const FooterSection = (): JSX.Element => {
                     Support
                   </h3>
                   {supportLinks.map((link, index) => (
-                    <a
+                    <Link
                       key={index}
                       href={link.href}
                       className="flex items-start px-4 py-2 self-stretch w-full hover:bg-[#01010a0d] rounded transition-colors"
@@ -157,7 +158,7 @@ export const FooterSection = (): JSX.Element => {
                       <div className="flex-1 mt-[-1.00px] font-text-small-semi-bold text-[#01010a] text-[length:var(--text-small-semi-bold-font-size)] tracking-[var(--text-small-semi-bold-letter-spacing)] leading-[var(--text-small-semi-bold-line-height)]">
                         {link.name}
                       </div>
-                    </a>
+                    </Link>
                   ))}
                 </div>
               </div>
@@ -172,13 +173,13 @@ export const FooterSection = (): JSX.Element => {
 
               <div className="flex flex-wrap items-start gap-4 lg:gap-6">
                 {bottomLinks.map((link, index) => (
-                  <a
+                  <Link
                     key={index}
                     href={link.href}
                     className="w-fit mt-[-1.00px] font-text-small-link text-[#01010a] text-[length:var(--text-small-link-font-size)] tracking-[var(--text-small-link-letter-spacing)] leading-[var(--text-small-link-line-height)] underline whitespace-nowrap hover:no-underline transition-all"
                   >
                     {link.name}
-                  </a>
+                  </Link>
                 ))}
               </div>
             </div>
