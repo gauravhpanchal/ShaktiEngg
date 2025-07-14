@@ -13,7 +13,6 @@ import { ProductShowcaseSection } from "./sections/ProductShowcaseSection";
 export const HomeDesktop = (): JSX.Element => {
   return (
     <main className="flex flex-col w-full">
-      <NavigationBarSection />
       <HeaderSection />
       <MainLayoutSection />
       <ProductShowcaseSection />
@@ -22,7 +21,6 @@ export const HomeDesktop = (): JSX.Element => {
       <CustomerTestimonialsSection />
       <ContactFormSection />
       <ContactInfoSection />
-      <FooterSection />
     </main>
   );
 };

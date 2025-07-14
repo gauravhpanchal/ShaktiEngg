@@ -9,12 +9,10 @@ import { ContactMapSection } from "./sections/ContactMapSection";
 export const ContactDesktop = (): JSX.Element => {
   return (
     <main className="flex flex-col w-full">
-      <NavigationBarSection />
       <ContactHeroSection />
       <ContactFormSection />
       <ContactInfoSection />
       <ContactMapSection />
-      <FooterSection />
     </main>
   );
 };

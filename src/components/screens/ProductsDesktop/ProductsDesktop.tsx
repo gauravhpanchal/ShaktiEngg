@@ -9,12 +9,10 @@ import { ProductsCTASection } from "./sections/ProductsCTASection";
 export const ProductsDesktop = (): JSX.Element => {
   return (
     <main className="flex flex-col w-full">
-      <NavigationBarSection />
       <ProductsHeroSection />
       <ProductsCatalogSection />
       <ProductsSpecsSection />
       <ProductsCTASection />
-      <FooterSection />
     </main>
   );
 };

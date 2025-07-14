@@ -4,6 +4,8 @@ import "./globals.css";
 import { Toaster } from "@/components/ui/toast";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import CallNowButton from "@/components/CallNowButton";
+import { NavigationBarSection } from "@/components/screens/HomeDesktop/sections/NavigationBarSection";
+import { FooterSection } from "@/components/screens/HomeDesktop/sections/FooterSection";
 
 const archivo = Archivo({
   subsets: ["latin"],
@@ -116,9 +118,9 @@ export default function RootLayout({
         <link rel="manifest" href="/site.webmanifest" />
       </head>
       <body className="antialiased">
-        {children}
-        {/* <WhatsAppButton textMessage="I'm interested in your car for sale" />
-        <CallNowButton /> */}
+        <NavigationBarSection />
+        <main>{children}</main>
+        <FooterSection />
         <Toaster />
       </body>
     </html>
