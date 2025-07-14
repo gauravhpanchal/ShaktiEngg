@@ -4,6 +4,8 @@ import React from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import homepageContent from "@/data/homepage-content.json";
+import { QuoteModal } from "@/components/QuoteModal";
+import Link from "next/link";
 
 // Feature card data from JSON
 const featureCards = homepageContent.capabilities.features.map((feature) => ({
@@ -39,20 +41,23 @@ export const MainLayoutSection = (): JSX.Element => {
             </div>
 
             <div className="flex justify-between items-start sm:items-center gap-4 lg:gap-6">
-              <Button
-                variant="outline"
-                className="w-full sm:w-auto px-6 py-2.5 bg-[#01010a0d] rounded-[100px] border-b-4 [border-bottom-style:solid] border-[#01010a26] font-text-regular-medium font-[number:var(--text-regular-medium-font-weight)] text-[#01010a] text-[length:var(--text-regular-medium-font-size)] tracking-[var(--text-regular-medium-letter-spacing)] leading-[var(--text-regular-medium-line-height)] hover:bg-[#01010a1a] transition-colors"
-              >
-                Learn More
-              </Button>
-
-              <Button
-                variant="ghost"
-                className="w-full sm:w-auto flex items-center gap-2 rounded-[100px] font-text-regular-medium font-[number:var(--text-regular-medium-font-weight)] text-[#01010a] text-[length:var(--text-regular-medium-font-size)] tracking-[var(--text-regular-medium-letter-spacing)] leading-[var(--text-regular-medium-line-height)] hover:bg-[#01010a0d] transition-colors"
-              >
-                Get Quote
-                <ChevronRightIcon className="w-5 h-5 lg:w-6 lg:h-6" />
-              </Button>
+              <Link href="/about">
+                <Button
+                  variant="outline"
+                  className="w-full sm:w-auto px-6 py-2.5 bg-[#01010a0d] rounded-[100px] border-b-4 [border-bottom-style:solid] border-[#01010a26] font-text-regular-medium font-[number:var(--text-regular-medium-font-weight)] text-[#01010a] text-[length:var(--text-regular-medium-font-size)] tracking-[var(--text-regular-medium-letter-spacing)] leading-[var(--text-regular-medium-line-height)] hover:bg-[#01010a1a] transition-colors"
+                >
+                  Learn More
+                </Button>
+              </Link>
+              <QuoteModal>
+                <Button
+                  variant="ghost"
+                  className="w-full sm:w-auto flex items-center gap-2 rounded-[100px] font-text-regular-medium font-[number:var(--text-regular-medium-font-weight)] text-[#01010a] text-[length:var(--text-regular-medium-font-size)] tracking-[var(--text-regular-medium-letter-spacing)] leading-[var(--text-regular-medium-line-height)] hover:bg-[#01010a0d] transition-colors"
+                >
+                  Get Quote
+                  <ChevronRightIcon className="w-5 h-5 lg:w-6 lg:h-6" />
+                </Button>
+              </QuoteModal>
             </div>
           </div>
 
