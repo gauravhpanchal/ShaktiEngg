@@ -239,7 +239,7 @@ export const ProductDetailDesktop = ({
                 consultation. We're here to help you find the perfect solution
                 for your application.
               </p>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <div className="flex flex-row gap-4 justify-center">
                 <QuoteModal>
                   <Button className="px-8 py-3 bg-white text-[#e22023] rounded-[100px] border-b-4 border-[#f2f2f2] font-text-regular-medium font-[number:var(--text-regular-medium-font-weight)] text-[length:var(--text-regular-medium-font-size)] tracking-[var(--text-regular-medium-letter-spacing)] leading-[var(--text-regular-medium-line-height)] [font-style:var(--text-regular-medium-font-style)] hover:bg-[#f2f2f2] transition-colors">
                     <span className="font-cta">Request Quote</span>
