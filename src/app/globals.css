@@ -3,105 +3,120 @@
 @tailwind utilities;
 
 :root {
-  --heading-h1-font-family: var(--font-archivo), "Archivo", Helvetica, sans-serif;
+  --heading-h1-font-family: var(--font-archivo), "Archivo", Helvetica,
+    sans-serif;
   --heading-h1-font-size: clamp(2rem, 5vw, 3.5rem);
   --heading-h1-font-style: normal;
   --heading-h1-font-weight: 400;
   --heading-h1-letter-spacing: -0.02em;
   --heading-h1-line-height: 1.2;
-  
-  --heading-h2-font-family: var(--font-archivo), "Archivo", Helvetica, sans-serif;
+
+  --heading-h2-font-family: var(--font-archivo), "Archivo", Helvetica,
+    sans-serif;
   --heading-h2-font-size: clamp(1.75rem, 4vw, 3rem);
   --heading-h2-font-style: normal;
   --heading-h2-font-weight: 400;
   --heading-h2-letter-spacing: -0.01em;
   --heading-h2-line-height: 1.2;
-  
-  --heading-h4-font-family: var(--font-archivo), "Archivo", Helvetica, sans-serif;
+
+  --heading-h4-font-family: var(--font-archivo), "Archivo", Helvetica,
+    sans-serif;
   --heading-h4-font-size: clamp(1.25rem, 2.5vw, 2rem);
   --heading-h4-font-style: normal;
   --heading-h4-font-weight: 400;
   --heading-h4-letter-spacing: -0.01em;
   --heading-h4-line-height: 1.3;
-  
-  --heading-h5-font-family: var(--font-archivo), "Archivo", Helvetica, sans-serif;
+
+  --heading-h5-font-family: var(--font-archivo), "Archivo", Helvetica,
+    sans-serif;
   --heading-h5-font-size: clamp(1.125rem, 2vw, 1.5rem);
   --heading-h5-font-style: normal;
   --heading-h5-font-weight: 400;
   --heading-h5-letter-spacing: -0.01em;
   --heading-h5-line-height: 1.4;
-  
-  --heading-tagline-font-family: var(--font-lexend-deca), "Lexend Deca", Helvetica, sans-serif;
+
+  --heading-tagline-font-family: var(--font-lexend-deca), "Lexend Deca",
+    Helvetica, sans-serif;
   --heading-tagline-font-size: 1rem;
   --heading-tagline-font-style: normal;
   --heading-tagline-font-weight: 600;
   --heading-tagline-letter-spacing: 0px;
   --heading-tagline-line-height: 1.5;
-  
-  --text-large-semi-bold-font-family: var(--font-lexend-deca), "Lexend Deca", Helvetica, sans-serif;
+
+  --text-large-semi-bold-font-family: var(--font-lexend-deca), "Lexend Deca",
+    Helvetica, sans-serif;
   --text-large-semi-bold-font-size: clamp(1.125rem, 1.5vw, 1.25rem);
   --text-large-semi-bold-font-style: normal;
   --text-large-semi-bold-font-weight: 600;
   --text-large-semi-bold-letter-spacing: 0px;
   --text-large-semi-bold-line-height: 1.5;
-  
-  --text-medium-normal-font-family: var(--font-lexend-deca), "Lexend Deca", Helvetica, sans-serif;
+
+  --text-medium-normal-font-family: var(--font-lexend-deca), "Lexend Deca",
+    Helvetica, sans-serif;
   --text-medium-normal-font-size: clamp(1rem, 1.25vw, 1.125rem);
   --text-medium-normal-font-style: normal;
   --text-medium-normal-font-weight: 400;
   --text-medium-normal-letter-spacing: 0px;
   --text-medium-normal-line-height: 1.5;
-  
-  --text-medium-semi-bold-font-family: var(--font-lexend-deca), "Lexend Deca", Helvetica, sans-serif;
+
+  --text-medium-semi-bold-font-family: var(--font-lexend-deca), "Lexend Deca",
+    Helvetica, sans-serif;
   --text-medium-semi-bold-font-size: clamp(1rem, 1.25vw, 1.125rem);
   --text-medium-semi-bold-font-style: normal;
   --text-medium-semi-bold-font-weight: 600;
   --text-medium-semi-bold-letter-spacing: 0px;
   --text-medium-semi-bold-line-height: 1.5;
-  
-  --text-regular-link-font-family: var(--font-lexend-deca), "Lexend Deca", Helvetica, sans-serif;
+
+  --text-regular-link-font-family: var(--font-lexend-deca), "Lexend Deca",
+    Helvetica, sans-serif;
   --text-regular-link-font-size: 1rem;
   --text-regular-link-font-style: normal;
   --text-regular-link-font-weight: 400;
   --text-regular-link-letter-spacing: 0px;
   --text-regular-link-line-height: 1.5;
-  
-  --text-regular-medium-font-family: var(--font-lexend-deca), "Lexend Deca", Helvetica, sans-serif;
+
+  --text-regular-medium-font-family: var(--font-lexend-deca), "Lexend Deca",
+    Helvetica, sans-serif;
   --text-regular-medium-font-size: 1rem;
   --text-regular-medium-font-style: normal;
   --text-regular-medium-font-weight: 500;
   --text-regular-medium-letter-spacing: 0px;
   --text-regular-medium-line-height: 1.5;
-  
-  --text-regular-normal-font-family: var(--font-lexend-deca), "Lexend Deca", Helvetica, sans-serif;
+
+  --text-regular-normal-font-family: var(--font-lexend-deca), "Lexend Deca",
+    Helvetica, sans-serif;
   --text-regular-normal-font-size: 1rem;
   --text-regular-normal-font-style: normal;
   --text-regular-normal-font-weight: 400;
   --text-regular-normal-letter-spacing: 0px;
   --text-regular-normal-line-height: 1.5;
-  
-  --text-regular-semi-bold-font-family: var(--font-lexend-deca), "Lexend Deca", Helvetica, sans-serif;
+
+  --text-regular-semi-bold-font-family: var(--font-lexend-deca), "Lexend Deca",
+    Helvetica, sans-serif;
   --text-regular-semi-bold-font-size: 1rem;
   --text-regular-semi-bold-font-style: normal;
   --text-regular-semi-bold-font-weight: 600;
   --text-regular-semi-bold-letter-spacing: 0px;
   --text-regular-semi-bold-line-height: 1.5;
-  
-  --text-small-link-font-family: var(--font-lexend-deca), "Lexend Deca", Helvetica, sans-serif;
+
+  --text-small-link-font-family: var(--font-lexend-deca), "Lexend Deca",
+    Helvetica, sans-serif;
   --text-small-link-font-size: 0.875rem;
   --text-small-link-font-style: normal;
   --text-small-link-font-weight: 400;
   --text-small-link-letter-spacing: 0px;
   --text-small-link-line-height: 1.5;
-  
-  --text-small-normal-font-family: var(--font-lexend-deca), "Lexend Deca", Helvetica, sans-serif;
+
+  --text-small-normal-font-family: var(--font-lexend-deca), "Lexend Deca",
+    Helvetica, sans-serif;
   --text-small-normal-font-size: 0.875rem;
   --text-small-normal-font-style: normal;
   --text-small-normal-font-weight: 400;
   --text-small-normal-letter-spacing: 0px;
   --text-small-normal-line-height: 1.5;
-  
-  --text-small-semi-bold-font-family: var(--font-lexend-deca), "Lexend Deca", Helvetica, sans-serif;
+
+  --text-small-semi-bold-font-family: var(--font-lexend-deca), "Lexend Deca",
+    Helvetica, sans-serif;
   --text-small-semi-bold-font-size: 0.875rem;
   --text-small-semi-bold-font-style: normal;
   --text-small-semi-bold-font-weight: 600;
@@ -161,7 +176,7 @@
   * {
     @apply border-border;
   }
-  
+
   body {
     @apply bg-background text-foreground;
     font-feature-settings: "rlig" 1, "calt" 1;
@@ -172,11 +187,11 @@
   .container-responsive {
     @apply container mx-auto px-4 sm:px-6 lg:px-8;
   }
-  
+
   .section-padding {
     @apply py-16 sm:py-20 lg:py-28;
   }
-  
+
   .grid-responsive {
     @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-12;
   }
@@ -288,4 +303,68 @@
 .mobile-menu-backdrop {
   backdrop-filter: blur(8px);
   background: rgba(0, 0, 0, 0.1);
+}
+
+/* Typography Utility Classes */
+
+/* Main Headings (H1, H2) - Manrope */
+.font-heading {
+  font-family: var(--font-manrope);
+  font-weight: 600; /* Semibold */
+}
+
+.font-heading-bold {
+  font-family: var(--font-manrope);
+  font-weight: 700; /* Bold */
+}
+
+/* Subheadings (H3, H4) - IBM Plex Sans */
+.font-subheading {
+  font-family: var(--font-ibm-plex-sans);
+  font-weight: 500; /* Medium */
+}
+
+/* Navigation - Montserrat */
+.font-nav {
+  font-family: var(--font-montserrat);
+  font-weight: 600; /* Semi-Bold */
+}
+
+/* Body Text - Inter */
+.font-body {
+  font-family: var(--font-inter);
+  font-weight: 400; /* Regular */
+}
+
+/* CTAs (Buttons, Links) - Poppins */
+.font-cta {
+  font-family: var(--font-poppins);
+  font-weight: 600; /* Semi-Bold */
+}
+
+.font-cta-bold {
+  font-family: var(--font-poppins);
+  font-weight: 700; /* Bold */
+}
+
+/* Product Specs / Labels - Space Grotesk */
+.font-specs {
+  font-family: var(--font-space-grotesk);
+  font-weight: 400; /* Regular */
+}
+
+.font-specs-medium {
+  font-family: var(--font-space-grotesk);
+  font-weight: 500; /* Medium */
+}
+
+/* Footnotes/Legal - Roboto */
+.font-footnote {
+  font-family: var(--font-roboto);
+  font-weight: 300; /* Light */
+}
+
+.font-legal {
+  font-family: var(--font-roboto);
+  font-weight: 400; /* Regular */
 }

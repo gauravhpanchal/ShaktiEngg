@@ -9,17 +9,17 @@ export const AboutStorySection = (): JSX.Element => {
           <div className="flex flex-col items-start gap-6 lg:gap-8 relative flex-1 order-2 lg:order-1">
             <div className="flex flex-col items-start gap-6 lg:gap-8 relative self-stretch w-full">
               <div className="gap-4 self-stretch w-full flex flex-col items-start">
-                <span className="relative w-fit mt-[-1.00px] font-heading-tagline font-[number:var(--heading-tagline-font-weight)] text-[#01010a] text-[length:var(--heading-tagline-font-size)] tracking-[var(--heading-tagline-letter-spacing)] leading-[var(--heading-tagline-line-height)] whitespace-nowrap [font-style:var(--heading-tagline-font-style)]">
+                <span className="font-heading-bold relative w-fit mt-[-1.00px] font-heading-tagline font-[number:var(--heading-tagline-font-weight)] text-[#01010a] text-[length:var(--heading-tagline-font-size)] tracking-[var(--heading-tagline-letter-spacing)] leading-[var(--heading-tagline-line-height)] whitespace-nowrap [font-style:var(--heading-tagline-font-style)]">
                   Our Story
                 </span>
 
-                <div className="flex flex-col items-start gap-4 lg:gap-6 relative self-stretch w-full">
-                  <h2 className="relative self-stretch mt-[-1.00px] font-heading-h2 font-[number:var(--heading-h2-font-weight)] text-[#01010a] text-[length:var(--heading-h2-font-size)] tracking-[var(--heading-h2-letter-spacing)] leading-[var(--heading-h2-line-height)] [font-style:var(--heading-h2-font-style)] text-balance">
+                <div className=" flex flex-col items-start gap-4 lg:gap-6 relative self-stretch w-full">
+                  <h2 className="font-heading relative self-stretch mt-[-1.00px] font-heading-h2 font-[number:var(--heading-h2-font-weight)] text-[#01010a] text-[length:var(--heading-h2-font-size)] tracking-[var(--heading-h2-letter-spacing)] leading-[var(--heading-h2-line-height)] [font-style:var(--heading-h2-font-style)] text-balance">
                     Our Journey of Innovation and Growth
                   </h2>
 
                   <div className="flex flex-col gap-4 lg:gap-6 relative self-stretch w-full">
-                    <p className="relative self-stretch font-text-medium-normal font-[number:var(--text-medium-normal-font-weight)] text-[#01010a] text-[length:var(--text-medium-normal-font-size)] tracking-[var(--text-medium-normal-letter-spacing)] leading-[var(--text-medium-normal-line-height)] [font-style:var(--text-medium-normal-font-style)]">
+                    <p className="font-body relative self-stretch font-text-medium-normal font-[number:var(--text-medium-normal-font-weight)] text-[#01010a] text-[length:var(--text-medium-normal-font-size)] tracking-[var(--text-medium-normal-letter-spacing)] leading-[var(--text-medium-normal-line-height)] [font-style:var(--text-medium-normal-font-style)]">
                       Shakti Engineers was founded in 1978 by Shri. G. S.
                       Ghorpade, a visionary engineer driven by a passion for
                       innovation and self-reliance. A graduate in Electrical
@@ -30,7 +30,7 @@ export const AboutStorySection = (): JSX.Element => {
                       years, gaining valuable industry experience.
                     </p>
 
-                    <p className="relative self-stretch font-text-medium-normal font-[number:var(--text-medium-normal-font-weight)] text-[#01010a] text-[length:var(--text-medium-normal-font-size)] tracking-[var(--text-medium-normal-letter-spacing)] leading-[var(--text-medium-normal-line-height)] [font-style:var(--text-medium-normal-font-style)]">
+                    <p className="font-body relative self-stretch font-text-medium-normal font-[number:var(--text-medium-normal-font-weight)] text-[#01010a] text-[length:var(--text-medium-normal-font-size)] tracking-[var(--text-medium-normal-letter-spacing)] leading-[var(--text-medium-normal-line-height)] [font-style:var(--text-medium-normal-font-style)]">
                       In 1962, he joined Industrial Electrical Equipments Co. as
                       a partner, where he played a pivotal role in developing
                       numerous special-purpose electric motors, addressing niche
@@ -42,7 +42,7 @@ export const AboutStorySection = (): JSX.Element => {
                       innovation he thrived on.
                     </p>
 
-                    <p className="relative self-stretch font-text-medium-normal font-[number:var(--text-medium-normal-font-weight)] text-[#01010a] text-[length:var(--text-medium-normal-font-size)] tracking-[var(--text-medium-normal-letter-spacing)] leading-[var(--text-medium-normal-line-height)] [font-style:var(--text-medium-normal-font-style)]">
+                    <p className="font-body relative self-stretch font-text-medium-normal font-[number:var(--text-medium-normal-font-weight)] text-[#01010a] text-[length:var(--text-medium-normal-font-size)] tracking-[var(--text-medium-normal-letter-spacing)] leading-[var(--text-medium-normal-line-height)] [font-style:var(--text-medium-normal-font-style)]">
                       This desire for meaningful, hands-on engineering work gave
                       birth to Shakti Engineers. Since then, the company has
                       been at the forefront of import substitution, development,

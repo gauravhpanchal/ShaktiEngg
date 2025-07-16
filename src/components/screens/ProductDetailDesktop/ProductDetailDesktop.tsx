@@ -4,8 +4,6 @@ import React, { useState } from "react";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { NavigationBarSection } from "../HomeDesktop/sections/NavigationBarSection";
-import { FooterSection } from "../HomeDesktop/sections/FooterSection";
 import { QuoteModal } from "@/components/QuoteModal";
 import Link from "next/link";
 import { ChevronLeftIcon } from "lucide-react";
@@ -41,27 +39,27 @@ export const ProductDetailDesktop = ({
 
   return (
     <main className="flex flex-col w-full">
-      <NavigationBarSection />
-
       {/* Breadcrumb */}
       <section className="bg-[#f2f2f2] py-4">
         <div className="container-responsive">
           <div className="flex items-center gap-2 text-sm">
             <Link
               href="/"
-              className="text-[#01010a] hover:text-[#e22023] transition-colors"
+              className="text-[#01010a] font-nav hover:text-[#e22023] transition-colors"
             >
               Home
             </Link>
             <span className="text-[#01010a]">/</span>
             <Link
               href="/products"
-              className="text-[#01010a] hover:text-[#e22023] transition-colors"
+              className="text-[#01010a] font-nav hover:text-[#e22023] transition-colors"
             >
               Products
             </Link>
             <span className="text-[#01010a]">/</span>
-            <span className="text-[#e22023] font-medium">{product.name}</span>
+            <span className="text-[#e22023] font-nav font-medium">
+              {product.name}
+            </span>
           </div>
         </div>
       </section>
@@ -74,7 +72,9 @@ export const ProductDetailDesktop = ({
             className="inline-flex items-center gap-2 text-[#01010a] hover:text-[#e22023] transition-colors"
           >
             <ChevronLeftIcon className="w-4 h-4" />
-            <span className="font-text-regular-medium">Back to Products</span>
+            <span className="font-text-regular-medium font-nav">
+              Back to Products
+            </span>
           </Link>
         </div>
       </section>
@@ -131,11 +131,11 @@ export const ProductDetailDesktop = ({
             {/* Product Info */}
             <div className="flex flex-col gap-6 lg:gap-8 flex-1 order-2">
               <div className="flex flex-col gap-4">
-                <h1 className="font-heading-h1 font-[number:var(--heading-h1-font-weight)] text-[#01010a] text-[length:var(--heading-h1-font-size)] tracking-[var(--heading-h1-letter-spacing)] leading-[var(--heading-h1-line-height)] [font-style:var(--heading-h1-font-style)]">
+                <h1 className="font-heading font-[number:var(--heading-h1-font-weight)] text-[#01010a] text-[length:var(--heading-h1-font-size)] tracking-[var(--heading-h1-letter-spacing)] leading-[var(--heading-h1-line-height)] [font-style:var(--heading-h1-font-style)]">
                   {product.name}
                 </h1>
 
-                <p className="font-text-medium-normal font-[number:var(--text-medium-normal-font-weight)] text-[#01010a] text-[length:var(--text-medium-normal-font-size)] tracking-[var(--text-medium-normal-letter-spacing)] leading-[var(--text-medium-normal-line-height)] [font-style:var(--text-medium-normal-font-style)]">
+                <p className="font-body font-text-medium-normal font-[number:var(--text-medium-normal-font-weight)] text-[#01010a] text-[length:var(--text-medium-normal-font-size)] tracking-[var(--text-medium-normal-letter-spacing)] leading-[var(--text-medium-normal-line-height)] [font-style:var(--text-medium-normal-font-style)]">
                   {product.longDescription}
                 </p>
               </div>
@@ -144,7 +144,7 @@ export const ProductDetailDesktop = ({
               <div className="flex flex-col sm:flex-row gap-4">
                 <QuoteModal>
                   <Button className="w-full sm:w-auto px-6 py-3 bg-[#e22023] rounded-[100px] border-b-4 border-[#e8787a] font-text-regular-medium font-[number:var(--text-regular-medium-font-weight)] text-white text-[length:var(--text-regular-medium-font-size)] tracking-[var(--text-regular-medium-letter-spacing)] leading-[var(--text-regular-medium-line-height)] [font-style:var(--text-regular-medium-font-style)] hover:bg-[#e8787a] transition-colors">
-                    Get Custom Quote
+                    <span className="font-cta">Get Custom Quote</span>
                   </Button>
                 </QuoteModal>
 
@@ -153,7 +153,7 @@ export const ProductDetailDesktop = ({
                     variant="outline"
                     className="w-full sm:w-auto px-6 py-3 bg-[#01010a0d] rounded-[100px] border-b-4 border-[#01010a26] font-text-regular-medium font-[number:var(--text-regular-medium-font-weight)] text-[#01010a] text-[length:var(--text-regular-medium-font-size)] tracking-[var(--text-regular-medium-letter-spacing)] leading-[var(--text-regular-medium-line-height)] [font-style:var(--text-regular-medium-font-style)] hover:bg-[#01010a1a] transition-colors"
                   >
-                    Contact Expert
+                    <span className="font-cta">Contact Expert</span>
                   </Button>
                 </Link>
               </div>
@@ -161,14 +161,14 @@ export const ProductDetailDesktop = ({
               {/* Key Features */}
               <Card className="border-none shadow-lg bg-[#f2f2f2]">
                 <CardContent className="p-6">
-                  <h3 className="font-heading-h4 font-[number:var(--heading-h4-font-weight)] text-[#01010a] text-[length:var(--heading-h4-font-size)] tracking-[var(--heading-h4-letter-spacing)] leading-[var(--heading-h4-line-height)] [font-style:var(--heading-h4-font-style)] mb-4">
+                  <h3 className="font-subheading font-[number:var(--heading-h4-font-weight)] text-[#01010a] text-[length:var(--heading-h4-font-size)] tracking-[var(--heading-h4-letter-spacing)] leading-[var(--heading-h4-line-height)] [font-style:var(--heading-h4-font-style)] mb-4">
                     Key Features
                   </h3>
                   <ul className="space-y-2">
                     {product.features.map((feature, index) => (
                       <li
                         key={index}
-                        className="font-text-regular-normal font-[number:var(--text-regular-normal-font-weight)] text-[#01010a] text-[length:var(--text-regular-normal-font-size)] tracking-[var(--text-regular-normal-letter-spacing)] leading-[var(--text-regular-normal-line-height)] [font-style:var(--text-regular-normal-font-style)] flex items-start"
+                        className="font-specsfont-text-regular-normal font-[number:var(--text-regular-normal-font-weight)] text-[#01010a] text-[length:var(--text-regular-normal-font-size)] tracking-[var(--text-regular-normal-letter-spacing)] leading-[var(--text-regular-normal-line-height)] [font-style:var(--text-regular-normal-font-style)] flex items-start"
                       >
                         <span className="w-1.5 h-1.5 bg-[#e22023] rounded-full mr-3 mt-2 flex-shrink-0"></span>
                         {feature}
@@ -182,7 +182,7 @@ export const ProductDetailDesktop = ({
 
           {/* Specifications */}
           <div className="w-full">
-            <h2 className="font-heading-h2 font-[number:var(--heading-h2-font-weight)] text-[#01010a] text-[length:var(--heading-h2-font-size)] tracking-[var(--heading-h2-letter-spacing)] leading-[var(--heading-h2-line-height)] [font-style:var(--heading-h2-font-style)] mb-8 text-center">
+            <h2 className="font-subheading font-[number:var(--heading-h2-font-weight)] text-[#01010a] text-[length:var(--heading-h2-font-size)] tracking-[var(--heading-h2-letter-spacing)] leading-[var(--heading-h2-line-height)] [font-style:var(--heading-h2-font-style)] mb-8 text-center">
               Technical Specifications
             </h2>
 
@@ -193,10 +193,10 @@ export const ProductDetailDesktop = ({
                     .filter(([, value]) => value !== undefined)
                     .map(([key, value], index) => (
                       <div key={index} className="flex flex-col gap-2">
-                        <span className="font-text-regular-semi-bold font-[number:var(--text-regular-semi-bold-font-weight)] text-[#01010a] text-[length:var(--text-regular-semi-bold-font-size)] tracking-[var(--text-regular-semi-bold-letter-spacing)] leading-[var(--text-regular-semi-bold-line-height)] [font-style:var(--text-regular-semi-bold-font-style)]">
+                        <span className="font-heading-bold font-text-regular-semi-bold font-[number:var(--text-regular-semi-bold-font-weight)] text-[#01010a] text-[length:var(--text-regular-semi-bold-font-size)] tracking-[var(--text-regular-semi-bold-letter-spacing)] leading-[var(--text-regular-semi-bold-line-height)] [font-style:var(--text-regular-semi-bold-font-style)]">
                           {key}:
                         </span>
-                        <span className="font-text-regular-normal font-[number:var(--text-regular-normal-font-weight)] text-[#01010a] text-[length:var(--text-regular-normal-font-size)] tracking-[var(--text-regular-normal-letter-spacing)] leading-[var(--text-regular-normal-line-height)] [font-style:var(--text-regular-normal-font-style)]">
+                        <span className="font-specs font-text-regular-normal font-[number:var(--text-regular-normal-font-weight)] text-[#01010a] text-[length:var(--text-regular-normal-font-size)] tracking-[var(--text-regular-normal-letter-spacing)] leading-[var(--text-regular-normal-line-height)] [font-style:var(--text-regular-normal-font-style)]">
                           {value}
                         </span>
                       </div>
@@ -208,7 +208,7 @@ export const ProductDetailDesktop = ({
 
           {/* Applications */}
           <div className="w-full">
-            <h2 className="font-heading-h2 font-[number:var(--heading-h2-font-weight)] text-[#01010a] text-[length:var(--heading-h2-font-size)] tracking-[var(--heading-h2-letter-spacing)] leading-[var(--heading-h2-line-height)] [font-style:var(--heading-h2-font-style)] mb-8 text-center">
+            <h2 className="font-subheading font-[number:var(--heading-h2-font-weight)] text-[#01010a] text-[length:var(--heading-h2-font-size)] tracking-[var(--heading-h2-letter-spacing)] leading-[var(--heading-h2-line-height)] [font-style:var(--heading-h2-font-style)] mb-8 text-center">
               Common Applications
             </h2>
 
@@ -219,7 +219,7 @@ export const ProductDetailDesktop = ({
                   className="border-none shadow-lg bg-[#f2f2f2] hover:shadow-xl transition-shadow"
                 >
                   <CardContent className="p-6 text-center">
-                    <span className="font-text-regular-semi-bold font-[number:var(--text-regular-semi-bold-font-weight)] text-[#01010a] text-[length:var(--text-regular-semi-bold-font-size)] tracking-[var(--text-regular-semi-bold-letter-spacing)] leading-[var(--text-regular-semi-bold-line-height)] [font-style:var(--text-regular-semi-bold-font-style)]">
+                    <span className="font-specs font-text-regular-semi-bold font-[number:var(--text-regular-semi-bold-font-weight)] text-[#01010a] text-[length:var(--text-regular-semi-bold-font-size)] tracking-[var(--text-regular-semi-bold-letter-spacing)] leading-[var(--text-regular-semi-bold-line-height)] [font-style:var(--text-regular-semi-bold-font-style)]">
                       {application}
                     </span>
                   </CardContent>
@@ -231,10 +231,10 @@ export const ProductDetailDesktop = ({
           {/* CTA Section */}
           <Card className="w-full border-none shadow-lg bg-[#e22023] text-white">
             <CardContent className="p-8 lg:p-12 text-center">
-              <h2 className="font-heading-h2 font-[number:var(--heading-h2-font-weight)] text-white text-[length:var(--heading-h2-font-size)] tracking-[var(--heading-h2-letter-spacing)] leading-[var(--heading-h2-line-height)] [font-style:var(--heading-h2-font-style)] mb-4">
+              <h2 className="font-subheading font-[number:var(--heading-h2-font-weight)] text-white text-[length:var(--heading-h2-font-size)] tracking-[var(--heading-h2-letter-spacing)] leading-[var(--heading-h2-line-height)] [font-style:var(--heading-h2-font-style)] mb-4">
                 Ready to Get Started?
               </h2>
-              <p className="font-text-medium-normal font-[number:var(--text-medium-normal-font-weight)] text-white text-[length:var(--text-medium-normal-font-size)] tracking-[var(--text-medium-normal-letter-spacing)] leading-[var(--text-medium-normal-line-height)] [font-style:var(--text-medium-normal-font-style)] mb-8 max-w-2xl mx-auto">
+              <p className="font-body font-text-medium-normal font-[number:var(--text-medium-normal-font-weight)] text-white text-[length:var(--text-medium-normal-font-size)] tracking-[var(--text-medium-normal-letter-spacing)] leading-[var(--text-medium-normal-line-height)] [font-style:var(--text-medium-normal-font-style)] mb-8 max-w-2xl mx-auto">
                 Contact our engineering team for a custom quote or technical
                 consultation. We're here to help you find the perfect solution
                 for your application.
@@ -242,7 +242,7 @@ export const ProductDetailDesktop = ({
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <QuoteModal>
                   <Button className="px-8 py-3 bg-white text-[#e22023] rounded-[100px] border-b-4 border-[#f2f2f2] font-text-regular-medium font-[number:var(--text-regular-medium-font-weight)] text-[length:var(--text-regular-medium-font-size)] tracking-[var(--text-regular-medium-letter-spacing)] leading-[var(--text-regular-medium-line-height)] [font-style:var(--text-regular-medium-font-style)] hover:bg-[#f2f2f2] transition-colors">
-                    Request Quote
+                    <span className="font-cta">Request Quote</span>
                   </Button>
                 </QuoteModal>
                 <Link href="/contact">
@@ -250,7 +250,7 @@ export const ProductDetailDesktop = ({
                     variant="outline"
                     className="px-8 py-3 bg-transparent text-white border-2 border-white rounded-[100px] font-text-regular-medium font-[number:var(--text-regular-medium-font-weight)] text-[length:var(--text-regular-medium-font-size)] tracking-[var(--text-regular-medium-letter-spacing)] leading-[var(--text-regular-medium-line-height)] [font-style:var(--text-regular-medium-font-style)] hover:bg-white hover:text-[#e22023] transition-colors"
                   >
-                    Contact Us
+                    <span className="font-cta">Contact Us</span>
                   </Button>
                 </Link>
               </div>
@@ -258,8 +258,6 @@ export const ProductDetailDesktop = ({
           </Card>
         </div>
       </section>
-
-      <FooterSection />
     </main>
   );
 };

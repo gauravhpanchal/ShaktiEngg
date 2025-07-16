@@ -1,6 +1,4 @@
 import React from "react";
-import { NavigationBarSection } from "../HomeDesktop/sections/NavigationBarSection";
-import { FooterSection } from "../HomeDesktop/sections/FooterSection";
 import { AboutHeroSection } from "./sections/AboutHeroSection";
 import { AboutStorySection } from "./sections/AboutStorySection";
 import { AboutTeamSection } from "./sections/AboutTeamSection";

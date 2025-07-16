@@ -108,17 +108,17 @@ export const ContactInfoSection = (): JSX.Element => {
           <div className="flex flex-col items-start gap-6 lg:gap-8 relative flex-1 grow order-1 lg:order-2">
             <div className="gap-4 self-stretch w-full flex flex-col items-start">
               <div className="inline-flex items-center self-stretch">
-                <span className="font-heading-tagline font-[number:var(--heading-tagline-font-weight)] text-[#01010a] text-[length:var(--heading-tagline-font-size)] tracking-[var(--heading-tagline-letter-spacing)] leading-[var(--heading-tagline-line-height)] [font-style:var(--heading-tagline-font-style)]">
+                <span className="font-heading-bold font-[number:var(--heading-tagline-font-weight)] text-[#01010a] text-[length:var(--heading-tagline-font-size)] tracking-[var(--heading-tagline-letter-spacing)] leading-[var(--heading-tagline-line-height)] [font-style:var(--heading-tagline-font-style)]">
                   Connect
                 </span>
               </div>
 
               <div className="flex flex-col items-start gap-4 lg:gap-6 self-stretch w-full">
-                <h2 className="self-stretch font-heading-h2 font-[number:var(--heading-h2-font-weight)] text-[#01010a] text-[length:var(--heading-h2-font-size)] tracking-[var(--heading-h2-letter-spacing)] leading-[var(--heading-h2-line-height)] [font-style:var(--heading-h2-font-style)] text-balance">
+                <h2 className="self-stretch font-subheading font-[number:var(--heading-h2-font-weight)] text-[#01010a] text-[length:var(--heading-h2-font-size)] tracking-[var(--heading-h2-letter-spacing)] leading-[var(--heading-h2-line-height)] [font-style:var(--heading-h2-font-style)] text-balance">
                   Request a Quote
                 </h2>
 
-                <p className="self-stretch font-text-medium-normal font-[number:var(--text-medium-normal-font-weight)] text-[#01010a] text-[length:var(--text-medium-normal-font-size)] tracking-[var(--text-medium-normal-letter-spacing)] leading-[var(--text-medium-normal-line-height)] [font-style:var(--text-medium-normal-font-style)]">
+                <p className="self-stretch font-body font-text-medium-normal font-[number:var(--text-medium-normal-font-weight)] text-[#01010a] text-[length:var(--text-medium-normal-font-size)] tracking-[var(--text-medium-normal-letter-spacing)] leading-[var(--text-medium-normal-line-height)] [font-style:var(--text-medium-normal-font-style)]">
                   We&#39;d love to hear from you. Get in touch today for a
                   custom quote or technical consultation!
                 </p>
@@ -132,7 +132,7 @@ export const ContactInfoSection = (): JSX.Element => {
               <div className="flex flex-col items-start gap-2 self-stretch w-full">
                 <label
                   htmlFor="name"
-                  className="self-stretch font-text-regular-normal font-[number:var(--text-regular-normal-font-weight)] text-[#01010a] text-[length:var(--text-regular-normal-font-size)] tracking-[var(--text-regular-normal-letter-spacing)] leading-[var(--text-regular-normal-line-height)] [font-style:var(--text-regular-normal-font-style)]"
+                  className="self-stretch font-specs-medium font-text-regular-normal font-[number:var(--text-regular-normal-font-weight)] text-[#01010a] text-[length:var(--text-regular-normal-font-size)] tracking-[var(--text-regular-normal-letter-spacing)] leading-[var(--text-regular-normal-line-height)] [font-style:var(--text-regular-normal-font-style)]"
                 >
                   Name *
                 </label>
@@ -151,7 +151,7 @@ export const ContactInfoSection = (): JSX.Element => {
               <div className="flex flex-col items-start gap-2 self-stretch w-full">
                 <label
                   htmlFor="email"
-                  className="self-stretch font-text-regular-normal font-[number:var(--text-regular-normal-font-weight)] text-[#01010a] text-[length:var(--text-regular-normal-font-size)] tracking-[var(--text-regular-normal-letter-spacing)] leading-[var(--text-regular-normal-line-height)] [font-style:var(--text-regular-normal-font-style)]"
+                  className="self-stretch font-specs-medium font-text-regular-normal font-[number:var(--text-regular-normal-font-weight)] text-[#01010a] text-[length:var(--text-regular-normal-font-size)] tracking-[var(--text-regular-normal-letter-spacing)] leading-[var(--text-regular-normal-line-height)] [font-style:var(--text-regular-normal-font-style)]"
                 >
                   Email *
                 </label>
@@ -170,7 +170,7 @@ export const ContactInfoSection = (): JSX.Element => {
               <div className="flex flex-col items-start gap-2 self-stretch w-full">
                 <label
                   htmlFor="company"
-                  className="self-stretch font-text-regular-normal font-[number:var(--text-regular-normal-font-weight)] text-[#01010a] text-[length:var(--text-regular-normal-font-size)] tracking-[var(--text-regular-normal-letter-spacing)] leading-[var(--text-regular-normal-line-height)] [font-style:var(--text-regular-normal-font-style)]"
+                  className="self-stretch font-specs-medium font-text-regular-normal font-[number:var(--text-regular-normal-font-weight)] text-[#01010a] text-[length:var(--text-regular-normal-font-size)] tracking-[var(--text-regular-normal-letter-spacing)] leading-[var(--text-regular-normal-line-height)] [font-style:var(--text-regular-normal-font-style)]"
                 >
                   Company
                 </label>
@@ -188,7 +188,7 @@ export const ContactInfoSection = (): JSX.Element => {
               <div className="flex flex-col items-start gap-2 self-stretch w-full">
                 <label
                   htmlFor="phone"
-                  className="self-stretch font-text-regular-normal font-[number:var(--text-regular-normal-font-weight)] text-[#01010a] text-[length:var(--text-regular-normal-font-size)] tracking-[var(--text-regular-normal-letter-spacing)] leading-[var(--text-regular-normal-line-height)] [font-style:var(--text-regular-normal-font-style)]"
+                  className="self-stretch font-specs-medium font-text-regular-normal font-[number:var(--text-regular-normal-font-weight)] text-[#01010a] text-[length:var(--text-regular-normal-font-size)] tracking-[var(--text-regular-normal-letter-spacing)] leading-[var(--text-regular-normal-line-height)] [font-style:var(--text-regular-normal-font-style)]"
                 >
                   Contact No
                 </label>
@@ -207,7 +207,7 @@ export const ContactInfoSection = (): JSX.Element => {
               <div className="flex flex-col items-start gap-2 self-stretch w-full">
                 <label
                   htmlFor="message"
-                  className="self-stretch font-text-regular-normal font-[number:var(--text-regular-normal-font-weight)] text-[#01010a] text-[length:var(--text-regular-normal-font-size)] tracking-[var(--text-regular-normal-letter-spacing)] leading-[var(--text-regular-normal-line-height)] [font-style:var(--text-regular-normal-font-style)]"
+                  className="self-stretch font-specs-medium font-text-regular-normal font-[number:var(--text-regular-normal-font-weight)] text-[#01010a] text-[length:var(--text-regular-normal-font-size)] tracking-[var(--text-regular-normal-letter-spacing)] leading-[var(--text-regular-normal-line-height)] [font-style:var(--text-regular-normal-font-style)]"
                 >
                   Project Details *
                 </label>
@@ -235,7 +235,7 @@ export const ContactInfoSection = (): JSX.Element => {
                 />
                 <label
                   htmlFor="terms"
-                  className="font-text-small-normal font-[number:var(--text-small-normal-font-weight)] text-[#01010a] text-[length:var(--text-small-normal-font-size)] tracking-[var(--text-small-normal-letter-spacing)] leading-[var(--text-small-normal-line-height)] [font-style:var(--text-small-normal-font-style)] flex-1"
+                  className="font-text-small-normal font-specs font-[number:var(--text-small-normal-font-weight)] text-[#01010a] text-[length:var(--text-small-normal-font-size)] tracking-[var(--text-small-normal-letter-spacing)] leading-[var(--text-small-normal-line-height)] [font-style:var(--text-small-normal-font-style)] flex-1"
                 >
                   I agree to the Terms of Service and Privacy Policy, and
                   consent to receive communications about product manufacturing
@@ -248,7 +248,9 @@ export const ContactInfoSection = (): JSX.Element => {
                 disabled={!agreeToTerms || isSubmitting}
                 className="w-full sm:w-auto px-6 py-2.5 bg-[#e22023] rounded-[100px] border-b-4 border-[#e8787a] font-text-regular-medium font-[number:var(--text-regular-medium-font-weight)] text-white text-[length:var(--text-regular-medium-font-size)] tracking-[var(--text-regular-medium-letter-spacing)] leading-[var(--text-regular-medium-line-height)] [font-style:var(--text-regular-medium-font-style)] hover:bg-[#e8787a] transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
               >
-                {isSubmitting ? "Submitting..." : "Submit Request"}
+                <span className="font-cta">
+                  {isSubmitting ? "Submitting..." : "Submit Request"}
+                </span>
               </Button>
             </form>
           </div>

@@ -1,7 +1,7 @@
 {
   "hero": {
     "title": "Precision Engineering Solutions for Industrial Excellence",
-    "subtitle": "SHAKTI delivers helical geared motors, rotary vibrators, testing machines, bin activators, and vibro separators engineered for maximum performance across pharmaceutical, chemical, food processing, and manufacturing industries.",
+    "subtitle": "SHAKTI ENGINEERING delivers helical geared motors, rotary vibrators, testing machines, bin activators, and vibro separators engineered for maximum performance across pharmaceutical, chemical, food processing, and manufacturing industries.",
     "primaryCTA": {
       "text": "Explore Products",
       "href": "/products"
@@ -12,7 +12,7 @@
     }
   },
   "company": {
-    "name": "SHAKTI",
+    "name": "SHAKTI ENGINEERING",
     "tagline": "Engineering Excellence Since Inception",
     "description": "Leading manufacturer of precision-engineered industrial equipment, specializing in motors, testing machines, and material handling solutions for pharmaceutical, chemical, food processing, and manufacturing industries."
   },
@@ -113,7 +113,7 @@
     ]
   },
   "capabilities": {
-    "sectionTitle": "Why Choose SHAKTI",
+    "sectionTitle": "Why Choose SHAKTI ENGINEERING",
     "sectionSubtitle": "Decades of engineering expertise delivering reliable solutions for critical industrial applications",
     "features": [
       {

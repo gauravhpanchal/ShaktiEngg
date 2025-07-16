@@ -1,9 +1,17 @@
 import type { Metadata } from "next";
-import { Archivo, Lexend_Deca } from "next/font/google";
+import {
+  Archivo,
+  Lexend_Deca,
+  Manrope,
+  IBM_Plex_Sans,
+  Montserrat,
+  Inter,
+  Poppins,
+  Space_Grotesk,
+  Roboto,
+} from "next/font/google";
 import "./globals.css";
 import { Toaster } from "@/components/ui/toast";
-import WhatsAppButton from "@/components/WhatsAppButton";
-import CallNowButton from "@/components/CallNowButton";
 import { NavigationBarSection } from "@/components/screens/HomeDesktop/sections/NavigationBarSection";
 import { FooterSection } from "@/components/screens/HomeDesktop/sections/FooterSection";
 
@@ -19,27 +27,93 @@ const lexendDeca = Lexend_Deca({
   display: "swap",
 });
 
+// Main Headings (H1, H2) - Clean, modern, slightly geometric
+const manrope = Manrope({
+  subsets: ["latin"],
+  variable: "--font-manrope",
+  weight: ["400", "500", "600", "700"],
+  display: "swap",
+});
+
+// Subheadings (H3, H4) - Technical, balanced tone
+const ibmPlexSans = IBM_Plex_Sans({
+  subsets: ["latin"],
+  variable: "--font-ibm-plex-sans",
+  weight: ["400", "500", "600"],
+  display: "swap",
+});
+
+// Navigation Tabs - Neutral and highly readable
+const montserrat = Montserrat({
+  subsets: ["latin"],
+  variable: "--font-montserrat",
+  weight: ["400", "500", "600", "700"],
+  display: "swap",
+});
+
+// Body Text - Clean and versatile for long-form reading
+const inter = Inter({
+  subsets: ["latin"],
+  variable: "--font-inter",
+  weight: ["300", "400", "500", "600"],
+  display: "swap",
+});
+
+// CTAs (Buttons, Links) - Slightly rounded, grabs attention
+const poppins = Poppins({
+  subsets: ["latin"],
+  variable: "--font-poppins",
+  weight: ["400", "500", "600", "700"],
+  display: "swap",
+});
+
+// Product Specs / Labels - Good for numeric or tabular info
+const spaceGrotesk = Space_Grotesk({
+  subsets: ["latin"],
+  variable: "--font-space-grotesk",
+  weight: ["400", "500", "600"],
+  display: "swap",
+});
+
+// Footnotes / Legal - Neutral and low-contrast
+const roboto = Roboto({
+  subsets: ["latin"],
+  variable: "--font-roboto",
+  weight: ["300", "400", "500"],
+  display: "swap",
+});
+
 export const metadata: Metadata = {
   title: {
-    default: "Spring Solutions - Precision Springs Manufacturing",
-    template: "%s | Spring Solutions",
+    default:
+      "Shakti Engineers - Precision Engineering Solutions for Industrial Excellence",
+    template: "%s | Shakti Engineers",
   },
   description:
-    "Leading manufacturer of precision springs for industrial applications. Custom compression, extension, and torsion springs with expert engineering and quality assurance.",
+    "SHAKTI ENGINEERING delivers helical geared motors, rotary vibrators, testing machines, bin activators, and vibro separators engineered for maximum performance across pharmaceutical, chemical, food processing, and manufacturing industries. Custom compression, extension, and torsion springs with expert engineering and quality assurance.",
   keywords: [
-    "spring manufacturing",
-    "precision springs",
-    "compression springs",
-    "extension springs",
-    "torsion springs",
-    "industrial springs",
-    "custom springs",
-    "wire forms",
-    "spring engineering",
+    "Shakti Engineers",
+    "precision engineering",
+    "industrial solutions",
+    "helical geared motors",
+    "rotary vibrators",
+    "testing machines",
+    "bin activators",
+    "vibro separators",
+    "pharmaceutical equipment",
+    "chemical processing equipment",
+    "food processing machinery",
+    "manufacturing equipment",
+    "industrial excellence",
+    "engineering solutions",
+    "industrial automation",
+    "quality assurance",
+    "custom engineering",
+    "industrial performance",
   ],
-  authors: [{ name: "Spring Solutions" }],
-  creator: "Spring Solutions",
-  publisher: "Spring Solutions",
+  authors: [{ name: "Shakti Engineers" }],
+  creator: "Shakti Engineers",
+  publisher: "Shakti Engineers",
   formatDetection: {
     email: false,
     address: false,
@@ -53,24 +127,26 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     url: "https://spring-solutions.com",
-    title: "Spring Solutions - Precision Springs Manufacturing",
+    title:
+      "Shakti Engineers - Precision Engineering Solutions for Industrial Excellence",
     description:
-      "Leading manufacturer of precision springs for industrial applications. Custom compression, extension, and torsion springs with expert engineering.",
-    siteName: "Spring Solutions",
+      "SHAKTI ENGINEERING delivers helical geared motors, rotary vibrators, testing machines, bin activators, and vibro separators engineered for maximum performance across pharmaceutical, chemical, food processing, and manufacturing industries. Custom compression, extension, and torsion springs with expert engineering.",
+    siteName: "Shakti Engineers",
     images: [
       {
         url: "/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "Spring Solutions - Precision Springs Manufacturing",
+        alt: "Shakti Engineers - Precision Engineering Solutions for Industrial Excellence",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Spring Solutions - Precision Springs Manufacturing",
+    title:
+      "Shakti Engineers - Precision Engineering Solutions for Industrial Excellence",
     description:
-      "Leading manufacturer of precision springs for industrial applications.",
+      "SHAKTI ENGINEERING delivers helical geared motors, rotary vibrators, testing machines, bin activators, and vibro separators engineered for maximum performance across pharmaceutical, chemical, food processing, and manufacturing industries.",
     images: ["/og-image.jpg"],
   },
   robots: {
@@ -95,7 +171,20 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={`${archivo.variable} ${lexendDeca.variable}`}>
+    <html
+      lang="en"
+      className={`
+        ${archivo.variable}
+        ${lexendDeca.variable}
+        ${manrope.variable}
+        ${ibmPlexSans.variable}
+        ${montserrat.variable}
+        ${inter.variable}
+        ${poppins.variable}
+        ${spaceGrotesk.variable}
+        ${roboto.variable}
+      `}
+    >
       <head>
         <link rel="icon" href="/favicon.ico" />
         <link

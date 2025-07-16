@@ -12,11 +12,11 @@ export const ProductsCTASection = (): JSX.Element => {
           <CardContent className="flex flex-col lg:flex-row items-center gap-8 lg:gap-12 p-8 lg:p-12">
             <div className="flex flex-col items-start gap-6 lg:gap-8 flex-1">
               <div className="flex flex-col items-start gap-4 lg:gap-6 w-full">
-                <h2 className="font-heading-h2 font-[number:var(--heading-h2-font-weight)] text-[#01010a] text-[length:var(--heading-h2-font-size)] tracking-[var(--heading-h2-letter-spacing)] leading-[var(--heading-h2-line-height)] [font-style:var(--heading-h2-font-style)] text-balance">
+                <h2 className="font-heading font-[number:var(--heading-h2-font-weight)] text-[#01010a] text-[length:var(--heading-h2-font-size)] tracking-[var(--heading-h2-letter-spacing)] leading-[var(--heading-h2-line-height)] [font-style:var(--heading-h2-font-style)] text-balance">
                   Need a Custom Quote?
                 </h2>
 
-                <p className="font-text-medium-normal font-[number:var(--text-medium-normal-font-weight)] text-[#01010a] text-[length:var(--text-medium-normal-font-size)] tracking-[var(--text-medium-normal-letter-spacing)] leading-[var(--text-medium-normal-line-height)] [font-style:var(--text-medium-normal-font-style)]">
+                <p className="font-body font-text-medium-normal font-[number:var(--text-medium-normal-font-weight)] text-[#01010a] text-[length:var(--text-medium-normal-font-size)] tracking-[var(--text-medium-normal-letter-spacing)] leading-[var(--text-medium-normal-line-height)] [font-style:var(--text-medium-normal-font-style)]">
                   Our engineering team specializes in creating custom solutions
                   tailored to your exact specifications. From prototype to
                   production, we'll work with you to develop the perfect for
@@ -26,19 +26,19 @@ export const ProductsCTASection = (): JSX.Element => {
                 <div className="flex flex-col gap-3">
                   <div className="flex items-center gap-3">
                     <span className="w-2 h-2 bg-[#e22023] rounded-full"></span>
-                    <span className="font-text-regular-normal font-[number:var(--text-regular-normal-font-weight)] text-[#01010a] text-[length:var(--text-regular-normal-font-size)] tracking-[var(--text-regular-normal-letter-spacing)] leading-[var(--text-regular-normal-line-height)] [font-style:var(--text-regular-normal-font-style)]">
+                    <span className="font-specs font-text-regular-normal font-[number:var(--text-regular-normal-font-weight)] text-[#01010a] text-[length:var(--text-regular-normal-font-size)] tracking-[var(--text-regular-normal-letter-spacing)] leading-[var(--text-regular-normal-line-height)] [font-style:var(--text-regular-normal-font-style)]">
                       Free engineering consultation
                     </span>
                   </div>
                   <div className="flex items-center gap-3">
                     <span className="w-2 h-2 bg-[#e22023] rounded-full"></span>
-                    <span className="font-text-regular-normal font-[number:var(--text-regular-normal-font-weight)] text-[#01010a] text-[length:var(--text-regular-normal-font-size)] tracking-[var(--text-regular-normal-letter-spacing)] leading-[var(--text-regular-normal-line-height)] [font-style:var(--text-regular-normal-font-style)]">
+                    <span className="font-specs font-text-regular-normal font-[number:var(--text-regular-normal-font-weight)] text-[#01010a] text-[length:var(--text-regular-normal-font-size)] tracking-[var(--text-regular-normal-letter-spacing)] leading-[var(--text-regular-normal-line-height)] [font-style:var(--text-regular-normal-font-style)]">
                       Rapid prototyping available
                     </span>
                   </div>
                   <div className="flex items-center gap-3">
                     <span className="w-2 h-2 bg-[#e22023] rounded-full"></span>
-                    <span className="font-text-regular-normal font-[number:var(--text-regular-normal-font-weight)] text-[#01010a] text-[length:var(--text-regular-normal-font-size)] tracking-[var(--text-regular-normal-letter-spacing)] leading-[var(--text-regular-normal-line-height)] [font-style:var(--text-regular-normal-font-style)]">
+                    <span className="font-specs font-text-regular-normal font-[number:var(--text-regular-normal-font-weight)] text-[#01010a] text-[length:var(--text-regular-normal-font-size)] tracking-[var(--text-regular-normal-letter-spacing)] leading-[var(--text-regular-normal-line-height)] [font-style:var(--text-regular-normal-font-style)]">
                       Competitive pricing for all volumes
                     </span>
                   </div>
@@ -48,7 +48,7 @@ export const ProductsCTASection = (): JSX.Element => {
               <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 lg:gap-6">
                 <QuoteModal>
                   <Button className="w-full sm:w-auto px-6 py-2.5 bg-[#e22023] rounded-[100px] border-b-4 border-[#e8787a] font-text-regular-medium font-[number:var(--text-regular-medium-font-weight)] text-white text-[length:var(--text-regular-medium-font-size)] tracking-[var(--text-regular-medium-letter-spacing)] leading-[var(--text-regular-medium-line-height)] [font-style:var(--text-regular-medium-font-style)] hover:bg-[#e8787a] transition-colors">
-                    Start Custom Project
+                    <span className="font-cta">Start Custom Project</span>
                   </Button>
                 </QuoteModal>
 
@@ -56,18 +56,18 @@ export const ProductsCTASection = (): JSX.Element => {
                   variant="outline"
                   className="w-full sm:w-auto px-6 py-2.5 bg-[#01010a0d] rounded-[100px] border-b-4 border-[#01010a26] font-text-regular-medium font-[number:var(--text-regular-medium-font-weight)] text-[#01010a] text-[length:var(--text-regular-medium-font-size)] tracking-[var(--text-regular-medium-letter-spacing)] leading-[var(--text-regular-medium-line-height)] [font-style:var(--text-regular-medium-font-style)] hover:bg-[#01010a1a] transition-colors"
                 >
-                  Download Catalog
+                  <span className="font-cta">Download Catalog</span>
                 </Button>
               </div>
             </div>
 
             <div className="flex flex-col items-center gap-4 lg:gap-6 bg-[#f2f2f2] p-6 lg:p-8 rounded-lg">
-              <h3 className="font-heading-h4 font-[number:var(--heading-h4-font-weight)] text-[#01010a] text-[length:var(--heading-h4-font-size)] tracking-[var(--heading-h4-letter-spacing)] leading-[var(--heading-h4-line-height)] [font-style:var(--heading-h4-font-style)] text-center">
+              <h3 className="font-heading font-[number:var(--heading-h4-font-weight)] text-[#01010a] text-[length:var(--heading-h4-font-size)] tracking-[var(--heading-h4-letter-spacing)] leading-[var(--heading-h4-line-height)] [font-style:var(--heading-h4-font-style)] text-center">
                 Quick Quote Request
               </h3>
 
               <div className="flex flex-col gap-3 text-center">
-                <p className="font-text-regular-normal font-[number:var(--text-regular-normal-font-weight)] text-[#01010a] text-[length:var(--text-regular-normal-font-size)] tracking-[var(--text-regular-normal-letter-spacing)] leading-[var(--text-regular-normal-line-height)] [font-style:var(--text-regular-normal-font-style)]">
+                <p className="font-subheading font-text-regular-normal font-[number:var(--text-regular-normal-font-weight)] text-[#01010a] text-[length:var(--text-regular-normal-font-size)] tracking-[var(--text-regular-normal-letter-spacing)] leading-[var(--text-regular-normal-line-height)] [font-style:var(--text-regular-normal-font-style)]">
                   Get a quote in 24 hours or less
                 </p>
 
@@ -83,7 +83,7 @@ export const ProductsCTASection = (): JSX.Element => {
 
               <QuoteModal>
                 <Button className="w-full px-6 py-2.5 bg-[#e22023] rounded-[100px] border-b-4 border-[#e8787a] font-text-regular-medium font-[number:var(--text-regular-medium-font-weight)] text-white text-[length:var(--text-regular-medium-font-size)] tracking-[var(--text-regular-medium-letter-spacing)] leading-[var(--text-regular-medium-line-height)] [font-style:var(--text-regular-medium-font-style)] hover:bg-[#e8787a] transition-colors">
-                  Get Quote Now
+                  <span className="font-cta">Get Quote Now</span>
                 </Button>
               </QuoteModal>
             </div>

@@ -136,7 +136,7 @@ const ProductCard = ({ product }: { product: (typeof products)[0] }) => (
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
           />
           <div className="absolute top-4 left-4">
-            <span className="bg-[#e22023] text-white px-3 py-1 rounded-full text-sm font-text-small-semi-bold">
+            <span className="bg-[#e22023] font-specs text-white px-3 py-1 rounded-full text-sm font-text-small-semi-bold">
               {product.category}
             </span>
           </div>
@@ -146,27 +146,27 @@ const ProductCard = ({ product }: { product: (typeof products)[0] }) => (
       <div className="p-6 flex flex-col flex-1">
         <div className="flex flex-col gap-3 mb-4">
           <Link href={`/products/${product.slug}`}>
-            <h3 className="font-heading-h4 font-[number:var(--heading-h4-font-weight)] text-[#01010a] text-[length:var(--heading-h4-font-size)] tracking-[var(--heading-h4-letter-spacing)] leading-[var(--heading-h4-line-height)] [font-style:var(--heading-h4-font-style)] hover:text-[#e22023] transition-colors">
+            <h3 className="font-heading font-[number:var(--heading-h4-font-weight)] text-[#01010a] text-[length:var(--heading-h4-font-size)] tracking-[var(--heading-h4-letter-spacing)] leading-[var(--heading-h4-line-height)] [font-style:var(--heading-h4-font-style)] hover:text-[#e22023] transition-colors">
               {product.name}
             </h3>
           </Link>
-          <p className="font-text-regular-normal font-[number:var(--text-regular-normal-font-weight)] text-[#01010a] text-[length:var(--text-regular-normal-font-size)] tracking-[var(--text-regular-normal-letter-spacing)] leading-[var(--text-regular-normal-line-height)] [font-style:var(--text-regular-normal-font-style)]">
+          <p className="font-body font-text-regular-normal font-[number:var(--text-regular-normal-font-weight)] text-[#01010a] text-[length:var(--text-regular-normal-font-size)] tracking-[var(--text-regular-normal-letter-spacing)] leading-[var(--text-regular-normal-line-height)] [font-style:var(--text-regular-normal-font-style)]">
             {product.description}
           </p>
         </div>
 
         <div className="flex flex-col gap-4 mb-6">
           <div>
-            <h4 className="font-text-regular-semi-bold font-[number:var(--text-regular-semi-bold-font-weight)] text-[#01010a] text-[length:var(--text-regular-semi-bold-font-size)] tracking-[var(--text-regular-semi-bold-letter-spacing)] leading-[var(--text-regular-semi-bold-line-height)] [font-style:var(--text-regular-semi-bold-font-style)] mb-2">
+            <h4 className="font-heading-bold font-text-regular-semi-bold font-[number:var(--text-regular-semi-bold-font-weight)] text-[#01010a] text-[length:var(--text-regular-semi-bold-font-size)] tracking-[var(--text-regular-semi-bold-letter-spacing)] leading-[var(--text-regular-semi-bold-line-height)] [font-style:var(--text-regular-semi-bold-font-style)] mb-2">
               Key Features:
             </h4>
             <ul className="space-y-1">
               {product.features.slice(0, 3).map((feature, index) => (
                 <li
                   key={index}
-                  className="font-text-small-normal font-[number:var(--text-small-normal-font-weight)] text-[#01010a] text-[length:var(--text-small-normal-font-size)] tracking-[var(--text-small-normal-letter-spacing)] leading-[var(--text-small-normal-line-height)] [font-style:var(--text-small-normal-font-style)] flex items-center"
+                  className="font-specs font-text-small-normal font-[number:var(--text-small-normal-font-weight)] text-[#01010a] text-[length:var(--text-small-normal-font-size)] tracking-[var(--text-small-normal-letter-spacing)] leading-[var(--text-small-normal-line-height)] [font-style:var(--text-small-normal-font-style)] flex items-center"
                 >
-                  <span className="w-1.5 h-1.5 bg-[#e22023] rounded-full mr-2 flex-shrink-0"></span>
+                  <span className=" w-1.5 h-1.5 bg-[#e22023] rounded-full mr-2 flex-shrink-0"></span>
                   {feature}
                 </li>
               ))}
@@ -174,14 +174,14 @@ const ProductCard = ({ product }: { product: (typeof products)[0] }) => (
           </div>
 
           <div>
-            <h4 className="font-text-regular-semi-bold font-[number:var(--text-regular-semi-bold-font-weight)] text-[#01010a] text-[length:var(--text-regular-semi-bold-font-size)] tracking-[var(--text-regular-semi-bold-letter-spacing)] leading-[var(--text-regular-semi-bold-line-height)] [font-style:var(--text-regular-semi-bold-font-style)] mb-2">
+            <h4 className="font-heading-bold font-text-regular-semi-bold font-[number:var(--text-regular-semi-bold-font-weight)] text-[#01010a] text-[length:var(--text-regular-semi-bold-font-size)] tracking-[var(--text-regular-semi-bold-letter-spacing)] leading-[var(--text-regular-semi-bold-line-height)] [font-style:var(--text-regular-semi-bold-font-style)] mb-2">
               Applications:
             </h4>
             <div className="flex flex-wrap gap-2">
               {product.applications.slice(0, 2).map((app, index) => (
                 <span
                   key={index}
-                  className="bg-[#f2f2f2] text-[#01010a] px-2 py-1 rounded text-xs font-text-small-normal"
+                  className="bg-[#f2f2f2] font-specs text-[#01010a] px-2 py-1 rounded text-xs font-text-small-normal"
                 >
                   {app}
                 </span>
@@ -196,13 +196,13 @@ const ProductCard = ({ product }: { product: (typeof products)[0] }) => (
               variant="outline"
               className="w-full px-4 py-2 bg-[#01010a0d] rounded-[100px] border-b-4 border-[#01010a26] font-text-regular-medium font-[number:var(--text-regular-medium-font-weight)] text-[#01010a] text-[length:var(--text-regular-medium-font-size)] tracking-[var(--text-regular-medium-letter-spacing)] leading-[var(--text-regular-medium-line-height)] [font-style:var(--text-regular-medium-font-style)] hover:bg-[#01010a1a] transition-colors"
             >
-              View Details
+              <span className="font-cta">View Details</span>
             </Button>
           </Link>
 
           <QuoteModal>
             <Button className="w-full px-4 py-2 bg-[#e22023] rounded-[100px] border-b-4 border-[#e8787a] font-text-regular-medium font-[number:var(--text-regular-medium-font-weight)] text-white text-[length:var(--text-regular-medium-font-size)] tracking-[var(--text-regular-medium-letter-spacing)] leading-[var(--text-regular-medium-line-height)] [font-style:var(--text-regular-medium-font-style)] hover:bg-[#e8787a] transition-colors">
-              Request Quote
+              <span className="font-cta">Request Quote</span>
             </Button>
           </QuoteModal>
         </div>
@@ -217,17 +217,17 @@ export const ProductsCatalogSection = (): JSX.Element => {
       <div className="flex-col container-responsive items-start gap-12 lg:gap-20 w-full flex">
         <div className="flex flex-col max-w-4xl items-center gap-4 relative w-full text-center mx-auto">
           <div className="inline-flex items-center relative">
-            <span className="relative w-fit mt-[-1.00px] font-heading-tagline font-[number:var(--heading-tagline-font-weight)] text-[#01010a] text-[length:var(--heading-tagline-font-size)] text-center tracking-[var(--heading-tagline-letter-spacing)] leading-[var(--heading-tagline-line-height)] whitespace-nowrap [font-style:var(--heading-tagline-font-style)]">
+            <span className="font-heading-bold relative w-fit mt-[-1.00px] font-heading-tagline font-[number:var(--heading-tagline-font-weight)] text-[#01010a] text-[length:var(--heading-tagline-font-size)] text-center tracking-[var(--heading-tagline-letter-spacing)] leading-[var(--heading-tagline-line-height)] whitespace-nowrap [font-style:var(--heading-tagline-font-style)]">
               Product Catalog
             </span>
           </div>
 
           <div className="flex flex-col items-center gap-4 lg:gap-6 relative self-stretch w-full">
-            <h2 className="mt-[-1.00px] font-heading-h2 font-[number:var(--heading-h2-font-weight)] text-[length:var(--heading-h2-font-size)] text-center tracking-[var(--heading-h2-letter-spacing)] leading-[var(--heading-h2-line-height)] relative self-stretch text-[#01010a] [font-style:var(--heading-h2-font-style)] text-balance">
+            <h2 className="font-heading mt-[-1.00px] font-heading-h2 font-[number:var(--heading-h2-font-weight)] text-[length:var(--heading-h2-font-size)] text-center tracking-[var(--heading-h2-letter-spacing)] leading-[var(--heading-h2-line-height)] relative self-stretch text-[#01010a] [font-style:var(--heading-h2-font-style)] text-balance">
               Explore Our Complete Products Range
             </h2>
 
-            <p className="relative mx-auto font-text-medium-normal font-[number:var(--text-medium-normal-font-weight)] text-[#01010a] text-[length:var(--text-medium-normal-font-size)] text-center tracking-[var(--text-medium-normal-letter-spacing)] leading-[var(--text-medium-normal-line-height)] [font-style:var(--text-medium-normal-font-style)] max-w-3xl">
+            <p className="font-body relative mx-auto font-text-medium-normal font-[number:var(--text-medium-normal-font-weight)] text-[#01010a] text-[length:var(--text-medium-normal-font-size)] text-center tracking-[var(--text-medium-normal-letter-spacing)] leading-[var(--text-medium-normal-line-height)] [font-style:var(--text-medium-normal-font-style)] max-w-3xl">
               Discover our comprehensive selection of engineered products, each
               designed to meet specific industry requirements and performance
               standards.

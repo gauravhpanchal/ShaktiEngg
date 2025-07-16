@@ -38,7 +38,7 @@ export const NavigationBarSection = (): JSX.Element => {
             <Image
               className="w-[200px] h-auto aspect-auto lg:w-[220px] lg:h-auto"
               alt="Shakti Engineers"
-              src="/logo.png"
+              src="/logo.svg"
               width={84}
               height={36}
               priority
@@ -56,7 +56,7 @@ export const NavigationBarSection = (): JSX.Element => {
                     variant="ghost"
                     className="font-text-regular-normal text-[#01010a] hover:bg-[#01010a0d] transition-colors"
                   >
-                    {item.name}
+                    <span className="font-nav">{item.name}</span>
                   </Button>
                 </Link>
               </NavigationMenuItem>
@@ -73,7 +73,7 @@ export const NavigationBarSection = (): JSX.Element => {
                 variant="default"
                 className="px-3 lg:px-5 py-2 bg-[#01010a0d] rounded-[100px] border-b-4 border-[#01010a26] hover:bg-[#01010a1a] text-sm lg:text-base transition-colors"
               >
-                <span className="font-text-regular-medium text-[#01010a] text-[length:var(--text-regular-medium-font-size)] tracking-[var(--text-regular-medium-letter-spacing)] leading-[var(--text-regular-medium-line-height)]">
+                <span className="font-cta font-text-regular-medium text-[#01010a] text-[length:var(--text-regular-medium-font-size)] tracking-[var(--text-regular-medium-letter-spacing)] leading-[var(--text-regular-medium-line-height)]">
                   Contact
                 </span>
               </Button>
@@ -81,7 +81,7 @@ export const NavigationBarSection = (): JSX.Element => {
 
             <QuoteModal>
               <Button className="px-3 lg:px-5 py-2 bg-[#e22023] rounded-[100px] border-b-4 border-[#e8787a] hover:bg-[#e8787a] text-sm lg:text-base transition-colors">
-                <span className="font-text-regular-medium text-white text-[length:var(--text-regular-medium-font-size)] tracking-[var(--text-regular-medium-letter-spacing)] leading-[var(--text-regular-medium-line-height)]">
+                <span className="font-cta font-text-regular-medium text-white text-[length:var(--text-regular-medium-font-size)] tracking-[var(--text-regular-medium-letter-spacing)] leading-[var(--text-regular-medium-line-height)]">
                   Get Quote
                 </span>
               </Button>
@@ -148,7 +148,7 @@ export const NavigationBarSection = (): JSX.Element => {
                       className="text-center py-4 px-8 text-[#01010a] font-text-large-semi-bold hover:bg-[#01010a0d] rounded-xl transition-all duration-200 transform hover:scale-[1.05] active:scale-[0.95]"
                       onClick={() => setIsMobileMenuOpen(false)}
                     >
-                      <span className="text-xl">{item.name}</span>
+                      <span className="text-xl font-nav">{item.name}</span>
                     </Link>
                   ))}
                 </div>
@@ -160,7 +160,7 @@ export const NavigationBarSection = (): JSX.Element => {
                       className="w-full px-4 py-6 bg-[#e22023] rounded-2xl border-2 border-[#e8787a] hover:bg-[#e8787a] transition-all duration-200 transform hover:scale-[1.02] active:scale-[0.98]"
                       // onClick={() => setIsMobileMenuOpen(false)}
                     >
-                      <span className="font-text-regular-medium text-white text-xl">
+                      <span className="font-cta font-text-regular-medium text-white text-xl">
                         Get Quote
                       </span>
                     </Button>

@@ -22,17 +22,17 @@ export const ContentLayoutSection = (): JSX.Element => {
       <div className="flex flex-col container-responsive items-center gap-12 lg:gap-20 relative w-full">
         <div className="flex flex-col max-w-4xl items-center gap-4 relative w-full text-center">
           <div className="inline-flex items-center relative">
-            <span className="relative w-fit mt-[-1.00px] font-heading-tagline font-[number:var(--heading-tagline-font-weight)] text-[#01010a] text-[length:var(--heading-tagline-font-size)] text-center tracking-[var(--heading-tagline-letter-spacing)] leading-[var(--heading-tagline-line-height)] whitespace-nowrap [font-style:var(--heading-tagline-font-style)]">
+            <span className="font-heading-bold relative w-fit mt-[-1.00px] font-heading-tagline font-[number:var(--heading-tagline-font-weight)] text-[#01010a] text-[length:var(--heading-tagline-font-size)] text-center tracking-[var(--heading-tagline-letter-spacing)] leading-[var(--heading-tagline-line-height)] whitespace-nowrap [font-style:var(--heading-tagline-font-style)]">
               {homepageContent.company.name}
             </span>
           </div>
 
           <div className="flex flex-col items-center gap-4 lg:gap-6 relative self-stretch w-full">
-            <h2 className="mt-[-1.00px] font-heading-h2 font-[number:var(--heading-h2-font-weight)] text-[length:var(--heading-h2-font-size)] text-center tracking-[var(--heading-h2-letter-spacing)] leading-[var(--heading-h2-line-height)] relative self-stretch text-[#01010a] [font-style:var(--heading-h2-font-style)] text-balance">
+            <h2 className="mt-[-1.00px] font-heading font-[number:var(--heading-h2-font-weight)] text-[length:var(--heading-h2-font-size)] text-center tracking-[var(--heading-h2-letter-spacing)] leading-[var(--heading-h2-line-height)] relative self-stretch text-[#01010a] [font-style:var(--heading-h2-font-style)] text-balance">
               {homepageContent.industries.sectionTitle}
             </h2>
 
-            <p className="relative mx-auto font-text-medium-normal font-[number:var(--text-medium-normal-font-weight)] text-[#01010a] text-[length:var(--text-medium-normal-font-size)] text-center tracking-[var(--text-medium-normal-letter-spacing)] leading-[var(--text-medium-normal-line-height)] [font-style:var(--text-medium-normal-font-style)] max-w-3xl">
+            <p className="relative font-subheading mx-auto font-text-medium-normal font-[number:var(--text-medium-normal-font-weight)] text-[#01010a] text-[length:var(--text-medium-normal-font-size)] text-center tracking-[var(--text-medium-normal-letter-spacing)] leading-[var(--text-medium-normal-line-height)] [font-style:var(--text-medium-normal-font-style)] max-w-3xl">
               {homepageContent.industries.sectionSubtitle}
             </p>
           </div>
@@ -55,11 +55,11 @@ export const ContentLayoutSection = (): JSX.Element => {
                   />
 
                   <div className="flex flex-col items-center gap-4 lg:gap-6 self-stretch w-full">
-                    <h4 className="mt-[-1.00px] font-heading-h4 font-[number:var(--heading-h4-font-weight)] text-[length:var(--heading-h4-font-size)] text-center tracking-[var(--heading-h4-letter-spacing)] leading-[var(--heading-h4-line-height)] self-stretch text-[#01010a] [font-style:var(--heading-h4-font-style)] text-balance">
+                    <h4 className="mt-[-1.00px] font-heading font-[number:var(--heading-h4-font-weight)] text-[length:var(--heading-h4-font-size)] text-center tracking-[var(--heading-h4-letter-spacing)] leading-[var(--heading-h4-line-height)] self-stretch text-[#01010a] [font-style:var(--heading-h4-font-style)] text-balance">
                       {feature.title}
                     </h4>
 
-                    <p className="self-stretch font-text-regular-normal font-[number:var(--text-regular-normal-font-weight)] text-[#01010a] text-[length:var(--text-regular-normal-font-size)] text-center tracking-[var(--text-regular-normal-letter-spacing)] leading-[var(--text-regular-normal-line-height)] [font-style:var(--text-regular-normal-font-style)]">
+                    <p className="self-stretch font-body font-text-regular-normal font-[number:var(--text-regular-normal-font-weight)] text-[#01010a] text-[length:var(--text-regular-normal-font-size)] text-center tracking-[var(--text-regular-normal-letter-spacing)] leading-[var(--text-regular-normal-line-height)] [font-style:var(--text-regular-normal-font-style)]">
                       {feature.description}
                     </p>
                   </div>
@@ -73,9 +73,9 @@ export const ContentLayoutSection = (): JSX.Element => {
           <Link href="/products">
             <Button
               variant="secondary"
-              className="w-full sm:w-auto px-6 py-2.5 bg-[#01010a0d] rounded-[100px] border-b-4 [border-bottom-style:solid] border-[#01010a26] font-text-regular-medium text-[#01010a] hover:bg-[#01010a1a] transition-colors"
+              className="w-full font-cta sm:w-auto px-6 py-2.5 bg-[#01010a0d] rounded-[100px] border-b-4 [border-bottom-style:solid] border-[#01010a26] font-text-regular-medium text-[#01010a] hover:bg-[#01010a1a] transition-colors"
             >
-              Learn More
+              <span className="font-cta">Learn More</span>
             </Button>
           </Link>
 
@@ -84,7 +84,8 @@ export const ContentLayoutSection = (): JSX.Element => {
               variant="ghost"
               className="w-full sm:w-auto flex items-center gap-2 rounded-[100px] font-text-regular-medium text-[#01010a] px-2 hover:bg-[#01010a0d] transition-colors"
             >
-              Contact Us
+              <span className="font-cta">Contact Us</span>
+
               <ChevronRightIcon className="w-5 h-5 lg:w-6 lg:h-6" />
             </Button>
           </Link>

@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import "@/app/globals.css";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { QuoteModal } from "@/components/QuoteModal";
@@ -44,11 +45,11 @@ export const HeaderSection = (): JSX.Element => {
       <div className="flex flex-col container-responsive items-center gap-8 lg:gap-20 w-full">
         <div className="flex flex-col max-w-4xl items-center gap-6 lg:gap-8 w-full text-center">
           <div className="flex flex-col items-center gap-4 lg:gap-6 w-full">
-            <h1 className="font-heading-h1 font-[number:var(--heading-h1-font-weight)] text-[#01010a] text-[length:var(--heading-h1-font-size)] text-center tracking-[var(--heading-h1-letter-spacing)] leading-[var(--heading-h1-line-height)] [font-style:var(--heading-h1-font-style)] text-balance">
+            <h1 className="font-heading font-[number:var(--heading-h1-font-weight)] text-[#01010a] text-[length:var(--heading-h1-font-size)] text-center tracking-[var(--heading-h1-letter-spacing)] leading-[var(--heading-h1-line-height)] [font-style:var(--heading-h1-font-style)] text-balance">
               {homepageContent.hero.title}
             </h1>
 
-            <p className="text-[length:var(--text-medium-normal-font-size)] text-center leading-[var(--text-medium-normal-line-height)] font-text-medium-normal font-[number:var(--text-medium-normal-font-weight)] text-[#01010a] tracking-[var(--text-medium-normal-letter-spacing)] [font-style:var(--text-medium-normal-font-style)] max-w-3xl">
+            <p className="font-body text-[length:var(--text-medium-normal-font-size)] text-center leading-[var(--text-medium-normal-line-height)] font-text-medium-normal font-[number:var(--text-medium-normal-font-weight)] text-[#01010a] tracking-[var(--text-medium-normal-letter-spacing)] [font-style:var(--text-medium-normal-font-style)] max-w-3xl">
               {homepageContent.hero.subtitle}
             </p>
           </div>
@@ -58,17 +59,21 @@ export const HeaderSection = (): JSX.Element => {
               href={homepageContent.hero.primaryCTA.href}
               className="w-full sm:w-auto"
             >
-              <Button className="w-full sm:w-auto px-6 py-2.5 bg-[#e22023] rounded-[100px] border-b-4 border-[#e8787a] font-text-regular-medium font-[number:var(--text-regular-medium-font-weight)] text-white text-[length:var(--text-regular-medium-font-size)] tracking-[var(--text-regular-medium-letter-spacing)] leading-[var(--text-regular-medium-line-height)] [font-style:var(--text-regular-medium-font-style)] hover:bg-[#e8787a] transition-colors">
-                {homepageContent.hero.primaryCTA.text}
+              <Button className="w-full font-cta sm:w-auto px-6 py-2.5 bg-[#e22023] rounded-[100px] border-b-4 border-[#e8787a] font-text-regular-medium font-[number:var(--text-regular-medium-font-weight)] text-white text-[length:var(--text-regular-medium-font-size)] tracking-[var(--text-regular-medium-letter-spacing)] leading-[var(--text-regular-medium-line-height)] [font-style:var(--text-regular-medium-font-style)] hover:bg-[#e8787a] transition-colors">
+                <span className="font-cta">
+                  {homepageContent.hero.primaryCTA.text}
+                </span>
               </Button>
             </Link>
 
             <QuoteModal>
               <Button
                 variant="outline"
-                className="w-full sm:w-auto px-6 py-2.5 bg-[#01010a0d] rounded-[100px] border-b-4 border-[#01010a26] font-text-regular-medium font-[number:var(--text-regular-medium-font-weight)] text-[#01010a] text-[length:var(--text-regular-medium-font-size)] tracking-[var(--text-regular-medium-letter-spacing)] leading-[var(--text-regular-medium-line-height)] [font-style:var(--text-regular-medium-font-style)] hover:bg-[#01010a1a] transition-colors"
+                className="w-full font-cta sm:w-auto px-6 py-2.5 bg-[#01010a0d] rounded-[100px] border-b-4 border-[#01010a26] font-text-regular-medium font-[number:var(--text-regular-medium-font-weight)] text-[#01010a] text-[length:var(--text-regular-medium-font-size)] tracking-[var(--text-regular-medium-letter-spacing)] leading-[var(--text-regular-medium-line-height)] [font-style:var(--text-regular-medium-font-style)] hover:bg-[#01010a1a] transition-colors"
               >
-                {homepageContent.hero.secondaryCTA.text}
+                <span className="font-cta">
+                  {homepageContent.hero.secondaryCTA.text}
+                </span>
               </Button>
             </QuoteModal>
           </div>

@@ -128,7 +128,7 @@ export const QuoteModal = ({ children }: QuoteModalProps): JSX.Element => {
       <DialogTrigger asChild>{children}</DialogTrigger>
       <DialogContent className="max-w-2xl max-h-[90vh] overflow-y-auto w-[calc(100vw-2rem)] mx-auto rounded-2xl sm:rounded-lg sm:mx-0 sm:w-full fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
         <DialogHeader>
-          <DialogTitle className="font-heading-h4 font-[number:var(--heading-h4-font-weight)] text-[#01010a] text-[length:var(--heading-h4-font-size)] tracking-[var(--heading-h4-letter-spacing)] leading-[var(--heading-h4-line-height)] [font-style:var(--heading-h4-font-style)]">
+          <DialogTitle className="font-subheading font-[number:var(--heading-h4-font-weight)] text-[#01010a] text-[length:var(--heading-h4-font-size)] tracking-[var(--heading-h4-letter-spacing)] leading-[var(--heading-h4-line-height)] [font-style:var(--heading-h4-font-style)]">
             Request a Quote
           </DialogTitle>
         </DialogHeader>
@@ -138,7 +138,7 @@ export const QuoteModal = ({ children }: QuoteModalProps): JSX.Element => {
             <div className="space-y-2">
               <Label
                 htmlFor="quote-name"
-                className="font-text-regular-normal font-[number:var(--text-regular-normal-font-weight)] text-[#01010a] text-[length:var(--text-regular-normal-font-size)]"
+                className="font-subheading font-text-regular-normal font-[number:var(--text-regular-normal-font-weight)] text-[#01010a] text-[length:var(--text-regular-normal-font-size)]"
               >
                 Full Name *
               </Label>
@@ -147,7 +147,7 @@ export const QuoteModal = ({ children }: QuoteModalProps): JSX.Element => {
                 required
                 value={formData.name}
                 onChange={(e) => handleInputChange("name", e.target.value)}
-                className="bg-[#01010a0d] rounded-xl border-transparent focus:border-[#e22023] focus:ring-[#e22023]"
+                className=" bg-[#01010a0d] rounded-xl border-transparent focus:border-[#e22023] focus:ring-[#e22023]"
                 placeholder="Enter your full name"
                 disabled={isSubmitting}
               />
@@ -156,7 +156,7 @@ export const QuoteModal = ({ children }: QuoteModalProps): JSX.Element => {
             <div className="space-y-2">
               <Label
                 htmlFor="quote-email"
-                className="font-text-regular-normal font-[number:var(--text-regular-normal-font-weight)] text-[#01010a] text-[length:var(--text-regular-normal-font-size)]"
+                className="font-subheading font-text-regular-normal font-[number:var(--text-regular-normal-font-weight)] text-[#01010a] text-[length:var(--text-regular-normal-font-size)]"
               >
                 Email Address *
               </Label>
@@ -166,7 +166,7 @@ export const QuoteModal = ({ children }: QuoteModalProps): JSX.Element => {
                 required
                 value={formData.email}
                 onChange={(e) => handleInputChange("email", e.target.value)}
-                className="bg-[#01010a0d] rounded-xl border-transparent focus:border-[#e22023] focus:ring-[#e22023]"
+                className=" bg-[#01010a0d] rounded-xl border-transparent focus:border-[#e22023] focus:ring-[#e22023]"
                 placeholder="Enter your email"
                 disabled={isSubmitting}
               />
@@ -177,7 +177,7 @@ export const QuoteModal = ({ children }: QuoteModalProps): JSX.Element => {
             <div className="space-y-2">
               <Label
                 htmlFor="quote-company"
-                className="font-text-regular-normal font-[number:var(--text-regular-normal-font-weight)] text-[#01010a] text-[length:var(--text-regular-normal-font-size)]"
+                className="font-subheading font-text-regular-normal font-[number:var(--text-regular-normal-font-weight)] text-[#01010a] text-[length:var(--text-regular-normal-font-size)]"
               >
                 Company Name
               </Label>
@@ -187,7 +187,7 @@ export const QuoteModal = ({ children }: QuoteModalProps): JSX.Element => {
                 type="text"
                 required
                 onChange={(e) => handleInputChange("company", e.target.value)}
-                className="bg-[#01010a0d] rounded-xl border-transparent focus:border-[#e22023] focus:ring-[#e22023]"
+                className=" bg-[#01010a0d] rounded-xl border-transparent focus:border-[#e22023] focus:ring-[#e22023]"
                 placeholder="Enter company name"
                 disabled={isSubmitting}
               />
@@ -196,7 +196,7 @@ export const QuoteModal = ({ children }: QuoteModalProps): JSX.Element => {
             <div className="space-y-2">
               <Label
                 htmlFor="quote-phone"
-                className="font-text-regular-normal font-[number:var(--text-regular-normal-font-weight)] text-[#01010a] text-[length:var(--text-regular-normal-font-size)]"
+                className="font-subheading font-text-regular-normal font-[number:var(--text-regular-normal-font-weight)] text-[#01010a] text-[length:var(--text-regular-normal-font-size)]"
               >
                 Phone Number
               </Label>
@@ -206,7 +206,7 @@ export const QuoteModal = ({ children }: QuoteModalProps): JSX.Element => {
                 value={formData.phone}
                 required
                 onChange={(e) => handleInputChange("phone", e.target.value)}
-                className="bg-[#01010a0d] rounded-xl border-transparent focus:border-[#e22023] focus:ring-[#e22023]"
+                className=" bg-[#01010a0d] rounded-xl border-transparent focus:border-[#e22023] focus:ring-[#e22023]"
                 placeholder="Enter phone number"
                 disabled={isSubmitting}
               />
@@ -215,7 +215,7 @@ export const QuoteModal = ({ children }: QuoteModalProps): JSX.Element => {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <div className="space-y-2">
-              <Label className="font-text-regular-normal font-[number:var(--text-regular-normal-font-weight)] text-[#01010a] text-[length:var(--text-regular-normal-font-size)]">
+              <Label className="font-subheading font-text-regular-normal font-[number:var(--text-regular-normal-font-weight)] text-[#01010a] text-[length:var(--text-regular-normal-font-size)]">
                 Product Type *
               </Label>
               <Select
@@ -225,7 +225,7 @@ export const QuoteModal = ({ children }: QuoteModalProps): JSX.Element => {
                 }
                 disabled={isSubmitting}
               >
-                <SelectTrigger className="bg-[#01010a0d] rounded-xl border-transparent focus:border-[#e22023] focus:ring-[#e22023]">
+                <SelectTrigger className=" bg-[#01010a0d] rounded-xl border-transparent focus:border-[#e22023] focus:ring-[#e22023]">
                   <SelectValue placeholder="Select product type" />
                 </SelectTrigger>
                 <SelectContent>
@@ -247,7 +247,7 @@ export const QuoteModal = ({ children }: QuoteModalProps): JSX.Element => {
             </div>
 
             <div className="space-y-2">
-              <Label className="font-text-regular-normal font-[number:var(--text-regular-normal-font-weight)] text-[#01010a] text-[length:var(--text-regular-normal-font-size)]">
+              <Label className="font-subheading font-text-regular-normal font-[number:var(--text-regular-normal-font-weight)] text-[#01010a] text-[length:var(--text-regular-normal-font-size)]">
                 Estimated Quantity *
               </Label>
               <Select
@@ -255,7 +255,7 @@ export const QuoteModal = ({ children }: QuoteModalProps): JSX.Element => {
                 onValueChange={(value) => handleInputChange("quantity", value)}
                 disabled={isSubmitting}
               >
-                <SelectTrigger className="bg-[#01010a0d] rounded-xl border-transparent focus:border-[#e22023] focus:ring-[#e22023]">
+                <SelectTrigger className=" bg-[#01010a0d] rounded-xl border-transparent focus:border-[#e22023] focus:ring-[#e22023]">
                   <SelectValue placeholder="Select quantity range" />
                 </SelectTrigger>
                 <SelectContent>
@@ -272,14 +272,14 @@ export const QuoteModal = ({ children }: QuoteModalProps): JSX.Element => {
           </div>
 
           <div className="space-y-2">
-            <Label className="font-text-regular-normal font-[number:var(--text-regular-normal-font-weight)] text-[#01010a] text-[length:var(--text-regular-normal-font-size)]">
+            <Label className="font-subheading font-text-regular-normal font-[number:var(--text-regular-normal-font-weight)] text-[#01010a] text-[length:var(--text-regular-normal-font-size)]">
               Project Timeline
             </Label>
             <Select
               onValueChange={(value) => handleInputChange("timeline", value)}
               disabled={isSubmitting}
             >
-              <SelectTrigger className="bg-[#01010a0d] rounded-xl border-transparent focus:border-[#e22023] focus:ring-[#e22023]">
+              <SelectTrigger className=" bg-[#01010a0d] rounded-xl border-transparent focus:border-[#e22023] focus:ring-[#e22023]">
                 <SelectValue placeholder="Select timeline" />
               </SelectTrigger>
               <SelectContent>
@@ -296,7 +296,7 @@ export const QuoteModal = ({ children }: QuoteModalProps): JSX.Element => {
           <div className="space-y-2">
             <Label
               htmlFor="quote-specifications"
-              className="font-text-regular-normal font-[number:var(--text-regular-normal-font-weight)] text-[#01010a] text-[length:var(--text-regular-normal-font-size)]"
+              className="font-subheading font-text-regular-normal font-[number:var(--text-regular-normal-font-weight)] text-[#01010a] text-[length:var(--text-regular-normal-font-size)]"
             >
               Specifications & Requirements *
             </Label>
@@ -325,7 +325,7 @@ export const QuoteModal = ({ children }: QuoteModalProps): JSX.Element => {
             />
             <Label
               htmlFor="quote-terms"
-              className="font-text-small-normal font-[number:var(--text-small-normal-font-weight)] text-[#01010a] text-[length:var(--text-small-normal-font-size)] tracking-[var(--text-small-normal-letter-spacing)] leading-[var(--text-small-normal-line-height)] [font-style:var(--text-small-normal-font-style)] flex-1"
+              className="font-legal font-text-small-normal font-[number:var(--text-small-normal-font-weight)] text-[#01010a] text-[length:var(--text-small-normal-font-size)] tracking-[var(--text-small-normal-letter-spacing)] leading-[var(--text-small-normal-line-height)] [font-style:var(--text-small-normal-font-style)] flex-1"
             >
               I agree to the Terms of Service and Privacy Policy, and consent to
               receive communications.
@@ -340,14 +340,16 @@ export const QuoteModal = ({ children }: QuoteModalProps): JSX.Element => {
               className="w-full sm:w-auto px-6 py-2.5 bg-[#01010a0d] rounded-[100px] border-b-4 border-[#01010a26] font-text-regular-medium font-[number:var(--text-regular-medium-font-weight)] text-[#01010a] text-[length:var(--text-regular-medium-font-size)] hover:bg-[#01010a1a] transition-colors"
               disabled={isSubmitting}
             >
-              Cancel
+              <span className="font-cta">Cancel</span>
             </Button>
             <Button
               type="submit"
               disabled={!formData.agreeToTerms || isSubmitting}
               className="w-full sm:w-auto px-6 py-2.5 bg-[#e22023] rounded-[100px] border-b-4 border-[#e8787a] font-text-regular-medium font-[number:var(--text-regular-medium-font-weight)] text-white text-[length:var(--text-regular-medium-font-size)] hover:bg-[#e8787a] transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
             >
-              {isSubmitting ? "Submitting..." : "Submit Quote Request"}
+              <span className="font-cta">
+                {isSubmitting ? "Submitting..." : "Submit Quote Request"}{" "}
+              </span>
             </Button>
           </div>
         </form>

@@ -32,7 +32,7 @@ export const CustomerTestimonialsSection = (): JSX.Element => {
               height={24}
             />
 
-            <blockquote className="font-heading-h5 text-[#01010a] text-[length:var(--heading-h5-font-size)] text-center tracking-[var(--heading-h5-letter-spacing)] leading-[var(--heading-h5-line-height)] [font-style:var(--heading-h5-font-style)] text-balance">
+            <blockquote className="font-body text-[#01010a] text-[length:var(--heading-h5-font-size)] text-center tracking-[var(--heading-h5-letter-spacing)] leading-[var(--heading-h5-line-height)] [font-style:var(--heading-h5-font-style)] text-balance">
               "{testimonialData.quote}"
             </blockquote>
 
@@ -46,10 +46,10 @@ export const CustomerTestimonialsSection = (): JSX.Element => {
               </Avatar>
 
               <div className="flex flex-col items-center sm:items-start">
-                <span className="font-text-regular-semi-bold font-[number:var(--text-regular-semi-bold-font-weight)] text-[#01010a] text-[length:var(--text-regular-semi-bold-font-size)] tracking-[var(--text-regular-semi-bold-letter-spacing)] leading-[var(--text-regular-semi-bold-line-height)]">
+                <span className="font-heading-bold font-text-regular-semi-bold font-[number:var(--text-regular-semi-bold-font-weight)] text-[#01010a] text-[length:var(--text-regular-semi-bold-font-size)] tracking-[var(--text-regular-semi-bold-letter-spacing)] leading-[var(--text-regular-semi-bold-line-height)]">
                   {testimonialData.customer.name}
                 </span>
-                <span className="font-text-regular-normal font-[number:var(--text-regular-normal-font-weight)] text-[#01010a] text-[length:var(--text-regular-normal-font-size)] tracking-[var(--text-regular-normal-letter-spacing)] leading-[var(--text-regular-normal-line-height)]">
+                <span className="font-subheading font-text-regular-normal font-[number:var(--text-regular-normal-font-weight)] text-[#01010a] text-[length:var(--text-regular-normal-font-size)] tracking-[var(--text-regular-normal-letter-spacing)] leading-[var(--text-regular-normal-line-height)]">
                   {testimonialData.customer.position}
                 </span>
               </div>

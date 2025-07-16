@@ -30,11 +30,11 @@ export const MainLayoutSection = (): JSX.Element => {
               </div>
 
               <div className="flex flex-col items-start gap-4 lg:gap-6 self-stretch w-full">
-                <h2 className="self-stretch mt-[-1.00px] font-heading-h2 font-[number:var(--heading-h2-font-weight)] text-[#01010a] text-[length:var(--heading-h2-font-size)] tracking-[var(--heading-h2-letter-spacing)] leading-[var(--heading-h2-line-height)] [font-style:var(--heading-h2-font-style)] text-balance">
+                <h2 className="self-stretch mt-[-1.00px] font-subheading font-[number:var(--heading-h2-font-weight)] text-[#01010a] text-[length:var(--heading-h2-font-size)] tracking-[var(--heading-h2-letter-spacing)] leading-[var(--heading-h2-line-height)] [font-style:var(--heading-h2-font-style)] text-balance">
                   {homepageContent.capabilities.sectionTitle}
                 </h2>
 
-                <p className="self-stretch font-text-medium-normal font-[number:var(--text-medium-normal-font-weight)] text-[#01010a] text-[length:var(--text-medium-normal-font-size)] tracking-[var(--text-medium-normal-letter-spacing)] leading-[var(--text-medium-normal-line-height)] [font-style:var(--text-medium-normal-font-style)]">
+                <p className="self-stretch font-body font-text-medium-normal font-[number:var(--text-medium-normal-font-weight)] text-[#01010a] text-[length:var(--text-medium-normal-font-size)] tracking-[var(--text-medium-normal-letter-spacing)] leading-[var(--text-medium-normal-line-height)] [font-style:var(--text-medium-normal-font-style)]">
                   {homepageContent.capabilities.sectionSubtitle}
                 </p>
               </div>
@@ -44,7 +44,7 @@ export const MainLayoutSection = (): JSX.Element => {
               <Link href="/about">
                 <Button
                   variant="outline"
-                  className="w-full sm:w-auto px-6 py-2.5 bg-[#01010a0d] rounded-[100px] border-b-4 [border-bottom-style:solid] border-[#01010a26] font-text-regular-medium font-[number:var(--text-regular-medium-font-weight)] text-[#01010a] text-[length:var(--text-regular-medium-font-size)] tracking-[var(--text-regular-medium-letter-spacing)] leading-[var(--text-regular-medium-line-height)] hover:bg-[#01010a1a] transition-colors"
+                  className="w-full font-cta sm:w-auto px-6 py-2.5 bg-[#01010a0d] rounded-[100px] border-b-4 [border-bottom-style:solid] border-[#01010a26] font-text-regular-medium font-[number:var(--text-regular-medium-font-weight)] text-[#01010a] text-[length:var(--text-regular-medium-font-size)] tracking-[var(--text-regular-medium-letter-spacing)] leading-[var(--text-regular-medium-line-height)] hover:bg-[#01010a1a] transition-colors"
                 >
                   Learn More
                 </Button>
@@ -52,7 +52,7 @@ export const MainLayoutSection = (): JSX.Element => {
               <QuoteModal>
                 <Button
                   variant="ghost"
-                  className="w-full sm:w-auto flex items-center gap-2 rounded-[100px] font-text-regular-medium font-[number:var(--text-regular-medium-font-weight)] text-[#01010a] text-[length:var(--text-regular-medium-font-size)] tracking-[var(--text-regular-medium-letter-spacing)] leading-[var(--text-regular-medium-line-height)] hover:bg-[#01010a0d] transition-colors"
+                  className="w-full font-cta sm:w-auto flex items-center gap-2 rounded-[100px] font-text-regular-medium font-[number:var(--text-regular-medium-font-weight)] text-[#01010a] text-[length:var(--text-regular-medium-font-size)] tracking-[var(--text-regular-medium-letter-spacing)] leading-[var(--text-regular-medium-line-height)] hover:bg-[#01010a0d] transition-colors"
                 >
                   Get Quote
                   <ChevronRightIcon className="w-5 h-5 lg:w-6 lg:h-6" />
@@ -78,10 +78,10 @@ export const MainLayoutSection = (): JSX.Element => {
                       width={48}
                       height={48}
                     />
-                    <h4 className="font-heading-h4 font-[number:var(--heading-h4-font-weight)] text-[length:var(--heading-h4-font-size)] tracking-[var(--heading-h4-letter-spacing)] leading-[var(--heading-h4-line-height)] self-stretch text-[#01010a] [font-style:var(--heading-h4-font-style)] text-balance">
+                    <h4 className="font-subheading font-[number:var(--heading-h4-font-weight)] text-[length:var(--heading-h4-font-size)] tracking-[var(--heading-h4-letter-spacing)] leading-[var(--heading-h4-line-height)] self-stretch text-[#01010a] [font-style:var(--heading-h4-font-style)] text-balance">
                       {card.title}
                     </h4>
-                    <p className="self-stretch font-text-regular-normal font-[number:var(--text-regular-normal-font-weight)] text-[#01010a] text-[length:var(--text-regular-normal-font-size)] tracking-[var(--text-regular-normal-letter-spacing)] leading-[var(--text-regular-normal-line-height)] [font-style:var(--text-regular-normal-font-style)]">
+                    <p className="self-stretch font-body font-text-regular-normal font-[number:var(--text-regular-normal-font-weight)] text-[#01010a] text-[length:var(--text-regular-normal-font-size)] tracking-[var(--text-regular-normal-letter-spacing)] leading-[var(--text-regular-normal-line-height)] [font-style:var(--text-regular-normal-font-style)]">
                       {card.description}
                     </p>
                   </CardContent>
