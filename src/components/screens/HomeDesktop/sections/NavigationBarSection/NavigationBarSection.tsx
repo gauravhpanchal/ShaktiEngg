@@ -129,7 +129,7 @@ export const NavigationBarSection = (): JSX.Element => {
                   <Image
                     className="w-[200px] h-auto aspect-auto"
                     alt="Shakti Engineers"
-                    src="/logo.png"
+                    src="/logo.svg"
                     width={84}
                     height={36}
                     priority
