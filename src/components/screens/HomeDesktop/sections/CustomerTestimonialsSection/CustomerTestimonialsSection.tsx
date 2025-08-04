@@ -4,7 +4,6 @@ import React from "react";
 import Image from "next/image";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Card, CardContent } from "@/components/ui/card";
-import { Separator } from "@/components/ui/separator";
 import {
   Carousel,
   CarouselContent,
@@ -20,7 +19,7 @@ const { testimonials } = testimonialsContent;
 
 export const CustomerTestimonialsSection = (): JSX.Element => {
   const plugin = React.useRef(
-    Autoplay({ delay: 5000, stopOnInteraction: true })
+    Autoplay({ delay: 3000, stopOnInteraction: true })
   );
 
   return (

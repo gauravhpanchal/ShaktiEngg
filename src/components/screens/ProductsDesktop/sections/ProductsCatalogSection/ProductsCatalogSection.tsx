@@ -164,8 +164,7 @@ const products = [
       "Food processing conveyors",
       "Automotive assembly lines",
     ],
-    image: "/vibro-seperator.png",
-    // image: "/sonzogni-camme.png",
+    image: "/sonzogni.png",
   },
 
   // --- NEW PRODUCT: ENZFELDER SCREW JACKS ---
@@ -190,8 +189,7 @@ const products = [
       "Test rigs and wind tunnel positioning",
       "Stage, solar and agriculture lifting",
     ],
-    image: "/vibro-seperator.png",
-    // image: "/enzfelder-screw-jack.png",
+    image: "/enzfelder.png",
   },
 ];
 

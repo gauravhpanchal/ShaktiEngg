@@ -220,8 +220,7 @@ const products = [
       Maintenance: "Long-life lubrication available",
       Customization: "Index angle, configuration, torque",
     },
-    images: ["/vibro-seperator.png"],
-    // images: ["/sonzogni-camme.png"],
+    images: ["/sonzogni.png"],
   },
 
   // ------- NEW PRODUCT: ENZFELDER SCREW JACKS ------
@@ -257,8 +256,7 @@ const products = [
       Operation: "Manual, electric, or motor-driven",
       Customization: "Stroke, speed, mounting options",
     },
-    images: ["/vibro-seperator.png"],
-    // images: ["/enzfelder-screw-jack.png"],
+    images: ["/enzfelder.png", "/enzfelder-2.png"],
   },
 ];
 

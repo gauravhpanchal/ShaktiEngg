@@ -7,13 +7,25 @@ import homepageContent from "@/data/homepage-content.json";
 import { QuoteModal } from "@/components/QuoteModal";
 import Link from "next/link";
 
-// Feature card data from JSON
-const featureCards = homepageContent.capabilities.features.map((feature) => ({
-  title: feature.title,
-  description: feature.description,
-  iconSrc: `${feature.icon}`,
-  iconAlt: `${feature.icon} icon`,
-}));
+// Feature card data from JSON with relevant capability-specific icons
+const featureCards = homepageContent.capabilities.features.map(
+  (feature, index) => {
+    // Map each capability to a relevant icon
+    const iconMap: Record<number, string> = {
+      0: "/manufacturing-excellence-icon.svg", // Advanced Manufacturing Excellence - gear icon
+      1: "/industry-expertise-icon.svg", // Comprehensive Industry Expertise - people icon
+      2: "/custom-engineering-icon.svg", // Custom Engineering Solutions - tools icon
+      3: "/quality-assurance-icon.svg", // Quality Assurance Excellence - award icon
+    };
+
+    return {
+      title: feature.title,
+      description: feature.description,
+      iconSrc: iconMap[index] || feature.icon,
+      iconAlt: `${feature.title} icon`,
+    };
+  }
+);
 
 export const MainLayoutSection = (): JSX.Element => {
   return (

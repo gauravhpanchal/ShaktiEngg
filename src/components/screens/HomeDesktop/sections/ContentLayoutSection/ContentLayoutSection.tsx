@@ -1,20 +1,26 @@
-import { ChevronRightIcon } from "lucide-react";
 import Image from "next/image";
 import React from "react";
-import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import homepageContent from "@/data/homepage-content.json";
-import Link from "next/link";
 
-// Service features from JSON
+// Service features from JSON with industry-specific icons
 const serviceFeatures = homepageContent.industries.sectors
   .slice(0, 3)
-  .map((sector) => ({
-    icon: "/manufacturing.svg",
-    alt: `${sector.name} industry solutions`,
-    title: sector.name,
-    description: sector.description,
-  }));
+  .map((sector, index) => {
+    // Map each sector to a relevant industry-specific icon
+    const iconMap: Record<number, string> = {
+      0: "/pharmaceutical-icon.svg", // Pharmaceutical - capsule/pill icon
+      1: "/food-processing-icon.svg", // Food Processing - cup/beverage processing icon
+      2: "/chemical-industry-icon.svg", // Chemical Industry - flask/laboratory icon
+    };
+
+    return {
+      icon: iconMap[index] || "/manufacturing.svg",
+      alt: `${sector.name} industry solutions`,
+      title: sector.name,
+      description: sector.description,
+    };
+  });
 
 export const ContentLayoutSection = (): JSX.Element => {
   return (

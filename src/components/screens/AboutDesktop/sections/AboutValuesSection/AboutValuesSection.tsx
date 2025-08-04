@@ -4,25 +4,25 @@ import { Card, CardContent } from "@/components/ui/card";
 
 const values = [
   {
-    icon: "/high-quality.svg",
+    icon: "/quality-excellence-icon.svg",
     title: "Quality Excellence",
     description:
       "We maintain the highest standards in every products we manufacture, ensuring consistent quality and reliability.",
   },
   {
-    icon: "/productivity.svg",
+    icon: "/innovation-drive-icon.svg",
     title: "Innovation Drive",
     description:
       "Continuously investing in new technologies and processes to stay at the forefront of manufacturing.",
   },
   {
-    icon: "/support.svg",
+    icon: "/customer-focus-icon.svg",
     title: "Customer Focus",
     description:
       "Building lasting partnerships through exceptional service, technical support, and customized solutions.",
   },
   {
-    icon: "/manufacturing.svg",
+    icon: "/precision-engineering-icon.svg",
     title: "Precision Engineering",
     description:
       "Leveraging decades of expertise to deliver products that meet exact specifications and performance requirements.",

@@ -22,10 +22,8 @@ const imageMap = [
   "/bump-jolt.png",
   "/bin.png",
   "/vibro-seperator.png",
-  "/bin.png",
-  "/vibro-seperator.png",
-  // "/sonzogni-camme.png",
-  // "/enzfelder-screw-jack.png",
+  "/sonzogni.png",
+  "/enzfelder.png",
 ];
 
 const products = homepageContent.products.featured.map((product, index) => ({
