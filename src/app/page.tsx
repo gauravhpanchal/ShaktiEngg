@@ -1,6 +1,7 @@
 import { HomeDesktop } from "@/components/screens/HomeDesktop";
 import type { Metadata } from "next";
 import homepageContent from "@/data/homepage-content.json";
+import { HomeDesktoptwo } from "@/components/screens/HomeDesktop/HomeDesktoptwo";
 
 export const metadata: Metadata = {
   title: homepageContent.metadata.pageTitle,
@@ -21,5 +22,5 @@ export const metadata: Metadata = {
 };
 
 export default function Home() {
-  return <HomeDesktop />;
+  return <HomeDesktoptwo />;
 }

@@ -8,11 +8,11 @@ import { AboutStatsSection } from "./sections/AboutStatsSection";
 export const AboutDesktop = (): JSX.Element => {
   return (
     <main className="flex flex-col w-full">
-      <AboutHeroSection />
+      {/* <AboutHeroSection /> */}
       <AboutStorySection />
-      <AboutValuesSection />
       <AboutStatsSection />
-      <AboutTeamSection />
+      <AboutValuesSection />
+      {/* <AboutTeamSection /> */}
     </main>
   );
 };

@@ -1,0 +1,44 @@
+{
+  "testimonials": {
+    "sectionTitle": "Customer Testimonials",
+    "sectionSubtitle": "Trusted by leading companies across industries for reliable engineering solutions",
+    "reviews": [
+      {
+        "id": 1,
+        "quote": "SHAKTI's helical geared motors have significantly improved our production efficiency. The build quality is exceptional and their technical support team is always responsive to our needs.",
+        "customer": {
+          "name": "Rajesh Sharma",
+          "position": "Production Manager",
+          "company": "Bharat Pharmaceuticals Ltd.",
+          "avatar": "https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=200"
+        },
+        "companyLogo": "/placeholder-logo.svg",
+        "rating": 5
+      },
+      {
+        "id": 2,
+        "quote": "The rotary vibrators from SHAKTI have been running flawlessly for over two years. Their precision engineering and reliability have made them our preferred supplier for material handling equipment.",
+        "customer": {
+          "name": "Ravindra Patel",
+          "position": "Engineering Head",
+          "company": "Gujarat Chemical Industries",
+          "avatar": "https://images.pexels.com/photos/3785077/pexels-photo-3785077.jpeg?auto=compress&cs=tinysrgb&w=200"
+        },
+        "companyLogo": "/placeholder-logo.svg",
+        "rating": 5
+      },
+      {
+        "id": 3,
+        "quote": "Outstanding quality and performance! SHAKTI's vibro separators have enhanced our food processing operations significantly. Their custom engineering solutions perfectly match our requirements.",
+        "customer": {
+          "name": "Arjun Mehta",
+          "position": "Operations Director",
+          "company": "Mumbai Food Processing Co.",
+          "avatar": "https://images.pexels.com/photos/1040880/pexels-photo-1040880.jpeg?auto=compress&cs=tinysrgb&w=200"
+        },
+        "companyLogo": "/placeholder-logo.svg",
+        "rating": 5
+      }
+    ]
+  }
+}

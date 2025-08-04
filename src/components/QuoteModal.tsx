@@ -242,6 +242,12 @@ export const QuoteModal = ({ children }: QuoteModalProps): JSX.Element => {
                   <SelectItem value="vibro-separators">
                     Vibro Separators
                   </SelectItem>
+                  <SelectItem value="sonzogni-camme-mechanical-indexers">
+                    Sonzogni Camme Mechanical Indexers
+                  </SelectItem>
+                  <SelectItem value="enzfelder-screw-jacks">
+                    Enzfelder Screw Jacks
+                  </SelectItem>
                 </SelectContent>
               </Select>
             </div>

@@ -22,6 +22,10 @@ const imageMap = [
   "/bump-jolt.png",
   "/bin.png",
   "/vibro-seperator.png",
+  "/bin.png",
+  "/vibro-seperator.png",
+  // "/sonzogni-camme.png",
+  // "/enzfelder-screw-jack.png",
 ];
 
 const products = homepageContent.products.featured.map((product, index) => ({
@@ -33,47 +37,56 @@ const products = homepageContent.products.featured.map((product, index) => ({
     .replace(/&/g, ""),
   name: product.name,
   variant: product.category,
-  image: imageMap[index] || imageMap[0],
+  // Images are mapped from imageMap array based on product index
+  image: imageMap[index] || imageMap[0], // Fallback to first image if index exceeds array
 }));
 
-const ProductCard = ({ product }: { product: (typeof products)[0] }) => (
-  <Card className="border-none shadow-none bg-transparent group cursor-pointer">
-    <CardContent className="p-0 flex flex-col items-start gap-4">
-      <Link href={`/products/${product.slug}`} className="w-full">
-        <div className="w-full relative overflow-hidden rounded-lg">
-          <Image
-            className="w-full h-64 sm:h-80 lg:h-[350px] object-cover transition-transform duration-300 group-hover:scale-105"
-            alt={`${product.name} - ${product.variant} products manufacturing with motor components`}
-            src={product.image}
-            width={400}
-            height={486}
-            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-          />
-        </div>
-      </Link>
+const ProductCard = ({ product }: { product: (typeof products)[0] }) => {
+  const handleImageError = (e: React.SyntheticEvent<HTMLImageElement>) => {
+    // Fallback to a default product image if the specific image doesn't exist
+    e.currentTarget.src = "/default-product.png";
+  };
 
-      <div className="flex flex-col items-start gap-2 w-full">
-        <div className="flex flex-col items-start w-full">
-          <Link href={`/products/${product.slug}`}>
-            <h3 className="w-full mt-[-1.00px] font-text-medium-semi-bold font-[number:var(--text-medium-semi-bold-font-weight)] text-[#01010a] text-[length:var(--text-medium-semi-bold-font-size)] tracking-[var(--text-medium-semi-bold-letter-spacing)] leading-[var(--text-medium-semi-bold-line-height)] [font-style:var(--text-medium-semi-bold-font-style)] hover:text-[#e22023] transition-colors">
-              {product.name}
-            </h3>
-          </Link>
-          <p className="w-full font-text-small-normal font-[number:var(--text-small-normal-font-weight)] text-[#01010a] text-[length:var(--text-small-normal-font-size)] tracking-[var(--text-small-normal-letter-spacing)] leading-[var(--text-small-normal-line-height)] [font-style:var(--text-small-normal-font-style)]">
-            {product.variant}
-          </p>
-        </div>
+  return (
+    <Card className="border-none shadow-none bg-transparent group cursor-pointer">
+      <CardContent className="p-0 flex flex-col items-start gap-4">
+        <Link href={`/products/${product.slug}`} className="w-full">
+          <div className="w-full relative overflow-hidden rounded-lg">
+            <Image
+              className="w-full h-64 sm:h-80 lg:h-[350px] object-cover transition-transform duration-300 group-hover:scale-105"
+              alt={`${product.name} - ${product.variant} products manufacturing with motor components`}
+              src={product.image}
+              width={400}
+              height={486}
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+              onError={handleImageError}
+            />
+          </div>
+        </Link>
 
-        {/* Get Quote Button */}
-        <QuoteModal>
-          <Button className="w-full mt-2 px-4 py-2 bg-[#e22023] rounded-[100px] border-b-4 border-[#e8787a] font-text-regular-medium font-[number:var(--text-regular-medium-font-weight)] text-white text-[length:var(--text-regular-medium-font-size)] tracking-[var(--text-regular-medium-letter-spacing)] leading-[var(--text-regular-medium-line-height)] [font-style:var(--text-regular-medium-font-style)] hover:bg-[#e8787a] transition-colors">
-            Get Quote
-          </Button>
-        </QuoteModal>
-      </div>
-    </CardContent>
-  </Card>
-);
+        <div className="flex flex-col items-start gap-2 w-full">
+          <div className="flex flex-col items-start w-full">
+            <Link href={`/products/${product.slug}`}>
+              <h3 className="w-full mt-[-1.00px] line-clamp-1 font-text-medium-semi-bold font-[number:var(--text-medium-semi-bold-font-weight)] text-[#01010a] text-[length:var(--text-medium-semi-bold-font-size)] tracking-[var(--text-medium-semi-bold-letter-spacing)] leading-[var(--text-medium-semi-bold-line-height)] [font-style:var(--text-medium-semi-bold-font-style)] hover:text-[#e22023] transition-colors">
+                {product.name}
+              </h3>
+            </Link>
+            <p className="w-full font-text-small-normal font-[number:var(--text-small-normal-font-weight)] text-[#01010a] text-[length:var(--text-small-normal-font-size)] tracking-[var(--text-small-normal-letter-spacing)] leading-[var(--text-small-normal-line-height)] [font-style:var(--text-small-normal-font-style)]">
+              {product.variant}
+            </p>
+          </div>
+
+          {/* Get Quote Button */}
+          <QuoteModal>
+            <Button className="w-full mt-2 px-4 py-2 bg-[#e22023] rounded-[100px] border-b-4 border-[#e8787a] font-text-regular-medium font-[number:var(--text-regular-medium-font-weight)] text-white text-[length:var(--text-regular-medium-font-size)] tracking-[var(--text-regular-medium-letter-spacing)] leading-[var(--text-regular-medium-line-height)] [font-style:var(--text-regular-medium-font-style)] hover:bg-[#e8787a] transition-colors">
+              Get Quote
+            </Button>
+          </QuoteModal>
+        </div>
+      </CardContent>
+    </Card>
+  );
+};
 
 export const ProductShowcaseSection = (): JSX.Element => {
   return (
@@ -135,18 +148,10 @@ export const ProductShowcaseSection = (): JSX.Element => {
             </Carousel>
           </div>
 
-          {/* Desktop Grid */}
-          <div className="hidden md:flex flex-col items-start gap-8 lg:gap-16 w-full">
-            {/* First row of products */}
+          {/* Desktop Grid - Dynamic layout that adapts to any number of products */}
+          <div className="hidden md:block w-full">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-12 w-full">
-              {products.slice(0, 3).map((product) => (
-                <ProductCard key={product.id} product={product} />
-              ))}
-            </div>
-
-            {/* Second row of products */}
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-12 w-full">
-              {products.slice(3, 6).map((product) => (
+              {products.map((product) => (
                 <ProductCard key={product.id} product={product} />
               ))}
             </div>

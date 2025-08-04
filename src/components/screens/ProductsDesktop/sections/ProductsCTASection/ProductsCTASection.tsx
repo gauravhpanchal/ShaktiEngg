@@ -6,9 +6,9 @@ import Link from "next/link";
 
 export const ProductsCTASection = (): JSX.Element => {
   return (
-    <section className="flex flex-col items-center gap-12 lg:gap-20 section-padding relative self-stretch w-full bg-[#f2f2f2]">
+    <section className="flex flex-col items-center gap-12 lg:gap-20 section-padding relative self-stretch w-full bg-white">
       <div className="flex flex-col container-responsive items-center gap-12 lg:gap-20 relative w-full">
-        <Card className="w-full border-none shadow-lg bg-white">
+        <Card className="w-full border-[1px] shadow-sm bg-white">
           <CardContent className="flex flex-col lg:flex-row items-center gap-8 lg:gap-12 p-8 lg:p-12">
             <div className="flex flex-col items-start gap-6 lg:gap-8 flex-1">
               <div className="flex flex-col items-start gap-4 lg:gap-6 w-full">

@@ -11,7 +11,7 @@ import Link from "next/link";
 const featureCards = homepageContent.capabilities.features.map((feature) => ({
   title: feature.title,
   description: feature.description,
-  iconSrc: "/relume.svg",
+  iconSrc: `${feature.icon}`,
   iconAlt: `${feature.icon} icon`,
 }));
 
@@ -68,7 +68,7 @@ export const MainLayoutSection = (): JSX.Element => {
               {featureCards.slice(0, 2).map((card, index) => (
                 <Card
                   key={index}
-                  className="flex-1 border-none bg-transparent shadow-none"
+                  className="flex-1 border-none shadow-none bg-white p-6"
                 >
                   <CardContent className="p-0 gap-4 lg:gap-6 flex flex-col items-start">
                     <Image
@@ -94,7 +94,7 @@ export const MainLayoutSection = (): JSX.Element => {
               {featureCards.slice(2, 4).map((card, index) => (
                 <Card
                   key={index}
-                  className="flex-1 border-none bg-transparent shadow-none"
+                  className="flex-1 border-none shadow-none bg-white p-6"
                 >
                   <CardContent className="p-0 gap-4 lg:gap-6 flex flex-col items-start">
                     <Image

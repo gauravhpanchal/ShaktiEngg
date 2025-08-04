@@ -45,7 +45,7 @@ export const ProductsHeroSection = (): JSX.Element => {
           </div>
         </div>
 
-        <div className="w-full relative">
+        {/* <div className="w-full relative">
           <Image
             className="w-full h-48 sm:h-64 md:h-80 lg:h-[720px] object-cover rounded-lg"
             alt="Comprehensive display of various products types with motors, gears, and helical components"
@@ -55,7 +55,7 @@ export const ProductsHeroSection = (): JSX.Element => {
             priority
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 90vw, 1260px"
           />
-        </div>
+        </div> */}
       </div>
     </section>
   );

@@ -22,8 +22,7 @@ const contactMethods = [
   {
     icon: <MapPinIcon className="h-10 w-10 lg:h-12 lg:w-12" />,
     title: "Office",
-    description:
-      "Visit us at our headquarters for facility tours and meetings.",
+    description: "Visit us at our headquarters.",
     contact:
       "8F, New Empire I.E. (A), Kondivita Lane,J.B.Nagar, Andheri (E), Mumbai - 400059",
     href: "https://www.google.com/maps/dir//AF%2F8,+New+Empire+Estate,+Ram+Krishna+Mandir+Road,+near+Kondivita+Rd,+J+B,+J+B+Nagar,+Andheri+East,+Mumbai,+Maharashtra+400059/@19.1137008,72.7890161,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x3be7c838e5555555:0xeb432b7d5cb1202d!2m2!1d72.8714178!2d19.1137191?entry=ttu&g_ep=EgoyMDI1MDcwOS4wIKXMDSoASAFQAw%3D%3D",
@@ -32,7 +31,7 @@ const contactMethods = [
 
 export const ContactFormSection = (): JSX.Element => {
   return (
-    <section className="flex flex-col items-center gap-12 lg:gap-20 section-padding relative self-stretch w-full bg-white">
+    <section className="flex flex-col items-center gap-12 lg:gap-20 section-padding relative self-stretch w-full bg-[#f2f2f2]">
       <div className="flex flex-col container-responsive items-center gap-12 lg:gap-20 relative w-full">
         <div className="flex flex-col max-w-4xl items-center gap-4 relative w-full text-center">
           <div className="inline-flex items-center relative">
@@ -59,9 +58,9 @@ export const ContactFormSection = (): JSX.Element => {
             {contactMethods.map((method, index) => (
               <Card
                 key={index}
-                className="flex-1 border-none shadow-none bg-transparent"
+                className="flex-1 border-none shadow-none bg-white p-6 h-full"
               >
-                <CardContent className="flex flex-col items-center gap-4 lg:gap-6 p-0 text-center">
+                <CardContent className="flex flex-col h-full items-center justify-between gap-4 lg:gap-6 p-6 lg:p-8 text-center">
                   <div className="text-[#e22023]">{method.icon}</div>
 
                   <div className="flex flex-col items-center gap-4 lg:gap-6 relative self-stretch w-full">

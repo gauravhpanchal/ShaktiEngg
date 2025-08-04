@@ -1,0 +1,50 @@
+{
+  "specifications": {
+    "sectionTitle": "Technical Specifications & Standards",
+    "sectionSubtitle": "Our products are manufactured to the highest industry standards with precise specifications and quality control measures.",
+    "categories": [
+      {
+        "category": "Motor Specifications",
+        "items": [
+          "Voltage: 400/440V, 3-phase, 50Hz",
+          "Motor Type: Totally enclosed, fan-cooled",
+          "Insulation Class: B (Optional: F or H)",
+          "Mounting: Foot, Flange, Agitator"
+        ]
+      },
+      {
+        "category": "Quality Standards",
+        "items": [
+          "ISO 9001:2015 Certified",
+          "ASTM Compliance",
+          "DIN Standards",
+          "100% Load Testing",
+          "Dimensional Inspection",
+          "Material Certification"
+        ]
+      },
+      {
+        "category": "Materials & Finishes",
+        "items": [
+          "High Carbon Steel",
+          "Stainless Steel (304, 316)",
+          "Corrosion-resistant options",
+          "Food-grade finishes available",
+          "Custom coatings on request",
+          "Heavy-duty bearings"
+        ]
+      },
+      {
+        "category": "Performance Features",
+        "items": [
+          "Low-noise operation",
+          "Thermal protection available",
+          "Self-locking drive systems",
+          "Precision tolerance ±0.05mm",
+          "Long operational life",
+          "Maintenance-free design"
+        ]
+      }
+    ]
+  }
+}

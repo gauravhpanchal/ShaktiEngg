@@ -57,7 +57,7 @@ export const AboutValuesSection = (): JSX.Element => {
           {values.map((value, index) => (
             <Card
               key={index}
-              className="flex-1 border-none shadow-none bg-transparent"
+              className="flex-1 h-full border p-6 border-gray-100 shadow-md bg-slate-100 rounded-lg hover:shadow-lg transition-shadow duration-300"
             >
               <CardContent className="flex flex-col items-center gap-4 lg:gap-6 p-0 text-center">
                 <Image

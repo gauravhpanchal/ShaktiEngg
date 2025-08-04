@@ -14,6 +14,26 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 
+/**
+ * DYNAMIC PRODUCTS CATALOG SECTION
+ *
+ * This component displays all products in a dynamic grid layout.
+ * The layout automatically adapts to any number of products in the array.
+ *
+ * TO ADD NEW PRODUCTS:
+ * 1. Add your product object to the 'products' array below
+ * 2. Include all required fields: id, name, slug, category, description, features, applications, image
+ * 3. The component will automatically display the new product in the grid
+ *
+ * AUTOMATIC FEATURES:
+ * - Dynamic grid layout (adapts to any number of products)
+ * - Responsive design (carousel on mobile, grid on desktop)
+ * - Consistent product card styling
+ * - Auto-generated links to individual product pages
+ *
+ * NO LAYOUT CHANGES NEEDED when adding new products!
+ */
+
 const products = [
   {
     id: 1,
@@ -120,6 +140,59 @@ const products = [
     ],
     image: "/vibro-seperator.png",
   },
+
+  // --- NEW PRODUCT: SONZOGNI CAMME INDEXERS ---
+  {
+    id: 6,
+    slug: "sonzogni-camme-mechanical-indexers",
+    name: "Sonzogni Camme Mechanical Indexers",
+    category: "Automation Components",
+    description:
+      "High-precision cam-driven indexers for controlled, repeatable, backlash-free rotary and oscillating motion in automation.",
+    features: [
+      "Zero backlash, high positioning accuracy",
+      "Handles heavy loads and high-speed indexing",
+      "Silent, smooth cam-profiled motion",
+      "Customizable index steps & configurations",
+      "Compact, rigid, and low maintenance",
+      "Rotary, oscillating, shaft/flange types",
+    ],
+    applications: [
+      "Rotary assembly and pick-&-place machines",
+      "Pharmaceutical filling & inspection",
+      "Packaging, labeling, cartoning equipment",
+      "Food processing conveyors",
+      "Automotive assembly lines",
+    ],
+    image: "/vibro-seperator.png",
+    // image: "/sonzogni-camme.png",
+  },
+
+  // --- NEW PRODUCT: ENZFELDER SCREW JACKS ---
+  {
+    id: 7,
+    slug: "enzfelder-screw-jacks",
+    name: "Enzfelder Screw Jacks",
+    category: "Mechanical Positioning",
+    description:
+      "Robust, precise screw jacks for industrial lifting, lowering, and synchronized movement of heavy loads.",
+    features: [
+      "High load capacity models (several kN to hundreds kN)",
+      "Self-locking (lead screw) options",
+      "Corrosion-resistant configurations",
+      "Upright, inverted & double jack variants",
+      "Suitable for outdoor, washdown, and custom mounting",
+    ],
+    applications: [
+      "Industrial platforms and conveyor adjustment",
+      "Steel plant ladle tilting and rolling mills",
+      "Tool changers and machine tool tables",
+      "Test rigs and wind tunnel positioning",
+      "Stage, solar and agriculture lifting",
+    ],
+    image: "/vibro-seperator.png",
+    // image: "/enzfelder-screw-jack.png",
+  },
 ];
 
 const ProductCard = ({ product }: { product: (typeof products)[0] }) => (
@@ -213,7 +286,7 @@ const ProductCard = ({ product }: { product: (typeof products)[0] }) => (
 
 export const ProductsCatalogSection = (): JSX.Element => {
   return (
-    <section className="flex flex-col items-center gap-12 lg:gap-20 section-padding w-full bg-[#f2f2f2]">
+    <section className="flex flex-col items-center gap-12 lg:gap-20 section-padding w-full bg-white">
       <div className="flex-col container-responsive items-start gap-12 lg:gap-20 w-full flex">
         <div className="flex flex-col max-w-4xl items-center gap-4 relative w-full text-center mx-auto">
           <div className="inline-flex items-center relative">
@@ -227,11 +300,11 @@ export const ProductsCatalogSection = (): JSX.Element => {
               Explore Our Complete Products Range
             </h2>
 
-            <p className="font-body relative mx-auto font-text-medium-normal font-[number:var(--text-medium-normal-font-weight)] text-[#01010a] text-[length:var(--text-medium-normal-font-size)] text-center tracking-[var(--text-medium-normal-letter-spacing)] leading-[var(--text-medium-normal-line-height)] [font-style:var(--text-medium-normal-font-style)] max-w-3xl">
+            {/* <p className="font-body relative mx-auto font-text-medium-normal font-[number:var(--text-medium-normal-font-weight)] text-[#01010a] text-[length:var(--text-medium-normal-font-size)] text-center tracking-[var(--text-medium-normal-letter-spacing)] leading-[var(--text-medium-normal-line-height)] [font-style:var(--text-medium-normal-font-style)] max-w-3xl">
               Discover our comprehensive selection of engineered products, each
               designed to meet specific industry requirements and performance
               standards.
-            </p>
+            </p> */}
           </div>
         </div>
 
@@ -260,18 +333,10 @@ export const ProductsCatalogSection = (): JSX.Element => {
             </Carousel>
           </div>
 
-          {/* Desktop Grid */}
-          <div className="hidden lg:flex flex-col items-start gap-8 lg:gap-16 w-full">
-            {/* First row of products */}
+          {/* Desktop Grid - Dynamic layout that adapts to any number of products */}
+          <div className="hidden lg:block w-full">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 w-full">
-              {products.slice(0, 3).map((product) => (
-                <ProductCard key={product.id} product={product} />
-              ))}
-            </div>
-
-            {/* Second row of products */}
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 w-full">
-              {products.slice(3, 6).map((product) => (
+              {products.map((product) => (
                 <ProductCard key={product.id} product={product} />
               ))}
             </div>

@@ -18,7 +18,7 @@ const serviceFeatures = homepageContent.industries.sectors
 
 export const ContentLayoutSection = (): JSX.Element => {
   return (
-    <section className="flex flex-col items-center gap-12 lg:gap-20 section-padding relative self-stretch w-full bg-white">
+    <section className="flex flex-col items-center gap-12 lg:gap-20 section-padding relative self-stretch w-full bg-[#f2f2f2]">
       <div className="flex flex-col container-responsive items-center gap-12 lg:gap-20 relative w-full">
         <div className="flex flex-col max-w-4xl items-center gap-4 relative w-full text-center">
           <div className="inline-flex items-center relative">
@@ -43,7 +43,7 @@ export const ContentLayoutSection = (): JSX.Element => {
             {serviceFeatures.map((feature, index) => (
               <Card
                 key={index}
-                className="flex-1 border-none shadow-none bg-transparent"
+                className="flex-1 border-none shadow-none bg-white p-6"
               >
                 <CardContent className="flex flex-col items-center gap-4 lg:gap-6 p-0 text-center">
                   <Image

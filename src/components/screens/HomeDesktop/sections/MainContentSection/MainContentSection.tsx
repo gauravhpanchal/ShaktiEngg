@@ -16,7 +16,7 @@ const features = homepageContent.benefits.features.map((feature) => ({
 
 export const MainContentSection = (): JSX.Element => {
   return (
-    <section className="flex flex-col items-center gap-12 lg:gap-20 section-padding relative self-stretch w-full bg-[#f2f2f2]">
+    <section className="flex flex-col items-center gap-12 lg:gap-20 section-padding relative self-stretch w-full bg-white">
       <div className="flex-col container-responsive items-start gap-12 lg:gap-20 w-full flex relative">
         <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-20 relative self-stretch w-full">
           {/* Left content column */}
@@ -95,7 +95,7 @@ export const MainContentSection = (): JSX.Element => {
             <Image
               className="w-full h-64 sm:h-80 lg:h-[640px] object-cover rounded-lg"
               alt="Modern manufacturing facility with precision helical motors and industrial gear systems"
-              src="https://images.pexels.com/photos/1108101/pexels-photo-1108101.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+              src="/factory-3.jpeg"
               width={640}
               height={640}
               sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 640px"

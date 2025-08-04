@@ -109,6 +109,42 @@
           "Food and chemical processing",
           "Metal and mining industries"
         ]
+      },
+      {
+        "id": 6,
+        "name": "Sonzogni Camme Mechanical Indexers",
+        "category": "Automation Components",
+        "shortDescription": "High-precision cam-driven indexers for controlled, repeatable, backlash-free rotary and oscillating motion in automation.",
+        "keyFeatures": [
+          "Zero backlash, high positioning accuracy",
+          "Handles heavy loads and high-speed indexing",
+          "Silent, smooth cam-profiled motion",
+          "Customizable index steps & configurations"
+        ],
+        "industries": [
+          "Rotary assembly and pick-&-place machines",
+          "Pharmaceutical filling & inspection",
+          "Packaging, labeling, cartoning equipment",
+          "Automotive assembly lines"
+        ]
+      },
+      {
+        "id": 7,
+        "name": "Enzfelder Screw Jacks",
+        "category": "Mechanical Positioning",
+        "shortDescription": "Robust, precise screw jacks for industrial lifting, lowering, and synchronized movement of heavy loads.",
+        "keyFeatures": [
+          "High load capacity models (several kN to hundreds kN)",
+          "Self-locking (lead screw) options",
+          "Corrosion-resistant configurations",
+          "Upright, inverted & double jack variants"
+        ],
+        "industries": [
+          "Industrial platforms and conveyor adjustment",
+          "Steel plant ladle tilting and rolling mills",
+          "Tool changers and machine tool tables",
+          "Test rigs and wind tunnel positioning"
+        ]
       }
     ]
   },
@@ -119,22 +155,22 @@
       {
         "title": "Advanced Manufacturing Excellence",
         "description": "State-of-the-art production facilities with precision machinery and quality control systems.",
-        "icon": "manufacturing"
+        "icon": "manufacturing.svg"
       },
       {
         "title": "Comprehensive Industry Expertise",
         "description": "Specialized solutions for pharmaceutical, chemical, food processing, and manufacturing sectors.",
-        "icon": "expertise"
+        "icon": "/productivity.svg"
       },
       {
         "title": "Custom Engineering Solutions",
         "description": "Tailored designs to meet exact application requirements with complete technical support.",
-        "icon": "custom-solutions"
+        "icon": "/support.svg"
       },
       {
         "title": "Quality Assurance Excellence",
         "description": "Rigorous testing and quality control ensuring highest industry standards and reliability.",
-        "icon": "quality"
+        "icon": "/high-quality.svg"
       }
     ]
   },

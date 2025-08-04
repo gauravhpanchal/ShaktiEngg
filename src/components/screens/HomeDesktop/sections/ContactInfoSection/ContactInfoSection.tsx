@@ -98,7 +98,7 @@ export const ContactInfoSection = (): JSX.Element => {
             <Image
               className="w-full h-64 sm:h-96 lg:h-[734px] object-cover rounded-lg"
               alt="Modern manufacturing facility with advanced product production equipment, motors, and gear systems"
-              src="https://images.pexels.com/photos/1108572/pexels-photo-1108572.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+              src="/hero-5.png"
               width={600}
               height={734}
               sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 600px"

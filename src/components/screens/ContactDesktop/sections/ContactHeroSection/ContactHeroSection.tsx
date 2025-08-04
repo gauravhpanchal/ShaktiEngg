@@ -4,10 +4,10 @@ import { QuoteModal } from "@/components/QuoteModal";
 
 export const ContactHeroSection = (): JSX.Element => {
   return (
-    <section className="flex flex-col items-center gap-8 lg:gap-20 section-padding w-full bg-white">
-      <div className="flex flex-col container-responsive items-center gap-8 lg:gap-20 w-full">
-        <div className="flex flex-col max-w-4xl items-center gap-6 lg:gap-8 w-full text-center">
-          <div className="flex flex-col items-center gap-4 lg:gap-6 w-full">
+    <section className="flex flex-col items-center gap-6 sm:gap-8 lg:gap-20 section-padding w-full bg-white">
+      <div className="flex flex-col container-responsive items-center gap-6 sm:gap-8 lg:gap-20 w-full">
+        <div className="flex flex-col max-w-4xl items-center gap-6 lg:gap-8 w-full text-center px-4 sm:px-0">
+          <div className="flex flex-col items-center gap-4 sm:gap-5 lg:gap-6 w-full">
             <div className="inline-flex items-center relative">
               <span className="font-heading-bold relative w-fit mt-[-1.00px] font-heading-tagline font-[number:var(--heading-tagline-font-weight)] text-[#01010a] text-[length:var(--heading-tagline-font-size)] text-center tracking-[var(--heading-tagline-letter-spacing)] leading-[var(--heading-tagline-line-height)] whitespace-nowrap [font-style:var(--heading-tagline-font-style)]">
                 Contact Us
@@ -18,7 +18,7 @@ export const ContactHeroSection = (): JSX.Element => {
               Let’s Discuss Your Industrial Engineering Needs
             </h1>
 
-            <p className="font-body text-[length:var(--text-medium-normal-font-size)] text-center leading-[var(--text-medium-normal-line-height)] font-text-medium-normal font-[number:var(--text-medium-normal-font-weight)] text-[#01010a] tracking-[var(--text-medium-normal-letter-spacing)] [font-style:var(--text-medium-normal-font-style)] max-w-3xl">
+            <p className="font-body text-[length:var(--text-medium-normal-font-size)] text-center leading-[var(--text-medium-normal-line-height)] font-text-medium-normal font-[number:var(--text-medium-normal-font-weight)] text-[#01010a] tracking-[var(--text-medium-normal-letter-spacing)] [font-style:var(--text-medium-normal-font-style)] max-w-3xl text-sm sm:text-base">
               Thank you for your interest in Shakti Engineers. Whether you have
               a business inquiry, require technical support, or simply wish to
               know more about our products and services, we are always happy to

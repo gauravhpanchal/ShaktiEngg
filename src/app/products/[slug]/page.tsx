@@ -184,6 +184,82 @@ const products = [
     },
     images: ["/vibro-seperator.png"],
   },
+
+  // ------- NEW PRODUCT: SONZOGNI CAMME INDEXERS ------
+  {
+    id: 6,
+    slug: "sonzogni-camme-mechanical-indexers",
+    name: "Sonzogni Camme Mechanical Indexers",
+    category: "Automation Components",
+    description:
+      "High-precision cam-driven indexers for controlled, repeatable, backlash-free rotary and oscillating motion in automation.",
+    longDescription:
+      "Sonzogni Camme mechanical indexers employ cam-driven mechanisms that convert continuous rotary input into precise, intermittent indexed motion. With zero backlash and engineered cam profiles, these indexers ensure high positioning accuracy, smooth acceleration, and reliable repeatability. They are maintenance-free, compact, and rugged—ideal for automation in harsh industrial settings. Configurations include rotary, oscillating, shaft/flange, and parallel indexers, with a wide range of index steps and torque ratings to match application requirements.",
+    features: [
+      "Zero-backlash mechanical transmission",
+      "High positioning accuracy and repeatability",
+      "Handles heavy loads and high-speed indexing",
+      "Customizable index steps (2, 4, 6, 8, 12, 24 stations, etc.)",
+      "Silent, smooth cam-profiled motion",
+      "Maintenance-free options (lubricated for life)",
+      "Compact, rigid design",
+      "Wide configuration range: shaft, flange, rotary, oscillating drives",
+    ],
+    applications: [
+      "Pharmaceutical & cosmetics: capsule filling, vial handling, rotary inspection",
+      "Rotary or linear assembly and pick-and-place machines",
+      "Bottle filling, capping, labeling, cartoning, and packaging lines",
+      "Food & beverage: container orientation, conveyors",
+      "Automotive: engine, gearbox lines, robotic cells",
+    ],
+    specifications: {
+      "Index Steps": "2, 4, 6, 8, 12, 24 (and custom)",
+      "Max Torque": "Varies by model (consult specification)",
+      "Drive Type": "Mechanical cam, zero backlash",
+      "Mounting Options": "Shaft-type, flange-type, parallel, oscillating",
+      Maintenance: "Long-life lubrication available",
+      Customization: "Index angle, configuration, torque",
+    },
+    images: ["/vibro-seperator.png"],
+    // images: ["/sonzogni-camme.png"],
+  },
+
+  // ------- NEW PRODUCT: ENZFELDER SCREW JACKS ------
+  {
+    id: 7,
+    slug: "enzfelder-screw-jacks",
+    name: "Enzfelder Screw Jacks",
+    category: "Mechanical Positioning",
+    description:
+      "Robust, precise screw jacks for industrial lifting, lowering, and synchronized movement of heavy loads.",
+    longDescription:
+      "Enzfelder Screw Jacks, engineered in Germany, are mechanical positioning devices designed for safe, precise lifting and lowering of heavy loads in industrial and architectural applications. Using lead or ball screws, they convert rotary motion into controlled linear movement. Self-locking options allow maintenance of position without a brake, and corrosion-resistant models support harsh or outdoor environments. Multiple mounting and drive configurations allow integration into diverse lifting platforms, conveyors, test rigs, solar panels, and more.",
+    features: [
+      "Handles loads from a few kN up to several hundred kN",
+      "Self-locking lead screw versions (hold load with power off)",
+      "Corrosion-resistant options for outdoor/washdown use",
+      "Upright, inverted, and double jack configurations available",
+      "Robust, low-maintenance, precision construction",
+    ],
+    applications: [
+      "Industrial platforms, conveyor adjustment, material handling",
+      "Steel plants: ladle tilting, furnace doors, rolling mills",
+      "Machine tools: tool changers, tables, machining centers",
+      "Aerospace and test rigs, wind tunnel positioning",
+      "Solar trackers, stadium seating, stage lifts, architecture",
+    ],
+    specifications: {
+      "Load Range": "Few kN to several hundred kN",
+      "Drive Types": "Lead screw (self-locking) or ball screw (low friction)",
+      "Mounting Variants":
+        "Upright (standing), inverted (hanging), double jack",
+      Material: "Corrosion-resistant options available",
+      Operation: "Manual, electric, or motor-driven",
+      Customization: "Stroke, speed, mounting options",
+    },
+    images: ["/vibro-seperator.png"],
+    // images: ["/enzfelder-screw-jack.png"],
+  },
 ];
 
 export async function generateStaticParams() {

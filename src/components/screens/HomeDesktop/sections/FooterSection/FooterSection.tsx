@@ -138,7 +138,7 @@ export const FooterSection = (): JSX.Element => {
                       href={link.href}
                       className="flex items-start px-4 py-2 self-stretch w-full hover:bg-[#01010a0d] rounded transition-colors"
                     >
-                      <div className="font-headingflex-1 mt-[-1.00px] font-text-small-semi-bold text-[#01010a] text-[length:var(--text-small-semi-bold-font-size)] tracking-[var(--text-small-semi-bold-letter-spacing)] leading-[var(--text-small-semi-bold-line-height)]">
+                      <div className="font-headingflex-1 mt-[-1.00px] font-text-medium-semi-bold  text-[#01010a] text-[length:var(--text-small-semi-bold-font-size)] tracking-[var(--text-small-semi-bold-letter-spacing)] leading-[var(--text-small-semi-bold-line-height)]">
                         {link.name}
                       </div>
                     </a>
