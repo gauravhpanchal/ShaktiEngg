@@ -19,7 +19,7 @@ const { testimonials } = testimonialsContent;
 
 export const CustomerTestimonialsSection = (): JSX.Element => {
   const plugin = React.useRef(
-    Autoplay({ delay: 3000, stopOnInteraction: true })
+    Autoplay({ delay: 3000, stopOnInteraction: false })
   );
 
   return (
@@ -40,8 +40,8 @@ export const CustomerTestimonialsSection = (): JSX.Element => {
           <Carousel
             plugins={[plugin.current]}
             className="w-full"
-            onMouseEnter={plugin.current.stop}
-            onMouseLeave={plugin.current.reset}
+            onMouseEnter={() => plugin.current.stop()}
+            onMouseLeave={() => plugin.current.play()}
             opts={{
               align: "center",
               loop: true,
