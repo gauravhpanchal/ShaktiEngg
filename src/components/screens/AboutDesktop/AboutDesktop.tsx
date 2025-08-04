@@ -9,8 +9,8 @@ export const AboutDesktop = (): JSX.Element => {
   return (
     <main className="flex flex-col w-full">
       {/* <AboutHeroSection /> */}
-      <AboutStorySection />
       <AboutStatsSection />
+      <AboutStorySection />
       <AboutValuesSection />
       {/* <AboutTeamSection /> */}
     </main>

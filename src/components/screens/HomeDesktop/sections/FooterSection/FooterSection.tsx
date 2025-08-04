@@ -72,38 +72,38 @@ export const FooterSection = (): JSX.Element => {
                   className="w-auto h-8 aspect-auto lg:w-auto lg:h-12"
                   alt="Shakti Engineers"
                   src="/logo.svg"
-                  width={84}
-                  height={36}
+                  width={90}
+                  height={40}
                 />
 
                 <div className="flex flex-col items-start gap-4 lg:gap-6 self-stretch w-full">
                   <div className="flex flex-col items-start gap-1 self-stretch w-full">
-                    <div className="font-heading self-stretch mt-[-1.00px] font-text-small-semi-bold text-[#01010a] text-[length:var(--text-small-semi-bold-font-size)] tracking-[var(--text-small-semi-bold-letter-spacing)] leading-[var(--text-small-semi-bold-line-height)]">
+                    <div className="font-heading self-stretch mt-[-1.00px] font-text-small-semi-bold text-[#01010a] text-[length:var(--text-small-semi-bold-font-size)] text-lg tracking-[var(--text-small-semi-bold-letter-spacing)] leading-[var(--text-small-semi-bold-line-height)]">
                       Address:
                     </div>
 
-                    <div className="font-heading self-stretch font-text-small-normal text-[#01010a] text-[length:var(--text-small-normal-font-size)] tracking-[var(--text-small-normal-letter-spacing)] leading-[var(--text-small-normal-line-height)]">
+                    <div className="font-heading self-stretch font-text-small-normal text-[#01010a] text-[length:var(--text-small-normal-font-size)] text-lg tracking-[var(--text-small-normal-letter-spacing)] leading-[var(--text-small-normal-line-height)]">
                       8F, New Empire I.E. (A), Kondivita Lane,J.B.Nagar, Andheri
                       (E), Mumbai - 400059
                     </div>
                   </div>
 
                   <div className="flex flex-col items-start gap-1 self-stretch w-full">
-                    <div className="font-heading self-stretch mt-[-1.00px] font-text-small-semi-bold text-[#01010a] text-[length:var(--text-small-semi-bold-font-size)] tracking-[var(--text-small-semi-bold-letter-spacing)] leading-[var(--text-small-semi-bold-line-height)]">
+                    <div className="font-heading self-stretch mt-[-1.00px] font-text-small-semi-bold text-[#01010a] text-[length:var(--text-small-semi-bold-font-size)] text-lg tracking-[var(--text-small-semi-bold-letter-spacing)] leading-[var(--text-small-semi-bold-line-height)]">
                       Contact:
                     </div>
 
                     <div className="flex flex-col items-start self-stretch w-full">
                       <a
                         href="tel:1800123456"
-                        className="font-heading self-stretch mt-[-1.00px] font-text-small-link text-[#01010a] text-[length:var(--text-small-link-font-size)] tracking-[var(--text-small-link-letter-spacing)] leading-[var(--text-small-link-line-height)] underline hover:no-underline transition-all"
+                        className="font-heading self-stretch mt-[-1.00px] font-text-small-link text-[#01010a] text-[length:var(--text-small-link-font-size)] tracking-[var(--text-small-link-letter-spacing)] leading-[var(--text-small-link-line-height)] text-lg underline hover:no-underline transition-all"
                       >
                         +91 9821034962
                       </a>
 
                       <a
                         href="mailto:shaktiengr@gmail.com"
-                        className="font-heading self-stretch font-text-small-link text-[#01010a] text-[length:var(--text-small-link-font-size)] tracking-[var(--text-small-link-letter-spacing)] leading-[var(--text-small-link-line-height)] underline hover:no-underline transition-all"
+                        className="font-heading self-stretch font-text-small-link text-[#01010a] text-[length:var(--text-small-link-font-size)] text-lg tracking-[var(--text-small-link-letter-spacing)] leading-[var(--text-small-link-line-height)] underline hover:no-underline transition-all"
                       >
                         shaktiengr@gmail.com
                       </a>
@@ -111,7 +111,7 @@ export const FooterSection = (): JSX.Element => {
                   </div>
                 </div>
 
-                <div className="flex items-start gap-3">
+                <div className="flex items-start mt-4 gap-3">
                   {socialIcons.map((social, index) => (
                     <a
                       key={index}
@@ -129,7 +129,7 @@ export const FooterSection = (): JSX.Element => {
 
               <div className="max-w-full lg:max-w-[400px] items-start gap-6 lg:gap-8 flex-1 grow flex flex-col sm:flex-row lg:flex-row">
                 <div className="flex flex-col items-start flex-1 grow">
-                  <h3 className="font-heading font-text-small-semi-bold text-[#01010a] text-[length:var(--text-small-semi-bold-font-size)] tracking-[var(--text-small-semi-bold-letter-spacing)] leading-[var(--text-small-semi-bold-line-height)] mb-3 lg:mb-4">
+                  <h3 className="font-heading font-text-small-semi-bold text-[#01010a] text-[length:var(--text-small-semi-bold-font-size)] text-lg tracking-[var(--text-small-semi-bold-letter-spacing)] leading-[var(--text-small-semi-bold-line-height)] mb-3 lg:mb-4">
                     Company
                   </h3>
                   {companyLinks.map((link, index) => (
@@ -138,7 +138,7 @@ export const FooterSection = (): JSX.Element => {
                       href={link.href}
                       className="flex items-start px-4 py-2 self-stretch w-full hover:bg-[#01010a0d] rounded transition-colors"
                     >
-                      <div className="font-headingflex-1 mt-[-1.00px] font-text-medium-semi-bold  text-[#01010a] text-[length:var(--text-small-semi-bold-font-size)] tracking-[var(--text-small-semi-bold-letter-spacing)] leading-[var(--text-small-semi-bold-line-height)]">
+                      <div className="font-headingflex-1 mt-[-1.00px] font-text-medium-semi-bold  text-[#01010a] text-[length:var(--text-small-semi-bold-font-size)] text-lg tracking-[var(--text-small-semi-bold-letter-spacing)] leading-[var(--text-small-semi-bold-line-height)]">
                         {link.name}
                       </div>
                     </a>
@@ -146,7 +146,7 @@ export const FooterSection = (): JSX.Element => {
                 </div>
 
                 <div className="flex flex-col items-start flex-1 grow">
-                  <h3 className="font-heading font-text-small-semi-bold text-[#01010a] text-[length:var(--text-small-semi-bold-font-size)] tracking-[var(--text-small-semi-bold-letter-spacing)] leading-[var(--text-small-semi-bold-line-height)] mb-3 lg:mb-4">
+                  <h3 className="font-heading font-text-small-semi-bold text-[#01010a] text-[length:var(--text-small-semi-bold-font-size)] text-lg tracking-[var(--text-small-semi-bold-letter-spacing)] leading-[var(--text-small-semi-bold-line-height)] mb-3 lg:mb-4">
                     Support
                   </h3>
                   {supportLinks.map((link, index) => (
@@ -155,7 +155,7 @@ export const FooterSection = (): JSX.Element => {
                       href={link.href}
                       className="flex items-start px-4 py-2 self-stretch w-full hover:bg-[#01010a0d] rounded transition-colors"
                     >
-                      <div className="font-heading flex-1 mt-[-1.00px] font-text-small-semi-bold text-[#01010a] text-[length:var(--text-small-semi-bold-font-size)] tracking-[var(--text-small-semi-bold-letter-spacing)] leading-[var(--text-small-semi-bold-line-height)]">
+                      <div className="font-heading flex-1 mt-[-1.00px] font-text-small-semi-bold text-[#01010a] text-[length:var(--text-small-semi-bold-font-size)] text-lg tracking-[var(--text-small-semi-bold-letter-spacing)] leading-[var(--text-small-semi-bold-line-height)]">
                         {link.name}
                       </div>
                     </Link>

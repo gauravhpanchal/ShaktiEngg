@@ -175,7 +175,7 @@ export const HeaderSectiontwo = (): JSX.Element => {
         <div className="flex flex-col max-w-4xl items-center gap-6 lg:gap-8 w-full text-center">
           <div className="flex flex-col items-center gap-4 lg:gap-6 w-full">
             <h1 className="font-heading font-[number:var(--heading-h1-font-weight)] text-white text-[length:var(--heading-h1-font-size)] text-center tracking-[var(--heading-h1-letter-spacing)] leading-[var(--heading-h1-line-height)] [font-style:var(--heading-h1-font-style)] text-balance drop-shadow-lg">
-              {homepageContent.hero.title} - 2
+              {homepageContent.hero.title}
             </h1>
 
             <p className="font-body text-[length:var(--text-medium-normal-font-size)] text-center leading-[var(--text-medium-normal-line-height)] font-text-medium-normal font-[number:var(--text-medium-normal-font-weight)] text-white tracking-[var(--text-medium-normal-letter-spacing)] [font-style:var(--text-medium-normal-font-style)] max-w-3xl drop-shadow-md">

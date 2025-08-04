@@ -69,7 +69,7 @@ export const ContentLayoutSection = (): JSX.Element => {
           </div>
         </div>
 
-        <div className="flex flex-col sm:flex-row items-center gap-4 lg:gap-6 relative">
+        {/* <div className="flex flex-col sm:flex-row items-center gap-4 lg:gap-6 relative">
           <Link href="/products">
             <Button
               variant="secondary"
@@ -89,7 +89,7 @@ export const ContentLayoutSection = (): JSX.Element => {
               <ChevronRightIcon className="w-5 h-5 lg:w-6 lg:h-6" />
             </Button>
           </Link>
-        </div>
+        </div> */}
       </div>
     </section>
   );
