@@ -52,12 +52,12 @@ export const ProductsCTASection = (): JSX.Element => {
                   </Button>
                 </QuoteModal>
 
-                <Button
+                {/* <Button
                   variant="outline"
                   className="w-full sm:w-auto px-6 py-2.5 bg-[#01010a0d] rounded-[100px] border-b-4 border-[#01010a26] font-text-regular-medium font-[number:var(--text-regular-medium-font-weight)] text-[#01010a] text-[length:var(--text-regular-medium-font-size)] tracking-[var(--text-regular-medium-letter-spacing)] leading-[var(--text-regular-medium-line-height)] [font-style:var(--text-regular-medium-font-style)] hover:bg-[#01010a1a] transition-colors"
                 >
                   <span className="font-cta">Download Catalog</span>
-                </Button>
+                </Button> */}
               </div>
             </div>
 
