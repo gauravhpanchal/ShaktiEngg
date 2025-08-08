@@ -14,6 +14,7 @@ import "./globals.css";
 import { Toaster } from "@/components/ui/toast";
 import { NavigationBarSection } from "@/components/screens/HomeDesktop/sections/NavigationBarSection";
 import { FooterSection } from "@/components/screens/HomeDesktop/sections/FooterSection";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 const archivo = Archivo({
   subsets: ["latin"],
@@ -209,6 +210,7 @@ export default function RootLayout({
       <body className="antialiased">
         <NavigationBarSection />
         <main>{children}</main>
+        <SpeedInsights />
         <FooterSection />
         <Toaster />
       </body>
