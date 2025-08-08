@@ -21,21 +21,39 @@
     "sectionSubtitle": "Comprehensive solutions engineered for reliability, efficiency, and performance across industrial applications",
     "featured": [
       {
-        "id": 1,
-        "name": "SHAKTI Make Helical Geared Motors",
-        "category": "Motors",
-        "shortDescription": "Compact. Efficient. Reliable. Designed for low-speed applications with maximum performance.",
+        "id": 6,
+        "name": "Sonzogni Camme Mechanical Indexers",
+        "category": "Automation Components",
+        "shortDescription": "High-precision cam-driven indexers for controlled, repeatable, backlash-free rotary and oscillating motion in automation.",
         "keyFeatures": [
-          "Compact and economical drive for low-speed operations",
-          "Single, Double, Triple, and Quadruple reduction options",
-          "Heat-treated alloy steel gears and pinions",
-          "Heavy-duty bearings for silent operation"
+          "Zero backlash, high positioning accuracy",
+          "Handles heavy loads and high-speed indexing",
+          "Silent, smooth cam-profiled motion",
+          "Customizable index steps & configurations"
         ],
         "industries": [
-          "Material handling systems",
-          "Packaging machinery",
-          "Industrial automation",
-          "Conveyors and feeders"
+          "Rotary assembly and pick-&-place machines",
+          "Pharmaceutical filling & inspection",
+          "Packaging, labeling, cartoning equipment",
+          "Automotive assembly lines"
+        ]
+      },
+      {
+        "id": 7,
+        "name": "Enzfelder Screw Jacks",
+        "category": "Mechanical Positioning",
+        "shortDescription": "Robust, precise screw jacks for industrial lifting, lowering, and synchronized movement of heavy loads.",
+        "keyFeatures": [
+          "High load capacity models (several kN to hundreds kN)",
+          "Self-locking (lead screw) options",
+          "Corrosion-resistant configurations",
+          "Upright, inverted & double jack variants"
+        ],
+        "industries": [
+          "Industrial platforms and conveyor adjustment",
+          "Steel plant ladle tilting and rolling mills",
+          "Tool changers and machine tool tables",
+          "Test rigs and wind tunnel positioning"
         ]
       },
       {
@@ -75,6 +93,25 @@
         ]
       },
       {
+        "id": 1,
+        "name": "SHAKTI Make Helical Geared Motors",
+        "category": "Motors",
+        "shortDescription": "Compact. Efficient. Reliable. Designed for low-speed applications with maximum performance.",
+        "keyFeatures": [
+          "Compact and economical drive for low-speed operations",
+          "Single, Double, Triple, and Quadruple reduction options",
+          "Heat-treated alloy steel gears and pinions",
+          "Heavy-duty bearings for silent operation"
+        ],
+        "industries": [
+          "Material handling systems",
+          "Packaging machinery",
+          "Industrial automation",
+          "Conveyors and feeders"
+        ]
+      },
+
+      {
         "id": 4,
         "name": "SHAKTI Make Bin Activators",
         "category": "Bulk Material Systems",
@@ -108,42 +145,6 @@
           "Solid-liquid separation",
           "Food and chemical processing",
           "Metal and mining industries"
-        ]
-      },
-      {
-        "id": 6,
-        "name": "Sonzogni Camme Mechanical Indexers",
-        "category": "Automation Components",
-        "shortDescription": "High-precision cam-driven indexers for controlled, repeatable, backlash-free rotary and oscillating motion in automation.",
-        "keyFeatures": [
-          "Zero backlash, high positioning accuracy",
-          "Handles heavy loads and high-speed indexing",
-          "Silent, smooth cam-profiled motion",
-          "Customizable index steps & configurations"
-        ],
-        "industries": [
-          "Rotary assembly and pick-&-place machines",
-          "Pharmaceutical filling & inspection",
-          "Packaging, labeling, cartoning equipment",
-          "Automotive assembly lines"
-        ]
-      },
-      {
-        "id": 7,
-        "name": "Enzfelder Screw Jacks",
-        "category": "Mechanical Positioning",
-        "shortDescription": "Robust, precise screw jacks for industrial lifting, lowering, and synchronized movement of heavy loads.",
-        "keyFeatures": [
-          "High load capacity models (several kN to hundreds kN)",
-          "Self-locking (lead screw) options",
-          "Corrosion-resistant configurations",
-          "Upright, inverted & double jack variants"
-        ],
-        "industries": [
-          "Industrial platforms and conveyor adjustment",
-          "Steel plant ladle tilting and rolling mills",
-          "Tool changers and machine tool tables",
-          "Test rigs and wind tunnel positioning"
         ]
       }
     ]

@@ -35,112 +35,6 @@ import {
  */
 
 const products = [
-  {
-    id: 1,
-    slug: "helical-geared-motors",
-    name: "SHAKTI Make helical-geared-motors",
-    category: "Motors",
-    description:
-      "Compact. Efficient. Reliable. Designed for low-speed applications with maximum performance.",
-    features: [
-      "Compact and economical drive",
-      "Multiple reduction options",
-      "Alloy steel gears",
-      "Silent operation",
-    ],
-    applications: [
-      "Material handling systems",
-      "Packaging machinery",
-      "Industrial automation",
-      "Conveyors and feeders",
-    ],
-    image: "/helical-geared-motor-2.png",
-  },
-  {
-    id: 2,
-    slug: "rotary-vibrators",
-    name: "SHAKTI Make Rotary Vibrators",
-    category: "Material Handling",
-    description:
-      "Efficient vibratory solutions for material handling, dosing, and compaction across industries.",
-    features: [
-      "Adjustable centrifugal force",
-      "Multiple vibration frequencies",
-      "Heavy-duty bearings",
-      "Low-noise operation",
-    ],
-    applications: [
-      "Emptying bins and silos",
-      "Feeding and mixing",
-      "Screening and compaction",
-      "Dust removal and cleaning",
-    ],
-    image: "/rotary-vibrator.png",
-  },
-  {
-    id: 3,
-    slug: "bump-jolt-machines",
-    name: "SHAKTI Make Bump & Jolt Machines",
-    category: "Testing Equipment",
-    description:
-      "Test packaging integrity and durability by simulating real-world transport conditions.",
-    features: [
-      "Customizable bump height",
-      "Adjustable drop frequency",
-      "Integrated cycle counter",
-      "Dual motor system",
-    ],
-    applications: [
-      "Product packaging testing",
-      "Assembly validation",
-      "Welding joint evaluation",
-      "Transportation simulation",
-    ],
-    image: "/bump-jolt.png",
-  },
-  {
-    id: 4,
-    slug: "bin-activators",
-    name: "SHAKTI Make Bin Activators",
-    category: "Bulk Material Systems",
-    description:
-      "Ensure uninterrupted discharge from storage bins and prevent material flow issues.",
-    features: [
-      "First-in, first-out discharge",
-      "Prevents bridging",
-      "Energy efficient",
-      "Easy to install",
-    ],
-    applications: [
-      "Powder discharge systems",
-      "Silos and hoppers",
-      "Food-grade material flow",
-      "Pharmaceutical bins",
-    ],
-    image: "/bin.png",
-  },
-  {
-    id: 5,
-    slug: "vibro-separators",
-    name: "SHAKTI Make Vibro Separators",
-    category: "Separation Systems",
-    description:
-      "Versatile separators for classifying and dewatering materials with high throughput.",
-    features: [
-      "Multi-plane vibration",
-      "Supports up to five screens",
-      "Pollution-free operation",
-      "Long screen life",
-    ],
-    applications: [
-      "Wet and dry separation",
-      "Granule classification",
-      "Solid-liquid dewatering",
-      "Powder grading",
-    ],
-    image: "/vibro-seperator.png",
-  },
-
   // --- NEW PRODUCT: SONZOGNI CAMME INDEXERS ---
   {
     id: 6,
@@ -190,6 +84,112 @@ const products = [
       "Stage, solar and agriculture lifting",
     ],
     image: "/enzfelder.png",
+  },
+  {
+    id: 2,
+    slug: "rotary-vibrators",
+    name: "SHAKTI Make Rotary Vibrators",
+    category: "Material Handling",
+    description:
+      "Efficient vibratory solutions for material handling, dosing, and compaction across industries.",
+    features: [
+      "Adjustable centrifugal force",
+      "Multiple vibration frequencies",
+      "Heavy-duty bearings",
+      "Low-noise operation",
+    ],
+    applications: [
+      "Emptying bins and silos",
+      "Feeding and mixing",
+      "Screening and compaction",
+      "Dust removal and cleaning",
+    ],
+    image: "/rotary-vibrator.png",
+  },
+  {
+    id: 3,
+    slug: "bump-jolt-machines",
+    name: "SHAKTI Make Bump & Jolt Machines",
+    category: "Testing Equipment",
+    description:
+      "Test packaging integrity and durability by simulating real-world transport conditions.",
+    features: [
+      "Customizable bump height",
+      "Adjustable drop frequency",
+      "Integrated cycle counter",
+      "Dual motor system",
+    ],
+    applications: [
+      "Product packaging testing",
+      "Assembly validation",
+      "Welding joint evaluation",
+      "Transportation simulation",
+    ],
+    image: "/bump-jolt.png",
+  },
+  {
+    id: 1,
+    slug: "helical-geared-motors",
+    name: "SHAKTI Make helical-geared-motors",
+    category: "Motors",
+    description:
+      "Compact. Efficient. Reliable. Designed for low-speed applications with maximum performance.",
+    features: [
+      "Compact and economical drive",
+      "Multiple reduction options",
+      "Alloy steel gears",
+      "Silent operation",
+    ],
+    applications: [
+      "Material handling systems",
+      "Packaging machinery",
+      "Industrial automation",
+      "Conveyors and feeders",
+    ],
+    image: "/helical-geared-motor-2.png",
+  },
+
+  {
+    id: 4,
+    slug: "bin-activators",
+    name: "SHAKTI Make Bin Activators",
+    category: "Bulk Material Systems",
+    description:
+      "Ensure uninterrupted discharge from storage bins and prevent material flow issues.",
+    features: [
+      "First-in, first-out discharge",
+      "Prevents bridging",
+      "Energy efficient",
+      "Easy to install",
+    ],
+    applications: [
+      "Powder discharge systems",
+      "Silos and hoppers",
+      "Food-grade material flow",
+      "Pharmaceutical bins",
+    ],
+    image: "/bin.png",
+  },
+  {
+    id: 5,
+    slug: "vibro-separators",
+    name: "SHAKTI Make Vibro Separators",
+    category: "Separation Systems",
+    description:
+      "Versatile separators for classifying and dewatering materials with high throughput.",
+    features: [
+      "Multi-plane vibration",
+      "Supports up to five screens",
+      "Pollution-free operation",
+      "Long screen life",
+    ],
+    applications: [
+      "Wet and dry separation",
+      "Granule classification",
+      "Solid-liquid dewatering",
+      "Powder grading",
+    ],
+    image: "/vibro-seperator.png",
   },
 ];
 
