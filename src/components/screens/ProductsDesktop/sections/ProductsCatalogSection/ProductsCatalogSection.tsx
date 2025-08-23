@@ -104,7 +104,7 @@ const products = [
       "Screening and compaction",
       "Dust removal and cleaning",
     ],
-    image: "/rotary-vibrator.png",
+    image: "/rotary-vibrator.jpeg",
   },
   {
     id: 3,
@@ -189,7 +189,7 @@ const products = [
       "Solid-liquid dewatering",
       "Powder grading",
     ],
-    image: "/vibro-seperator.png",
+    image: "/vibro-seperator.jpeg",
   },
 ];
 

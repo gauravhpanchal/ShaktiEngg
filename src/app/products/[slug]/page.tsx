@@ -74,7 +74,7 @@ const products = [
       Bearings: "Heavy-duty, sealed",
       "Noise Level": "Low",
     },
-    images: ["/rotary-vibrator.png", "/rotary-vibrator-2.png"],
+    images: ["/rotary-vibrator.jpeg", "/rotary-vibrator-2.jpeg"],
   },
   {
     id: 3,
@@ -182,7 +182,7 @@ const products = [
       "Tensioning System": "Uniform and long-lasting",
       "Base Design": "Vibration-free",
     },
-    images: ["/vibro-seperator.png"],
+    images: ["/vibro-seperator.jpeg"],
   },
 
   // ------- NEW PRODUCT: SONZOGNI CAMME INDEXERS ------

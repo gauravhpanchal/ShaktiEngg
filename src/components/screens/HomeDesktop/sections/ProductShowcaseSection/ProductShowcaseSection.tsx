@@ -19,20 +19,16 @@ import homepageContent from "@/data/homepage-content.json";
 const imageMap = [
   "/sonzogni.png",
   "/enzfelder.png",
-  "/rotary-vibrator.png",
+  "/rotary-vibrator.jpeg",
   "/bump-jolt.png",
   "/helical-geared-motor.png",
   "/bin.png",
-  "/vibro-seperator.png",
+  "/vibro-seperator.jpeg",
 ];
 
 const products = homepageContent.products.featured.map((product, index) => ({
   id: product.id,
-  slug: product.name
-    .toLowerCase()
-    .replace(/Shakti-make /g, "")
-    .replace(/\s+/g, "-")
-    .replace(/&/g, ""),
+  slug: product.slug,
   name: product.name,
   variant: product.category,
   // Images are mapped from imageMap array based on product index

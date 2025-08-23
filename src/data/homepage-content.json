@@ -22,6 +22,7 @@
     "featured": [
       {
         "id": 6,
+        "slug": "sonzogni-camme-mechanical-indexers",
         "name": "Sonzogni Camme Mechanical Indexers",
         "category": "Automation Components",
         "shortDescription": "High-precision cam-driven indexers for controlled, repeatable, backlash-free rotary and oscillating motion in automation.",
@@ -40,6 +41,7 @@
       },
       {
         "id": 7,
+        "slug": "enzfelder-screw-jacks",
         "name": "Enzfelder Screw Jacks",
         "category": "Mechanical Positioning",
         "shortDescription": "Robust, precise screw jacks for industrial lifting, lowering, and synchronized movement of heavy loads.",
@@ -58,6 +60,7 @@
       },
       {
         "id": 2,
+        "slug": "rotary-vibrators",
         "name": "Shakti-make Rotary Vibrators",
         "category": "Material Handling",
         "shortDescription": "Efficient vibratory solutions for material handling, dosing, and compaction across industries.",
@@ -76,6 +79,7 @@
       },
       {
         "id": 3,
+        "slug": "bump-jolt-machines",
         "name": "Shakti-make Bump & Jolt Machines",
         "category": "Testing Equipment",
         "shortDescription": "Test packaging integrity and durability by simulating real-world transport conditions.",
@@ -94,6 +98,7 @@
       },
       {
         "id": 1,
+        "slug": "helical-geared-motors",
         "name": "Shakti-make Helical Geared Motors",
         "category": "Motors",
         "shortDescription": "Compact. Efficient. Reliable. Designed for low-speed applications with maximum performance.",
@@ -113,6 +118,7 @@
 
       {
         "id": 4,
+        "slug": "bin-activators",
         "name": "Shakti-make Bin Activators",
         "category": "Bulk Material Systems",
         "shortDescription": "Ensure uninterrupted discharge from storage bins and prevent material flow issues.",
@@ -131,6 +137,7 @@
       },
       {
         "id": 5,
+        "slug": "vibro-separators",
         "name": "Shakti-make Vibro Separators",
         "category": "Separation Systems",
         "shortDescription": "Versatile separators for classifying and dewatering materials with high throughput.",

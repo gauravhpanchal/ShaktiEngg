@@ -18,19 +18,15 @@ import homepageContent from "@/data/homepage-content.json";
 
 const heroImages = [
   {
-    src: "/our-products.png",
+    src: "/our-products.jpeg",
     alt: "Precision compression springs and mechanical gears in industrial manufacturing setting",
   },
   {
-    src: "/hero-2.png",
-    alt: "Industrial machinery gears and precision engineering components with helical motors",
-  },
-  {
-    src: "/hero-4.png",
+    src: "/hero-4.jpeg",
     alt: "Modern manufacturing facility with advanced motor systems and spring production equipment",
   },
   {
-    src: "/hero-3.png",
+    src: "/hero-3.jpeg",
     alt: "Precision workshop tools with helical gears and motor components for spring manufacturing",
   },
   {
@@ -46,8 +42,12 @@ const heroImages = [
     alt: "Precision workshop tools with helical gears and motor components for spring manufacturing",
   },
   {
-    src: "/hero-8.png",
+    src: "/hero-8.jpeg",
     alt: "Precision workshop tools with helical gears and motor components for spring manufacturing",
+  },
+  {
+    src: "/hero-2.jpeg",
+    alt: "Industrial machinery gears and precision engineering components with helical motors",
   },
 ];
 
