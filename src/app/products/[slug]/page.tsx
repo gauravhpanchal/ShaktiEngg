@@ -242,8 +242,8 @@ const products = [
     ],
     applications: [
       "Industrial platforms, conveyor adjustment, material handling",
-      "Steel plants: ladle tilting, furnace doors, rolling mills",
-      "Machine tools: tool changers, tables, machining centers",
+      "<strong>Steel plants</strong>: ladle tilting, furnace doors, rolling mills",
+      "<strong>Machine tools</strong>: tool changers, tables, machining centers",
       "Aerospace and test rigs, wind tunnel positioning",
       "Solar trackers, stadium seating, stage lifts, architecture",
     ],

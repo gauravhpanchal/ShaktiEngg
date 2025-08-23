@@ -219,9 +219,10 @@ export const ProductDetailDesktop = ({
                   className="border-none shadow-lg bg-[#f2f2f2] hover:shadow-xl transition-shadow"
                 >
                   <CardContent className="p-6 text-center">
-                    <span className="font-specs font-text-regular-semi-bold font-[number:var(--text-regular-semi-bold-font-weight)] text-[#01010a] text-[length:var(--text-regular-semi-bold-font-size)] tracking-[var(--text-regular-semi-bold-letter-spacing)] leading-[var(--text-regular-semi-bold-line-height)] [font-style:var(--text-regular-semi-bold-font-style)]">
-                      {application}
-                    </span>
+                    <span
+                      className="font-specs font-text-regular-semi-bold font-[number:var(--text-regular-semi-bold-font-weight)] text-[#01010a] text-[length:var(--text-regular-semi-bold-font-size)] tracking-[var(--text-regular-semi-bold-letter-spacing)] leading-[var(--text-regular-semi-bold-line-height)] [font-style:var(--text-regular-semi-bold-font-style)]"
+                      dangerouslySetInnerHTML={{ __html: application }}
+                    />
                   </CardContent>
                 </Card>
               ))}
