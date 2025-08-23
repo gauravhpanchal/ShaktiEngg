@@ -30,7 +30,7 @@ const products = homepageContent.products.featured.map((product, index) => ({
   id: product.id,
   slug: product.name
     .toLowerCase()
-    .replace(/shakti make /g, "")
+    .replace(/Shakti-make /g, "")
     .replace(/\s+/g, "-")
     .replace(/&/g, ""),
   name: product.name,

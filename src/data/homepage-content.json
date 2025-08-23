@@ -1,7 +1,7 @@
 {
   "hero": {
     "title": "Precision Engineering Solutions for Industrial Excellence",
-    "subtitle": "SHAKTI ENGINEERING delivers helical geared motors, rotary vibrators, testing machines, bin activators, and vibro separators engineered for maximum performance across pharmaceutical, chemical, food processing, and manufacturing industries.",
+    "subtitle": "Shakti Engineers delivers helical geared motors, rotary vibrators, testing machines, bin activators, and vibro separators engineered for maximum performance across pharmaceutical, steel, chemical, food processing, and manufacturing industries.",
     "primaryCTA": {
       "text": "Explore Products",
       "href": "/products"
@@ -12,9 +12,9 @@
     }
   },
   "company": {
-    "name": "SHAKTI ENGINEERING",
+    "name": "Shakti Engineers",
     "tagline": "Engineering Excellence Since Inception",
-    "description": "Leading manufacturer of precision-engineered industrial equipment, specializing in motors, testing machines, and material handling solutions for pharmaceutical, chemical, food processing, and manufacturing industries."
+    "description": "Leading manufacturer of precision-engineered industrial equipment, specializing in motors, testing machines, and material handling solutions for pharmaceutical, steel, chemical, food processing, and manufacturing industries."
   },
   "products": {
     "sectionTitle": "Our Product Portfolio",
@@ -27,7 +27,7 @@
         "shortDescription": "High-precision cam-driven indexers for controlled, repeatable, backlash-free rotary and oscillating motion in automation.",
         "keyFeatures": [
           "Zero backlash, high positioning accuracy",
-          "Handles heavy loads and high-speed indexing",
+          "Handle heavy loads and high-speed indexing",
           "Silent, smooth cam-profiled motion",
           "Customizable index steps & configurations"
         ],
@@ -58,7 +58,7 @@
       },
       {
         "id": 2,
-        "name": "SHAKTI Make Rotary Vibrators",
+        "name": "Shakti-make Rotary Vibrators",
         "category": "Material Handling",
         "shortDescription": "Efficient vibratory solutions for material handling, dosing, and compaction across industries.",
         "keyFeatures": [
@@ -76,7 +76,7 @@
       },
       {
         "id": 3,
-        "name": "SHAKTI Make Bump & Jolt Machines",
+        "name": "Shakti-make Bump & Jolt Machines",
         "category": "Testing Equipment",
         "shortDescription": "Test packaging integrity and durability by simulating real-world transport conditions.",
         "keyFeatures": [
@@ -94,7 +94,7 @@
       },
       {
         "id": 1,
-        "name": "SHAKTI Make Helical Geared Motors",
+        "name": "Shakti-make Helical Geared Motors",
         "category": "Motors",
         "shortDescription": "Compact. Efficient. Reliable. Designed for low-speed applications with maximum performance.",
         "keyFeatures": [
@@ -113,7 +113,7 @@
 
       {
         "id": 4,
-        "name": "SHAKTI Make Bin Activators",
+        "name": "Shakti-make Bin Activators",
         "category": "Bulk Material Systems",
         "shortDescription": "Ensure uninterrupted discharge from storage bins and prevent material flow issues.",
         "keyFeatures": [
@@ -131,12 +131,12 @@
       },
       {
         "id": 5,
-        "name": "SHAKTI Make Vibro Separators",
+        "name": "Shakti-make Vibro Separators",
         "category": "Separation Systems",
         "shortDescription": "Versatile separators for classifying and dewatering materials with high throughput.",
         "keyFeatures": [
           "Supports up to five screens",
-          "Handles wet or dry materials",
+          "Handle wet or dry materials",
           "Multi-plane vibration system",
           "Vibration-free base"
         ],
@@ -150,7 +150,7 @@
     ]
   },
   "capabilities": {
-    "sectionTitle": "Why Choose SHAKTI ENGINEERING",
+    "sectionTitle": "Why Choose Shakti Engineers",
     "sectionSubtitle": "Decades of engineering expertise delivering reliable solutions for critical industrial applications",
     "features": [
       {
@@ -160,7 +160,7 @@
       },
       {
         "title": "Comprehensive Industry Expertise",
-        "description": "Specialized solutions for pharmaceutical, chemical, food processing, and manufacturing sectors.",
+        "description": "Specialized solutions for pharmaceutical, steel, chemical, food processing, and manufacturing sectors.",
         "icon": "/productivity.svg"
       },
       {
@@ -310,7 +310,7 @@
   },
   "metadata": {
     "pageTitle": "SHAKTI - Helical Geared Motors, Rotary Vibrators & Industrial Equipment",
-    "metaDescription": "Leading manufacturer of SHAKTI helical geared motors, rotary vibrators, bump & jolt machines, bin activators, and vibro separators for pharmaceutical, chemical, food processing, and manufacturing industries.",
+    "metaDescription": "Leading manufacturer of SHAKTI helical geared motors, rotary vibrators, bump & jolt machines, bin activators, and vibro separators for pharmaceutical, steel, chemical, food processing, and manufacturing industries.",
     "keywords": [
       "SHAKTI helical geared motors",
       "rotary vibrators",

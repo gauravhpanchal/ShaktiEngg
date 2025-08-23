@@ -45,11 +45,11 @@ export const ContactFormSection = (): JSX.Element => {
               Get in Touch
             </h2>
 
-            <p className="relative mx-auto font-body font-text-medium-normal font-[number:var(--text-medium-normal-font-weight)] text-[#01010a] text-[length:var(--text-medium-normal-font-size)] text-center tracking-[var(--text-medium-normal-letter-spacing)] leading-[var(--text-medium-normal-line-height)] [font-style:var(--text-medium-normal-font-style)] max-w-3xl">
+            {/* <p className="relative mx-auto font-body font-text-medium-normal font-[number:var(--text-medium-normal-font-weight)] text-[#01010a] text-[length:var(--text-medium-normal-font-size)] text-center tracking-[var(--text-medium-normal-letter-spacing)] leading-[var(--text-medium-normal-line-height)] [font-style:var(--text-medium-normal-font-style)] max-w-3xl">
               We&apos;re here to assist you with your Industrial needs. Contact
               us for quotes, technical support, or any questions about our
               products and services.
-            </p>
+            </p> */}
           </div>
         </div>
 

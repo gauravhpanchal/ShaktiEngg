@@ -4,6 +4,12 @@ import { Card, CardContent } from "@/components/ui/card";
 
 const values = [
   {
+    icon: "/customer-focus-icon.svg",
+    title: "Customer Focus",
+    description:
+      "Building lasting partnerships through exceptional service, technical support, and customized solutions.",
+  },
+  {
     icon: "/quality-excellence-icon.svg",
     title: "Quality Excellence",
     description:
@@ -14,12 +20,6 @@ const values = [
     title: "Innovation Drive",
     description:
       "Continuously investing in new technologies and processes to stay at the forefront of manufacturing.",
-  },
-  {
-    icon: "/customer-focus-icon.svg",
-    title: "Customer Focus",
-    description:
-      "Building lasting partnerships through exceptional service, technical support, and customized solutions.",
   },
   {
     icon: "/precision-engineering-icon.svg",

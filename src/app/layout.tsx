@@ -91,7 +91,7 @@ export const metadata: Metadata = {
     template: "%s | Shakti Engineers",
   },
   description:
-    "SHAKTI ENGINEERING delivers helical geared motors, rotary vibrators, testing machines, bin activators, and vibro separators engineered for maximum performance across pharmaceutical, chemical, food processing, and manufacturing industries. Custom compression, extension, and torsion springs with expert engineering and quality assurance.",
+    "Shakti Engineers delivers helical geared motors, rotary vibrators, testing machines, bin activators, and vibro separators engineered for maximum performance across pharmaceutical, steel, chemical, food processing, and manufacturing industries. Custom compression, extension, and torsion springs with expert engineering and quality assurance.",
   keywords: [
     "Shakti Engineers",
     "precision engineering",
@@ -131,7 +131,7 @@ export const metadata: Metadata = {
     title:
       "Shakti Engineers - Precision Engineering Solutions for Industrial Excellence",
     description:
-      "SHAKTI ENGINEERING delivers helical geared motors, rotary vibrators, testing machines, bin activators, and vibro separators engineered for maximum performance across pharmaceutical, chemical, food processing, and manufacturing industries. Custom compression, extension, and torsion springs with expert engineering.",
+      "Shakti Engineers delivers helical geared motors, rotary vibrators, testing machines, bin activators, and vibro separators engineered for maximum performance across pharmaceutical, steel, chemical, food processing, and manufacturing industries. Custom compression, extension, and torsion springs with expert engineering.",
     siteName: "Shakti Engineers",
     images: [
       {
@@ -147,7 +147,7 @@ export const metadata: Metadata = {
     title:
       "Shakti Engineers - Precision Engineering Solutions for Industrial Excellence",
     description:
-      "SHAKTI ENGINEERING delivers helical geared motors, rotary vibrators, testing machines, bin activators, and vibro separators engineered for maximum performance across pharmaceutical, chemical, food processing, and manufacturing industries.",
+      "Shakti Engineers delivers helical geared motors, rotary vibrators, testing machines, bin activators, and vibro separators engineered for maximum performance across pharmaceutical, steel, chemical, food processing, and manufacturing industries.",
     images: ["/og-image.jpg"],
   },
   robots: {

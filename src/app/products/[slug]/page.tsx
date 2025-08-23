@@ -7,7 +7,7 @@ const products = [
   {
     id: 1,
     slug: "helical-geared-motors",
-    name: "SHAKTI Make Helical Geared Motors",
+    name: "Shakti-make Helical Geared Motors",
     category: "Motors",
     description:
       "Compact. Efficient. Reliable. Designed for low-speed applications with maximum performance.",
@@ -43,7 +43,7 @@ const products = [
   {
     id: 2,
     slug: "rotary-vibrators",
-    name: "SHAKTI Make Rotary Vibrators",
+    name: "Shakti-make Rotary Vibrators",
     category: "Material Handling",
     description:
       "Efficient vibratory solutions for material handling, dosing, and compaction across industries.",
@@ -79,7 +79,7 @@ const products = [
   {
     id: 3,
     slug: "bump-jolt-machines",
-    name: "SHAKTI Make Bump & Jolt Machines",
+    name: "Shakti-make Bump & Jolt Machines",
     category: "Testing Equipment",
     description:
       "Test packaging integrity and durability by simulating real-world transport conditions.",
@@ -115,7 +115,7 @@ const products = [
   {
     id: 4,
     slug: "bin-activators",
-    name: "SHAKTI Make Bin Activators",
+    name: "Shakti-make Bin Activators",
     category: "Bulk Material Systems",
     description:
       "Ensure uninterrupted discharge from storage bins and prevent material flow issues.",
@@ -151,7 +151,7 @@ const products = [
   {
     id: 5,
     slug: "vibro-separators",
-    name: "SHAKTI Make Vibro Separators",
+    name: "Shakti-make Vibro Separators",
     category: "Separation Systems",
     description:
       "Versatile separators for classifying and dewatering materials with high throughput.",
@@ -159,7 +159,7 @@ const products = [
       "Shakti Vibro Separators are versatile systems for separating solids from liquids or classifying solids by size. Their multi-plane vibration ensures high throughput, reduced screen blinding, and efficient operation in minimal space.",
     features: [
       "Supports up to five screens",
-      "Handles wet or dry materials",
+      "Handle wet or dry materials",
       "Multi-plane vibration system",
       "Pollution-free operation",
       "Uniform screen tensioning",
@@ -198,7 +198,7 @@ const products = [
     features: [
       "Zero-backlash mechanical transmission",
       "High positioning accuracy and repeatability",
-      "Handles heavy loads and high-speed indexing",
+      "Handle heavy loads and high-speed indexing",
       "Customizable index steps (2, 4, 6, 8, 12, 24 stations, etc.)",
       "Silent, smooth cam-profiled motion",
       "Maintenance-free options (lubricated for life)",
@@ -234,7 +234,7 @@ const products = [
     longDescription:
       "Enzfelder Screw Jacks, engineered in Germany, are mechanical positioning devices designed for safe, precise lifting and lowering of heavy loads in industrial and architectural applications. Using lead or ball screws, they convert rotary motion into controlled linear movement. Self-locking options allow maintenance of position without a brake, and corrosion-resistant models support harsh or outdoor environments. Multiple mounting and drive configurations allow integration into diverse lifting platforms, conveyors, test rigs, solar panels, and more.",
     features: [
-      "Handles loads from a few kN up to several hundred kN",
+      "Handle loads from a few kN up to several hundred kN",
       "Self-locking lead screw versions (hold load with power off)",
       "Corrosion-resistant options for outdoor/washdown use",
       "Upright, inverted, and double jack configurations available",

@@ -45,7 +45,7 @@ const products = [
       "High-precision cam-driven indexers for controlled, repeatable, backlash-free rotary and oscillating motion in automation.",
     features: [
       "Zero backlash, high positioning accuracy",
-      "Handles heavy loads and high-speed indexing",
+      "Handle heavy loads and high-speed indexing",
       "Silent, smooth cam-profiled motion",
       "Customizable index steps & configurations",
       "Compact, rigid, and low maintenance",
@@ -88,7 +88,7 @@ const products = [
   {
     id: 2,
     slug: "rotary-vibrators",
-    name: "SHAKTI Make Rotary Vibrators",
+    name: "Shakti-make Rotary Vibrators",
     category: "Material Handling",
     description:
       "Efficient vibratory solutions for material handling, dosing, and compaction across industries.",
@@ -109,7 +109,7 @@ const products = [
   {
     id: 3,
     slug: "bump-jolt-machines",
-    name: "SHAKTI Make Bump & Jolt Machines",
+    name: "Shakti-make Bump & Jolt Machines",
     category: "Testing Equipment",
     description:
       "Test packaging integrity and durability by simulating real-world transport conditions.",
@@ -130,7 +130,7 @@ const products = [
   {
     id: 1,
     slug: "helical-geared-motors",
-    name: "SHAKTI Make helical-geared-motors",
+    name: "Shakti-make helical-geared-motors",
     category: "Motors",
     description:
       "Compact. Efficient. Reliable. Designed for low-speed applications with maximum performance.",
@@ -152,7 +152,7 @@ const products = [
   {
     id: 4,
     slug: "bin-activators",
-    name: "SHAKTI Make Bin Activators",
+    name: "Shakti-make Bin Activators",
     category: "Bulk Material Systems",
     description:
       "Ensure uninterrupted discharge from storage bins and prevent material flow issues.",
@@ -173,7 +173,7 @@ const products = [
   {
     id: 5,
     slug: "vibro-separators",
-    name: "SHAKTI Make Vibro Separators",
+    name: "Shakti-make Vibro Separators",
     category: "Separation Systems",
     description:
       "Versatile separators for classifying and dewatering materials with high throughput.",
