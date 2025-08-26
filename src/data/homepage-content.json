@@ -218,6 +218,16 @@
         ]
       },
       {
+        "name": "Steel Industry",
+        "description": "Heavy-duty equipment for steel production, material handling, and high-temperature industrial applications.",
+        "applications": [
+          "Steel Production",
+          "Heavy Material Handling",
+          "Rolling Mills",
+          "Furnace Operations"
+        ]
+      },
+      {
         "name": "Food Processing",
         "description": "Food-grade solutions for ingredient handling, processing, and packaging with hygiene compliance.",
         "applications": [
@@ -235,16 +245,6 @@
           "Bulk Handling",
           "Separation",
           "Storage"
-        ]
-      },
-      {
-        "name": "Manufacturing",
-        "description": "Reliable drive systems and testing equipment for general manufacturing and assembly operations.",
-        "applications": [
-          "Assembly Lines",
-          "Quality Testing",
-          "Material Transport",
-          "Automation"
         ]
       }
     ]

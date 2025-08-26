@@ -5,13 +5,14 @@ import homepageContent from "@/data/homepage-content.json";
 
 // Service features from JSON with industry-specific icons
 const serviceFeatures = homepageContent.industries.sectors
-  .slice(0, 3)
+  .slice(0, 4)
   .map((sector, index) => {
     // Map each sector to a relevant industry-specific icon
     const iconMap: Record<number, string> = {
       0: "/pharmaceutical-icon.svg", // Pharmaceutical - capsule/pill icon
-      1: "/food-processing-icon.svg", // Food Processing - cup/beverage processing icon
-      2: "/chemical-industry-icon.svg", // Chemical Industry - flask/laboratory icon
+      1: "/steel-industry-icon.svg", // Steel Industry - steel beam/foundry icon
+      2: "/food-processing-icon.svg", // Food Processing - cup/beverage processing icon
+      3: "/chemical-industry-icon.svg", // Chemical Industry - flask/laboratory icon
     };
 
     return {
@@ -45,7 +46,7 @@ export const ContentLayoutSection = (): JSX.Element => {
         </div>
 
         <div className="flex flex-col items-start gap-8 lg:gap-16 relative self-stretch w-full">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-12 relative self-stretch w-full">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-12 relative self-stretch w-full">
             {serviceFeatures.map((feature, index) => (
               <Card
                 key={index}
