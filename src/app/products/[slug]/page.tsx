@@ -74,7 +74,7 @@ const products = [
       Bearings: "Heavy-duty, sealed",
       "Noise Level": "Low",
     },
-    images: ["/rotary-vibrator.webp", "/rotary-vibrator-2.jpeg"],
+    images: ["/rotary-vibrator.jpeg", "/rotary-vibrator-2.jpeg"],
   },
   {
     id: 3,

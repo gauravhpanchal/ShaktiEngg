@@ -104,7 +104,7 @@ const products = [
       "Screening and compaction",
       "Dust removal and cleaning",
     ],
-    image: "/rotary-vibrator.webp",
+    image: "/rotary-vibrator.jpeg",
   },
   {
     id: 3,

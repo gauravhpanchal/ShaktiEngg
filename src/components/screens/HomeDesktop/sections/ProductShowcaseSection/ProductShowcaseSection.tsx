@@ -19,7 +19,7 @@ import homepageContent from "@/data/homepage-content.json";
 const imageMap = [
   "/sonzogni.png",
   "/enzfelder.png",
-  "/rotary-vibrator.webp",
+  "/rotary-vibrator.jpeg",
   "/bump-jolt.png",
   "/helical-geared-motor.png",
   "/bin.png",
