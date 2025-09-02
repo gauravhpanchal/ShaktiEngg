@@ -6,13 +6,7 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { QuoteModal } from "@/components/QuoteModal";
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
-} from "@/components/ui/carousel";
+import { ArrowLeft, ArrowRight } from "lucide-react";
 
 /**
  * DYNAMIC PRODUCTS CATALOG SECTION
@@ -193,6 +187,111 @@ const products = [
   },
 ];
 
+// Simple Carousel Component
+const SimpleCarousel = ({ children }: { children: React.ReactNode[] }) => {
+  const [currentIndex, setCurrentIndex] = React.useState(0);
+  const [isTransitioning, setIsTransitioning] = React.useState(false);
+
+  const totalItems = children.length;
+
+  const goToPrevious = React.useCallback(() => {
+    if (isTransitioning) return;
+    setIsTransitioning(true);
+    setCurrentIndex((prevIndex) =>
+      prevIndex === 0 ? totalItems - 1 : prevIndex - 1
+    );
+    setTimeout(() => setIsTransitioning(false), 300);
+  }, [totalItems, isTransitioning]);
+
+  const goToNext = React.useCallback(() => {
+    if (isTransitioning) return;
+    setIsTransitioning(true);
+    setCurrentIndex((prevIndex) =>
+      prevIndex === totalItems - 1 ? 0 : prevIndex + 1
+    );
+    setTimeout(() => setIsTransitioning(false), 300);
+  }, [totalItems, isTransitioning]);
+
+  // Touch handling for mobile
+  const [touchStart, setTouchStart] = React.useState<number | null>(null);
+  const [touchEnd, setTouchEnd] = React.useState<number | null>(null);
+
+  const minSwipeDistance = 50;
+
+  const onTouchStart = (e: React.TouchEvent) => {
+    setTouchEnd(null);
+    setTouchStart(e.targetTouches[0].clientX);
+  };
+
+  const onTouchMove = (e: React.TouchEvent) => {
+    setTouchEnd(e.targetTouches[0].clientX);
+  };
+
+  const onTouchEnd = () => {
+    if (!touchStart || !touchEnd) return;
+    const distance = touchStart - touchEnd;
+    const isLeftSwipe = distance > minSwipeDistance;
+    const isRightSwipe = distance < -minSwipeDistance;
+
+    if (isLeftSwipe) {
+      goToNext();
+    } else if (isRightSwipe) {
+      goToPrevious();
+    }
+  };
+
+  return (
+    <div className="relative w-full">
+      <div
+        className="overflow-hidden"
+        onTouchStart={onTouchStart}
+        onTouchMove={onTouchMove}
+        onTouchEnd={onTouchEnd}
+      >
+        <div
+          className="flex transition-transform duration-300 ease-in-out -ml-2"
+          style={{
+            transform: `translateX(-${currentIndex * 100}%)`,
+            willChange: "transform",
+          }}
+        >
+          {children.map((child, index) => (
+            <div
+              key={index}
+              className="pl-2 md:pl-4 basis-full sm:basis-1/2 flex-shrink-0"
+            >
+              {child}
+            </div>
+          ))}
+        </div>
+      </div>
+
+      {/* Navigation Buttons */}
+      <Button
+        variant="secondary"
+        size="icon"
+        className="absolute left-2 top-1/2 -translate-y-1/2 h-8 w-8 rounded-full"
+        onClick={goToPrevious}
+        disabled={isTransitioning}
+      >
+        <ArrowLeft className="h-4 w-4" />
+        <span className="sr-only">Previous slide</span>
+      </Button>
+
+      <Button
+        variant="secondary"
+        size="icon"
+        className="absolute right-2 top-1/2 -translate-y-1/2 h-8 w-8 rounded-full"
+        onClick={goToNext}
+        disabled={isTransitioning}
+      >
+        <ArrowRight className="h-4 w-4" />
+        <span className="sr-only">Next slide</span>
+      </Button>
+    </div>
+  );
+};
+
 const ProductCard = ({ product }: { product: (typeof products)[0] }) => (
   <Card className="border-none shadow-lg bg-white group cursor-pointer hover:shadow-xl transition-shadow duration-300">
     <CardContent className="p-0 flex flex-col h-full">
@@ -307,28 +406,13 @@ export const ProductsCatalogSection = (): JSX.Element => {
         </div>
 
         <div className="flex flex-col items-start gap-8 lg:gap-16 w-full">
-          {/* Mobile Carousel */}
+          {/* Mobile Carousel - Simple and lightweight */}
           <div className="block lg:hidden w-full">
-            <Carousel
-              opts={{
-                align: "start",
-                loop: true,
-              }}
-              className="w-full"
-            >
-              <CarouselContent className="-ml-2 md:-ml-4">
-                {products.map((product) => (
-                  <CarouselItem
-                    key={product.id}
-                    className="pl-2 md:pl-4 basis-full sm:basis-1/2"
-                  >
-                    <ProductCard product={product} />
-                  </CarouselItem>
-                ))}
-              </CarouselContent>
-              <CarouselPrevious className="left-2" />
-              <CarouselNext className="right-2" />
-            </Carousel>
+            <SimpleCarousel>
+              {products.map((product) => (
+                <ProductCard key={product.id} product={product} />
+              ))}
+            </SimpleCarousel>
           </div>
 
           {/* Desktop Grid - Dynamic layout that adapts to any number of products */}
