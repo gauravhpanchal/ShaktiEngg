@@ -17,12 +17,12 @@ import homepageContent from "@/data/homepage-content.json";
 
 // Product data from JSON with motor/gear images
 const imageMap = [
-  "/sonzogni.png",
-  "/enzfelder.png",
+  "/sonzogni.jpg",
+  "/enzfelder.jpg",
   "/rotary-vibrator.jpeg",
-  "/bump-jolt.png",
-  "/helical-geared-motor.png",
-  "/bin.png",
+  "/bump-jolt.jpg",
+  "/helical-geared-motor.jpg",
+  "/bin.jpg",
   "/vibro-seperator.jpeg",
 ];
 
