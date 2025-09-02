@@ -137,10 +137,10 @@ export const ProductShowcaseSection = (): JSX.Element => {
           {/* Mobile Carousel using shadcn carousel */}
           <div className="block md:hidden w-full">
             <Carousel
-              opts={{
-                loop: true,
-                align: "start",
-              }}
+              // opts={{
+              //   loop: true,
+              //   align: "start",
+              // }}
               className="w-full"
             >
               <CarouselContent className="-ml-2">
