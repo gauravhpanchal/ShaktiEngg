@@ -18,6 +18,8 @@ const contactMethods = [
     description: "Call us for immediate assistance and technical consultation.",
     contact: "+91 9821034962",
     href: "tel:+919821034962",
+    contact2: "+91 9820249085",
+    href2: "tel:+919820249085",
   },
   {
     icon: <MapPinIcon className="h-10 w-10 lg:h-12 lg:w-12" />,
@@ -81,6 +83,15 @@ export const ContactFormSection = (): JSX.Element => {
                     >
                       {method.contact}
                     </a>
+                    {method.contact2 && (
+                      <a
+                        href={method.href2}
+                        target="_blank"
+                        className="relative self-stretch font-text-regular-link font-[number:var(--text-regular-link-font-weight)] text-[#01010a] text-[length:var(--text-regular-link-font-size)] text-center tracking-[var(--text-regular-link-letter-spacing)] leading-[var(--text-regular-link-line-height)] underline [font-style:var(--text-regular-link-font-style)] hover:no-underline transition-all break-words"
+                      >
+                        {method.contact2}
+                      </a>
+                    )}
                   </div>
                 </CardContent>
               </Card>

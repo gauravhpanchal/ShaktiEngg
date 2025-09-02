@@ -17,10 +17,10 @@ export const ContactMapSection = (): JSX.Element => {
               Our Location
             </h2>
 
-            <p className="font-body relative mx-auto font-text-medium-normal font-[number:var(--text-medium-normal-font-weight)] text-[#01010a] text-[length:var(--text-medium-normal-font-size)] text-center tracking-[var(--text-medium-normal-letter-spacing)] leading-[var(--text-medium-normal-line-height)] [font-style:var(--text-medium-normal-font-style)] max-w-3xl text-sm sm:text-base">
+            {/* <p className="font-body relative mx-auto font-text-medium-normal font-[number:var(--text-medium-normal-font-weight)] text-[#01010a] text-[length:var(--text-medium-normal-font-size)] text-center tracking-[var(--text-medium-normal-letter-spacing)] leading-[var(--text-medium-normal-line-height)] [font-style:var(--text-medium-normal-font-style)] max-w-3xl text-sm sm:text-base">
               Visit our state-of-the-art manufacturing facility to see our
               production process firsthand and meet our expert team.
-            </p>
+            </p> */}
           </div>
         </div>
 
@@ -28,7 +28,7 @@ export const ContactMapSection = (): JSX.Element => {
           <CardContent className="p-0">
             <div className="w-full h-64 sm:h-80 md:h-96 lg:h-[500px] xl:h-[600px] bg-[#f2f2f2] relative">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3769.8617704252088!2d72.8714178!3d19.1137191!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c838e5555555%3A0xeb432b7d5cb1202d!2sShakti%20Engineers!5e0!3m2!1sen!2sin!4v1752398030915!5m2!1sen!2sin"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52374.88952709347!2d72.81036690590619!3d19.117298356575365!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c838e5555555%3A0xeb432b7d5cb1202d!2sShakti%20Engineers!5e0!3m2!1sen!2sin!4v1756276262905!5m2!1sen!2sin"
                 className="absolute inset-0 w-full h-full border-0"
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
@@ -39,7 +39,7 @@ export const ContactMapSection = (): JSX.Element => {
           </CardContent>
         </Card>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6 lg:gap-8 relative self-stretch w-full">
+        <div className="grid grid-cols-1  gap-4 sm:gap-6 lg:gap-8 relative self-stretch w-full">
           <Card className="flex-1 h-full border border-gray-100 shadow-md bg-slate-100 rounded-lg hover:shadow-lg transition-shadow duration-300">
             <CardContent className="flex flex-col items-center gap-3 sm:gap-4 p-4 sm:p-6 lg:p-8 text-center">
               <h4 className="font-subheading font-[number:var(--heading-h4-font-weight)] text-[length:var(--heading-h4-font-size)] tracking-[var(--heading-h4-letter-spacing)] leading-[var(--heading-h4-line-height)] text-[#01010a] [font-style:var(--heading-h4-font-style)]">
@@ -47,19 +47,13 @@ export const ContactMapSection = (): JSX.Element => {
               </h4>
               <div className="flex flex-col gap-1.5 sm:gap-2">
                 <p className="font-body font-text-regular-normal font-[number:var(--text-regular-normal-font-weight)] text-[#01010a] text-[length:var(--text-regular-normal-font-size)] tracking-[var(--text-regular-normal-letter-spacing)] leading-[var(--text-regular-normal-line-height)] [font-style:var(--text-regular-normal-font-style)] text-sm sm:text-base">
-                  Monday - Friday: 8:00 AM - 6:00 PM
-                </p>
-                <p className="font-body font-text-regular-normal font-[number:var(--text-regular-normal-font-weight)] text-[#01010a] text-[length:var(--text-regular-normal-font-size)] tracking-[var(--text-regular-normal-letter-spacing)] leading-[var(--text-regular-normal-line-height)] [font-style:var(--text-regular-normal-font-style)] text-sm sm:text-base">
-                  Saturday: 9:00 AM - 2:00 PM
-                </p>
-                <p className="font-body font-text-regular-normal font-[number:var(--text-regular-normal-font-weight)] text-[#01010a] text-[length:var(--text-regular-normal-font-size)] tracking-[var(--text-regular-normal-letter-spacing)] leading-[var(--text-regular-normal-line-height)] [font-style:var(--text-regular-normal-font-style)] text-sm sm:text-base">
-                  Sunday: Closed
+                  All Days : 9:00 AM - 5:30 PM
                 </p>
               </div>
             </CardContent>
           </Card>
 
-          <Card className="flex-1 h-full border border-gray-100 shadow-md bg-slate-100 rounded-lg hover:shadow-lg transition-shadow duration-300">
+          {/* <Card className="flex-1 h-full border border-gray-100 shadow-md bg-slate-100 rounded-lg hover:shadow-lg transition-shadow duration-300">
             <CardContent className="flex flex-col items-center gap-3 sm:gap-4 p-4 sm:p-6 lg:p-8 text-center">
               <h4 className="font-subheading font-[number:var(--heading-h4-font-weight)] text-[length:var(--heading-h4-font-size)] tracking-[var(--heading-h4-letter-spacing)] leading-[var(--heading-h4-line-height)] text-[#01010a] [font-style:var(--heading-h4-font-style)]">
                 Parking
@@ -68,7 +62,7 @@ export const ContactMapSection = (): JSX.Element => {
                 Free parking available on-site for all visitors and customers.
               </p>
             </CardContent>
-          </Card>
+          </Card> */}
         </div>
       </div>
     </section>

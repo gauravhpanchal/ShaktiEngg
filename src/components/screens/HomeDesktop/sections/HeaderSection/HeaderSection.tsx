@@ -18,36 +18,39 @@ import homepageContent from "@/data/homepage-content.json";
 
 const heroImages = [
   {
-    src: "/our-products.jpeg",
-    alt: "Precision compression springs and mechanical gears in industrial manufacturing setting",
+    src: "/helical-geared-motor-2.png",
+    alt: "Helical Geared Motor",
+  },
+  {
+    src: "/rotary-vibrator-2.jpeg",
+    alt: "Electric Rotary Vibrator",
+  },
+  {
+    src: "/sonzogni.png",
+    alt: "Precision workshop tools with helical gears and motor components for spring manufacturing",
+    object: "contain",
+  },
+  {
+    src: "/enzfelder.png",
+    alt: "Precision workshop tools with helical gears and motor components for spring manufacturing",
+    object: "contain",
+  },
+  {
+    src: "/electric-actuator.png",
+    alt: "Precision workshop tools with helical gears and motor components for spring manufacturing",
   },
   {
     src: "/hero-4.jpeg",
-    alt: "Modern manufacturing facility with advanced motor systems and spring production equipment",
-  },
-  {
-    src: "/hero-3.jpeg",
     alt: "Precision workshop tools with helical gears and motor components for spring manufacturing",
   },
   {
-    src: "/hero-5.png",
-    alt: "Precision workshop tools with helical gears and motor components for spring manufacturing",
-  },
-  // {
-  //   src: "/hero-6.png",
-  //   alt: "Precision workshop tools with helical gears and motor components for spring manufacturing",
-  // },
-  {
-    src: "/hero-7.png",
-    alt: "Precision workshop tools with helical gears and motor components for spring manufacturing",
-  },
-  {
-    src: "/hero-8.jpeg",
-    alt: "Precision workshop tools with helical gears and motor components for spring manufacturing",
-  },
-  {
-    src: "/hero-2.jpeg",
+    src: "/bump-jolt.png",
     alt: "Industrial machinery gears and precision engineering components with helical motors",
+  },
+  {
+    src: "/Electromagnetic-Vibro-Feeders.png",
+    alt: "Industrial machinery gears and precision engineering components with helical motors",
+    object: "contain",
   },
 ];
 
@@ -111,9 +114,10 @@ export const HeaderSection = (): JSX.Element => {
                 <CarouselItem key={index}>
                   <div className="relative">
                     <Image
-                      className="w-full h-48 sm:h-64 md:h-80 lg:h-[720px] object-cover rounded-lg"
+                      className={`w-full h-48 sm:h-64 md:h-80 lg:h-[720px] object-${image.object} rounded-lg`}
                       alt={image.alt}
                       src={image.src}
+                      // objectFit={image.object || "cover"}
                       width={1260}
                       height={720}
                       priority={index === 0}

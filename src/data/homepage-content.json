@@ -1,6 +1,7 @@
 {
   "hero": {
-    "title": "Precision Engineering Solutions for Industrial Excellence",
+    "title": "Gearing Solutions For Industrial Excellence",
+    "Oldtitle": "Precision Engineering Solutions for Industrial Excellence",
     "subtitle": "Shakti Engineers delivers helical geared motors, rotary vibrators, testing machines, bin activators, and vibro separators engineered for maximum performance across pharmaceutical, steel, chemical, food processing, and manufacturing industries.",
     "primaryCTA": {
       "text": "Explore Products",
@@ -161,8 +162,8 @@
     "sectionSubtitle": "Decades of engineering expertise delivering reliable solutions for critical industrial applications",
     "features": [
       {
-        "title": "Advanced Manufacturing Excellence",
-        "description": "State-of-the-art production facilities with precision machinery and quality control systems.",
+        "title": "45 Years of Manufacturing Experience",
+        "description": "With over 45 years of expertise, we manufacture durable Geared Motors and Rotary Electrical Vibrators. Our in-house gear design and motor winding ensure precision, reliability, and a longer service life.",
         "icon": "manufacturing.svg"
       },
       {

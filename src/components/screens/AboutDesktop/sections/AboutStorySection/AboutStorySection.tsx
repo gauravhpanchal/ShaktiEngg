@@ -20,7 +20,7 @@ export const AboutStorySection = (): JSX.Element => {
 
                   <div className="flex flex-col gap-4 lg:gap-6 relative self-stretch w-full">
                     <p className="font-body relative self-stretch font-text-medium-normal font-[number:var(--text-medium-normal-font-weight)] text-[#01010a] text-[length:var(--text-medium-normal-font-size)] tracking-[var(--text-medium-normal-letter-spacing)] leading-[var(--text-medium-normal-line-height)] [font-style:var(--text-medium-normal-font-style)]">
-                      Shakti Engineers was founded in 1978 by Shri. G. S.
+                      Shakti Engineers was founded in 1978 by Late Shri. G. S.
                       Ghorpade, a visionary engineer driven by a passion for
                       innovation and self-reliance. A graduate in Electrical
                       Engineering from M.S. University of Baroda (1958), Shri
@@ -32,23 +32,25 @@ export const AboutStorySection = (): JSX.Element => {
 
                     <p className="font-body relative self-stretch font-text-medium-normal font-[number:var(--text-medium-normal-font-weight)] text-[#01010a] text-[length:var(--text-medium-normal-font-size)] tracking-[var(--text-medium-normal-letter-spacing)] leading-[var(--text-medium-normal-line-height)] [font-style:var(--text-medium-normal-font-style)]">
                       In 1962, he joined Industrial Electrical Equipments Co. as
-                      a partner, where he played a pivotal role in developing
+                      a Partner, where he played a pivotal role in developing
                       numerous special-purpose electric motors, addressing niche
                       industrial requirements and building a reputation for
                       technical ingenuity. However, driven by an entrepreneurial
                       spirit and a desire for more dynamic challenges, he
-                      transitioned to working as a consulting engineer — yet
-                      found that the consultant role lacked the pace and
-                      innovation he thrived on.
+                      transitioned to his desire for meaningful, hands-on
+                      engineering work gave birth to Shakti Engineers. Since
+                      then, the company has been at the forefront of import
+                      substitution, development, and manufacturing of critical
+                      products like Geared Motors, Electrical Rotary Vibrators,
+                      and other engineered solutions for diverse industrial
+                      applications.
                     </p>
 
                     <p className="font-body relative self-stretch font-text-medium-normal font-[number:var(--text-medium-normal-font-weight)] text-[#01010a] text-[length:var(--text-medium-normal-font-size)] tracking-[var(--text-medium-normal-letter-spacing)] leading-[var(--text-medium-normal-line-height)] [font-style:var(--text-medium-normal-font-style)]">
-                      This desire for meaningful, hands-on engineering work gave
-                      birth to Shakti Engineers. Since then, the company has
-                      been at the forefront of import substitution, development,
-                      and manufacturing of critical products like Geared Motors,
-                      Rotary Vibrators, and other precision-engineered solutions
-                      for diverse industrial applications..
+                      Mr. G.S.GHORPADE passed away in 2022 !!! He attended
+                      office till his last day !!! Today, his legacies are
+                      carried forward by his Son and Grandson Shrikant
+                      G.Ghorpade and Mayuresh S Ghorpade.
                     </p>
                   </div>
                 </div>
