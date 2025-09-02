@@ -159,11 +159,10 @@ export const HeaderSectiontwo = (): JSX.Element => {
           }`}
           alt={heroImages[currentImageIndex].alt}
           src={heroImages[currentImageIndex].src}
-          width={1920}
-          height={1080}
+          // width={1920}
+          // height={1080}
+          fill
           priority={currentImageIndex === 0}
-          sizes="100vw"
-          loading="eager"
         />
         {/* Dark overlay for better text readability */}
         <div className="absolute inset-0 bg-black/40" />
