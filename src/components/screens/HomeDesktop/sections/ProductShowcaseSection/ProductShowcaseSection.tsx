@@ -14,6 +14,7 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 import homepageContent from "@/data/homepage-content.json";
+import "@/styles/carousel-optimizations.css";
 
 // Product data from JSON with motor/gear images
 const imageMap = [
@@ -26,20 +27,28 @@ const imageMap = [
   "/vibro-seperator.jpeg",
 ];
 
-const products = homepageContent.products.featured.map((product, index) => ({
-  id: product.id,
-  slug: product.slug,
-  name: product.name,
-  variant: product.category,
-  // Images are mapped from imageMap array based on product index
-  image: imageMap[index] || imageMap[0], // Fallback to first image if index exceeds array
-}));
+// Product data from JSON with motor/gear images - moved to component level
+const getProducts = () =>
+  homepageContent.products.featured.map((product, index) => ({
+    id: product.id,
+    slug: product.slug,
+    name: product.name,
+    variant: product.category,
+    // Images are mapped from imageMap array based on product index
+    image: imageMap[index] || imageMap[0], // Fallback to first image if index exceeds array
+  }));
 
-const ProductCard = ({ product }: { product: (typeof products)[0] }) => {
-  const handleImageError = (e: React.SyntheticEvent<HTMLImageElement>) => {
-    // Fallback to a default product image if the specific image doesn't exist
-    e.currentTarget.src = "/default-product.png";
-  };
+type ProductType = ReturnType<typeof getProducts>[0];
+
+// Memoized ProductCard component to prevent unnecessary re-renders
+const ProductCard = React.memo(({ product }: { product: ProductType }) => {
+  const handleImageError = React.useCallback(
+    (e: React.SyntheticEvent<HTMLImageElement>) => {
+      // Fallback to a default product image if the specific image doesn't exist
+      e.currentTarget.src = "/default-product.png";
+    },
+    []
+  );
 
   return (
     <Card className="border-none shadow-none bg-transparent group cursor-pointer">
@@ -47,13 +56,16 @@ const ProductCard = ({ product }: { product: (typeof products)[0] }) => {
         <Link href={`/products/${product.slug}`} className="w-full">
           <div className="w-full relative overflow-hidden rounded-lg">
             <Image
-              className="w-full h-64 sm:h-80 lg:h-[350px] object-cover transition-transform duration-300 group-hover:scale-105"
+              className="w-full h-64 sm:h-80 lg:h-[350px] object-cover transition-transform duration-300 md:group-hover:scale-105"
               alt={`${product.name} - ${product.variant} products manufacturing with motor components`}
               src={product.image}
               width={400}
               height={486}
-              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+              sizes="(max-width: 768px) 90vw, (max-width: 1200px) 50vw, 33vw"
               onError={handleImageError}
+              loading="lazy"
+              placeholder="blur"
+              blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAABAAEDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAv/xAAhEAACAQMDBQAAAAAAAAAAAAABAgMABAUGIWGRkqGx0f/EABUBAQEAAAAAAAAAAAAAAAAAAAMF/8QAGhEAAgIDAAAAAAAAAAAAAAAAAAECEgMRkf/aAAwDAQACEQMRAD8AltJagyeH0AthI5xdrLcNM91BF5pX2HaH9bcfaSXWGaRmknyJckliyjqTzSlT54b6bk+h0R//2Q=="
             />
           </div>
         </Link>
@@ -80,9 +92,14 @@ const ProductCard = ({ product }: { product: (typeof products)[0] }) => {
       </CardContent>
     </Card>
   );
-};
+});
+
+ProductCard.displayName = "ProductCard";
 
 export const ProductShowcaseSection = (): JSX.Element => {
+  // Memoize products array to prevent unnecessary re-renders
+  const products = React.useMemo(() => getProducts(), []);
+
   return (
     <section className="flex flex-col items-center gap-12 lg:gap-20 section-padding w-full bg-white">
       <div className="flex-col container-responsive items-start gap-12 lg:gap-20 w-full flex">
@@ -118,12 +135,15 @@ export const ProductShowcaseSection = (): JSX.Element => {
         </div>
 
         <div className="flex flex-col items-start gap-8 lg:gap-16 w-full">
-          {/* Mobile Carousel */}
+          {/* Mobile Carousel - Optimized for performance */}
           <div className="block md:hidden w-full">
             <Carousel
               opts={{
                 align: "start",
                 loop: true,
+                skipSnaps: false,
+                dragFree: true,
+                containScroll: "trimSnaps",
               }}
               className="w-full"
             >

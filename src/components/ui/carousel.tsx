@@ -157,7 +157,11 @@ const CarouselContent = React.forwardRef<
   const { carouselRef, orientation } = useCarousel();
 
   return (
-    <div ref={carouselRef} className="overflow-hidden">
+    <div
+      ref={carouselRef}
+      className="overflow-hidden"
+      style={{ willChange: "transform" }}
+    >
       <div
         ref={ref}
         className={cn(
@@ -165,6 +169,7 @@ const CarouselContent = React.forwardRef<
           orientation === "horizontal" ? "-ml-4" : "-mt-4 flex-col",
           className
         )}
+        style={{ willChange: "transform" }}
         {...props}
       />
     </div>
@@ -188,6 +193,7 @@ const CarouselItem = React.forwardRef<
         orientation === "horizontal" ? "pl-4" : "pt-4",
         className
       )}
+      style={{ willChange: "transform" }}
       {...props}
     />
   );

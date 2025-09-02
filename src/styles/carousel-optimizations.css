@@ -1,0 +1,62 @@
+/* Mobile Carousel Performance Optimizations */
+
+/* Enable hardware acceleration for smooth scrolling */
+.embla {
+  will-change: transform;
+  transform: translateZ(0);
+}
+
+.embla__container {
+  will-change: transform;
+  transform: translateZ(0);
+  backface-visibility: hidden;
+}
+
+.embla__slide {
+  will-change: transform;
+  transform: translateZ(0);
+  backface-visibility: hidden;
+}
+
+/* Optimize transitions for mobile devices */
+@media (max-width: 768px) {
+  /* Reduce transition duration on mobile for snappier feel */
+  .group .transition-transform {
+    transition-duration: 200ms;
+  }
+  
+  /* Disable hover effects on mobile to prevent performance issues */
+  .group:hover .md\:group-hover\:scale-105 {
+    transform: none;
+  }
+  
+  /* Optimize image rendering on mobile */
+  .embla__slide img {
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
+  }
+  
+  /* Reduce repaints by containing layout changes */
+  .embla__slide {
+    contain: layout style paint;
+  }
+  
+  /* Optimize carousel content for mobile scrolling */
+  .embla__container {
+    scroll-behavior: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+}
+
+/* Prevent layout shifts during image loading */
+.embla__slide .relative {
+  contain: layout;
+}
+
+/* Optimize button interactions on mobile */
+@media (max-width: 768px) {
+  .embla button {
+    touch-action: manipulation;
+    -webkit-tap-highlight-color: transparent;
+  }
+}
