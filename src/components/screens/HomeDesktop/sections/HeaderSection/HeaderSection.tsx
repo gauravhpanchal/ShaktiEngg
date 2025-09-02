@@ -163,6 +163,7 @@ export const HeaderSectiontwo = (): JSX.Element => {
           height={1080}
           priority={currentImageIndex === 0}
           sizes="100vw"
+          loading="eager"
         />
         {/* Dark overlay for better text readability */}
         <div className="absolute inset-0 bg-black/40" />
