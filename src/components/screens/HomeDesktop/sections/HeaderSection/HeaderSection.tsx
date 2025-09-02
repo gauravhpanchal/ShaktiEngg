@@ -1,7 +1,6 @@
 "use client";
 
 import React from "react";
-import "@/app/globals.css";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { QuoteModal } from "@/components/QuoteModal";
@@ -152,25 +151,19 @@ export const HeaderSectiontwo = (): JSX.Element => {
     <section className="relative flex flex-col items-center justify-center min-h-screen w-full overflow-hidden">
       {/* Background Image Carousel */}
       <div className="absolute inset-0 w-full h-full">
-        {heroImages.map((image, index) => (
-          <div
-            key={index}
-            className={`absolute inset-0 w-full h-full transition-opacity duration-1000 ease-in-out ${
-              index === currentImageIndex ? "opacity-100" : "opacity-0"
-            }`}
-          >
-            <Image
-              className="w-full h-full object-cover"
-              alt={image.alt}
-              src={image.src}
-              width={1920}
-              height={1080}
-              priority
-              loading="eager"
-              sizes="100vw"
-            />
-          </div>
-        ))}
+        <Image
+          className={`w-full h-full ${
+            heroImages[currentImageIndex].object
+              ? "object-contain"
+              : "object-cover"
+          }`}
+          alt={heroImages[currentImageIndex].alt}
+          src={heroImages[currentImageIndex].src}
+          width={1920}
+          height={1080}
+          priority={currentImageIndex === 0}
+          sizes="100vw"
+        />
         {/* Dark overlay for better text readability */}
         <div className="absolute inset-0 bg-black/40" />
       </div>
