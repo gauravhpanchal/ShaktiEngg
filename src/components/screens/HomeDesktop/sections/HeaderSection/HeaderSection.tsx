@@ -18,7 +18,7 @@ import homepageContent from "@/data/homepage-content.json";
 
 const heroImages = [
   {
-    src: "/helical-geared-motor-2.png",
+    src: "/helical-geared-motor-2.jpg",
     alt: "Helical Geared Motor",
   },
   {
@@ -160,14 +160,13 @@ export const HeaderSectiontwo = (): JSX.Element => {
             }`}
           >
             <Image
-              className={`w-full h-full ${
-                image.object ? "object-contain" : "object-cover"
-              }`}
+              className="w-full h-full object-cover"
               alt={image.alt}
               src={image.src}
               width={1920}
               height={1080}
-              priority={index === 0}
+              priority
+              loading="eager"
               sizes="100vw"
             />
           </div>
