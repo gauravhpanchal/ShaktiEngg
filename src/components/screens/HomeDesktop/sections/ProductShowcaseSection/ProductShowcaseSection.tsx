@@ -41,14 +41,6 @@ type ProductType = ReturnType<typeof getProducts>[0];
 
 // Memoized ProductCard component to prevent unnecessary re-renders
 const ProductCard = React.memo(({ product }: { product: ProductType }) => {
-  const handleImageError = React.useCallback(
-    (e: React.SyntheticEvent<HTMLImageElement>) => {
-      // Fallback to a default product image if the specific image doesn't exist
-      e.currentTarget.src = "/default-product.png";
-    },
-    []
-  );
-
   return (
     <Card className="border-none shadow-none bg-transparent group cursor-pointer">
       <CardContent className="p-0 flex flex-col items-start gap-4">
@@ -61,10 +53,8 @@ const ProductCard = React.memo(({ product }: { product: ProductType }) => {
               width={400}
               height={486}
               sizes="(max-width: 768px) 90vw, (max-width: 1200px) 50vw, 33vw"
-              onError={handleImageError}
-              loading="lazy"
-              placeholder="blur"
-              blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAABAAEDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAv/xAAhEAACAQMDBQAAAAAAAAAAAAABAgMABAUGIWGRkqGx0f/EABUBAQEAAAAAAAAAAAAAAAAAAAMF/8QAGhEAAgIDAAAAAAAAAAAAAAAAAAECEgMRkf/aAAwDAQACEQMRAD8AltJagyeH0AthI5xdrLcNM91BF5pX2HaH9bcfaSXWGaRmknyJckliyjqTzSlT54b6bk+h0R//2Q=="
+              loading="eager"
+              priority
             />
           </div>
         </Link>
@@ -137,10 +127,10 @@ export const ProductShowcaseSection = (): JSX.Element => {
           {/* Mobile Carousel using shadcn carousel */}
           <div className="block md:hidden w-full">
             <Carousel
-              // opts={{
-              //   loop: true,
-              //   align: "start",
-              // }}
+              opts={{
+                loop: true,
+                align: "start",
+              }}
               className="w-full"
             >
               <CarouselContent className="-ml-2">

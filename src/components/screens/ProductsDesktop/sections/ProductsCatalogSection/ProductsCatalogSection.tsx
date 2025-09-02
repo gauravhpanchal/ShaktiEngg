@@ -205,6 +205,8 @@ const ProductCard = ({ product }: { product: (typeof products)[0] }) => (
             width={400}
             height={320}
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+            priority
+            loading="eager"
           />
           <div className="absolute top-4 left-4">
             <span className="bg-[#e22023] font-specs text-white px-3 py-1 rounded-full text-sm font-text-small-semi-bold">
@@ -310,10 +312,10 @@ export const ProductsCatalogSection = (): JSX.Element => {
           {/* Mobile Carousel using shadcn carousel */}
           <div className="block lg:hidden w-full">
             <Carousel
-              // opts={{
-              //   loop: true,
-              //   align: "start",
-              // }}
+              opts={{
+                loop: true,
+                align: "start",
+              }}
               className="w-full"
             >
               <CarouselContent className="-ml-2">
