@@ -78,11 +78,15 @@ const Carousel = React.forwardRef<
     }, []);
 
     const scrollPrev = React.useCallback(() => {
-      api?.scrollPrev();
+      if (api && api.canScrollPrev()) {
+        api.scrollPrev();
+      }
     }, [api]);
 
     const scrollNext = React.useCallback(() => {
-      api?.scrollNext();
+      if (api && api.canScrollNext()) {
+        api.scrollNext();
+      }
     }, [api]);
 
     const handleKeyDown = React.useCallback(
@@ -205,6 +209,17 @@ const CarouselPrevious = React.forwardRef<
   React.ComponentProps<typeof Button>
 >(({ className, variant = "secondary", size = "icon", ...props }, ref) => {
   const { orientation, scrollPrev, canScrollPrev } = useCarousel();
+  const [isScrolling, setIsScrolling] = React.useState(false);
+
+  const handleClick = React.useCallback(() => {
+    if (isScrolling || !canScrollPrev) return;
+
+    setIsScrolling(true);
+    scrollPrev();
+
+    // Reset scrolling state after animation completes
+    setTimeout(() => setIsScrolling(false), 300);
+  }, [scrollPrev, canScrollPrev, isScrolling]);
 
   return (
     <Button
@@ -218,8 +233,8 @@ const CarouselPrevious = React.forwardRef<
           : "-top-12 left-1/2 -translate-x-1/2 rotate-90",
         className
       )}
-      disabled={!canScrollPrev}
-      onClick={scrollPrev}
+      disabled={!canScrollPrev || isScrolling}
+      onClick={handleClick}
       {...props}
     >
       <ArrowLeft className="h-4 w-4" />
@@ -234,6 +249,17 @@ const CarouselNext = React.forwardRef<
   React.ComponentProps<typeof Button>
 >(({ className, variant = "secondary", size = "icon", ...props }, ref) => {
   const { orientation, scrollNext, canScrollNext } = useCarousel();
+  const [isScrolling, setIsScrolling] = React.useState(false);
+
+  const handleClick = React.useCallback(() => {
+    if (isScrolling || !canScrollNext) return;
+
+    setIsScrolling(true);
+    scrollNext();
+
+    // Reset scrolling state after animation completes
+    setTimeout(() => setIsScrolling(false), 300);
+  }, [scrollNext, canScrollNext, isScrolling]);
 
   return (
     <Button
@@ -247,8 +273,8 @@ const CarouselNext = React.forwardRef<
           : "-bottom-12 left-1/2 -translate-x-1/2 rotate-90",
         className
       )}
-      disabled={!canScrollNext}
-      onClick={scrollNext}
+      disabled={!canScrollNext || isScrolling}
+      onClick={handleClick}
       {...props}
     >
       <ArrowRight className="h-4 w-4" />

@@ -142,8 +142,10 @@ export const ProductShowcaseSection = (): JSX.Element => {
                 align: "start",
                 loop: true,
                 skipSnaps: false,
-                dragFree: true,
+                dragFree: false, // Disable dragFree for button navigation
                 containScroll: "trimSnaps",
+                duration: 20, // Faster animation duration
+                startIndex: 0,
               }}
               className="w-full"
             >
@@ -157,8 +159,8 @@ export const ProductShowcaseSection = (): JSX.Element => {
                   </CarouselItem>
                 ))}
               </CarouselContent>
-              <CarouselPrevious className="left-2" />
-              <CarouselNext className="right-2" />
+              <CarouselPrevious className="left-2 touch-manipulation" />
+              <CarouselNext className="right-2 touch-manipulation" />
             </Carousel>
           </div>
 
