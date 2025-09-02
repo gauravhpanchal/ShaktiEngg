@@ -283,7 +283,7 @@ const SimpleCarousel = ({ children }: { children: React.ReactNode[] }) => {
         size="icon"
         className="absolute right-2 top-1/2 -translate-y-1/2 h-8 w-8 rounded-full"
         onClick={goToNext}
-        disabled={isTransitioning}
+        disabled={false}
       >
         <ArrowRight className="h-4 w-4" />
         <span className="sr-only">Next slide</span>
