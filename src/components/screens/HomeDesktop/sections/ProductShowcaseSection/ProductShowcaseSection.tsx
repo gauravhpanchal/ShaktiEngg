@@ -6,7 +6,13 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { QuoteModal } from "@/components/QuoteModal";
-import { ArrowLeft, ArrowRight } from "lucide-react";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
 import homepageContent from "@/data/homepage-content.json";
 
 // Product data from JSON with motor/gear images
@@ -89,111 +95,6 @@ const ProductCard = React.memo(({ product }: { product: ProductType }) => {
 
 ProductCard.displayName = "ProductCard";
 
-// Simple Carousel Component
-const SimpleCarousel = ({ children }: { children: React.ReactNode[] }) => {
-  const [currentIndex, setCurrentIndex] = React.useState(0);
-  const [isTransitioning, setIsTransitioning] = React.useState(false);
-
-  const totalItems = children.length;
-
-  const goToPrevious = React.useCallback(() => {
-    if (isTransitioning) return;
-    setIsTransitioning(true);
-    setCurrentIndex((prevIndex) =>
-      prevIndex === 0 ? totalItems - 1 : prevIndex - 1
-    );
-    setTimeout(() => setIsTransitioning(false), 300);
-  }, [totalItems, isTransitioning]);
-
-  const goToNext = React.useCallback(() => {
-    if (isTransitioning) return;
-    setIsTransitioning(true);
-    setCurrentIndex((prevIndex) =>
-      prevIndex === totalItems - 1 ? 0 : prevIndex + 1
-    );
-    setTimeout(() => setIsTransitioning(false), 300);
-  }, [totalItems, isTransitioning]);
-
-  // Touch handling for mobile
-  const [touchStart, setTouchStart] = React.useState<number | null>(null);
-  const [touchEnd, setTouchEnd] = React.useState<number | null>(null);
-
-  const minSwipeDistance = 50;
-
-  const onTouchStart = (e: React.TouchEvent) => {
-    setTouchEnd(null);
-    setTouchStart(e.targetTouches[0].clientX);
-  };
-
-  const onTouchMove = (e: React.TouchEvent) => {
-    setTouchEnd(e.targetTouches[0].clientX);
-  };
-
-  const onTouchEnd = () => {
-    if (!touchStart || !touchEnd) return;
-    const distance = touchStart - touchEnd;
-    const isLeftSwipe = distance > minSwipeDistance;
-    const isRightSwipe = distance < -minSwipeDistance;
-
-    if (isLeftSwipe) {
-      goToNext();
-    } else if (isRightSwipe) {
-      goToPrevious();
-    }
-  };
-
-  return (
-    <div className="relative w-full">
-      <div
-        className="overflow-hidden"
-        onTouchStart={onTouchStart}
-        onTouchMove={onTouchMove}
-        onTouchEnd={onTouchEnd}
-      >
-        <div
-          className="flex transition-transform duration-300 ease-in-out -ml-2"
-          style={{
-            transform: `translateX(-${currentIndex * 80}%)`,
-            willChange: "transform",
-          }}
-        >
-          {children.map((child, index) => (
-            <div
-              key={index}
-              className="pl-2 basis-4/5 sm:basis-3/5 flex-shrink-0"
-            >
-              {child}
-            </div>
-          ))}
-        </div>
-      </div>
-
-      {/* Navigation Buttons */}
-      <Button
-        variant="secondary"
-        size="icon"
-        className="absolute left-2 top-1/2 -translate-y-1/2 h-8 w-8 rounded-full touch-manipulation"
-        onClick={goToPrevious}
-        disabled={isTransitioning}
-      >
-        <ArrowLeft className="h-4 w-4" />
-        <span className="sr-only">Previous slide</span>
-      </Button>
-
-      <Button
-        variant="secondary"
-        size="icon"
-        className="absolute right-2 top-1/2 -translate-y-1/2 h-8 w-8 rounded-full touch-manipulation"
-        onClick={goToNext}
-        disabled={false}
-      >
-        <ArrowRight className="h-4 w-4" />
-        <span className="sr-only">Next slide</span>
-      </Button>
-    </div>
-  );
-};
-
 export const ProductShowcaseSection = (): JSX.Element => {
   // Memoize products array to prevent unnecessary re-renders
   const products = React.useMemo(() => getProducts(), []);
@@ -233,13 +134,28 @@ export const ProductShowcaseSection = (): JSX.Element => {
         </div>
 
         <div className="flex flex-col items-start gap-8 lg:gap-16 w-full">
-          {/* Mobile Carousel - Simple and lightweight */}
+          {/* Mobile Carousel using shadcn carousel */}
           <div className="block md:hidden w-full">
-            <SimpleCarousel>
-              {products.map((product) => (
-                <ProductCard key={product.id} product={product} />
-              ))}
-            </SimpleCarousel>
+            <Carousel
+              opts={{
+                loop: true,
+                align: "start",
+              }}
+              className="w-full"
+            >
+              <CarouselContent className="-ml-2">
+                {products.map((product) => (
+                  <CarouselItem
+                    key={product.id}
+                    className="pl-2 basis-4/5 sm:basis-3/5"
+                  >
+                    <ProductCard product={product} />
+                  </CarouselItem>
+                ))}
+              </CarouselContent>
+              <CarouselPrevious className="left-2" />
+              <CarouselNext className="right-2" />
+            </Carousel>
           </div>
 
           {/* Desktop Grid - Dynamic layout that adapts to any number of products */}
