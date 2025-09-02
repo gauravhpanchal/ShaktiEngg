@@ -114,7 +114,7 @@ export const HeaderSection = (): JSX.Element => {
                 <CarouselItem key={index}>
                   <div className="relative">
                     <Image
-                      className={`w-full h-48 sm:h-64 md:h-80 lg:h-[720px] object-${image.object} rounded-lg`}
+                      className={`w-full h-48 sm:h-64 md:h-80 lg:h-[720px] object-cover rounded-lg`}
                       alt={image.alt}
                       src={image.src}
                       // objectFit={image.object || "cover"}
@@ -160,7 +160,9 @@ export const HeaderSectiontwo = (): JSX.Element => {
             }`}
           >
             <Image
-              className="w-full h-full object-cover"
+              className={`w-full h-full ${
+                image.object ? "object-contain" : "object-cover"
+              }`}
               alt={image.alt}
               src={image.src}
               width={1920}
