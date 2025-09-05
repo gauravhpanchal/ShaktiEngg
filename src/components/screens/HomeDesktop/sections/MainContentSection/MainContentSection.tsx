@@ -101,8 +101,7 @@ const MainContentSectionComponent = (): JSX.Element => {
               src="/factory-3.jpeg"
               width={640}
               height={640}
-              priority
-              loading="eager"
+              loading="lazy"
             />
           </div>
         </div>
