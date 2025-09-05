@@ -58,7 +58,8 @@ const products = [
       "Food processing conveyors",
       "Automotive assembly lines",
     ],
-    image: "/sonzogni.png",
+    image:
+      "https://res.cloudinary.com/doof2ycfz/image/upload/v1757079131/sonzogni_meqrpn.jpg",
   },
 
   // --- NEW PRODUCT: ENZFELDER SCREW JACKS ---
@@ -83,7 +84,8 @@ const products = [
       "Test rigs and wind tunnel positioning",
       "Stage, solar and agriculture lifting",
     ],
-    image: "/enzfelder.png",
+    image:
+      "https://res.cloudinary.com/doof2ycfz/image/upload/v1757079219/enzfelder_uhgpbe.png",
   },
   {
     id: 2,
@@ -104,7 +106,8 @@ const products = [
       "Screening and compaction",
       "Dust removal and cleaning",
     ],
-    image: "/rotary-vibrator.jpeg",
+    image:
+      "https://res.cloudinary.com/doof2ycfz/image/upload/v1757079902/rotary-vibrator_ahmhft.jpg",
   },
   {
     id: 3,
@@ -125,7 +128,8 @@ const products = [
       "Welding joint evaluation",
       "Transportation simulation",
     ],
-    image: "/bump-jolt.png",
+    image:
+      "https://res.cloudinary.com/doof2ycfz/image/upload/v1757079608/bump-jolt_qb8du4.png",
   },
   {
     id: 1,
@@ -146,7 +150,8 @@ const products = [
       "Industrial automation",
       "Conveyors and feeders",
     ],
-    image: "/helical-geared-motor-2.png",
+    image:
+      "https://res.cloudinary.com/doof2ycfz/image/upload/v1757078974/helical-geared-motor-2_zp0gpi.jpg",
   },
 
   {
@@ -168,7 +173,8 @@ const products = [
       "Food-grade material flow",
       "Pharmaceutical bins",
     ],
-    image: "/bin.png",
+    image:
+      "https://res.cloudinary.com/doof2ycfz/image/upload/v1757080015/bin_srgf9q.jpg",
   },
   {
     id: 5,
@@ -189,7 +195,8 @@ const products = [
       "Solid-liquid dewatering",
       "Powder grading",
     ],
-    image: "/vibro-seperator.jpeg",
+    image:
+      "https://res.cloudinary.com/doof2ycfz/image/upload/v1757080065/vibro-seperator_spgyye.jpg",
   },
 ];
 

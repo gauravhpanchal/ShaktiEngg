@@ -17,25 +17,23 @@ import homepageContent from "@/data/homepage-content.json";
 
 const heroImages = [
   {
-    src: "/helical-geared-motor-2.jpg",
+    src: "https://res.cloudinary.com/doof2ycfz/image/upload/v1757078974/helical-geared-motor-2_zp0gpi.jpg",
     alt: "Helical Geared Motor",
   },
   {
-    src: "/rotary-vibrator-2.jpeg",
+    src: "https://res.cloudinary.com/doof2ycfz/image/upload/v1757079050/rotary-vibrator-2_jdawxr.jpg",
     alt: "Electric Rotary Vibrator",
   },
   {
-    src: "/sonzogni.png",
+    src: "https://res.cloudinary.com/doof2ycfz/image/upload/v1757079131/sonzogni_meqrpn.jpg",
     alt: "Precision workshop tools with helical gears and motor components for spring manufacturing",
-    object: "contain",
   },
   {
-    src: "/enzfelder.png",
+    src: "https://res.cloudinary.com/doof2ycfz/image/upload/v1757079219/enzfelder_uhgpbe.png",
     alt: "Precision workshop tools with helical gears and motor components for spring manufacturing",
-    object: "contain",
   },
   {
-    src: "/electric-actuator.png",
+    src: "https://res.cloudinary.com/doof2ycfz/image/upload/v1757079511/electric-actuator_s3ugtt.png",
     alt: "Precision workshop tools with helical gears and motor components for spring manufacturing",
   },
   {
@@ -43,13 +41,12 @@ const heroImages = [
     alt: "Precision workshop tools with helical gears and motor components for spring manufacturing",
   },
   {
-    src: "/bump-jolt.png",
+    src: "https://res.cloudinary.com/doof2ycfz/image/upload/v1757079608/bump-jolt_qb8du4.png",
     alt: "Industrial machinery gears and precision engineering components with helical motors",
   },
   {
-    src: "/Electromagnetic-Vibro-Feeders.png",
+    src: "https://res.cloudinary.com/doof2ycfz/image/upload/v1757079710/Electromagnetic-Vibro-Feeders_vesko7.png",
     alt: "Industrial machinery gears and precision engineering components with helical motors",
-    object: "contain",
   },
 ];
 
@@ -152,11 +149,7 @@ export const HeaderSectiontwo = React.memo((): JSX.Element => {
       {/* Background Image Carousel */}
       <div className="absolute inset-0 w-full h-full">
         <Image
-          className={`w-full h-full ${
-            heroImages[currentImageIndex].object
-              ? "object-contain"
-              : "object-cover"
-          }`}
+          className={`w-full h-full object-cover`}
           alt={heroImages[currentImageIndex].alt}
           src={heroImages[currentImageIndex].src}
           // width={1920}

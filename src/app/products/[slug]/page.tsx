@@ -38,7 +38,10 @@ const products = [
       "Gear Types": "Helical, Worm, Epicyclic",
       "Mounting Options": "Foot, Flange, Agitator",
     },
-    images: ["/helical-geared-motor.png", "/helical-geared-motor-2.png"],
+    images: [
+      "https://res.cloudinary.com/doof2ycfz/image/upload/v1757079405/helical-geared-motor_kv8zm0.jpg",
+      "https://res.cloudinary.com/doof2ycfz/image/upload/v1757078974/helical-geared-motor-2_zp0gpi.jpg",
+    ],
   },
   {
     id: 2,
@@ -74,7 +77,10 @@ const products = [
       Bearings: "Heavy-duty, sealed",
       "Noise Level": "Low",
     },
-    images: ["/rotary-vibrator.jpeg", "/rotary-vibrator-2.jpeg"],
+    images: [
+      "https://res.cloudinary.com/doof2ycfz/image/upload/v1757079902/rotary-vibrator_ahmhft.jpg",
+      "https://res.cloudinary.com/doof2ycfz/image/upload/v1757079050/rotary-vibrator-2_jdawxr.jpg",
+    ],
   },
   {
     id: 3,
@@ -110,7 +116,9 @@ const products = [
       Counter: "Integrated cycle counter",
       Construction: "Heavy-duty steel frame",
     },
-    images: ["/bump-jolt.png"],
+    images: [
+      "https://res.cloudinary.com/doof2ycfz/image/upload/v1757079608/bump-jolt_qb8du4.png",
+    ],
   },
   {
     id: 4,
@@ -146,7 +154,9 @@ const products = [
       Installation: "Steel or concrete bins",
       "Elastic Sleeve": "Optional for food-grade use",
     },
-    images: ["/bin.png"],
+    images: [
+      "https://res.cloudinary.com/doof2ycfz/image/upload/v1757080015/bin_srgf9q.jpg",
+    ],
   },
   {
     id: 5,
@@ -182,7 +192,9 @@ const products = [
       "Tensioning System": "Uniform and long-lasting",
       "Base Design": "Vibration-free",
     },
-    images: ["/vibro-seperator.jpeg"],
+    images: [
+      "https://res.cloudinary.com/doof2ycfz/image/upload/v1757080065/vibro-seperator_spgyye.jpg",
+    ],
   },
 
   // ------- NEW PRODUCT: SONZOGNI CAMME INDEXERS ------
@@ -220,7 +232,9 @@ const products = [
       Maintenance: "Long-life lubrication available",
       Customization: "Index angle, configuration, torque",
     },
-    images: ["/sonzogni.png"],
+    images: [
+      "https://res.cloudinary.com/doof2ycfz/image/upload/v1757079131/sonzogni_meqrpn.jpg",
+    ],
   },
 
   // ------- NEW PRODUCT: ENZFELDER SCREW JACKS ------
@@ -256,7 +270,10 @@ const products = [
       Operation: "Manual, electric, or motor-driven",
       Customization: "Stroke, speed, mounting options",
     },
-    images: ["/enzfelder.png", "/enzfelder-2.png"],
+    images: [
+      "https://res.cloudinary.com/doof2ycfz/image/upload/v1757079219/enzfelder_uhgpbe.png",
+      "/enzfelder-2.png",
+    ],
   },
 ];
 
