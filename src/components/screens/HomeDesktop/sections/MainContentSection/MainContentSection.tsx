@@ -1,6 +1,6 @@
 import { ChevronRightIcon } from "lucide-react";
 import Image from "next/image";
-import React from "react";
+import React, { memo } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import homepageContent from "@/data/homepage-content.json";
@@ -14,7 +14,7 @@ const features = homepageContent.benefits.features.map((feature) => ({
   text: feature.description,
 }));
 
-export const MainContentSection = (): JSX.Element => {
+const MainContentSectionComponent = (): JSX.Element => {
   return (
     <section className="flex flex-col items-center gap-12 lg:gap-20 section-padding relative self-stretch w-full bg-white">
       <div className="flex-col container-responsive items-start gap-12 lg:gap-20 w-full flex relative">
@@ -110,3 +110,6 @@ export const MainContentSection = (): JSX.Element => {
     </section>
   );
 };
+
+export const MainContentSection = memo(MainContentSectionComponent);
+MainContentSection.displayName = "MainContentSection";

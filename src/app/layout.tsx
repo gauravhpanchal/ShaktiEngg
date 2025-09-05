@@ -210,7 +210,7 @@ export default function RootLayout({
       <body className="antialiased">
         <NavigationBarSection />
         <main>{children}</main>
-        <SpeedInsights />
+        {/* <SpeedInsights /> */}
         <FooterSection />
         <Toaster />
       </body>

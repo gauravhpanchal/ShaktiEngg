@@ -30,7 +30,10 @@ export const NavigationBarSection = (): JSX.Element => {
   ];
 
   return (
-    <header className="flex flex-col items-center w-full bg-white border-b border-[#01010a26] sticky top-0 z-50">
+    <header
+      className="flex flex-col items-center w-full bg-white border-b border-[#01010a26] sticky top-0 z-50"
+      style={{ willChange: "auto" }}
+    >
       <div className="flex h-16 lg:h-[72px] items-center justify-between container-responsive w-full">
         {/* Logo - Left side */}
         <div className="flex items-center gap-4 lg:gap-6">
@@ -47,7 +50,7 @@ export const NavigationBarSection = (): JSX.Element => {
         </div>
 
         {/* Desktop Navigation - Centered */}
-        <NavigationMenu className="hidden lg:flex absolute left-1/2 transform -translate-x-1/2">
+        <NavigationMenu className="hidden lg:flex absolute left-1/2 -translate-x-1/2">
           <NavigationMenuList className="flex items-center gap-6 lg:gap-8">
             {navigationItems.map((item, index) => (
               <NavigationMenuItem key={index}>

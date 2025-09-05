@@ -291,6 +291,21 @@
   }
 }
 
+/* Performance optimizations to prevent layout thrashing */
+* {
+  box-sizing: border-box;
+}
+
+/* Optimize sticky elements */
+.sticky {
+  will-change: auto;
+}
+
+/* Optimize transforms */
+.transform {
+  will-change: auto;
+}
+
 /* Touch-friendly button sizes */
 @media (max-width: 768px) {
   button {

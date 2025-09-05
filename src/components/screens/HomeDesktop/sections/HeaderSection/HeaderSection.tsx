@@ -135,14 +135,14 @@ export const HeaderSection = (): JSX.Element => {
   );
 };
 
-export const HeaderSectiontwo = (): JSX.Element => {
+export const HeaderSectiontwo = React.memo((): JSX.Element => {
   const [currentImageIndex, setCurrentImageIndex] = React.useState(0);
 
   // Auto-rotate background images
   React.useEffect(() => {
     const interval = setInterval(() => {
       setCurrentImageIndex((prevIndex) => (prevIndex + 1) % heroImages.length);
-    }, 5000); // Change image every 3 seconds
+    }, 5000); // Change image every 5 seconds
 
     return () => clearInterval(interval);
   }, []);
@@ -224,4 +224,6 @@ export const HeaderSectiontwo = (): JSX.Element => {
       </div>
     </section>
   );
-};
+});
+
+HeaderSectiontwo.displayName = "HeaderSectiontwo";

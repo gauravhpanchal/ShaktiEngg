@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, memo } from "react";
 import { Button } from "@/components/ui/button";
 import { Checkbox } from "@/components/ui/checkbox";
 import { Input } from "@/components/ui/input";
@@ -27,7 +27,7 @@ interface QuoteModalProps {
   children: React.ReactNode;
 }
 
-export const QuoteModal = ({ children }: QuoteModalProps): JSX.Element => {
+const QuoteModalComponent = ({ children }: QuoteModalProps): JSX.Element => {
   const [isOpen, setIsOpen] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [formData, setFormData] = useState<QuoteFormData>({
@@ -363,3 +363,6 @@ export const QuoteModal = ({ children }: QuoteModalProps): JSX.Element => {
     </Dialog>
   );
 };
+
+export const QuoteModal = memo(QuoteModalComponent);
+QuoteModal.displayName = "QuoteModal";
