@@ -14,7 +14,7 @@ const features = homepageContent.benefits.features.map((feature) => ({
   text: feature.description,
 }));
 
-const MainContentSectionComponent = (): JSX.Element => {
+export const MainContentSection = (): JSX.Element => {
   return (
     <section className="flex flex-col items-center gap-12 lg:gap-20 section-padding relative self-stretch w-full bg-white">
       <div className="flex-col container-responsive items-start gap-12 lg:gap-20 w-full flex relative">
@@ -53,9 +53,6 @@ const MainContentSectionComponent = (): JSX.Element => {
                         src={feature.icon}
                         width={16}
                         height={16}
-                        loading="eager"
-                        quality={90}
-                        priority
                       />
                       <p className="relative font-body flex-1 mt-[-1.00px] font-text-regular-normal font-[number:var(--text-regular-normal-font-weight)] text-[#01010a] text-[length:var(--text-regular-normal-font-size)] tracking-[var(--text-regular-normal-letter-spacing)] leading-[var(--text-regular-normal-line-height)] [font-style:var(--text-regular-normal-font-style)]">
                         {feature.text}
@@ -98,10 +95,11 @@ const MainContentSectionComponent = (): JSX.Element => {
             <Image
               className="w-full h-64 sm:h-80 lg:h-[640px] object-cover rounded-lg"
               alt="Modern manufacturing facility with precision helical motors and industrial gear systems"
-              src="/factory-3.jpeg"
+              src="https://images.pexels.com/photos/1108101/pexels-photo-1108101.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+              // src="/factory-3.jpeg"
               width={640}
               height={640}
-              loading="lazy"
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 640px"
             />
           </div>
         </div>
@@ -109,6 +107,3 @@ const MainContentSectionComponent = (): JSX.Element => {
     </section>
   );
 };
-
-export const MainContentSection = memo(MainContentSectionComponent);
-MainContentSection.displayName = "MainContentSection";
