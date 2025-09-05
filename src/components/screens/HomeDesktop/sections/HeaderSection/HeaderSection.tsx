@@ -139,13 +139,13 @@ export const HeaderSectiontwo = React.memo((): JSX.Element => {
   const [currentImageIndex, setCurrentImageIndex] = React.useState(0);
 
   // Auto-rotate background images
-  // React.useEffect(() => {
-  //   const interval = setInterval(() => {
-  //     setCurrentImageIndex((prevIndex) => (prevIndex + 1) % heroImages.length);
-  //   }, 5000); // Change image every 5 seconds
+  React.useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentImageIndex((prevIndex) => (prevIndex + 1) % heroImages.length);
+    }, 5000); // Change image every 5 seconds
 
-  //   return () => clearInterval(interval);
-  // }, []);
+    return () => clearInterval(interval);
+  }, []);
 
   return (
     <section className="relative flex flex-col items-center justify-center min-h-screen w-full overflow-hidden">
