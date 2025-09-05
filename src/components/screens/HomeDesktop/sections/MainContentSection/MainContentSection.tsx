@@ -101,7 +101,6 @@ const MainContentSectionComponent = (): JSX.Element => {
               src="/factory-3.jpeg"
               width={640}
               height={640}
-              sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 640px"
               priority
               loading="eager"
             />
