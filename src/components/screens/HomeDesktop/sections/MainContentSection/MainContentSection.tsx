@@ -96,7 +96,7 @@ export const MainContentSection = (): JSX.Element => {
               className="w-full h-64 sm:h-80 lg:h-[640px] object-cover rounded-lg"
               alt="Modern manufacturing facility with precision helical motors and industrial gear systems"
               // src="https://images.pexels.com/photos/1108101/pexels-photo-1108101.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-              src="/factory-3.jpeg"
+              src="/factory-3.webp"
               width={640}
               height={640}
               sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 640px"
