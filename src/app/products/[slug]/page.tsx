@@ -272,7 +272,7 @@ const products = [
     },
     images: [
       "https://res.cloudinary.com/doof2ycfz/image/upload/v1757079219/enzfelder_uhgpbe.png",
-      "/enzfelder-2.png",
+      "https://res.cloudinary.com/doof2ycfz/image/upload/v1757080353/enzfelder-2_le8szf.png",
     ],
   },
 ];
