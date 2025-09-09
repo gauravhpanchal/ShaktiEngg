@@ -28,12 +28,12 @@ const heroImages = [
   },
   {
     // src: "https://res.cloudinary.com/doof2ycfz/image/upload/v1757079131/sonzogni_meqrpn.jpg",
-    src: "/sonzogni.jpg",
+    src: "/sonzogni-hero.jpeg",
     alt: "Precision workshop tools with helical gears and motor components for spring manufacturing",
   },
   {
     // src: "https://res.cloudinary.com/doof2ycfz/image/upload/v1757079219/enzfelder_uhgpbe.png",
-    src: "/enzfelder.png",
+    src: "/enzfelder-hero.jpeg",
     alt: "Precision workshop tools with helical gears and motor components for spring manufacturing",
   },
   {
@@ -52,7 +52,7 @@ const heroImages = [
   },
   {
     // src: "https://res.cloudinary.com/doof2ycfz/image/upload/v1757079710/Electromagnetic-Vibro-Feeders_vesko7.png",
-    src: "/Electromagnetic-Vibro-Feeders.png",
+    src: "/Electromagnetic-Vibro-Feeders-hero.jpeg",
     alt: "Industrial machinery gears and precision engineering components with helical motors",
   },
 ];

@@ -33,7 +33,7 @@ const contactMethods = [
 
 export const ContactFormSection = (): JSX.Element => {
   return (
-    <section className="flex flex-col pb-0 items-center gap-12 lg:gap-20 section-padding relative self-stretch w-full bg-[#f2f2f2]">
+    <section className="flex flex-col  items-center gap-12 lg:gap-20 section-padding relative self-stretch w-full bg-[#f2f2f2]">
       <div className="flex flex-col container-responsive items-center gap-12 lg:gap-20 relative w-full">
         <div className="flex flex-col max-w-4xl items-center gap-4 relative w-full text-center">
           <div className="inline-flex items-center relative">
