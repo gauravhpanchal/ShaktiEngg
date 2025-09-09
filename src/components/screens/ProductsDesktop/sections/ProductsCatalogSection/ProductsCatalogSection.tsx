@@ -58,8 +58,8 @@ const products = [
       "Food processing conveyors",
       "Automotive assembly lines",
     ],
-    image:
-      "https://res.cloudinary.com/doof2ycfz/image/upload/v1757079131/sonzogni_meqrpn.jpg",
+    // image: "https://res.cloudinary.com/doof2ycfz/image/upload/v1757079131/sonzogni_meqrpn.jpg",
+    image: "/sonzogni.jpg",
   },
 
   // --- NEW PRODUCT: ENZFELDER SCREW JACKS ---
@@ -84,8 +84,8 @@ const products = [
       "Test rigs and wind tunnel positioning",
       "Stage, solar and agriculture lifting",
     ],
-    image:
-      "https://res.cloudinary.com/doof2ycfz/image/upload/v1757079219/enzfelder_uhgpbe.png",
+    // image: "https://res.cloudinary.com/doof2ycfz/image/upload/v1757079219/enzfelder_uhgpbe.png",
+    image: "/enzfelder.png",
   },
   {
     id: 2,
@@ -106,8 +106,8 @@ const products = [
       "Screening and compaction",
       "Dust removal and cleaning",
     ],
-    image:
-      "https://res.cloudinary.com/doof2ycfz/image/upload/v1757079902/rotary-vibrator_ahmhft.jpg",
+    // image: "https://res.cloudinary.com/doof2ycfz/image/upload/v1757079902/rotary-vibrator_ahmhft.jpg",
+    image: "/rotary-vibrator.jpg",
   },
   {
     id: 3,
@@ -128,8 +128,8 @@ const products = [
       "Welding joint evaluation",
       "Transportation simulation",
     ],
-    image:
-      "https://res.cloudinary.com/doof2ycfz/image/upload/v1757079608/bump-jolt_qb8du4.png",
+    // image: "https://res.cloudinary.com/doof2ycfz/image/upload/v1757079608/bump-jolt_qb8du4.png",
+    image: "/bump-jolt.png",
   },
   {
     id: 1,
@@ -150,8 +150,8 @@ const products = [
       "Industrial automation",
       "Conveyors and feeders",
     ],
-    image:
-      "https://res.cloudinary.com/doof2ycfz/image/upload/v1757078974/helical-geared-motor-2_zp0gpi.jpg",
+    // image: "https://res.cloudinary.com/doof2ycfz/image/upload/v1757078974/helical-geared-motor-2_zp0gpi.jpg",
+    image: "/helical-geared-motor-2.jpg",
   },
 
   {
@@ -173,8 +173,8 @@ const products = [
       "Food-grade material flow",
       "Pharmaceutical bins",
     ],
-    image:
-      "https://res.cloudinary.com/doof2ycfz/image/upload/v1757080015/bin_srgf9q.jpg",
+    // image: "https://res.cloudinary.com/doof2ycfz/image/upload/v1757080015/bin_srgf9q.jpg",
+    image: "/bin.jpg",
   },
   {
     id: 5,
@@ -195,8 +195,8 @@ const products = [
       "Solid-liquid dewatering",
       "Powder grading",
     ],
-    image:
-      "https://res.cloudinary.com/doof2ycfz/image/upload/v1757080065/vibro-seperator_spgyye.jpg",
+    // image: "https://res.cloudinary.com/doof2ycfz/image/upload/v1757080065/vibro-seperator_spgyye.jpg",
+    image: "/vibro-seperator.jpeg",
   },
 ];
 

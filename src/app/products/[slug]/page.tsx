@@ -39,8 +39,10 @@ const products = [
       "Mounting Options": "Foot, Flange, Agitator",
     },
     images: [
-      "https://res.cloudinary.com/doof2ycfz/image/upload/v1757079405/helical-geared-motor_kv8zm0.jpg",
-      "https://res.cloudinary.com/doof2ycfz/image/upload/v1757078974/helical-geared-motor-2_zp0gpi.jpg",
+      // "https://res.cloudinary.com/doof2ycfz/image/upload/v1757079405/helical-geared-motor_kv8zm0.jpg",
+      "/helical-geared-motor.jpg",
+      // "https://res.cloudinary.com/doof2ycfz/image/upload/v1757078974/helical-geared-motor-2_zp0gpi.jpg",
+      "/helical-geared-motor-2.jpg",
     ],
   },
   {
@@ -78,8 +80,10 @@ const products = [
       "Noise Level": "Low",
     },
     images: [
-      "https://res.cloudinary.com/doof2ycfz/image/upload/v1757079902/rotary-vibrator_ahmhft.jpg",
-      "https://res.cloudinary.com/doof2ycfz/image/upload/v1757079050/rotary-vibrator-2_jdawxr.jpg",
+      // "https://res.cloudinary.com/doof2ycfz/image/upload/v1757079902/rotary-vibrator_ahmhft.jpg",
+      "/rotary-vibrator.jpg",
+      // "https://res.cloudinary.com/doof2ycfz/image/upload/v1757079050/rotary-vibrator-2_jdawxr.jpg",
+      "/rotary-vibrator-2.jpeg",
     ],
   },
   {
@@ -117,7 +121,8 @@ const products = [
       Construction: "Heavy-duty steel frame",
     },
     images: [
-      "https://res.cloudinary.com/doof2ycfz/image/upload/v1757079608/bump-jolt_qb8du4.png",
+      // "https://res.cloudinary.com/doof2ycfz/image/upload/v1757079608/bump-jolt_qb8du4.png",
+      "/bump-jolt.png",
     ],
   },
   {
@@ -155,7 +160,8 @@ const products = [
       "Elastic Sleeve": "Optional for food-grade use",
     },
     images: [
-      "https://res.cloudinary.com/doof2ycfz/image/upload/v1757080015/bin_srgf9q.jpg",
+      // "https://res.cloudinary.com/doof2ycfz/image/upload/v1757080015/bin_srgf9q.jpg",
+      "/bin.jpg",
     ],
   },
   {
@@ -193,7 +199,9 @@ const products = [
       "Base Design": "Vibration-free",
     },
     images: [
-      "https://res.cloudinary.com/doof2ycfz/image/upload/v1757080065/vibro-seperator_spgyye.jpg",
+      // "https://res.cloudinary.com/doof2ycfz/image/upload/v1757080065/vibro-seperator_spgyye.jpg",
+      "/vibro-seperator.jpeg",
+      "/Electromagnetic-Vibro-Feeders.png",
     ],
   },
 
@@ -233,7 +241,8 @@ const products = [
       Customization: "Index angle, configuration, torque",
     },
     images: [
-      "https://res.cloudinary.com/doof2ycfz/image/upload/v1757079131/sonzogni_meqrpn.jpg",
+      // "https://res.cloudinary.com/doof2ycfz/image/upload/v1757079131/sonzogni_meqrpn.jpg",
+      "/sonzogni.jpg",
     ],
   },
 
@@ -271,8 +280,11 @@ const products = [
       Customization: "Stroke, speed, mounting options",
     },
     images: [
-      "https://res.cloudinary.com/doof2ycfz/image/upload/v1757079219/enzfelder_uhgpbe.png",
-      "https://res.cloudinary.com/doof2ycfz/image/upload/v1757080353/enzfelder-2_le8szf.png",
+      // "https://res.cloudinary.com/doof2ycfz/image/upload/v1757079219/enzfelder_uhgpbe.png",
+      "/enzfelder.png",
+      // "https://res.cloudinary.com/doof2ycfz/image/upload/v1757080353/enzfelder-2_le8szf.png",
+      "/enzfelder-2.png",
+      "/electric-actuator.png",
     ],
   },
 ];

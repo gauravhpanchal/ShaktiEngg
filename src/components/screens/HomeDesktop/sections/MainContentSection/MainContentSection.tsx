@@ -95,8 +95,8 @@ export const MainContentSection = (): JSX.Element => {
             <Image
               className="w-full h-64 sm:h-80 lg:h-[640px] object-cover rounded-lg"
               alt="Modern manufacturing facility with precision helical motors and industrial gear systems"
-              src="https://res.cloudinary.com/doof2ycfz/image/upload/factory-3_m9u9cr.webp"
-              // src="/factory-3.webp"
+              // src="https://res.cloudinary.com/doof2ycfz/image/upload/factory-3_m9u9cr.webp"
+              src="/factory-3.webp"
               width={640}
               height={640}
               sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 640px"

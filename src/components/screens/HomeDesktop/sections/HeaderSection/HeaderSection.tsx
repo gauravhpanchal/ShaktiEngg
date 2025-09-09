@@ -17,35 +17,42 @@ import homepageContent from "@/data/homepage-content.json";
 
 const heroImages = [
   {
-    src: "https://res.cloudinary.com/doof2ycfz/image/upload/v1757078974/helical-geared-motor-2_zp0gpi.jpg",
+    // src: "https://res.cloudinary.com/doof2ycfz/image/upload/v1757078974/helical-geared-motor-2_zp0gpi.jpg",
+    src: "/helical-geared-motor-2.jpg",
     alt: "Helical Geared Motor",
   },
   {
-    src: "https://res.cloudinary.com/doof2ycfz/image/upload/v1757079050/rotary-vibrator-2_jdawxr.jpg",
+    // src: "https://res.cloudinary.com/doof2ycfz/image/upload/v1757079050/rotary-vibrator-2_jdawxr.jpg",
+    src: "/rotary-vibrator-2.jpeg",
     alt: "Electric Rotary Vibrator",
   },
   {
-    src: "https://res.cloudinary.com/doof2ycfz/image/upload/v1757079131/sonzogni_meqrpn.jpg",
+    // src: "https://res.cloudinary.com/doof2ycfz/image/upload/v1757079131/sonzogni_meqrpn.jpg",
+    src: "/sonzogni.jpg",
     alt: "Precision workshop tools with helical gears and motor components for spring manufacturing",
   },
   {
-    src: "https://res.cloudinary.com/doof2ycfz/image/upload/v1757079219/enzfelder_uhgpbe.png",
+    // src: "https://res.cloudinary.com/doof2ycfz/image/upload/v1757079219/enzfelder_uhgpbe.png",
+    src: "/enzfelder.png",
     alt: "Precision workshop tools with helical gears and motor components for spring manufacturing",
   },
   {
-    src: "https://res.cloudinary.com/doof2ycfz/image/upload/v1757079511/electric-actuator_s3ugtt.png",
+    // src: "https://res.cloudinary.com/doof2ycfz/image/upload/v1757079511/electric-actuator_s3ugtt.png",
+    src: "/electric-actuator.png",
     alt: "Precision workshop tools with helical gears and motor components for spring manufacturing",
   },
   {
-    src: "/hero-4.jpeg",
+    src: "/bin.jpg",
     alt: "Precision workshop tools with helical gears and motor components for spring manufacturing",
   },
   {
-    src: "https://res.cloudinary.com/doof2ycfz/image/upload/v1757079608/bump-jolt_qb8du4.png",
+    // src: "https://res.cloudinary.com/doof2ycfz/image/upload/v1757079608/bump-jolt_qb8du4.png",
+    src: "/bump-jolt.png",
     alt: "Industrial machinery gears and precision engineering components with helical motors",
   },
   {
-    src: "https://res.cloudinary.com/doof2ycfz/image/upload/v1757079710/Electromagnetic-Vibro-Feeders_vesko7.png",
+    // src: "https://res.cloudinary.com/doof2ycfz/image/upload/v1757079710/Electromagnetic-Vibro-Feeders_vesko7.png",
+    src: "/Electromagnetic-Vibro-Feeders.png",
     alt: "Industrial machinery gears and precision engineering components with helical motors",
   },
 ];

@@ -16,9 +16,9 @@ export const HomeDesktoptwo = (): JSX.Element => {
       <MainLayoutSection />
       <MainContentSection />
       <ContentLayoutSection />
-      <CustomerTestimonialsSection />
-      <ContactFormSection />
+      {/* <CustomerTestimonialsSection /> */}
       <ContactInfoSection />
+      <ContactFormSection />
     </main>
   );
 };

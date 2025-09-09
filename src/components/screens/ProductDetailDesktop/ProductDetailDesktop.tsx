@@ -156,6 +156,20 @@ export const ProductDetailDesktop = ({
                     <span className="font-cta">Contact Expert</span>
                   </Button>
                 </Link>
+                {product.slug === "enzfelder-screw-jacks" && (
+                  <a
+                    href="/catalogs/enzfelder-screw-jacks-catalog.pdf"
+                    download
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-full sm:w-auto"
+                    style={{ textDecoration: "none" }}
+                  >
+                    <Button className="w-full sm:w-auto px-6 py-3 bg-[#01010a0d] rounded-[100px] border-b-4 border-[#01010a26] font-text-regular-medium font-[number:var(--text-regular-medium-font-weight)] text-[#01010a] text-[length:var(--text-regular-medium-font-size)] tracking-[var(--text-regular-medium-letter-spacing)] leading-[var(--text-regular-medium-line-height)] [font-style:var(--text-regular-medium-font-style)] hover:bg-[#01010a1a] transition-colors">
+                      <span className="font-cta">Download Catalog</span>
+                    </Button>
+                  </a>
+                )}
               </div>
 
               {/* Key Features */}

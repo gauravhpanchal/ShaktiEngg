@@ -98,7 +98,8 @@ export const ContactInfoSection = (): JSX.Element => {
             <Image
               className="w-full h-64 sm:h-96 lg:h-[734px] object-cover rounded-lg"
               alt="Modern manufacturing facility with advanced product production equipment, motors, and gear systems"
-              src="https://res.cloudinary.com/doof2ycfz/image/upload/v1757080189/mfg-plant-2_dt8jps.jpg"
+              // src="https://res.cloudinary.com/doof2ycfz/image/upload/v1757080189/mfg-plant-2_dt8jps.jpg"
+              src="/mfg-plant-2.jpeg"
               width={600}
               height={734}
               sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 600px"

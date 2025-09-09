@@ -17,13 +17,20 @@ import homepageContent from "@/data/homepage-content.json";
 
 // Product data from JSON with motor/gear images
 const imageMap = [
-  "https://res.cloudinary.com/doof2ycfz/image/upload/v1757079131/sonzogni_meqrpn.jpg",
-  "https://res.cloudinary.com/doof2ycfz/image/upload/v1757079219/enzfelder_uhgpbe.png",
-  "https://res.cloudinary.com/doof2ycfz/image/upload/v1757079902/rotary-vibrator_ahmhft.jpg",
-  "https://res.cloudinary.com/doof2ycfz/image/upload/v1757079608/bump-jolt_qb8du4.png",
-  "https://res.cloudinary.com/doof2ycfz/image/upload/v1757079405/helical-geared-motor_kv8zm0.jpg",
-  "https://res.cloudinary.com/doof2ycfz/image/upload/v1757080015/bin_srgf9q.jpg",
-  "https://res.cloudinary.com/doof2ycfz/image/upload/v1757080065/vibro-seperator_spgyye.jpg",
+  // "https://res.cloudinary.com/doof2ycfz/image/upload/v1757079131/sonzogni_meqrpn.jpg",
+  "/sonzogni.jpg",
+  // "https://res.cloudinary.com/doof2ycfz/image/upload/v1757079219/enzfelder_uhgpbe.png",
+  "/enzfelder.png",
+  // "https://res.cloudinary.com/doof2ycfz/image/upload/v1757079902/rotary-vibrator_ahmhft.jpg",
+  "/rotary-vibrator.jpg",
+  // "https://res.cloudinary.com/doof2ycfz/image/upload/v1757079608/bump-jolt_qb8du4.png",
+  "/bump-jolt.png",
+  // "https://res.cloudinary.com/doof2ycfz/image/upload/v1757079405/helical-geared-motor_kv8zm0.jpg",
+  "/helical-geared-motor.jpg",
+  // "https://res.cloudinary.com/doof2ycfz/image/upload/v1757080015/bin_srgf9q.jpg",
+  "/bin.jpg",
+  // "https://res.cloudinary.com/doof2ycfz/image/upload/v1757080065/vibro-seperator_spgyye.jpg",
+  "/vibro-seperator.jpeg",
 ];
 
 // Product data from JSON with motor/gear images - moved to component level
