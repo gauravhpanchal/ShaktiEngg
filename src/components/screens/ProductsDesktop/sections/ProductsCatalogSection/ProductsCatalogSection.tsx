@@ -178,25 +178,24 @@ const products = [
   },
   {
     id: 5,
-    slug: "vibro-separators",
-    name: "Shakti-make Vibro Separators",
-    category: "Separation Systems",
+    slug: "electromagnetic-vibrator-feeder",
+    name: "Electromagnetic Vibrator Feeder",
+    category: "Material Handling",
     description:
-      "Versatile separators for classifying and dewatering materials with high throughput.",
+      "Driven by strong electromagnetic vibration system with controller for precise, controllable feed of powders, granules, aggregates, and chips.",
     features: [
-      "Multi-plane vibration",
-      "Supports up to five screens",
-      "Pollution-free operation",
-      "Long screen life",
+      "Electromagnetic vibration drive",
+      "MS baseframe; SS contact parts (food-grade)",
+      "Controller for feed-rate adjustment",
+      "Trays/tubes in SS, rubber, or polyurethane",
     ],
     applications: [
-      "Wet and dry separation",
-      "Granule classification",
-      "Solid-liquid dewatering",
-      "Powder grading",
+      "Dosing and batching",
+      "Metered discharge from hoppers/silos",
+      "Feeding conveyors and packaging lines",
+      "Process flow control",
     ],
-    // image: "https://res.cloudinary.com/doof2ycfz/image/upload/v1757080065/vibro-seperator_spgyye.jpg",
-    image: "/vibro-seperator.jpeg",
+    image: "/Electromagnetic-Vibro-Feeders.png",
   },
 ];
 

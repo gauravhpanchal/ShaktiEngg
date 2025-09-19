@@ -239,8 +239,8 @@ const QuoteModalComponent = ({ children }: QuoteModalProps): JSX.Element => {
                     Bump & Jolt Machines
                   </SelectItem>
                   <SelectItem value="bin-activators">Bin Activators</SelectItem>
-                  <SelectItem value="vibro-separators">
-                    Vibro Separators
+                  <SelectItem value="electromagnetic-vibrator-feeder">
+                    Electromagnetic Vibrator Feeder
                   </SelectItem>
                   <SelectItem value="sonzogni-camme-mechanical-indexers">
                     Sonzogni Camme Mechanical Indexers

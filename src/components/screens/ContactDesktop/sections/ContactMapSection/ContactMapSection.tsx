@@ -4,7 +4,7 @@ import { Card, CardContent } from "@/components/ui/card";
 export const ContactMapSection = (): JSX.Element => {
   return (
     <section className="flex flex-col items-center gap-8 sm:gap-12 lg:gap-20 border-b-2 section-padding relative self-stretch w-full bg-[#f2f2f2]">
-      <div className="flex flex-col container-responsive items-center gap-8 sm:gap-12 lg:gap-20 relative w-full">
+      <div className="flesx flex-col container-responsive items-center gap-8 sm:gap-12 lg:gap-20 relative w-full">
         <div className="flex flex-col max-w-4xl items-center gap-4 sm:gap-6 relative w-full text-center px-4 sm:px-0">
           <div className="inline-flex items-center relative">
             <span className="font-heading-bold relative w-fit mt-[-1.00px] font-heading-tagline font-[number:var(--heading-tagline-font-weight)] text-[#01010a] text-[length:var(--heading-tagline-font-size)] text-center tracking-[var(--heading-tagline-letter-spacing)] leading-[var(--heading-tagline-line-height)] whitespace-nowrap [font-style:var(--heading-tagline-font-style)]">

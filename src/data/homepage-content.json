@@ -2,7 +2,7 @@
   "hero": {
     "title": "Gearing Solutions For Industrial Excellence",
     "Oldtitle": "Precision Engineering Solutions for Industrial Excellence",
-    "subtitle": "Shakti Engineers delivers helical geared motors, rotary vibrators, testing machines, bin activators, and vibro separators engineered for maximum performance across pharmaceutical, steel, chemical, food processing, and manufacturing industries.",
+    "subtitle": "Shakti Engineers delivers helical geared motors, rotary vibrators, testing machines, bin activators, and electromagnetic vibrator feeders engineered for maximum performance across pharmaceutical, steel, chemical, food processing, and manufacturing industries.",
     "primaryCTA": {
       "text": "Explore Products",
       "href": "/products"
@@ -116,7 +116,6 @@
           "Conveyors and feeders"
         ]
       },
-
       {
         "id": 4,
         "slug": "bin-activators",
@@ -138,21 +137,21 @@
       },
       {
         "id": 5,
-        "slug": "vibro-separators",
-        "name": "Shakti-make Vibro Separators",
-        "category": "Separation Systems",
-        "shortDescription": "Versatile separators for classifying and dewatering materials with high throughput.",
+        "slug": "electromagnetic-vibrator-feeder",
+        "name": "Electromagnetic Vibrator Feeder",
+        "category": "Material Handling",
+        "shortDescription": "Driven by a strong electromagnetic vibration system with controller for precise, controllable feed.",
         "keyFeatures": [
-          "Supports up to five screens",
-          "Handle wet or dry materials",
-          "Multi-plane vibration system",
-          "Vibration-free base"
+          "Electromagnetic vibration drive",
+          "MS baseframe; SS contact parts (food-grade)",
+          "Controller for feed-rate adjustment",
+          "Trays/tubes in SS, rubber, or polyurethane"
         ],
         "industries": [
-          "Powder classification",
-          "Solid-liquid separation",
-          "Food and chemical processing",
-          "Metal and mining industries"
+          "Dosing and batching",
+          "Metered discharge from hoppers and silos",
+          "Feeding conveyors and packaging lines",
+          "Process flow control"
         ]
       }
     ]
@@ -318,13 +317,13 @@
   },
   "metadata": {
     "pageTitle": "SHAKTI - Helical Geared Motors, Rotary Vibrators & Industrial Equipment",
-    "metaDescription": "Leading manufacturer of SHAKTI helical geared motors, rotary vibrators, bump & jolt machines, bin activators, and vibro separators for pharmaceutical, steel, chemical, food processing, and manufacturing industries.",
+    "metaDescription": "Leading manufacturer of SHAKTI helical geared motors, rotary vibrators, bump & jolt machines, bin activators, and electromagnetic vibrator feeders for pharmaceutical, steel, chemical, food processing, and manufacturing industries.",
     "keywords": [
       "SHAKTI helical geared motors",
       "rotary vibrators",
       "bump jolt machines",
       "bin activators",
-      "vibro separators",
+      "electromagnetic vibrator feeders",
       "industrial equipment",
       "material handling",
       "pharmaceutical equipment",

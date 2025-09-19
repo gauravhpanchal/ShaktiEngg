@@ -29,8 +29,7 @@ const imageMap = [
   "/helical-geared-motor.jpg",
   // "https://res.cloudinary.com/doof2ycfz/image/upload/v1757080015/bin_srgf9q.jpg",
   "/bin.jpg",
-  // "https://res.cloudinary.com/doof2ycfz/image/upload/v1757080065/vibro-seperator_spgyye.jpg",
-  "/vibro-seperator.jpeg",
+  "/Electromagnetic-Vibro-Feeders.png",
 ];
 
 // Product data from JSON with motor/gear images - moved to component level
