@@ -24,7 +24,7 @@
       {
         "id": 6,
         "slug": "sonzogni-camme-mechanical-indexers",
-        "name": "Sonzogni Camme Mechanical Indexers",
+        "name": "Sonzogni Camme Mechanical Indexer",
         "category": "Automation Components",
         "shortDescription": "High-precision cam-driven indexers for controlled, repeatable, backlash-free rotary and oscillating motion in automation.",
         "keyFeatures": [
@@ -43,7 +43,7 @@
       {
         "id": 7,
         "slug": "enzfelder-screw-jacks",
-        "name": "Enzfelder Screw Jacks",
+        "name": "Enzfelder Screw Jack",
         "category": "Mechanical Positioning",
         "shortDescription": "Robust, precise screw jacks for industrial lifting, lowering, and synchronized movement of heavy loads.",
         "keyFeatures": [
@@ -62,7 +62,7 @@
       {
         "id": 2,
         "slug": "rotary-vibrators",
-        "name": "Shakti-make Rotary Vibrators",
+        "name": "Shakti-make Rotary Vibrator",
         "category": "Material Handling",
         "shortDescription": "Efficient vibratory solutions for material handling, dosing, and compaction across industries.",
         "keyFeatures": [
@@ -81,7 +81,7 @@
       {
         "id": 3,
         "slug": "bump-jolt-machines",
-        "name": "Shakti-make Bump & Jolt Machines",
+        "name": "Shakti-make Bumpjolt Machine",
         "category": "Testing Equipment",
         "shortDescription": "Test packaging integrity and durability by simulating real-world transport conditions.",
         "keyFeatures": [
@@ -100,7 +100,7 @@
       {
         "id": 1,
         "slug": "helical-geared-motors",
-        "name": "Shakti-make Helical Geared Motors",
+        "name": "Shakti-make Helical Geared Motor",
         "category": "Motors",
         "shortDescription": "Compact. Efficient. Reliable. Designed for low-speed applications with maximum performance.",
         "keyFeatures": [
@@ -119,7 +119,7 @@
       {
         "id": 4,
         "slug": "bin-activators",
-        "name": "Shakti-make Bin Activators",
+        "name": "Shakti-make Bin Activator",
         "category": "Bulk Material Systems",
         "shortDescription": "Ensure uninterrupted discharge from storage bins and prevent material flow issues.",
         "keyFeatures": [
@@ -161,8 +161,8 @@
     "sectionSubtitle": "Decades of engineering expertise delivering reliable solutions for critical industrial applications",
     "features": [
       {
-        "title": "45 Years of Manufacturing Experience",
-        "description": "With over 45 years of expertise, we manufacture durable Geared Motors and Rotary Electrical Vibrators. Our in-house gear design and motor winding ensure precision, reliability, and a longer service life.",
+        "title": "40+ Years of Manufacturing Experience",
+        "description": "With over 40 years of expertise, we manufacture durable Geared Motors and Rotary Electrical Vibrators. Our in-house gear design and motor winding ensure precision, reliability, and a longer service life.",
         "icon": "manufacturing.svg"
       },
       {
@@ -317,7 +317,7 @@
   },
   "metadata": {
     "pageTitle": "SHAKTI - Helical Geared Motors, Rotary Vibrators & Industrial Equipment",
-    "metaDescription": "Leading manufacturer of SHAKTI helical geared motors, rotary vibrators, bump & jolt machines, bin activators, and electromagnetic vibrator feeders for pharmaceutical, steel, chemical, food processing, and manufacturing industries.",
+    "metaDescription": "Leading manufacturer of SHAKTI helical geared motors, rotary vibrators, Bumpjolt machines, bin activators, and electromagnetic vibrator feeders for pharmaceutical, steel, chemical, food processing, and manufacturing industries.",
     "keywords": [
       "SHAKTI helical geared motors",
       "rotary vibrators",

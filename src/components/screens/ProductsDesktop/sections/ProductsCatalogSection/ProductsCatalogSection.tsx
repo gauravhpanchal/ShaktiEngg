@@ -39,7 +39,7 @@ const products = [
   {
     id: 6,
     slug: "sonzogni-camme-mechanical-indexers",
-    name: "Sonzogni Camme Mechanical Indexers",
+    name: "Sonzogni Camme Mechanical Indexer",
     category: "Automation Components",
     description:
       "High-precision cam-driven indexers for controlled, repeatable, backlash-free rotary and oscillating motion in automation.",
@@ -66,7 +66,7 @@ const products = [
   {
     id: 7,
     slug: "enzfelder-screw-jacks",
-    name: "Enzfelder Screw Jacks",
+    name: "Enzfelder Screw Jack",
     category: "Mechanical Positioning",
     description:
       "Robust, precise screw jacks for industrial lifting, lowering, and synchronized movement of heavy loads.",
@@ -90,7 +90,7 @@ const products = [
   {
     id: 2,
     slug: "rotary-vibrators",
-    name: "Shakti-make Rotary Vibrators",
+    name: "Shakti-make Rotary Vibrator",
     category: "Material Handling",
     description:
       "Efficient vibratory solutions for material handling, dosing, and compaction across industries.",
@@ -112,7 +112,7 @@ const products = [
   {
     id: 3,
     slug: "bump-jolt-machines",
-    name: "Shakti-make Bump & Jolt Machines",
+    name: "Shakti-make Bumpjolt Machine",
     category: "Testing Equipment",
     description:
       "Test packaging integrity and durability by simulating real-world transport conditions.",
@@ -134,7 +134,7 @@ const products = [
   {
     id: 1,
     slug: "helical-geared-motors",
-    name: "Shakti-make helical-geared-motors",
+    name: "Shakti-make Helical Geared Motor",
     category: "Motors",
     description:
       "Compact. Efficient. Reliable. Designed for low-speed applications with maximum performance.",
@@ -157,7 +157,7 @@ const products = [
   {
     id: 4,
     slug: "bin-activators",
-    name: "Shakti-make Bin Activators",
+    name: "Shakti-make Bin Activator",
     category: "Bulk Material Systems",
     description:
       "Ensure uninterrupted discharge from storage bins and prevent material flow issues.",

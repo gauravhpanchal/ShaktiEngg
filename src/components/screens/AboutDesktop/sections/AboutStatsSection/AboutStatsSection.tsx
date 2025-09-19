@@ -3,14 +3,9 @@ import { Card, CardContent } from "@/components/ui/card";
 
 const stats = [
   {
-    number: "27+",
+    number: "40+",
     label: "Years of Experience",
     description: "Decades of expertise in  manufacturing",
-  },
-  {
-    number: "10M+",
-    label: "Products Manufactured",
-    description: "Millions of high-quality products delivered worldwide",
   },
   {
     number: "500+",
@@ -47,7 +42,7 @@ export const AboutStatsSection = (): JSX.Element => {
           </div>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8 relative self-stretch w-full">
+        <div className="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-3 gap-6 lg:gap-8 relative self-stretch w-full">
           {stats.map((stat, index) => (
             <Card
               key={index}

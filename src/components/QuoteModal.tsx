@@ -230,23 +230,23 @@ const QuoteModalComponent = ({ children }: QuoteModalProps): JSX.Element => {
                 </SelectTrigger>
                 <SelectContent>
                   <SelectItem value="helical-geared-motors">
-                    Helical Geared Motors
+                    Helical Geared Motor
                   </SelectItem>
                   <SelectItem value="rotary-vibrators">
-                    Rotary Vibrators
+                    Rotary Vibrator
                   </SelectItem>
                   <SelectItem value="bump-jolt-machines">
-                    Bump & Jolt Machines
+                    Bumpjolt Machine
                   </SelectItem>
                   <SelectItem value="bin-activators">Bin Activators</SelectItem>
                   <SelectItem value="electromagnetic-vibrator-feeder">
                     Electromagnetic Vibrator Feeder
                   </SelectItem>
                   <SelectItem value="sonzogni-camme-mechanical-indexers">
-                    Sonzogni Camme Mechanical Indexers
+                    Sonzogni Camme Mechanical Indexer
                   </SelectItem>
                   <SelectItem value="enzfelder-screw-jacks">
-                    Enzfelder Screw Jacks
+                    Enzfelder Screw Jack
                   </SelectItem>
                 </SelectContent>
               </Select>

@@ -7,7 +7,7 @@ const products = [
   {
     id: 1,
     slug: "helical-geared-motors",
-    name: "Shakti-make Helical Geared Motors",
+    name: "Shakti-make Helical Geared Motor",
     category: "Motors",
     description:
       "Compact. Efficient. Reliable. Designed for low-speed applications with maximum performance.",
@@ -48,7 +48,7 @@ const products = [
   {
     id: 2,
     slug: "rotary-vibrators",
-    name: "Shakti-make Rotary Vibrators",
+    name: "Shakti-make Rotary Vibrator",
     category: "Material Handling",
     description:
       "Efficient vibratory solutions for material handling, dosing, and compaction across industries.",
@@ -89,16 +89,16 @@ const products = [
   {
     id: 3,
     slug: "bump-jolt-machines",
-    name: "Shakti-make Bump & Jolt Machines",
+    name: "Shakti-make Bumpjolt Machine",
     category: "Testing Equipment",
     description:
       "Test packaging integrity and durability by simulating real-world transport conditions.",
     longDescription:
-      "Shakti Engineers' Bump & Jolt Machines simulate road transport and handling conditions to test product durability, packaging integrity, and component strength. Precision bump and jolt mechanisms help manufacturers meet international quality standards with confidence.",
+      "Shakti Engineers' Bumpjolt Machines simulate road transport and handling conditions to test product durability, packaging integrity, and component strength. Precision bump and jolt mechanisms help manufacturers meet international quality standards with confidence.",
     features: [
       "25mm bump height (customizable)",
-      "Adjustable frequency: 60–160 drops/min",
-      "Rotary vibrator for horizontal jolts (25–50 jolts/sec)",
+      "Bumpjolt Frequency: 20-80 /min",
+      "Vibration Amplitude : 3-5 mm Max",
       "Integrated cycle counter",
       "Heavy-duty build with premium materials",
       "Separate motors for bump and jolt",
@@ -114,8 +114,8 @@ const products = [
     ],
     specifications: {
       "Bump Height": "25mm (customizable)",
-      "Drop Frequency": "60–160 drops/min",
-      "Jolt Rate": "25–50 jolts/sec",
+      "Bumpjolt Frequency": "20–80 /min",
+      "Vibration Amplitude": "3-5mm Max",
       "Motor Control": "Independent for each function",
       Counter: "Integrated cycle counter",
       Construction: "Heavy-duty steel frame",
@@ -128,7 +128,7 @@ const products = [
   {
     id: 4,
     slug: "bin-activators",
-    name: "Shakti-make Bin Activators",
+    name: "Shakti-make Bin Activator",
     category: "Bulk Material Systems",
     description:
       "Ensure uninterrupted discharge from storage bins and prevent material flow issues.",
@@ -204,7 +204,7 @@ const products = [
   {
     id: 6,
     slug: "sonzogni-camme-mechanical-indexers",
-    name: "Sonzogni Camme Mechanical Indexers",
+    name: "Sonzogni Camme Mechanical Indexer",
     category: "Automation Components",
     description:
       "High-precision cam-driven indexers for controlled, repeatable, backlash-free rotary and oscillating motion in automation.",
@@ -245,7 +245,7 @@ const products = [
   {
     id: 7,
     slug: "enzfelder-screw-jacks",
-    name: "Enzfelder Screw Jacks",
+    name: "Enzfelder Screw Jack",
     category: "Mechanical Positioning",
     description:
       "Robust, precise screw jacks for industrial lifting, lowering, and synchronized movement of heavy loads.",
