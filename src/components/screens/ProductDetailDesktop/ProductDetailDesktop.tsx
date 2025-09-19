@@ -80,7 +80,7 @@ export const ProductDetailDesktop = ({
       </section>
 
       {/* Product Detail */}
-      <section className="flex flex-col items-center gap-12 lg:gap-20 section-padding w-full bg-white">
+      <section className="flex flex-col items-center gap-12 lg:gap-20 w-full bg-white">
         <div className="flex-col container-responsive items-start gap-12 lg:gap-20 w-full flex">
           <div className="flex flex-col lg:flex-row items-start gap-12 lg:gap-20 relative self-stretch w-full">
             {/* Product Images */}
