@@ -1,1 +1,1 @@
-export { MainContentSection } from "./MainContentSection";
+export { default as MainContentSection } from "./MainContentServer";

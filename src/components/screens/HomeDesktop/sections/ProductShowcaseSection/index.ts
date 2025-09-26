@@ -1,1 +1,1 @@
-export { ProductShowcaseSection } from "./ProductShowcaseSection";
+export { ProductShowcaseServer as ProductShowcaseSection } from "./ProductShowcaseServer";

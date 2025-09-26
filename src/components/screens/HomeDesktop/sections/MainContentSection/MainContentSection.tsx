@@ -1,20 +1,34 @@
+"use client";
+
 import { ChevronRightIcon } from "lucide-react";
 import Image from "next/image";
-import React, { memo } from "react";
+import React from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import homepageContent from "@/data/homepage-content.json";
 import Link from "next/link";
-import { QuoteModal } from "@/components/QuoteModal";
+import dynamic from "next/dynamic";
 
-// Feature data from JSON
-const features = homepageContent.benefits.features.map((feature) => ({
-  icon: `/${feature.icon}.svg`,
-  alt: `${feature.title} icon`,
-  text: feature.description,
-}));
+// Now this component receives content via props from a server wrapper
+export type MainContentData = {
+  companyName: string;
+  benefits: {
+    sectionTitle: string;
+    sectionSubtitle: string;
+    features: { icon: string; title: string; description: string }[];
+  };
+};
 
-export const MainContentSection = (): JSX.Element => {
+const QuoteModal = dynamic(
+  () => import("@/components/QuoteModal").then((m) => m.QuoteModal),
+  { ssr: false }
+);
+
+export const MainContentSection = ({
+  data,
+}: {
+  data: MainContentData;
+}): JSX.Element => {
+  const { companyName, benefits } = data;
   return (
     <section className="flex flex-col items-center gap-12 lg:gap-20 section-padding relative self-stretch w-full bg-white">
       <div className="flex-col container-responsive items-start gap-12 lg:gap-20 w-full flex relative">
@@ -25,16 +39,16 @@ export const MainContentSection = (): JSX.Element => {
               {/* Heading section */}
               <div className="gap-4 self-stretch w-full flex flex-col items-start">
                 <span className="relative w-fit mt-[-1.00px] font-heading-bold font-[number:var(--heading-tagline-font-weight)] text-[#01010a] text-[length:var(--heading-tagline-font-size)] tracking-[var(--heading-tagline-letter-spacing)] leading-[var(--heading-tagline-line-height)] whitespace-nowrap [font-style:var(--heading-tagline-font-style)]">
-                  {homepageContent.company.name}
+                  {companyName}
                 </span>
 
                 <div className="flex flex-col items-start gap-4 lg:gap-6 relative self-stretch w-full">
                   <h2 className="relative font-heading self-stretch mt-[-1.00px] font-heading-h2 font-[number:var(--heading-h2-font-weight)] text-[#01010a] text-[length:var(--heading-h2-font-size)] tracking-[var(--heading-h2-letter-spacing)] leading-[var(--heading-h2-line-height)] [font-style:var(--heading-h2-font-style)] text-balance">
-                    {homepageContent.benefits.sectionTitle}
+                    {benefits.sectionTitle}
                   </h2>
 
                   <p className="relative font-subheading self-stretch font-text-medium-normal font-[number:var(--text-medium-normal-font-weight)] text-[#01010a] text-[length:var(--text-medium-normal-font-size)] tracking-[var(--text-medium-normal-letter-spacing)] leading-[var(--text-medium-normal-line-height)] [font-style:var(--text-medium-normal-font-style)]">
-                    {homepageContent.benefits.sectionSubtitle}
+                    {benefits.sectionSubtitle}
                   </p>
                 </div>
               </div>
@@ -42,20 +56,21 @@ export const MainContentSection = (): JSX.Element => {
               {/* Features list */}
               <Card className="border-none shadow-none bg-transparent">
                 <CardContent className="gap-3 lg:gap-4 px-0 py-2 self-stretch w-full flex flex-col items-start">
-                  {features.map((feature, index) => (
+                  {benefits.features.map((feature, index) => (
                     <div
                       key={index}
                       className="flex items-start gap-3 lg:gap-4 relative self-stretch w-full"
                     >
-                      <Image
+                      <img
                         className="relative w-4 h-4 mt-1 flex-shrink-0"
-                        alt={feature.alt}
-                        src={feature.icon}
+                        alt={`${feature.title} icon`}
+                        src={`/${feature.icon}.svg`}
                         width={16}
                         height={16}
+                        loading="lazy"
                       />
                       <p className="relative font-body flex-1 mt-[-1.00px] font-text-regular-normal font-[number:var(--text-regular-normal-font-weight)] text-[#01010a] text-[length:var(--text-regular-normal-font-size)] tracking-[var(--text-regular-normal-letter-spacing)] leading-[var(--text-regular-normal-line-height)] [font-style:var(--text-regular-normal-font-style)]">
-                        {feature.text}
+                        {feature.description}
                       </p>
                     </div>
                   ))}
@@ -79,7 +94,7 @@ export const MainContentSection = (): JSX.Element => {
               <QuoteModal>
                 <Button
                   variant="ghost"
-                  className="w-full sm:w-auto inline-flex items-center justify-center gap-2 relative rounded-[100px] hover:bg-[#01010a0d] transition-colors"
+                  className="w-full sm:w-auto inline-flex items-center justify-center gap-2 relative rounded-[100px] hover:bg[#01010a0d] transition-colors"
                 >
                   <span className="font-cta font-text-regular-medium font-[number:var(--text-regular-medium-font-weight)] text-[#01010a] text-[length:var(--text-regular-medium-font-size)] tracking-[var(--text-regular-medium-letter-spacing)] leading-[var(--text-regular-medium-line-height)] whitespace-nowrap [font-style:var(--text-regular-medium-font-style)]">
                     Get Quote
@@ -95,11 +110,12 @@ export const MainContentSection = (): JSX.Element => {
             <Image
               className="w-full h-64 sm:h-80 lg:h-[640px] object-cover rounded-lg"
               alt="Modern manufacturing facility with precision helical motors and industrial gear systems"
-              // src="https://res.cloudinary.com/doof2ycfz/image/upload/factory-3_m9u9cr.webp"
               src="/factory-3.webp"
               width={640}
               height={640}
               sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 640px"
+              loading="lazy"
+              decoding="async"
             />
           </div>
         </div>

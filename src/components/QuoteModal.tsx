@@ -24,11 +24,23 @@ import { sendQuoteEmail, QuoteFormData } from "@/lib/email";
 import toast from "react-hot-toast";
 
 interface QuoteModalProps {
-  children: React.ReactNode;
+  children?: React.ReactNode;
+  open?: boolean;
+  onOpenChange?: (open: boolean) => void;
 }
 
-const QuoteModalComponent = ({ children }: QuoteModalProps): JSX.Element => {
-  const [isOpen, setIsOpen] = useState(false);
+const QuoteModalComponent = ({
+  children,
+  open,
+  onOpenChange,
+}: QuoteModalProps): JSX.Element => {
+  const isControlled =
+    typeof open === "boolean" && typeof onOpenChange === "function";
+  const [internalOpen, setInternalOpen] = useState(false);
+  const isOpen = isControlled ? (open as boolean) : internalOpen;
+  const setIsOpen = isControlled
+    ? (onOpenChange as (o: boolean) => void)
+    : setInternalOpen;
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [formData, setFormData] = useState<QuoteFormData>({
     name: "",
@@ -125,7 +137,7 @@ const QuoteModalComponent = ({ children }: QuoteModalProps): JSX.Element => {
 
   return (
     <Dialog open={isOpen} onOpenChange={setIsOpen}>
-      <DialogTrigger asChild>{children}</DialogTrigger>
+      {children ? <DialogTrigger asChild>{children}</DialogTrigger> : null}
       <DialogContent className="max-w-2xl max-h-[90vh] overflow-y-auto w-[calc(100vw-2rem)] mx-auto rounded-2xl sm:rounded-lg sm:mx-0 sm:w-full fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
         <DialogHeader>
           <DialogTitle className="font-subheading font-[number:var(--heading-h4-font-weight)] text-[#01010a] text-[length:var(--heading-h4-font-size)] tracking-[var(--heading-h4-letter-spacing)] leading-[var(--heading-h4-line-height)] [font-style:var(--heading-h4-font-style)]">
