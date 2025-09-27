@@ -9,8 +9,8 @@ const contactMethods = [
     title: "Email",
     description:
       "Reach out to us for any questions, quotes, or technical support.",
-    contact: "shaktiengr@gmail.com",
-    href: "mailto:shaktiengr@gmail.com",
+    contact: "shaktiengr@shaktieng.com",
+    href: "mailto:shaktiengr@shaktieng.com",
   },
   {
     icon: <PhoneIcon className="h-10 w-10 lg:h-12 lg:w-12" />,

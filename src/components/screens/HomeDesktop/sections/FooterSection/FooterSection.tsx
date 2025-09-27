@@ -95,17 +95,17 @@ export const FooterSection = (): JSX.Element => {
 
                     <div className="flex flex-col items-start self-stretch w-full">
                       <a
-                        href="tel:1800123456"
+                        href="tel:+919821034962"
                         className="font-heading self-stretch mt-[-1.00px] font-text-small-link text-[#01010a] text-[length:var(--text-small-link-font-size)] tracking-[var(--text-small-link-letter-spacing)] leading-[var(--text-small-link-line-height)] text-lg underline hover:no-underline transition-all"
                       >
                         +91 9821034962
                       </a>
 
                       <a
-                        href="mailto:shaktiengr@gmail.com"
+                        href="mailto:shaktiengr@shaktieng.com"
                         className="font-heading self-stretch font-text-small-link text-[#01010a] text-[length:var(--text-small-link-font-size)] text-lg tracking-[var(--text-small-link-letter-spacing)] leading-[var(--text-small-link-line-height)] underline hover:no-underline transition-all"
                       >
-                        shaktiengr@gmail.com
+                        shaktiengr@shaktieng.com
                       </a>
                     </div>
                   </div>

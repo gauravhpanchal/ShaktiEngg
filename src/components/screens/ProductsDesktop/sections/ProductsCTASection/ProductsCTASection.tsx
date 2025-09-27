@@ -73,7 +73,7 @@ export const ProductsCTASection = (): JSX.Element => {
 
                 <div className="flex flex-col gap-2 text-sm">
                   <span className="font-text-small-semi-bold font-[number:var(--text-small-semi-bold-font-weight)] text-[#01010a] text-[length:var(--text-small-semi-bold-font-size)] tracking-[var(--text-small-semi-bold-letter-spacing)] leading-[var(--text-small-semi-bold-line-height)] [font-style:var(--text-small-semi-bold-font-style)]">
-                    📧 shaktiengr@gmail.com
+                    📧 shaktiengr@shaktieng.com
                   </span>
                   <span className="font-text-small-semi-bold font-[number:var(--text-small-semi-bold-font-weight)] text-[#01010a] text-[length:var(--text-small-semi-bold-font-size)] tracking-[var(--text-small-semi-bold-letter-spacing)] leading-[var(--text-small-semi-bold-line-height)] [font-style:var(--text-small-semi-bold-font-style)]">
                     📞 +91 9821034962
